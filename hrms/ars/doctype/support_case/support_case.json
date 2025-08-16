@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-26 16:52:47.262553",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_j3ek",
+  "\u554f\u5408\u5185\u5bb9_column",
+  "amended_from",
+  "subject",
+  "product_name",
+  "type",
+  "question_level",
+  "multiple_data_sources",
+  "account_name",
+  "related_to",
+  "phone",
+  "email_address_1",
+  "inquiry_handler",
+  "developer",
+  "status",
+  "priority",
+  "file_upload_1",
+  "file_upload_2",
+  "file_upload_3",
+  "image_upload_1",
+  "is_customization",
+  "column_break_gnve",
+  "start_date",
+  "latest_contact",
+  "completion_date",
+  "inquiry_table",
+  "hours",
+  "solution"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_j3ek",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Support Case",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "\u4f5c\u540d"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Select",
+   "label": "\u88fd\u54c1\u540d",
+   "options": "-None-\n\u901a\u8ca9Ace\n\u901a\u8ca9\u30d7\u30ed"
+  },
+  {
+   "default": "-None-",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "\u7a2e\u985e",
+   "options": "-None-\n\u64cd\u4f5c\u8aac\u660e\n\u4f5c\u696d\u4f9d\u983c\n\u6a5f\u80fd\u8981\u671b\n\u4e0d\u5177\u5408\n\u969c\u5bb3\n\u8acb\u6c42\u66f8\u3001\u5408\u610f\u66f8\n\u305d\u306e\u4ed6"
+  },
+  {
+   "fieldname": "question_level",
+   "fieldtype": "Select",
+   "label": "\u8cea\u554f\u30ec\u30d9\u30eb",
+   "options": "-None-\n\u672a\u5206\u985e\n\u6613 - \u55b6\u696d\u3042\u3066 \u5c0e\u5165\u524d\u306a\u3069\u306e\u8cea\u554f\n\u666e - CS\u3042\u3066 AI\u5b66\u7fd2\u3055\u305b\u308b\u8cea\u554f\n\u96e3 - CS\u3042\u3066 AI\u5b66\u7fd2\u3055\u305b\u306a\u3044\u8cea\u554f\n\u7279 - \u30ab\u30b9\u30bf\u30de\u30a4\u30ba"
+  },
+  {
+   "fieldname": "multiple_data_sources",
+   "fieldtype": "Select",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u306e\u30c7\u30fc\u30bf\u5143",
+   "options": "-None-\n\u30e1\u30fc\u30eb\n\u96fb\u8a71\nChatwork\nBacklog\nSlack\n\u30b9\u30d7\u30ec\u30c3\u30c9\u30b7\u30fc\u30c8\n\u8907\u6570\u306e\u624b\u6bb5"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Select",
+   "label": "\u53d6\u5f15\u5148\u540d",
+   "options": "\u30d3\u30c3\u30af\u30a6\u30a7\u30b9\u30c8\u793e\n\u682a\u5f0f\u4f1a\u793e\u30b8\u30a7\u30a4\u30b7\u30fc\u30af\u30ea\u30a8\u30a4\u30c6\u30a3\u30f4\n\u5408\u540c\u4f1a\u793e\u30ed\u30fc\u30ec\u30eb\u30d7\u30e9\u30f3\u30cb\u30f3\u30b0\n\u65e5\u672c\u30c8\u30fc\u30bf\u30eb\u30c6\u30ec\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u682a\u5f0f\u4f1a\u793e\n\u6709\u9650\u4f1a\u793e\u30e6\u30cb\u30b2\n\u682a\u5f0f\u4f1a\u793e\u30de\u30c3\u30b7\u30e5\u30d3\u30e5\u30fc\u30c6\u30a3\u30fc\u30e9\u30dc\n\u682a\u5f0f\u4f1a\u793e\u5c71\u7530\u990a\u8702\u5834\n\u682a\u5f0f\u4f1a\u793e\u30b5\u30d6\u30b9\u30af\u30ea\u30d7\u30b7\u30e7\u30f3\n\u682a\u5f0f\u4f1a\u793e\uff27\uff33\uff34\uff36\n\u30cb\u30c3\u30d4\u30b3\u30e9\u30fc\u30b2\u30f3\u5316\u7ca7\u54c1\n\u682a\u5f0f\u4f1a\u793eTLC"
+  },
+  {
+   "fieldname": "related_to",
+   "fieldtype": "Select",
+   "label": "\u95a2\u4fc2\u8005",
+   "options": "\u5c0f\u6afb\n\u5c71\u4e0b\n\u6e21\u8fba\n\u99c4\u9053\n\u3055\u3044\u304d\n\u91d1\u6fa4\n\u4e95\u4e0a\n\u677e\u5d0e\n\u5bae\u672c\n\u6e21\u908a\n\u8c37\u53e3"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "\u96fb\u8a71\u756a\u53f7"
+  },
+  {
+   "fieldname": "email_address_1",
+   "fieldtype": "Data",
+   "label": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b91"
+  },
+  {
+   "fieldname": "inquiry_handler",
+   "fieldtype": "Link",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u306e\u62c5\u5f53\u8005",
+   "options": "User"
+  },
+  {
+   "fieldname": "developer",
+   "fieldtype": "Link",
+   "label": "\u524d\u767a\u62c5\u5f53\u8005",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "\u30b9\u30c6\u30fc\u30bf\u30b9",
+   "options": "\u5bfe\u5fdc\u4e2d - CS\u5bfe\u5fdc\u4e2d\n\u5bfe\u5fdc\u4e2d - PG\u5bfe\u5fdc\u4e2d\n\u5bfe\u5fdc\u4e2d - \u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061\n\u672a\u5bfe\u5fdc\n\u4fdd\u7559\n\u6a5f\u80fd\u8981\u671b\n\u5b8c\u4e86"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "\u512a\u5148\u5ea6",
+   "options": "-None-\n\u9ad8\n\u4e2d\n\u4f4e\n\u5b8c\u4e86\n\u672a\u78ba\u5b9a"
+  },
+  {
+   "fieldname": "file_upload_1",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c91"
+  },
+  {
+   "fieldname": "file_upload_2",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c92"
+  },
+  {
+   "fieldname": "file_upload_3",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c93"
+  },
+  {
+   "fieldname": "image_upload_1",
+   "fieldtype": "Attach Image",
+   "label": "\u753b\u50cf\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c91"
+  },
+  {
+   "fieldname": "is_customization",
+   "fieldtype": "Select",
+   "label": "\u672c\u6848\u4ef6\u306f\u30ab\u30b9\u30bf\u30de\u30a4\u30ba\u5bfe\u5fdc",
+   "options": "--None--\n\u5bfe\u8c61\n\u5bfe\u8c61\u5916"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "\u958b\u59cb\u65e5",
+   "placeholder": "YYYY/MM/DD"
+  },
+  {
+   "fieldname": "latest_contact",
+   "fieldtype": "Date",
+   "label": "\u6700\u65b0\u30b3\u30f3\u30bf\u30af\u30c8",
+   "placeholder": "YYYY/MM/DD"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "\u5b8c\u4e86\u65e5",
+   "placeholder": "YYYY/MM/DD"
+  },
+  {
+   "fieldname": "\u554f\u5408\u5185\u5bb9_column",
+   "fieldtype": "Column Break",
+   "label": "\u554f\u5408\u5185\u5bb9"
+  },
+  {
+   "fieldname": "column_break_gnve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inquiry_table",
+   "fieldtype": "Table",
+   "label": "\u554f\u5408\u5185\u5bb9",
+   "options": "inquiry_details_table"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Int",
+   "label": "\u96c6\u8a08\u5de5\u6570\uff08H)"
+  },
+  {
+   "fieldname": "solution",
+   "fieldtype": "Long Text",
+   "label": "Solution  "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-27 13:07:22.592127",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Support Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

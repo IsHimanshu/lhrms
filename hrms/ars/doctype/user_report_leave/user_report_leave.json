@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-22 13:58:12.655279",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5oqd",
+  "amended_from",
+  "leave_type",
+  "from_date",
+  "to_date",
+  "days",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5oqd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "user report Leave",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "label": "\u65e5\u6570"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "\u72b6\u614b"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "\u4f11\u6687\u7a2e\u985e"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "\u958b\u59cb"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "\u7d42\u4e86"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-24 19:00:34.652137",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "user report Leave",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

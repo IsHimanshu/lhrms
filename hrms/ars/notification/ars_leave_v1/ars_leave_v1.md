@@ -1,0 +1,42 @@
+<div style="font-family: Arial, sans-serif; color: #333; max-width: 640px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+  <h2 style="color: #4a90e2; border-bottom: 1px solid #eee; padding-bottom: 8px;">📝 休暇等申請書</h2>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>作成者 </strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.name1}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>申請日 </strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.date}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>区分 </strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.leave_type}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>休暇日（から）</strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.start_date}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>休暇日（まで）</strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.end_date}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>休暇期間 </strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.days_difference}}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #eee;"><strong>状態 </strong></td>
+      <td style="padding: 8px; border: 1px solid #eee;">{{doc.workflow_state}}</td>
+    </tr>
+  </table>
+ <p style="margin-top: 20px;">この休暇申請をレビューまたは承認するには、以下のリンクをクリックしてください：</p>
+  <p style="margin-top: 10px;">
+    <a href="{{ frappe.utils.get_url_to_form(doc.doctype, doc.name) }}" style="display: inline-block; padding: 10px 20px; background-color: #4a90e2; color: #fff; text-decoration: none; border-radius: 5px;">休暇申請を見る</a>
+  </p>
+  <p style="margin-top: 10px;">ご不明な点がございましたら、直属の上司までご連絡ください。</p>
+
+  <hr style="margin-top: 30px;">
+  <p style="font-size: 12px; color: #888;">こちらは自動送信メールです。直接のご返信はご遠慮ください。</p>
+</div>

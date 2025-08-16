@@ -18,7 +18,6 @@ frappe.ui.form.on("Company", {
 					company: frm.doc.name,
 					is_group: 0,
 					root_type: "Asset",
-					account_type: "Receivable",
 				},
 			};
 		});

@@ -1,0 +1,49 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-07-22 12:44:37.562706",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "default": "HR-EMP-00004",
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "\u793e\u54e1ID",
+   "mandatory": 1,
+   "options": "Employee",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 2,
+ "is_standard": "Yes",
+ "letter_head": "Ars letter head",
+ "letterhead": null,
+ "modified": "2025-08-13 10:48:00.658514",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Overtime",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    name1 AS \"\u4f5c\u6210\u8005\",\n    employee_id AS \"\u793e\u54e1ID\",\n    date AS \"\u6b8b\u696d\u65e5\",\n    shift AS \"\u6b8b\u696d\u6642\u9593\u5e2f\",\n    today_total_working_hour AS \"\u4eca\u65e5 \u6b8b\u696d\u6642\u9593 (\u5206)\"\nFROM `tabOvertime`\nWHERE employee_id =%(employee_id)s;",
+ "ref_doctype": "Overtime",
+ "report_name": "Overtime",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Ars Applications"
+  },
+  {
+   "role": "Ars HR"
+  },
+  {
+   "role": "Ars Manager"
+  }
+ ],
+ "timeout": 0
+}

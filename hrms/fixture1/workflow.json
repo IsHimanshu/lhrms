@@ -1,0 +1,1094 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Leave",
+  "is_active": 1,
+  "modified": "2025-07-14 19:10:42.415751",
+  "name": "Leave workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "All",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "1"
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "2"
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "5"
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "6"
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "7"
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending Manager",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": "[{\"type\":\"state\",\"dimensions\":{\"width\":85,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":38.96875,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":88.9375,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":38.96875,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":100.5,\"y\":277.5,\"z\":0},\"id\":\"1\",\"position\":{\"x\":100.5,\"y\":277.5}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.5,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166,\"y\":33.5,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.5,\"y\":78,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":33.5,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":528.2651291512916,\"y\":259.99142066420666,\"z\":0},\"id\":\"2\",\"position\":{\"x\":528.2651291512916,\"y\":259.99142066420666}},{\"type\":\"state\",\"dimensions\":{\"width\":111,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":51.7734375,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":114.546875,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":51.7734375,\"y\":57.000030517578125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":818.8437641843619,\"y\":386.69455107222683,\"z\":0},\"id\":\"4\",\"position\":{\"x\":818.8437641843619,\"y\":386.69455107222683}},{\"type\":\"state\",\"dimensions\":{\"width\":130,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":61.5078125,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":134.0234375,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":61.5078125,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":932.1918135454225,\"y\":86.90570549194132,\"z\":0},\"id\":\"5\",\"position\":{\"x\":932.1918135454225,\"y\":86.90570549194132}},{\"type\":\"state\",\"dimensions\":{\"width\":111,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":51.7734375,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":114.546875,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":51.7734375,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1177.336978302453,\"y\":214.2009949924461,\"z\":0},\"id\":\"6\",\"position\":{\"x\":1177.336978302453,\"y\":214.2009949924461}},{\"type\":\"state\",\"dimensions\":{\"width\":117,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":54.9296875,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":120.859375,\"y\":22.999996185302734,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":54.9296875,\"y\":56.999996185302734,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":22.999996185302734,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1142.3063977418633,\"y\":-41.52224309985807,\"z\":0},\"id\":\"7\",\"position\":{\"x\":1142.3063977418633,\"y\":-41.52224309985807}},{\"type\":\"action\",\"dimensions\":{\"width\":130,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":62.1875,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":126.375,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":62.1875,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":324,\"y\":281.5,\"z\":0},\"id\":\"action-1\",\"position\":{\"x\":324,\"y\":281.5},\"data\":{\"from_id\":\"1\",\"to_id\":\"2\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":28.9453125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":59.8984375,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":28.9453125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":673.2102403286306,\"y\":400.11557378602475,\"z\":0},\"id\":\"action-3\",\"position\":{\"x\":673.2102403286306,\"y\":400.11557378602475},\"data\":{\"from_id\":\"2\",\"to_id\":\"4\"}},{\"type\":\"action\",\"dimensions\":{\"width\":78,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":36.125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":74.25,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":36.125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":708.684129535502,\"y\":92.49397165570906,\"z\":0},\"id\":\"action-4\",\"position\":{\"x\":708.684129535502,\"y\":92.49397165570906},\"data\":{\"from_id\":\"2\",\"to_id\":\"5\"}},{\"type\":\"action\",\"dimensions\":{\"width\":78,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":36.125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":74.25,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":36.125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1015.5462519802786,\"y\":-31.539756563553937,\"z\":0},\"id\":\"action-5\",\"position\":{\"x\":1015.5462519802786,\"y\":-31.539756563553937},\"data\":{\"from_id\":\"5\",\"to_id\":\"7\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":28.9453125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":59.8984375,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":28.9453125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1024.887740129769,\"y\":226.51885356612289,\"z\":0},\"id\":\"action-6\",\"position\":{\"x\":1024.887740129769,\"y\":226.51885356612289},\"data\":{\"from_id\":\"5\",\"to_id\":\"6\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"1\",\"target\":\"action-1\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-1right-action-1left\",\"sourceX\":196.4375,\"sourceY\":304,\"targetX\":322,\"targetY\":298},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-1\",\"target\":\"2\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-action-1right-2left\",\"sourceX\":456.375,\"sourceY\":298,\"targetX\":517.2651291512916,\"targetY\":296.99142066420666,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"bottom\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"2\",\"target\":\"action-3\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-2bottom-action-3left\",\"sourceX\":609.2651291512916,\"sourceY\":344.99142066420666,\"targetX\":671.2102403286306,\"targetY\":416.61557378602475},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-3\",\"target\":\"4\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-action-3right-4left\",\"sourceX\":739.1086778286306,\"sourceY\":416.61557378602475,\"targetX\":807.8437641843619,\"targetY\":413.19455107222683,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"top\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"2\",\"target\":\"action-4\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-2top-action-4left\",\"sourceX\":609.2651291512916,\"sourceY\":248.99142066420666,\"targetX\":706.684129535502,\"targetY\":108.99397165570906},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-4\",\"target\":\"5\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-action-4right-5left\",\"sourceX\":788.934129535502,\"sourceY\":108.99397165570906,\"targetX\":921.1918135454225,\"targetY\":113.40570549194132,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"top\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"5\",\"target\":\"action-5\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-5top-action-5left\",\"sourceX\":997.1996260454225,\"sourceY\":75.90570549194132,\"targetX\":1013.5462519802786,\"targetY\":-15.039756563553937},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-5\",\"target\":\"7\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-action-5right-7left\",\"sourceX\":1095.7962519802786,\"sourceY\":-15.039756563553937,\"targetX\":1131.3063977418633,\"targetY\":-15.022246914555339,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"bottom\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"5\",\"target\":\"action-6\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-5bottom-action-6left\",\"sourceX\":997.1996260454225,\"sourceY\":150.90570549194132,\"targetX\":1022.8877401297691,\"targetY\":243.01885356612289},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-6\",\"target\":\"6\",\"updatable\":true,\"animated\":true,\"id\":\"vueflow__edge-action-6right-6left\",\"sourceX\":1090.786177629769,\"sourceY\":243.01885356612289,\"targetX\":1166.336978302453,\"targetY\":240.7009949924461,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}}]",
+  "workflow_name": "Leave workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Internal approval",
+  "is_active": 1,
+  "modified": "2025-07-18 13:14:21.374611",
+  "name": "Internal approval workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Internal approval workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Add slack for external users",
+  "is_active": 1,
+  "modified": "2025-07-18 13:10:34.985762",
+  "name": "Add Slack external user workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Add Slack external user workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Advance Payment",
+  "is_active": 1,
+  "modified": "2025-07-18 13:11:21.771176",
+  "name": "Advance Payment workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Advance Payment workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Add Business trip request",
+  "is_active": 1,
+  "modified": "2025-07-08 14:21:36.676087",
+  "name": "Add Business trip request workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending Manager",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Add Business trip request workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Business trip report",
+  "is_active": 1,
+  "modified": "2025-07-08 14:26:31.659640",
+  "name": "Business trip report workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending Manager",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Business trip report workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Slack channel opening application",
+  "is_active": 1,
+  "modified": "2025-07-18 13:12:15.757672",
+  "name": "Slack channel opening workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Slack channel opening workflow Ars",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Breakfast",
+  "is_active": 1,
+  "modified": "2025-07-10 13:45:21.706605",
+  "name": "breakfast allowance workflow v2",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "All",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "breakfast allowance workflow v2",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Overtime",
+  "is_active": 1,
+  "modified": "2025-07-13 18:09:18.521687",
+  "name": "Overtime Workflow Ars",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "1"
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Need More Info",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "2"
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "~ Pending Manager",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "3"
+   },
+   {
+    "allow_edit": "Ars Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager",
+    "update_field": "",
+    "update_value": null,
+    "workflow_builder_id": "4"
+   },
+   {
+    "allow_edit": "Ars HR",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending HR",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "6"
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "7"
+   },
+   {
+    "allow_edit": "None",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": "workflow_state",
+    "update_value": "Rejected",
+    "workflow_builder_id": "8"
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send for Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "~ Pending Manager",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "workflow_builder_id": "action-1"
+   },
+   {
+    "action": "Approve and Request More Info",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Need More Info",
+    "send_email_to_creator": 0,
+    "state": "~ Pending Manager",
+    "workflow_builder_id": "action-2"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "~ Pending Manager",
+    "workflow_builder_id": "action-3"
+   },
+   {
+    "action": "Send for Final Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending Manager",
+    "send_email_to_creator": 0,
+    "state": "Need More Info",
+    "workflow_builder_id": "action-4"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Pending HR",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": "action-5"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager",
+    "workflow_builder_id": "action-6"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": "action-7"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Ars HR",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending HR",
+    "workflow_builder_id": "action-8"
+   }
+  ],
+  "workflow_data": "[{\"type\":\"state\",\"dimensions\":{\"width\":85,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":38.96875,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":88.9375,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":38.96875,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":823.9760125004836,\"y\":109.9748548240467,\"z\":0},\"id\":\"1\",\"position\":{\"x\":823.9760125004836,\"y\":109.9748548240467}},{\"type\":\"state\",\"dimensions\":{\"width\":155,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":74.03123809448219,\"y\":-11.000008619098832,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":159.06248480806323,\"y\":23.000015819766833,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":74.03123809448219,\"y\":57.000040258632495,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11.000008619098832,\"y\":23.000015819766833,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1833.9971956172278,\"y\":-12.141663420041311,\"z\":0},\"id\":\"2\",\"position\":{\"x\":1833.9971956172278,\"y\":-12.141663420041311}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.5,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166,\"y\":33.5,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.5,\"y\":78,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":33.5,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1272,\"y\":96,\"z\":0},\"id\":\"3\",\"position\":{\"x\":1272,\"y\":96}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.5,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166,\"y\":33.5,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.5,\"y\":78,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":33.5,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":2404.124748712105,\"y\":-29.708894797160553,\"z\":0},\"id\":\"4\",\"position\":{\"x\":2404.124748712105,\"y\":-29.708894797160553}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.5,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166,\"y\":33.5,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.5,\"y\":78,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":33.5,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":2234.557015667343,\"y\":383.1676803743572,\"z\":0},\"id\":\"5\",\"position\":{\"x\":2234.557015667343,\"y\":383.1676803743572}},{\"type\":\"state\",\"dimensions\":{\"width\":130,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":61.515717515794655,\"y\":-11.000008619098832,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":134.03144365068815,\"y\":22.999991597928837,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":61.515717515794655,\"y\":57.000040258632495,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11.000008619098832,\"y\":22.999991597928837,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":2807.292063714555,\"y\":-146.94390260996272,\"z\":0},\"id\":\"6\",\"position\":{\"x\":2807.292063714555,\"y\":-146.94390260996272}},{\"type\":\"state\",\"dimensions\":{\"width\":117,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":54.9296875,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":120.859375,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":54.9296875,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":3216.8713612731954,\"y\":-251.44680612902818,\"z\":0},\"id\":\"7\",\"position\":{\"x\":3216.8713612731954,\"y\":-251.44680612902818}},{\"type\":\"state\",\"dimensions\":{\"width\":111,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":51.7734375,\"y\":-11,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":114.546875,\"y\":23,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":51.7734375,\"y\":57,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-11,\"y\":23,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":3181.176974743388,\"y\":222.87233844085677,\"z\":0},\"id\":\"8\",\"position\":{\"x\":3181.176974743388,\"y\":222.87233844085677}},{\"type\":\"action\",\"dimensions\":{\"width\":130,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":62.1875,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":126.375,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":62.1875,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1099.245644721402,\"y\":118.33752419599222,\"z\":0},\"id\":\"action-1\",\"position\":{\"x\":1099.245644721402,\"y\":118.33752419599222},\"data\":{\"from_id\":\"1\",\"to_id\":\"3\"}},{\"type\":\"action\",\"dimensions\":{\"width\":233,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":113.56263412309909,\"y\":-2.000021384976328,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":229.12521696566054,\"y\":13.499992962102754,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":113.56263412309909,\"y\":29.000007309181836,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2.0000456068143215,\"y\":13.499992962102754,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1506.4632500757584,\"y\":-0.38394318914495784,\"z\":0},\"id\":\"action-2\",\"position\":{\"x\":1506.4632500757584,\"y\":-0.38394318914495784},\"data\":{\"from_id\":\"3\",\"to_id\":\"2\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":28.953234940016035,\"y\":-2.000021384976328,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":59.90622482479046,\"y\":13.499992962102754,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":28.953234940016035,\"y\":29.000007309181836,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2.0000456068143215,\"y\":13.499992962102754,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1497.7630565078207,\"y\":229.8513532536553,\"z\":0},\"id\":\"action-3\",\"position\":{\"x\":1497.7630565078207,\"y\":229.8513532536553},\"data\":{\"from_id\":\"3\",\"to_id\":\"8\"}},{\"type\":\"action\",\"dimensions\":{\"width\":166,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":79.95318682188156,\"y\":-2.000009274057331,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":161.90632236322546,\"y\":13.50000507302175,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":79.95318682188156,\"y\":29.00001942010083,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2.000142494166296,\"y\":13.50000507302175,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":2141.5921204848564,\"y\":-8.428273391433663,\"z\":0},\"id\":\"action-4\",\"position\":{\"x\":2141.5921204848564,\"y\":-8.428273391433663},\"data\":{\"from_id\":\"2\",\"to_id\":\"4\"}},{\"type\":\"action\",\"dimensions\":{\"width\":78,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":36.125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":74.25,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":36.125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":2616.4371277321443,\"y\":-138.91875743400954,\"z\":0},\"id\":\"action-5\",\"position\":{\"x\":2616.4371277321443,\"y\":-138.91875743400954},\"data\":{\"from_id\":\"4\",\"to_id\":\"6\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":28.953234940016035,\"y\":-2.000021384976328,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":59.906418599494415,\"y\":13.499992962102754,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":28.953234940016035,\"y\":29.000007309181836,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.9999487194623469,\"y\":13.499992962102754,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":2617.5754261998873,\"y\":228.89748361681,\"z\":0},\"id\":\"action-6\",\"position\":{\"x\":2617.5754261998873,\"y\":228.89748361681},\"data\":{\"from_id\":\"4\",\"to_id\":\"8\"}},{\"type\":\"action\",\"dimensions\":{\"width\":78,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":36.125,\"y\":-2,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":74.25,\"y\":13.5,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":36.125,\"y\":29,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-2,\"y\":13.5,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":2988.793031554243,\"y\":-244.43423354105147,\"z\":0},\"id\":\"action-7\",\"position\":{\"x\":2988.793031554243,\"y\":-244.43423354105147},\"data\":{\"from_id\":\"6\",\"to_id\":\"7\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":28.953234940016035,\"y\":-2.000021384976328,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":59.906418599494415,\"y\":13.499992962102754,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":28.953234940016035,\"y\":29.000007309181836,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.9999487194623469,\"y\":13.499992962102754,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":2990.7930315542435,\"y\":229.77079922532835,\"z\":0},\"id\":\"action-8\",\"position\":{\"x\":2990.7930315542435,\"y\":229.77079922532835},\"data\":{\"from_id\":\"6\",\"to_id\":\"8\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"1\",\"target\":\"action-1\",\"updatable\":true,\"id\":\"edge-1-action-1\",\"animated\":true,\"sourceX\":919.9135125004836,\"sourceY\":136.4748548240467,\"targetX\":1097.245644721402,\"targetY\":134.83752419599222},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-1\",\"target\":\"3\",\"updatable\":true,\"id\":\"edge-action-1-3\",\"animated\":true,\"sourceX\":1231.620644721402,\"sourceY\":134.83752419599222,\"targetX\":1261,\"targetY\":133,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"3\",\"target\":\"action-2\",\"updatable\":true,\"id\":\"edge-3-action-2\",\"animated\":true,\"sourceX\":1445,\"sourceY\":133,\"targetX\":1504.463204468944,\"targetY\":16.116049772957794},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-2\",\"target\":\"2\",\"updatable\":true,\"id\":\"edge-action-2-2\",\"animated\":true,\"sourceX\":1741.5884670414189,\"sourceY\":16.116049772957794,\"targetX\":1822.9971869981289,\"targetY\":14.358352399725522,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"3\",\"target\":\"action-3\",\"updatable\":true,\"id\":\"edge-3-action-3\",\"animated\":true,\"sourceX\":1445,\"sourceY\":133,\"targetX\":1495.7630109010063,\"targetY\":246.35134621575807},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-3\",\"target\":\"8\",\"updatable\":true,\"id\":\"edge-action-3-8\",\"animated\":true,\"sourceX\":1563.6692813326113,\"sourceY\":246.35134621575807,\"targetX\":3170.176974743388,\"targetY\":249.37233844085677,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"2\",\"target\":\"action-4\",\"updatable\":true,\"id\":\"edge-2-action-4\",\"animated\":true,\"sourceX\":2000.059680425291,\"sourceY\":14.358352399725522,\"targetX\":2139.5919779906903,\"targetY\":8.071731681588087},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-4\",\"target\":\"4\",\"updatable\":true,\"id\":\"edge-action-4-4\",\"animated\":true,\"sourceX\":2309.498442848082,\"sourceY\":8.071731681588087,\"targetX\":2393.124748712105,\"targetY\":7.2911052028394465,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"4\",\"target\":\"action-5\",\"updatable\":true,\"id\":\"edge-4-action-5\",\"animated\":true,\"sourceX\":2577.124748712105,\"sourceY\":7.2911052028394465,\"targetX\":2614.4371277321443,\"targetY\":-122.41875743400954},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-5\",\"target\":\"6\",\"updatable\":true,\"id\":\"edge-action-5-6\",\"animated\":true,\"sourceX\":2696.6871277321443,\"sourceY\":-122.41875743400954,\"targetX\":2796.292055095456,\"targetY\":-120.44391101203388,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"4\",\"target\":\"action-6\",\"updatable\":true,\"id\":\"edge-4-action-6\",\"animated\":true,\"sourceX\":2577.124748712105,\"sourceY\":7.2911052028394465,\"targetX\":2615.575477480425,\"targetY\":245.39747657891277},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-6\",\"target\":\"8\",\"updatable\":true,\"id\":\"edge-action-6-8\",\"animated\":true,\"sourceX\":2683.4818447993816,\"sourceY\":245.39747657891277,\"targetX\":3170.176974743388,\"targetY\":249.37233844085677,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"6\",\"target\":\"action-7\",\"updatable\":true,\"id\":\"edge-6-action-7\",\"animated\":true,\"sourceX\":2948.323507365243,\"sourceY\":-120.44391101203388,\"targetX\":2986.793031554243,\"targetY\":-227.93423354105147},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-7\",\"target\":\"7\",\"updatable\":true,\"id\":\"edge-action-7-7\",\"animated\":true,\"sourceX\":3069.043031554243,\"sourceY\":-227.93423354105147,\"targetX\":3205.8713612731954,\"targetY\":-224.94680612902818,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"6\",\"target\":\"action-8\",\"updatable\":true,\"id\":\"edge-6-action-8\",\"animated\":true,\"sourceX\":2948.323507365243,\"sourceY\":-120.44391101203388,\"targetX\":2988.793082834781,\"targetY\":246.2707921874311},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-8\",\"target\":\"8\",\"updatable\":true,\"id\":\"edge-action-8-8\",\"animated\":true,\"sourceX\":3056.699450153738,\"sourceY\":246.2707921874311,\"targetX\":3170.176974743388,\"targetY\":249.37233844085677,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}}]",
+  "workflow_name": "Overtime Workflow Ars",
+  "workflow_state_field": "workflow_state"
+ }
+]

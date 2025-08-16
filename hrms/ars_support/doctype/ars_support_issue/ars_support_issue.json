@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-08-12 12:28:19.682793",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ixit",
+  "issue_opening_date",
+  "naming_series",
+  "subject",
+  "business_project",
+  "product_name",
+  "issue_type",
+  "category",
+  "question_level",
+  "case_origin",
+  "client_id",
+  "client_name",
+  "stakeholder",
+  "phone_number",
+  "email_address",
+  "column_break_zths",
+  "issue_closing_date",
+  "inquiry_handler",
+  "inquiry_handler_name",
+  "development_representative",
+  "development_representative_name",
+  "status",
+  "priority",
+  "file1",
+  "file2",
+  "file3",
+  "image1",
+  "customization",
+  "customer_request_list",
+  "\u53c2\u7167\u8ab2\u984c_section",
+  "reference_issue_id",
+  "reference_start_date",
+  "reference_end_date",
+  "column_break_mzge",
+  "reference_subject",
+  "reference_client_id",
+  "reference_client_name",
+  "section_break_ayew",
+  "table_vzjv",
+  "memo",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "ISS-.YYYY.-",
+   "print_hide": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_ixit",
+   "fieldtype": "Section Break",
+   "options": "CS\nPG"
+  },
+  {
+   "bold": 1,
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "\u4ef6\u540d ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Select",
+   "label": "\u88fd\u54c1\u540d",
+   "options": "None\n\u901a\u8ca9Ace\n\u901a\u8ca9\u30d7\u30ed"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "\u7a2e\u985e",
+   "options": "None\n\u64cd\u4f5c\u8aac\u660e\n\u4f5c\u696d\u4f9d\u983c\n\u6a5f\u80fd\u8981\u671b\n\u4e0d\u5177\u5408\n\u969c\u5bb3\n\u8acb\u6c42\u66f8\u3001\u5408\u610f\u66f8\n\u958b\u767a\u8abf\u67fb\u4f9d\u983c\u4e2d\n\u305d\u306e\u4ed6"
+  },
+  {
+   "fieldname": "question_level",
+   "fieldtype": "Select",
+   "label": "\u8cea\u554f\u30ec\u30d9\u30eb",
+   "options": "None\n\u672a\u5206\u985e\n\u6613 - \u55b6\u696d\u3042\u3066 \u5c0e\u5165\u524d\u306a\u3069\u306e\u8cea\u554f\n\u666e - CS\u3042\u3066 AI\u5b66\u7fd2\u3055\u305b\u308b\u8cea\u554f\n\u96e3 - CS\u3042\u3066 AI\u5b66\u7fd2\u3055\u305b\u306a\u3044\u8cea\u554f\n\u7279 - \u30ab\u30b9\u30bf\u30de\u30a4\u30ba"
+  },
+  {
+   "fieldname": "case_origin",
+   "fieldtype": "Select",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u306e\u30c7\u30fc\u30bf\u5143",
+   "options": "None\n\u96fb\u8a71\nChatwork\nBacklog\nSlack\n\u30b9\u30d7\u30ec\u30c3\u30c9\u30b7\u30fc\u30c8\n\u8907\u6570\u306e\u624b\u6bb5"
+  },
+  {
+   "fieldname": "stakeholder",
+   "fieldtype": "Select",
+   "label": "\u95a2\u4fc2\u8005"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "\u96fb\u8a71\u756a\u53f7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zths",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inquiry_handler",
+   "fieldtype": "Link",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u306e\u62c5\u5f53\u8005",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "development_representative",
+   "fieldtype": "Link",
+   "label": "\u958b\u767a\u62c5\u5f53\u8005",
+   "options": "Employee"
+  },
+  {
+   "default": "None",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u30b9\u30c6\u30fc\u30bf\u30b9",
+   "no_copy": 1,
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "options": "None\n\u5bfe\u5fdc\u4e2d\n\u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061\n\u672a\u5bfe\u5fdc\n\u4fdd\u7559\n\u6a5f\u80fd\u8981\u671b\n\u5b8c\u4e86",
+   "search_index": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u512a\u5148\u5ea6",
+   "options": "None\n\u9ad8\n\u4e2d\n\u4f4e\n\u5b8c\u4e86\n\u672a\u78ba\u5b9a"
+  },
+  {
+   "fieldname": "file1",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\uff11"
+  },
+  {
+   "fieldname": "file2",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c92"
+  },
+  {
+   "fieldname": "file3",
+   "fieldtype": "Attach",
+   "label": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c93"
+  },
+  {
+   "fieldname": "image1",
+   "fieldtype": "Attach Image",
+   "label": "\u753b\u50cf\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\uff11"
+  },
+  {
+   "fieldname": "customization",
+   "fieldtype": "Select",
+   "label": "\u672c\u6848\u4ef6\u306f\u30ab\u30b9\u30bf\u30de\u30a4\u30ba\u5bfe\u8c61",
+   "options": "\u5bfe\u8c61\n\u5bfe\u8c61\u5916"
+  },
+  {
+   "bold": 1,
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_global_search": 1,
+   "label": "Description",
+   "oldfieldname": "problem_description",
+   "oldfieldtype": "Text"
+  },
+  {
+   "depends_on": "eval:doc.case_type === '\u8981\u671b'",
+   "fieldname": "customer_request_list",
+   "fieldtype": "Text Editor",
+   "label": "\u304a\u5ba2\u69d8\u8981\u671b\u30ea\u30b9\u30c8"
+  },
+  {
+   "collapsible_depends_on": "eval:doc.status!=\"Closed\"",
+   "fieldname": "memo",
+   "fieldtype": "Section Break",
+   "label": "Memo"
+  },
+  {
+   "fetch_from": "inquiry_handler.employee_name",
+   "fieldname": "inquiry_handler_name",
+   "fieldtype": "Data",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u306e\u62c5\u5f53\u8005\u540d\u524d",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "development_representative.employee_name",
+   "fieldname": "development_representative_name",
+   "fieldtype": "Data",
+   "label": "\u958b\u767a\u62c5\u5f53\u8005\u540d\u524d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_type",
+   "fieldtype": "Select",
+   "label": "\u554f\u3044\u5408\u308f\u305b\u30bf\u30a4\u30d7",
+   "options": "CS\nPG\n\u4fdd\u7559\n\u8981\u671b"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Link",
+   "label": "\u53d6\u5f15\u5148ID",
+   "options": "ars support customer"
+  },
+  {
+   "fetch_from": "client_id.customer_name",
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "\u53d6\u5f15\u5148\u540d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ayew",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_vzjv",
+   "fieldtype": "Table",
+   "options": "ars_support_issue_table"
+  },
+  {
+   "default": "Today",
+   "fieldname": "issue_opening_date",
+   "fieldtype": "Date",
+   "label": "\u8ab2\u984c\u767a\u751f\u65e5",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.status === '\u5b8c\u4e86'",
+   "fieldname": "issue_closing_date",
+   "fieldtype": "Date",
+   "label": "\u8ab2\u984c\u7d42\u4e86\u65e5",
+   "mandatory_depends_on": "eval:doc.status === '\u5b8c\u4e86'"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ars support issue",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u53c2\u7167\u8ab2\u984c_section",
+   "fieldtype": "Section Break",
+   "label": "\u53c2\u7167\u8ab2\u984c"
+  },
+  {
+   "fieldname": "reference_issue_id",
+   "fieldtype": "Link",
+   "label": "\u53c2\u7167\u8ab2\u984cID",
+   "options": "ars support issue"
+  },
+  {
+   "fieldname": "column_break_mzge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "reference_issue_id.issue_opening_date",
+   "fieldname": "reference_start_date",
+   "fieldtype": "Data",
+   "label": "\u53c2\u7167\u8ab2\u984c\u767a\u751f\u65e5",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reference_issue_id.issue_closing_date",
+   "fieldname": "reference_end_date",
+   "fieldtype": "Data",
+   "label": "\u53c2\u7167\u8ab2\u984c\u7d42\u4e86\u65e5",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reference_issue_id.subject",
+   "fieldname": "reference_subject",
+   "fieldtype": "Data",
+   "label": "\u53c2\u7167\u4ef6\u540d ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reference_issue_id.client_id",
+   "fieldname": "reference_client_id",
+   "fieldtype": "Data",
+   "label": "\u53c2\u7167\u53d6\u5f15\u5148ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reference_issue_id.client_name",
+   "fieldname": "reference_client_name",
+   "fieldtype": "Data",
+   "label": "\u53c2\u7167\u53d6\u5f15\u5148\u540d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "business_project",
+   "fieldtype": "Select",
+   "label": "\u696d\u52d9\u9805\u76ee",
+   "options": "None\n\u4ed5\u5165\u767a\u6ce8\n\u5165\u8377\uff08\u6a19\u6e96\uff09\n\u5728\u5eab\u7ba1\u7406\n\u53d7\u6ce8\n\u51fa\u8377\uff08\u6a19\u6e96\uff09\n\u8acb\u6c42/\u8acb\u6c42\u7ba1\u7406\n\u4ed5\u5165\u652f\u6255\n\u7269\u6d41SYS\u9023\u643a\n\u51fa\u8377\uff08WMS\u9023\u643a\uff09\n\u5165\u8377\uff08WMS\u9023\u643a\uff09\nEC\u9023\u643a\n\u305d\u306e\u4ed6\u9023\u643a\n\u53d7\u6ce8\u30b5\u30dd\u30fc\u30c8\n\u57fa\u672c\u8a2d\u5b9a\u9805\u76ee\n\u5e33\u7968\u7ba1\u7406\u8a2d\u5b9a"
+  }
+ ],
+ "icon": "fa fa-ticket",
+ "links": [],
+ "modified": "2025-08-16 01:02:44.520711",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support issue",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support Team",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "status,subject",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "subject_field": "subject",
+ "title_field": "subject",
+ "track_changes": 1,
+ "track_seen": 1
+}

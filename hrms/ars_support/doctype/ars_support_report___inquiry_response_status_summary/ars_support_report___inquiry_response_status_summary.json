@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 12:35:48.824264",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "start_date",
+  "column_break_jaha",
+  "end_date",
+  "section_break_mpvs",
+  "t1",
+  "t2",
+  "t3",
+  "t4",
+  "t5",
+  "t6"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "\u958b\u59cb\u65e5"
+  },
+  {
+   "fieldname": "column_break_jaha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "\u7d42\u4e86\u65e5"
+  },
+  {
+   "fieldname": "section_break_mpvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "t1",
+   "fieldtype": "Table",
+   "options": "ars support report - inquiry response status summary - t1"
+  },
+  {
+   "fieldname": "t2",
+   "fieldtype": "Table",
+   "label": "\u7dcf\u6ede\u7559\u65e5\u6570\uff08\u5b8c\u4e86\u3068\u672a\u5b8c\u4e86\u306e\u5168\u4f53\u6570\uff09",
+   "options": "ars support report - inquiry response status summary - t2"
+  },
+  {
+   "fieldname": "t3",
+   "fieldtype": "Table",
+   "label": "\u5bfe\u5fdc\u4e2d\u6ede\u7559\u65e5\u6570",
+   "options": "ars support report - inquiry response status summary - t3"
+  },
+  {
+   "fieldname": "t4",
+   "fieldtype": "Table",
+   "label": "\u305d\u306e\u4ed6",
+   "options": "ars support report - inquiry response status summary - t4"
+  },
+  {
+   "fieldname": "t5",
+   "fieldtype": "Table",
+   "label": "\u7d2f\u8a08(\u6708\u6b21\u8a08)",
+   "options": "ars support report - inquiry response status summary - t5"
+  },
+  {
+   "fieldname": "t6",
+   "fieldtype": "Table",
+   "label": "\u65e5\u5225\u30ec\u30dd\u30fc\u30c8",
+   "options": "ars support report - inquiry response status summary - t6"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-14 13:40:59.877544",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support report - inquiry response status summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

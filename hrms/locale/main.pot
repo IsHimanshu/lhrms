@@ -7,14 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Frappe HR VERSION\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
-"POT-Creation-Date: 2025-08-10 09:36+0000\n"
-"PO-Revision-Date: 2025-08-10 09:36+0000\n"
+"POT-Creation-Date: 2025-07-29 08:37+0000\n"
+"PO-Revision-Date: 2025-07-29 08:37+0000\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: contact@frappe.io\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
+
+#. Label of the column_break_wsgr (Column Break) field in DocType 'Employee
+#. User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid " "
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#: hrms/hr/workspace/overview/overview.json
+msgid " Slack社外利用者"
+msgstr ""
 
 #. Label of the unlink_payment_on_cancellation_of_employee_advance (Check)
 #. field in DocType 'HR Settings'
@@ -41,6 +52,22 @@ msgstr ""
 #: hrms/hr/utils.py:241
 #: hrms/payroll/doctype/payroll_period/payroll_period.py:53
 msgid ") for {0}"
+msgstr ""
+
+#. Option for the '本案件はカスタマイズ対応' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "--None--"
+msgstr ""
+
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '製品名' (Select) field in DocType 'Support Case'
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "-None-"
 msgstr ""
 
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.js:52
@@ -128,16 +155,31 @@ msgstr ""
 msgid "10:00"
 msgstr ""
 
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "10月"
+msgstr ""
+
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
 #. Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "11:00"
 msgstr ""
 
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "11月"
+msgstr ""
+
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
 #. Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "12:00"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "12月"
 msgstr ""
 
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
@@ -176,10 +218,26 @@ msgstr ""
 msgid "18:00"
 msgstr ""
 
+#. Option for the '残業時間帯' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "18:30 ～ 22:00"
+msgstr ""
+
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
 #. Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "19:00"
+msgstr ""
+
+#. Label of the total_overtime_c1 (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "19:00 ～ 22:00"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "1月"
 msgstr ""
 
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
@@ -200,10 +258,58 @@ msgstr ""
 msgid "22:00"
 msgstr ""
 
+#. Label of the total_overtime_c2 (Data) field in DocType 'Employee User
+#. Report'
+#. Option for the '残業時間帯' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "22:00 ～ 5:00"
+msgstr ""
+
 #. Option for the 'Send Emails At' (Select) field in DocType 'Daily Work
 #. Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "23:00"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "2月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "3月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "4月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "5月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "6月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "7月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "8月"
+msgstr ""
+
+#. Option for the '月を選択' (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "9月"
 msgstr ""
 
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.js:272
@@ -219,6 +325,11 @@ msgstr ""
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:280
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:288
 msgid "<b>Total Leaves Allocated</b> are more than the number of days in the allocation period"
+msgstr ""
+
+#. Paragraph text in the Zoho Workspace
+#: hrms/hr/workspace/zoho/zoho.json
+msgid "<br>"
 msgstr ""
 
 #. Content of the 'Help' (HTML) field in DocType 'Salary Component'
@@ -297,11 +408,6 @@ msgstr ""
 msgid "<span class=\"h4\"><b>Masters &amp; Transactions</b></span>"
 msgstr ""
 
-#. Header text in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "<span class=\"h4\"><b>Reports &amp; Masters</b></span>"
-msgstr ""
-
 #. Header text in the Salary Payout Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
 msgid "<span class=\"h4\"><b>Transactions &amp; Reports</b></span>"
@@ -310,7 +416,6 @@ msgstr ""
 #. Header text in the Employee Lifecycle Workspace
 #. Header text in the Expense Claims Workspace
 #. Header text in the Leaves Workspace
-#. Header text in the Overview Workspace
 #. Header text in the Performance Workspace
 #. Header text in the Recruitment Workspace
 #. Header text in the Shift & Attendance Workspace
@@ -319,7 +424,6 @@ msgstr ""
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/performance/performance.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
@@ -328,11 +432,27 @@ msgstr ""
 msgid "<span class=\"h4\"><b>Your Shortcuts</b></span>"
 msgstr ""
 
+#. Header text in the Zoho Workspace
+#: hrms/hr/workspace/zoho/zoho.json
+msgid "<span class=\"h4\">Zoho</span>"
+msgstr ""
+
+#. Header text in the Overview Workspace
+#: hrms/hr/workspace/overview/overview.json
+msgid "<span class=\"h4\">application</span>"
+msgstr ""
+
+#. Header text in the Reports Workspace
+#: hrms/hr/workspace/reports/reports.json
+msgid "<span class=\"h4\">報告</span>"
+msgstr ""
+
 #. Header text in the Shift & Attendance Workspace
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "<span style=\"font-size: 18px;\"><b>Masters &amp; Reports</b></span>"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:319
 #: hrms/public/js/utils/index.js:166
 msgid "<table class='table table-bordered'><tr><th>{0}</th><th>{1}</th></tr>"
 msgstr ""
@@ -373,7 +493,7 @@ msgstr ""
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.json
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:673
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:651
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "Absent"
 msgstr ""
@@ -490,7 +610,7 @@ msgstr ""
 msgid "Accounting Dimensions"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.js:122
+#: hrms/hr/doctype/expense_claim/expense_claim.js:121
 msgid "Accounting Ledger"
 msgstr ""
 
@@ -533,7 +653,7 @@ msgstr ""
 msgid "Accounts not set for Salary Component {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:600
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:593
 msgid "Accrual Journal Entry for salaries from {0} to {1}"
 msgstr ""
 
@@ -623,6 +743,11 @@ msgstr ""
 msgid "Actual balances aren't available because the leave application spans over different leave allocations. You can still apply for leaves which would be compensated during the next allocation."
 msgstr ""
 
+#. Name of a DocType
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+msgid "Add Business trip request"
+msgstr ""
+
 #. Label of the add_day_wise_dates (Button) field in DocType 'Leave Block List'
 #: hrms/hr/doctype/leave_block_list/leave_block_list.json
 msgid "Add Day-wise Dates"
@@ -636,12 +761,18 @@ msgstr ""
 msgid "Add Expense"
 msgstr ""
 
+#: hrms/public/dist/js/performance.bundle.HWRHZE2C.js:77
 #: hrms/public/js/performance/performance_feedback.js:95
 msgid "Add Feedback"
 msgstr ""
 
 #: frontend/src/components/ExpenseTaxesTable.vue:118
 msgid "Add Tax"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "Add slack for external users"
 msgstr ""
 
 #: hrms/hr/employee_property_update.js:116
@@ -668,7 +799,12 @@ msgstr ""
 msgid "Added On"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1341
+#. Label of the var_added_time (Data) field in DocType 'old-leave'
+#: hrms/zoho/doctype/old_leave/old_leave.json
+msgid "Added Time"
+msgstr ""
+
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1350
 msgid "Added tax components from the Salary Component master as the salary structure didn't have any tax component."
 msgstr ""
 
@@ -738,7 +874,7 @@ msgstr ""
 msgid "Advance Account"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:44
+#: hrms/hr/doctype/employee_advance/employee_advance.py:43
 msgid "Advance Account is mandatory. Please set the <a href=\"/app/company/{0}#default_employee_advance_account\" target=\"_blank\">Default Employee Advance Account</a> in the Company record {0} and submit this document."
 msgstr ""
 
@@ -747,7 +883,7 @@ msgstr ""
 #: frontend/src/views/employee_advance/List.vue:66
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/travel_itinerary/travel_itinerary.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:63
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:62
 msgid "Advance Amount"
 msgstr ""
 
@@ -757,10 +893,23 @@ msgstr ""
 msgid "Advance Paid"
 msgstr ""
 
+#. Name of a DocType
+#. Label of the advance_payment_details_table (Table) field in DocType
+#. 'Employee User Report'
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "Advance Payment"
+msgstr ""
+
 #. Label of the advance_payments_sb (Section Break) field in DocType 'Expense
 #. Claim'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 msgid "Advance Payments"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+msgid "Advance payment table"
 msgstr ""
 
 #. Label of the advanced_filters_section (Section Break) field in DocType
@@ -936,6 +1085,22 @@ msgstr ""
 msgid "Alternating entries as IN and OUT during the same shift"
 msgstr ""
 
+#. Label of the amended_from (Link) field in DocType 'Add Business trip
+#. request'
+#. Label of the amended_from (Link) field in DocType 'Add slack for external
+#. users'
+#. Label of the amended_from (Link) field in DocType 'Advance Payment'
+#. Label of the amended_from (Link) field in DocType 'Breakfast'
+#. Label of the amended_from (Link) field in DocType 'Business trip report'
+#. Label of the amended_from (Link) field in DocType 'Employee User Report'
+#. Label of the amended_from (Link) field in DocType 'Internal approval'
+#. Label of the amended_from (Link) field in DocType 'Leave'
+#. Label of the amended_from (Link) field in DocType 'Overtime'
+#. Label of the amended_from (Link) field in DocType 'Slack channel opening
+#. application'
+#. Label of the amended_from (Link) field in DocType 'Support Case'
+#. Label of the amended_from (Link) field in DocType 'user overtime report'
+#. Label of the amended_from (Link) field in DocType 'user report Leave'
 #. Label of the amended_from (Link) field in DocType 'Appraisal'
 #. Label of the amended_from (Link) field in DocType 'Attendance'
 #. Label of the amended_from (Link) field in DocType 'Attendance Request'
@@ -991,6 +1156,22 @@ msgstr ""
 #. Label of the amended_from (Link) field in DocType 'Salary Structure
 #. Assignment'
 #. Label of the amended_from (Link) field in DocType 'Salary Withholding'
+#. Label of the amended_from (Link) field in DocType 'old_breakfast'
+#. Label of the amended_from (Link) field in DocType 'old-leave'
+#. Label of the amended_from (Link) field in DocType 'repayment'
+#. Label of the amended_from (Link) field in DocType 'ringi'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/attendance_request/attendance_request.json
@@ -1040,6 +1221,10 @@ msgstr ""
 #: hrms/payroll/doctype/salary_structure/salary_structure.json
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 #: hrms/payroll/doctype/salary_withholding/salary_withholding.json
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/repayment/repayment.json
+#: hrms/zoho/doctype/ringi/ringi.json
 msgid "Amended From"
 msgstr ""
 
@@ -1238,6 +1423,7 @@ msgid "Apply / Approve Leaves"
 msgstr ""
 
 #: frontend/src/components/ListFiltersActionSheet.vue:83
+#: hrms/public/frontend/assets/ListFiltersActionSheet-C00TKDkr.js:1
 msgid "Apply Filters"
 msgstr ""
 
@@ -1391,18 +1577,49 @@ msgstr ""
 msgid "Approval"
 msgstr ""
 
+#. Label of the approval_completion_time (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Approval Completion time"
+msgstr ""
+
 #. Label of the approval_status (Select) field in DocType 'Expense Claim'
+#. Label of the var_approval_status (Data) field in DocType 'old_breakfast'
+#. Label of the var_approval_status (Data) field in DocType 'old-leave'
+#. Label of the approval_status (Data) field in DocType 'Old_overtime'
+#. Label of the var_approval_status (Data) field in DocType 'ringi'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+#: hrms/zoho/doctype/ringi/ringi.json
 msgid "Approval Status"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:138
+#: hrms/hr/doctype/expense_claim/expense_claim.py:119
 msgid "Approval Status must be 'Approved' or 'Rejected'"
+msgstr ""
+
+#. Label of the approval_submission (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Approval Sub"
+msgstr ""
+
+#. Label of the var_approval_time (Data) field in DocType 'old_breakfast'
+#. Label of the var_approval_time (Data) field in DocType 'old-leave'
+#. Label of the var_approval_time (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "Approval Time"
 msgstr ""
 
 #: frontend/src/components/RequestActionSheet.vue:108
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.js:119
 msgid "Approve"
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:9
+msgid "Approve and Request More Info"
 msgstr ""
 
 #. Option for the 'Approval Status' (Select) field in DocType 'Expense Claim'
@@ -1413,15 +1630,22 @@ msgstr ""
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/shift_request/shift_request.json
+#: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Approved"
 msgstr ""
 
 #. Label of the approver (Link) field in DocType 'Department Approver'
 #. Label of the approver (Link) field in DocType 'Shift Assignment Tool'
 #. Label of the approver (Link) field in DocType 'Shift Request'
+#. Label of the var_approver (Data) field in DocType 'old_breakfast'
+#. Label of the var_approver (Data) field in DocType 'old-leave'
+#. Label of the var_approver (Data) field in DocType 'ringi'
 #: hrms/hr/doctype/department_approver/department_approver.json
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.json
 #: hrms/hr/doctype/shift_request/shift_request.json
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/ringi/ringi.json
 msgid "Approver"
 msgstr ""
 
@@ -1430,6 +1654,7 @@ msgid "Approvers"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:15
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:510
 #: hrms/public/js/salary_slip_deductions_report_filters.js:22
 msgid "Apr"
 msgstr ""
@@ -1444,6 +1669,7 @@ msgid "Archived"
 msgstr ""
 
 #: frontend/src/components/FileUploaderView.vue:53
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Are you sure you want to delete the attachment"
 msgstr ""
 
@@ -1565,13 +1791,12 @@ msgstr ""
 #: frontend/src/components/RequestActionSheet.vue:55
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.json
 #: hrms/payroll/doctype/employee_tax_exemption_proof_submission/employee_tax_exemption_proof_submission.json
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Attachments"
 msgstr ""
 
 #. Name of a DocType
 #. Label of the attendance (Select) field in DocType 'Training Event Employee'
-#. Label of a Card Break in the Overview Workspace
-#. Label of a Link in the Overview Workspace
 #. Label of a Card Break in the Shift & Attendance Workspace
 #. Label of a Link in the Shift & Attendance Workspace
 #. Label of a shortcut in the Shift & Attendance Workspace
@@ -1580,7 +1805,6 @@ msgstr ""
 #: frontend/src/components/BottomTabs.vue:48
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 #: hrms/overrides/dashboard_overrides.py:10
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
@@ -1625,11 +1849,9 @@ msgstr ""
 
 #. Label of the attendance_request (Link) field in DocType 'Attendance'
 #. Name of a DocType
-#. Label of a Link in the Overview Workspace
 #. Label of a Link in the Shift & Attendance Workspace
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/attendance_request/attendance_request.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Attendance Request"
 msgstr ""
@@ -1649,7 +1871,7 @@ msgstr ""
 msgid "Attendance To Date"
 msgstr ""
 
-#: hrms/hr/doctype/attendance_request/attendance_request.py:121
+#: hrms/hr/doctype/attendance_request/attendance_request.py:115
 msgid "Attendance Updated"
 msgstr ""
 
@@ -1657,7 +1879,7 @@ msgstr ""
 msgid "Attendance Warnings"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:60
+#: hrms/hr/doctype/attendance/attendance.py:59
 msgid "Attendance date {0} can not be less than employee {1}'s joining date: {2}"
 msgstr ""
 
@@ -1665,11 +1887,11 @@ msgstr ""
 msgid "Attendance for all the employees under this criteria has been marked already."
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:118
+#: hrms/hr/doctype/attendance/attendance.py:117
 msgid "Attendance for employee {0} is already marked for an overlapping shift {1}: {2}"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:72
+#: hrms/hr/doctype/attendance/attendance.py:71
 msgid "Attendance for employee {0} is already marked for the date {1}: {2}"
 msgstr ""
 
@@ -1701,11 +1923,11 @@ msgstr ""
 msgid "Attendance marked successfully"
 msgstr ""
 
-#: hrms/hr/doctype/attendance_request/attendance_request.py:140
+#: hrms/hr/doctype/attendance_request/attendance_request.py:133
 msgid "Attendance not submitted for {0} as it is a Holiday."
 msgstr ""
 
-#: hrms/hr/doctype/attendance_request/attendance_request.py:149
+#: hrms/hr/doctype/attendance_request/attendance_request.py:142
 msgid "Attendance not submitted for {0} as {1} is on leave."
 msgstr ""
 
@@ -1716,6 +1938,7 @@ msgid "Attendance will be marked automatically only after this date."
 msgstr ""
 
 #: frontend/src/views/attendance/Dashboard.vue:19
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "AttendanceRequestListView"
 msgstr ""
 
@@ -1730,6 +1953,7 @@ msgid "Attrition Count"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:19
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:514
 #: hrms/public/js/salary_slip_deductions_report_filters.js:26
 msgid "Aug"
 msgstr ""
@@ -1813,6 +2037,13 @@ msgstr ""
 msgid "Backdated Leave Application is restricted. Please set the {} in {}"
 msgstr ""
 
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "Backlog"
+msgstr ""
+
 #: hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py:55
 msgid "Bank"
 msgstr ""
@@ -1832,7 +2063,7 @@ msgstr ""
 msgid "Bank Details"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.js:156
+#: hrms/hr/doctype/expense_claim/expense_claim.js:155
 msgid "Bank Entries"
 msgstr ""
 
@@ -1985,7 +2216,6 @@ msgstr ""
 #. Label of the branch (Link) field in DocType 'Employee Attendance Tool'
 #. Label of the branch (Link) field in DocType 'Leave Control Panel'
 #. Label of the branch (Link) field in DocType 'Shift Assignment Tool'
-#. Label of a Link in the Overview Workspace
 #. Label of the branch (Link) field in DocType 'Bulk Salary Structure
 #. Assignment'
 #. Label of the branch (Link) field in DocType 'Payroll Entry'
@@ -1998,7 +2228,6 @@ msgstr ""
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.json
 #: hrms/hr/report/employee_analytics/employee_analytics.py:33
 #: hrms/hr/report/employee_birthday/employee_birthday.py:24
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
@@ -2006,12 +2235,31 @@ msgstr ""
 #: hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py:21
 #: hrms/payroll/report/salary_register/salary_register.js:77
 #: hrms/payroll/report/salary_register/salary_register.py:134
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:536
 #: hrms/public/js/salary_slip_deductions_report_filters.js:48
 msgid "Branch"
 msgstr ""
 
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.py:193
 msgid "Branch: {0}"
+msgstr ""
+
+#. Name of a DocType
+#. Name of a report
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/hr/report/breakfast_allowance_report/breakfast_allowance_report.json
+msgid "Breakfast"
+msgstr ""
+
+#. Label of the breakfast_allowance_request_details_table (Table) field in
+#. DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "Breakfast Allowance Request Details"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+msgid "Breakfast table"
 msgstr ""
 
 #: hrms/payroll/doctype/salary_structure/salary_structure.js:131
@@ -2028,6 +2276,16 @@ msgstr ""
 #: hrms/payroll/doctype/salary_structure/salary_structure_list.js:3
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
 msgid "Bulk Salary Structure Assignment"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "Business trip report"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+msgid "Business trip request table"
 msgstr ""
 
 #. Description of the 'Calculate Final Score based on Formula' (Check) field in
@@ -2075,6 +2333,7 @@ msgstr ""
 #: frontend/src/components/FileUploaderView.vue:65
 #: frontend/src/components/FormView.vue:235
 #: frontend/src/components/RequestActionSheet.vue:143
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Cancel"
 msgstr ""
 
@@ -2134,11 +2393,11 @@ msgstr ""
 msgid "Cannot cancel Shift Assignment: {0} as it is linked to Employee Checkin: {1}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:268
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:277
 msgid "Cannot create Salary Slip for Employee joining after Payroll Period"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:271
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:280
 msgid "Cannot create Salary Slip for Employee who has left before Payroll Period"
 msgstr ""
 
@@ -2154,7 +2413,7 @@ msgstr ""
 msgid "Cannot find active Leave Period"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:152
+#: hrms/hr/doctype/attendance/attendance.py:151
 msgid "Cannot mark attendance for an Inactive employee {0}"
 msgstr ""
 
@@ -2198,14 +2457,6 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
-#: hrms/hr/doctype/attendance_request/attendance_request.py:105
-msgid "Changed the status from {0} to {1} and Status for Other Half to {2} via Attendance Request"
-msgstr ""
-
-#: hrms/hr/doctype/attendance_request/attendance_request.py:109
-msgid "Changed the status from {0} to {1} via Attendance Request"
-msgstr ""
-
 #: hrms/hr/doctype/leave_application/leave_application.js:187
 msgid "Changing '{0}' to {1}."
 msgstr ""
@@ -2224,11 +2475,19 @@ msgstr ""
 msgid "Chart of Cost Centers"
 msgstr ""
 
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "Chatwork"
+msgstr ""
+
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:302
 #: hrms/public/js/utils/index.js:147
 msgid "Check <a href='/app/List/Error Log?reference_doctype={0}'>{1}</a> for more details"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1440
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1426
 msgid "Check Error Log {0} for more details."
 msgstr ""
 
@@ -2245,7 +2504,7 @@ msgstr ""
 msgid "Check Vacancies On Job Offer Creation"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:392
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:335
 #: hrms/hr/utils.py:855
 msgid "Check {0} for more details"
 msgstr ""
@@ -2290,6 +2549,7 @@ msgstr ""
 
 #: frontend/src/views/Home.vue:47
 #: frontend/src/views/expense_claim/Dashboard.vue:17
+#: hrms/public/frontend/assets/Dashboard-BBVU9f_Y.js:1
 msgid "Claim an Expense"
 msgstr ""
 
@@ -2303,7 +2563,7 @@ msgstr ""
 #. Label of the claimed_amount (Currency) field in DocType 'Employee Benefit
 #. Claim'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:77
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:69
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.json
 msgid "Claimed Amount"
 msgstr ""
@@ -2315,6 +2575,7 @@ msgid "Claims"
 msgstr ""
 
 #: frontend/src/components/ListFiltersActionSheet.vue:76
+#: hrms/public/frontend/assets/ListFiltersActionSheet-C00TKDkr.js:1
 #: hrms/www/jobs/index.html:20 hrms/www/jobs/index.html:351
 msgid "Clear All"
 msgstr ""
@@ -2337,6 +2598,7 @@ msgstr ""
 
 #: frontend/src/components/FilePreviewModal.vue:6
 #: hrms/hr/doctype/goal/goal.js:88
+#: hrms/public/frontend/assets/workflow-Des3DWHa.js:1
 msgid "Close"
 msgstr ""
 
@@ -2374,6 +2636,8 @@ msgstr ""
 msgid "Closing Notes"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7574
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7578
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:125
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:130
 msgid "Collapse All"
@@ -2433,7 +2697,6 @@ msgstr ""
 #. Label of the company (Link) field in DocType 'Training Event'
 #. Label of the company (Link) field in DocType 'Training Program'
 #. Label of the company (Link) field in DocType 'Travel Request'
-#. Label of a Link in the Overview Workspace
 #. Label of the company (Link) field in DocType 'Additional Salary'
 #. Label of the company (Link) field in DocType 'Bulk Salary Structure
 #. Assignment'
@@ -2498,7 +2761,7 @@ msgstr ""
 #: hrms/hr/doctype/travel_request/travel_request.json
 #: hrms/hr/report/appraisal_overview/appraisal_overview.js:9
 #: hrms/hr/report/employee_advance_summary/employee_advance_summary.js:29
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:55
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:54
 #: hrms/hr/report/employee_analytics/employee_analytics.js:9
 #: hrms/hr/report/employee_analytics/employee_analytics.py:14
 #: hrms/hr/report/employee_analytics/employee_analytics.py:37
@@ -2516,7 +2779,6 @@ msgstr ""
 #: hrms/hr/report/recruitment_analytics/recruitment_analytics.js:9
 #: hrms/hr/report/shift_attendance/shift_attendance.js:40
 #: hrms/hr/report/shift_attendance/shift_attendance.py:104
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/additional_salary/additional_salary.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
@@ -2539,6 +2801,7 @@ msgstr ""
 #: hrms/payroll/report/income_tax_computation/income_tax_computation.js:9
 #: hrms/payroll/report/salary_register/salary_register.js:39
 #: hrms/payroll/report/salary_register/salary_register.py:155
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:495
 #: hrms/public/js/salary_slip_deductions_report_filters.js:7
 msgid "Company"
 msgstr ""
@@ -2556,11 +2819,9 @@ msgstr ""
 #. Name of a DocType
 #. Label of the compensatory_request (Link) field in DocType 'Leave Allocation'
 #. Label of a Link in the Leaves Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/compensatory_leave_request/compensatory_leave_request.json
 #: hrms/hr/doctype/leave_allocation/leave_allocation.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Compensatory Leave Request"
 msgstr ""
 
@@ -2747,7 +3008,7 @@ msgstr ""
 #. Label of the cost_center (Link) field in DocType 'Gratuity'
 #. Label of the cost_center (Link) field in DocType 'Payroll Entry'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
-#: hrms/hr/doctype/expense_claim/expense_claim.py:306
+#: hrms/hr/doctype/expense_claim/expense_claim.py:287
 #: hrms/hr/doctype/expense_claim_detail/expense_claim_detail.json
 #: hrms/hr/doctype/expense_taxes_and_charges/expense_taxes_and_charges.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
@@ -2775,7 +3036,7 @@ msgstr ""
 msgid "Costing Details"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1503
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1489
 msgid "Could not submit some Salary Slips: {}"
 msgstr ""
 
@@ -2812,10 +3073,10 @@ msgstr ""
 msgid "Cover Letter"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.js:55
-#: hrms/hr/doctype/employee_advance/employee_advance.js:67
-#: hrms/hr/doctype/employee_advance/employee_advance.js:84
-#: hrms/hr/doctype/employee_advance/employee_advance.js:95
+#: hrms/hr/doctype/employee_advance/employee_advance.js:54
+#: hrms/hr/doctype/employee_advance/employee_advance.js:66
+#: hrms/hr/doctype/employee_advance/employee_advance.js:83
+#: hrms/hr/doctype/employee_advance/employee_advance.js:94
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.js:59
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.js:61
 #: hrms/hr/doctype/expense_claim/expense_claim.js:109
@@ -2907,7 +3168,7 @@ msgstr ""
 msgid "Creating Payment Entries......"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1463
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1449
 msgid "Creating Salary Slips..."
 msgstr ""
 
@@ -2971,7 +3232,6 @@ msgstr ""
 #: hrms/hr/doctype/job_applicant/job_applicant.json
 #: hrms/hr/doctype/job_opening/job_opening.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:85
 #: hrms/hr/report/project_profitability/project_profitability.py:204
 #: hrms/payroll/doctype/additional_salary/additional_salary.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
@@ -3118,12 +3378,10 @@ msgstr ""
 #. Summary'
 #. Name of a DocType
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/daily_work_summary/daily_work_summary.json
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 #: hrms/hr/page/team_updates/team_updates.js:12
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Daily Work Summary Group"
 msgstr ""
 
@@ -3134,10 +3392,8 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/daily_work_summary_replies/daily_work_summary_replies.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Daily Work Summary Replies"
 msgstr ""
 
@@ -3235,6 +3491,7 @@ msgid "Debit A/C Number"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:23
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:518
 #: hrms/public/js/salary_slip_deductions_report_filters.js:30
 msgid "Dec"
 msgstr ""
@@ -3297,7 +3554,7 @@ msgstr ""
 msgid "Deduction Reports"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.js:91
+#: hrms/hr/doctype/employee_advance/employee_advance.js:90
 msgid "Deduction from Salary"
 msgstr ""
 
@@ -3371,10 +3628,12 @@ msgstr ""
 #: frontend/src/components/FileUploaderView.vue:73
 #: frontend/src/components/FormView.vue:39
 #: frontend/src/components/FormView.vue:243
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Delete"
 msgstr ""
 
 #: frontend/src/components/FileUploaderView.vue:49
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Delete Attachment"
 msgstr ""
 
@@ -3387,6 +3646,7 @@ msgstr ""
 msgid "Delivery Trip"
 msgstr ""
 
+#. Label of the dept (Data) field in DocType 'Leave'
 #. Label of the department (Link) field in DocType 'Appraisal'
 #. Label of the department (Link) field in DocType 'Appraisal Cycle'
 #. Label of the department (Link) field in DocType 'Appraisee'
@@ -3423,7 +3683,6 @@ msgstr ""
 #. Label of the department (Link) field in DocType 'Training Event Employee'
 #. Label of the department (Link) field in DocType 'Training Feedback'
 #. Label of the department (Link) field in DocType 'Training Result Employee'
-#. Label of a Link in the Overview Workspace
 #. Label of the department (Link) field in DocType 'Additional Salary'
 #. Label of the department (Link) field in DocType 'Bulk Salary Structure
 #. Assignment'
@@ -3442,9 +3701,10 @@ msgstr ""
 #. Label of the department (Link) field in DocType 'Salary Slip'
 #. Label of the department (Link) field in DocType 'Salary Structure
 #. Assignment'
+#. Label of the department (Data) field in DocType 'Old_overtime'
 #: frontend/src/views/attendance/ShiftRequestList.vue:54
 #: frontend/src/views/employee_advance/List.vue:59
-#: frontend/src/views/leave/List.vue:53
+#: frontend/src/views/leave/List.vue:53 hrms/ars/doctype/leave/leave.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/appraisee/appraisee.json
@@ -3494,7 +3754,6 @@ msgstr ""
 #: hrms/hr/report/leave_ledger/leave_ledger.js:54
 #: hrms/hr/report/shift_attendance/shift_attendance.js:34
 #: hrms/hr/report/shift_attendance/shift_attendance.py:97
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/additional_salary/additional_salary.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
@@ -3512,8 +3771,10 @@ msgstr ""
 #: hrms/payroll/report/income_tax_computation/income_tax_computation.py:600
 #: hrms/payroll/report/salary_register/salary_register.js:56
 #: hrms/payroll/report/salary_register/salary_register.py:141
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:530
 #: hrms/public/js/salary_slip_deductions_report_filters.js:42 hrms/setup.py:402
 #: hrms/templates/generators/job_opening.html:87
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
 msgid "Department"
 msgstr ""
 
@@ -3527,7 +3788,7 @@ msgstr ""
 msgid "Department Wise Openings"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:101
+#: hrms/hr/doctype/expense_claim/expense_claim.py:96
 msgid "Department {0} does not belong to company: {1}"
 msgstr ""
 
@@ -3642,7 +3903,6 @@ msgstr ""
 #. Label of the designation (Link) field in DocType 'Leave Control Panel'
 #. Label of the designation (Link) field in DocType 'Shift Assignment Tool'
 #. Label of the designation (Link) field in DocType 'Staffing Plan Detail'
-#. Label of a Link in the Overview Workspace
 #. Label of the designation (Link) field in DocType 'Bulk Salary Structure
 #. Assignment'
 #. Label of the designation (Data) field in DocType 'Gratuity'
@@ -3680,7 +3940,6 @@ msgstr ""
 #: hrms/hr/report/employee_exits/employee_exits.js:33
 #: hrms/hr/report/employee_exits/employee_exits.py:72
 #: hrms/hr/report/recruitment_analytics/recruitment_analytics.py:58
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/gratuity/gratuity.json
 #: hrms/payroll/doctype/payroll_employee_detail/payroll_employee_detail.json
@@ -3702,6 +3961,8 @@ msgstr ""
 msgid "Designation: {0}"
 msgstr ""
 
+#. Label of the details_section (Section Break) field in DocType 'Slack channel
+#. opening application participant list table'
 #. Label of the details_section (Section Break) field in DocType 'Attendance'
 #. Label of the interview_details_section (Section Break) field in DocType
 #. 'Interview'
@@ -3714,6 +3975,7 @@ msgstr ""
 #. 'Staffing Plan'
 #. Label of the employee_and_payroll_tab (Tab Break) field in DocType 'Salary
 #. Slip'
+#: hrms/ars/doctype/slack_channel_opening_application_participant_list_table/slack_channel_opening_application_participant_list_table.json
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/interview/interview.json
 #: hrms/hr/doctype/interview_feedback/interview_feedback.json
@@ -3751,7 +4013,7 @@ msgstr ""
 msgid "Disable {0} for the {1} component, to prevent the amount from being deducted twice, as its formula already uses a payment-days-based component."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:40
+#: hrms/hr/doctype/leave_type/leave_type.py:39
 msgid "Disable {0} or {1} to proceed."
 msgstr ""
 
@@ -3777,15 +4039,6 @@ msgstr ""
 #. Benefit Application'
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
 msgid "Dispensed Amount (Pro-rated)"
-msgstr ""
-
-#. Label of the do_not_include_in_accounts (Check) field in DocType 'Salary
-#. Component'
-#. Label of the do_not_include_in_accounts (Check) field in DocType 'Salary
-#. Detail'
-#: hrms/payroll/doctype/salary_component/salary_component.json
-#: hrms/payroll/doctype/salary_detail/salary_detail.json
-msgid "Do Not Include in Accounting Entries"
 msgstr ""
 
 #. Label of the do_not_include_in_total (Check) field in DocType 'Salary
@@ -3822,6 +4075,7 @@ msgid "Domestic"
 msgstr ""
 
 #: frontend/src/views/salary_slip/Detail.vue:39
+#: hrms/public/frontend/assets/Detail-CHgzL_vm.js:1
 msgid "Download PDF"
 msgstr ""
 
@@ -3857,7 +4111,7 @@ msgstr ""
 msgid "Driver"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:77
+#: hrms/hr/doctype/attendance/attendance.py:76
 msgid "Duplicate Attendance"
 msgstr ""
 
@@ -3883,6 +4137,7 @@ msgstr ""
 msgid "Duration (Days)"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:355
 #: hrms/public/js/utils/index.js:208
 msgid "ERROR({0}): {1}"
 msgstr ""
@@ -3922,7 +4177,7 @@ msgstr ""
 msgid "Earned Leaves"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:35
+#: hrms/hr/doctype/leave_type/leave_type.py:34
 msgid "Earned Leaves are allocated as per the configured frequency via scheduler."
 msgstr ""
 
@@ -3930,7 +4185,7 @@ msgstr ""
 msgid "Earned Leaves are auto-allocated via scheduler based on the annual allocation set in the Leave Policy: {0}"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:59
+#: hrms/hr/doctype/leave_type/leave_type.js:47
 msgid "Earned Leaves are leaves earned by an Employee after working with the company for a certain amount of time. Enabling this will allocate leaves on pro-rata basis by automatically updating Leave Allocation for leaves of this type at intervals set by 'Earned Leave Frequency."
 msgstr ""
 
@@ -4012,7 +4267,9 @@ msgid "Email Address"
 msgstr ""
 
 #. Label of the email (Data) field in DocType 'Exit Interview'
+#. Label of the var_Email_ID (Data) field in DocType 'old_breakTable'
 #: hrms/hr/doctype/exit_interview/exit_interview.json
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
 msgid "Email ID"
 msgstr ""
 
@@ -4075,9 +4332,6 @@ msgstr ""
 #. Label of the employee (Link) field in DocType 'Training Result Employee'
 #. Label of the employee (Link) field in DocType 'Travel Request'
 #. Label of the employee (Link) field in DocType 'Vehicle Log'
-#. Label of a Card Break in the Overview Workspace
-#. Label of a Link in the Overview Workspace
-#. Label of a shortcut in the Overview Workspace
 #. Label of the employee (Link) field in DocType 'Additional Salary'
 #. Label of the employee (Link) field in DocType 'Employee Benefit Application'
 #. Label of the employee (Link) field in DocType 'Employee Benefit Claim'
@@ -4157,7 +4411,7 @@ msgstr ""
 #: hrms/hr/report/appraisal_overview/appraisal_overview.js:24
 #: hrms/hr/report/appraisal_overview/appraisal_overview.py:22
 #: hrms/hr/report/employee_advance_summary/employee_advance_summary.js:9
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:48
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:47
 #: hrms/hr/report/employee_analytics/employee_analytics.py:30
 #: hrms/hr/report/employee_birthday/employee_birthday.py:21
 #: hrms/hr/report/employee_exits/employee_exits.js:39
@@ -4172,7 +4426,7 @@ msgstr ""
 #: hrms/hr/report/leave_ledger/leave_ledger.js:28
 #: hrms/hr/report/leave_ledger/leave_ledger.py:28
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:35
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:111
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:101
 #: hrms/hr/report/project_profitability/project_profitability.js:37
 #: hrms/hr/report/project_profitability/project_profitability.py:140
 #: hrms/hr/report/shift_attendance/shift_attendance.js:22
@@ -4181,7 +4435,6 @@ msgstr ""
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:18
 #: hrms/hr/report/vehicle_expenses/vehicle_expenses.js:57
 #: hrms/hr/report/vehicle_expenses/vehicle_expenses.py:55
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/additional_salary/additional_salary.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.js:159
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
@@ -4208,6 +4461,7 @@ msgstr ""
 #: hrms/payroll/report/salary_register/salary_register.js:32
 #: hrms/payroll/report/salary_register/salary_register.py:115
 #: hrms/public/js/templates/employees_with_unmarked_attendance.html:17
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
 msgid "Employee"
 msgstr ""
 
@@ -4220,24 +4474,21 @@ msgstr ""
 #. Advance'
 #. Label of a Link in the Expense Claims Workspace
 #. Label of a shortcut in the Expense Claims Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/expense_claim_advance/expense_claim_advance.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Advance"
 msgstr ""
 
 #: frontend/src/views/expense_claim/Dashboard.vue:35
+#: hrms/public/frontend/assets/Dashboard-BBVU9f_Y.js:1
 msgid "Employee Advance Balance"
 msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Expense Claims Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_advance_summary/employee_advance_summary.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Advance Summary"
 msgstr ""
 
@@ -4247,10 +4498,8 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_analytics/employee_analytics.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Analytics"
 msgstr ""
 
@@ -4289,10 +4538,8 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_birthday/employee_birthday.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Birthday"
 msgstr ""
 
@@ -4302,11 +4549,9 @@ msgid "Employee Boarding Activity"
 msgstr ""
 
 #. Name of a DocType
-#. Label of a Link in the Overview Workspace
 #. Label of a Link in the Shift & Attendance Workspace
 #. Label of a shortcut in the Shift & Attendance Workspace
 #: hrms/hr/doctype/employee_checkin/employee_checkin.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Employee Checkin"
 msgstr ""
@@ -4372,10 +4617,8 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_exits/employee_exits.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Exits"
 msgstr ""
 
@@ -4402,7 +4645,6 @@ msgstr ""
 #. Template'
 #. Label of the employee_grade (Link) field in DocType 'Leave Control Panel'
 #. Label of the grade (Link) field in DocType 'Shift Assignment Tool'
-#. Label of a Link in the Overview Workspace
 #. Label of the grade (Link) field in DocType 'Bulk Salary Structure
 #. Assignment'
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.json
@@ -4413,7 +4655,6 @@ msgstr ""
 #: hrms/hr/doctype/employee_separation_template/employee_separation_template.json
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.json
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 msgid "Employee Grade"
 msgstr ""
@@ -4426,11 +4667,6 @@ msgstr ""
 msgid "Employee Grievance"
 msgstr ""
 
-#. Label of a Link in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "Employee Group"
-msgstr ""
-
 #. Name of a DocType
 #: hrms/hr/doctype/employee_health_insurance/employee_health_insurance.json
 msgid "Employee Health Insurance"
@@ -4441,6 +4677,11 @@ msgstr ""
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Employee Hours Utilization Based On Timesheet"
+msgstr ""
+
+#. Label of the var_Employee_Id (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "Employee Id"
 msgstr ""
 
 #. Label of the employee_image (Attach Image) field in DocType 'Appraisal'
@@ -4462,10 +4703,8 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Employee Lifecycle Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_information/employee_information.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Information"
 msgstr ""
 
@@ -4476,19 +4715,15 @@ msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Leaves Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Leave Balance"
 msgstr ""
 
 #. Name of a report
 #. Label of a Link in the Leaves Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/report/employee_leave_balance_summary/employee_leave_balance_summary.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Employee Leave Balance Summary"
 msgstr ""
 
@@ -4589,7 +4824,7 @@ msgstr ""
 #: hrms/hr/report/employee_leave_balance_summary/employee_leave_balance_summary.py:23
 #: hrms/hr/report/employees_working_on_a_holiday/employees_working_on_a_holiday.py:30
 #: hrms/hr/report/leave_ledger/leave_ledger.py:35
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:117
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:107
 #: hrms/hr/report/project_profitability/project_profitability.py:145
 #: hrms/hr/report/shift_attendance/shift_attendance.py:31
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:19
@@ -4830,8 +5065,9 @@ msgstr ""
 msgid "Employee Transfer cannot be submitted before Transfer Date"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:73
-msgid "Employee advance account {0} should be of type {1}."
+#. Name of a DocType
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "Employee User Report"
 msgstr ""
 
 #: hrms/hr/doctype/hr_settings/hr_settings.js:27
@@ -4885,11 +5121,11 @@ msgstr ""
 msgid "Employee {0} has no maximum benefit amount"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:211
+#: hrms/hr/doctype/attendance/attendance.py:210
 msgid "Employee {0} is not active or does not exist"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:187
+#: hrms/hr/doctype/attendance/attendance.py:186
 msgid "Employee {0} is on Leave on {1}"
 msgstr ""
 
@@ -4897,15 +5133,15 @@ msgstr ""
 msgid "Employee {0} not found in Training Event Participants."
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:180
+#: hrms/hr/doctype/attendance/attendance.py:179
 msgid "Employee {0} on Half day on {1}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:602
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:611
 msgid "Employee {0} relieved on {1} must be set as 'Left'"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:161
+#: hrms/payroll/doctype/gratuity/gratuity.py:163
 msgid "Employee: {0} have to complete minimum {1} years for gratuity"
 msgstr ""
 
@@ -4930,11 +5166,6 @@ msgstr ""
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.json
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 msgid "Employees HTML"
-msgstr ""
-
-#. Label of a Link in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "Employees Working on a Holiday"
 msgstr ""
 
 #: hrms/hr/doctype/employee_performance_feedback/employee_performance_feedback.py:32
@@ -5083,6 +5314,7 @@ msgid "End Date"
 msgstr ""
 
 #: frontend/src/views/attendance/ShiftAssignmentForm.vue:75
+#: hrms/public/frontend/assets/ShiftAssignmentForm-IEarx--H.js:1
 msgid "End Date cannot be before Start Date"
 msgstr ""
 
@@ -5150,7 +5382,7 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:394
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:337
 #: hrms/hr/utils.py:857
 msgid "Error Log"
 msgstr ""
@@ -5168,11 +5400,11 @@ msgstr ""
 msgid "Error deleting {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1257
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1266
 msgid "Error in formula or condition"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2242
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2250
 msgid "Error in formula or condition: {0} in Income Tax Slab"
 msgstr ""
 
@@ -5184,7 +5416,7 @@ msgstr ""
 msgid "Error updating {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2321
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2329
 msgid "Error while evaluating the {doctype} {doclink} at row {row_id}. <br><br> <b>Error:</b> {error} <br><br> <b>Hint:</b> {description}"
 msgstr ""
 
@@ -5282,7 +5514,7 @@ msgstr ""
 msgid "Exchange Rate"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:67
+#: hrms/hr/doctype/employee_advance/employee_advance.py:66
 msgid "Exchange Rate cannot be zero."
 msgstr ""
 
@@ -5410,6 +5642,8 @@ msgstr ""
 msgid "Exits (This Month)"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7570
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7573
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:120
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:124
 msgid "Expand All"
@@ -5474,14 +5708,11 @@ msgstr ""
 #. Name of a DocType
 #. Label of a Link in the Expense Claims Workspace
 #. Label of a shortcut in the Expense Claims Workspace
-#. Label of a Card Break in the Overview Workspace
-#. Label of a Link in the Overview Workspace
-#: hrms/hr/doctype/employee_advance/employee_advance.js:63
+#: hrms/hr/doctype/employee_advance/employee_advance.js:62
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 #: hrms/hr/doctype/vehicle_log/vehicle_log.js:17
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:20
 #: hrms/hr/workspace/expense_claims/expense_claims.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/public/js/erpnext/delivery_trip.js:8
 msgid "Expense Claim"
 msgstr ""
@@ -5502,6 +5733,7 @@ msgid "Expense Claim Detail"
 msgstr ""
 
 #: frontend/src/components/ExpenseClaimSummary.vue:3
+#: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Expense Claim Summary"
 msgstr ""
 
@@ -5509,7 +5741,7 @@ msgstr ""
 #. Name of a DocType
 #. Label of the expense_type (Data) field in DocType 'Expense Claim Type'
 #. Label of a Link in the Expense Claims Workspace
-#: hrms/hr/doctype/expense_claim/expense_claim.py:525
+#: hrms/hr/doctype/expense_claim/expense_claim.py:506
 #: hrms/hr/doctype/expense_claim_detail/expense_claim_detail.json
 #: hrms/hr/doctype/expense_claim_type/expense_claim_type.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
@@ -5528,6 +5760,7 @@ msgstr ""
 #. Label of a chart in the Expense Claims Workspace
 #: frontend/src/views/expense_claim/Dashboard.vue:2
 #: hrms/hr/workspace/expense_claims/expense_claims.json
+#: hrms/public/frontend/assets/Dashboard-BBVU9f_Y.js:1
 msgid "Expense Claims"
 msgstr ""
 
@@ -5609,10 +5842,12 @@ msgstr ""
 msgid "Explanation"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7567
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:116
 msgid "Export"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7584
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:137
 msgid "Exporting..."
 msgstr ""
@@ -5630,7 +5865,7 @@ msgstr ""
 msgid "Failed to delete defaults for country {0}."
 msgstr ""
 
-#: hrms/api/__init__.py:769
+#: hrms/api/__init__.py:765
 msgid "Failed to download Salary Slip PDF"
 msgstr ""
 
@@ -5642,7 +5877,7 @@ msgstr ""
 msgid "Failed to setup defaults for country {0}."
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:389
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:332
 msgid "Failed to submit some leave policy assignments:"
 msgstr ""
 
@@ -5650,11 +5885,13 @@ msgstr ""
 msgid "Failed to update the Job Applicant status"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:298
 #: hrms/public/js/utils/index.js:143
 msgid "Failed to {0} {1} for employees:"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1506
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1492
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:304
 #: hrms/public/js/utils/index.js:149
 msgid "Failure"
 msgstr ""
@@ -5666,6 +5903,7 @@ msgid "Failure Details"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:13
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:508
 #: hrms/public/js/salary_slip_deductions_report_filters.js:20
 msgid "Feb"
 msgstr ""
@@ -5730,6 +5968,7 @@ msgstr ""
 msgid "Feedback cannot be recorded for an absent Employee."
 msgstr ""
 
+#: hrms/public/dist/js/performance.bundle.HWRHZE2C.js:101
 #: hrms/public/js/performance/performance_feedback.js:120
 msgid "Feedback {0} added successfully"
 msgstr ""
@@ -5758,6 +5997,7 @@ msgstr ""
 msgid "Fetching Shift"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:343
 #: hrms/public/js/utils/index.js:193
 msgid "Fetching your geolocation"
 msgstr ""
@@ -5768,6 +6008,7 @@ msgid "Field Name"
 msgstr ""
 
 #: frontend/src/components/FilePreviewModal.vue:4
+#: hrms/public/frontend/assets/workflow-Des3DWHa.js:1
 msgid "File Preview"
 msgstr ""
 
@@ -5805,6 +6046,7 @@ msgstr ""
 #. Cycle'
 #: frontend/src/components/ListFiltersActionSheet.vue:7
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
+#: hrms/public/frontend/assets/ListFiltersActionSheet-C00TKDkr.js:1
 #: hrms/www/jobs/index.html:19 hrms/www/jobs/index.html:312
 msgid "Filters"
 msgstr ""
@@ -5844,11 +6086,16 @@ msgstr ""
 msgid "First Name "
 msgstr ""
 
+#. Label of the var_First_name (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "First name"
+msgstr ""
+
 #: hrms/hr/report/vehicle_expenses/vehicle_expenses.js:29
 msgid "Fiscal Year"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1423
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1409
 msgid "Fiscal Year {0} not found"
 msgstr ""
 
@@ -5948,6 +6195,7 @@ msgid "Fractional Cost"
 msgstr ""
 
 #: frontend/src/components/BaseLayout.vue:9
+#: hrms/public/frontend/assets/BaseLayout-DyEJLFLW.js:1
 msgid "Frappe HR"
 msgstr ""
 
@@ -6059,7 +6307,7 @@ msgstr ""
 msgid "From date can not be less than employee's joining date."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:54
+#: hrms/hr/doctype/leave_type/leave_type.js:42
 msgid "From here, you can enable encashment for the balance leaves."
 msgstr ""
 
@@ -6166,11 +6414,14 @@ msgstr ""
 msgid "Geolocation"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:337
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:359
 #: hrms/public/js/utils/index.js:186 hrms/public/js/utils/index.js:212
 msgid "Geolocation Error"
 msgstr ""
 
 #: frontend/src/components/CheckInPanel.vue:143
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:336
 #: hrms/public/js/utils/index.js:185
 msgid "Geolocation is not supported by your current browser"
 msgstr ""
@@ -6215,6 +6466,7 @@ msgid "Gluten Free"
 msgstr ""
 
 #: frontend/src/views/InvalidEmployee.vue:12
+#: hrms/public/frontend/assets/InvalidEmployee-B0jRJkyO.js:1
 msgid "Go to Login"
 msgstr ""
 
@@ -6416,11 +6668,6 @@ msgstr ""
 msgid "HR & Payroll Settings"
 msgstr ""
 
-#. Label of a shortcut in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "HR Dashboard"
-msgstr ""
-
 #. Name of a role
 #: hrms/hr/doctype/appointment_letter/appointment_letter.json
 #: hrms/hr/doctype/appointment_letter_template/appointment_letter_template.json
@@ -6497,10 +6744,8 @@ msgid "HR Manager"
 msgstr ""
 
 #. Name of a DocType
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/hr_settings/hr_settings.json
 #: hrms/hr/doctype/leave_application/leave_application.py:169
-#: hrms/hr/workspace/overview/overview.json
 msgid "HR Settings"
 msgstr ""
 
@@ -6698,7 +6943,7 @@ msgstr ""
 msgid "Hold"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:296
+#: hrms/hr/doctype/attendance/attendance.py:285
 #: hrms/hr/doctype/leave_application/leave_application.py:1348
 #: hrms/hr/report/employees_working_on_a_holiday/employees_working_on_a_holiday.py:46
 msgid "Holiday"
@@ -6838,15 +7083,6 @@ msgstr ""
 #. DocType 'Payroll Settings'
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "If enabled, deducts payment days for absent attendance on holidays. By default, holidays are considered as paid"
-msgstr ""
-
-#. Description of the 'Do Not Include in Accounting Entries' (Check) field in
-#. DocType 'Salary Component'
-#. Description of the 'Do Not Include in Accounting Entries' (Check) field in
-#. DocType 'Salary Detail'
-#: hrms/payroll/doctype/salary_component/salary_component.json
-#: hrms/payroll/doctype/salary_detail/salary_detail.json
-msgid "If enabled, the amount will be excluded from accounting entries during Journal Entry creation."
 msgstr ""
 
 #. Description of the 'Variable Based On Taxable Salary' (Check) field in
@@ -7073,15 +7309,15 @@ msgstr ""
 msgid "Income Tax Slab is mandatory since the Salary Structure {0} has a tax component {1}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1586
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1594
 msgid "Income Tax Slab must be effective on or before Payroll Period Start Date: {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1574
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1582
 msgid "Income Tax Slab not set in Salary Structure Assignment: {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1582
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1590
 msgid "Income Tax Slab: {0} is disabled"
 msgstr ""
 
@@ -7147,6 +7383,11 @@ msgstr ""
 
 #: hrms/setup.py:388
 msgid "Intern"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "Internal approval"
 msgstr ""
 
 #. Option for the 'Travel Type' (Select) field in DocType 'Travel Request'
@@ -7351,7 +7592,7 @@ msgstr ""
 msgid "Invalid Shift Times"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:651
+#: hrms/hr/doctype/expense_claim/expense_claim.py:632
 msgid "Invalid parameters provided. Please pass the required arguments."
 msgstr ""
 
@@ -7408,7 +7649,7 @@ msgstr ""
 msgid "Is Compensatory"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:41
+#: hrms/hr/doctype/leave_type/leave_type.py:40
 msgid "Is Compensatory Leave"
 msgstr ""
 
@@ -7419,7 +7660,7 @@ msgstr ""
 
 #. Label of the is_earned_leave (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
-#: hrms/hr/doctype/leave_type/leave_type.py:41
+#: hrms/hr/doctype/leave_type/leave_type.py:40
 msgid "Is Earned Leave"
 msgstr ""
 
@@ -7506,6 +7747,7 @@ msgid "Is Tax Applicable"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:12
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:507
 #: hrms/public/js/salary_slip_deductions_report_filters.js:19
 msgid "Jan"
 msgstr ""
@@ -7669,11 +7911,13 @@ msgid "Journal Entry"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:18
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:513
 #: hrms/public/js/salary_slip_deductions_report_filters.js:25
 msgid "July"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:17
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:512
 #: hrms/public/js/salary_slip_deductions_report_filters.js:24
 msgid "June"
 msgstr ""
@@ -7719,11 +7963,6 @@ msgstr ""
 msgid "Key Performance Area"
 msgstr ""
 
-#. Label of a Card Break in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "Key Reports"
-msgstr ""
-
 #. Description of the 'Goal' (Small Text) field in DocType 'Appraisal Goal'
 #: hrms/hr/doctype/appraisal_goal/appraisal_goal.json
 msgid "Key Responsibility Area"
@@ -7758,6 +7997,11 @@ msgstr ""
 #. Label of the last_sync_of_checkin (Datetime) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
 msgid "Last Sync of Checkin"
+msgstr ""
+
+#. Label of the var_Last_name (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "Last name"
 msgstr ""
 
 #: frontend/src/components/CheckInPanel.vue:9
@@ -7806,9 +8050,11 @@ msgstr ""
 msgid "Latitude: {0}°"
 msgstr ""
 
+#. Name of a DocType
 #. Option for the 'Calculate Payroll Working Days Based On' (Select) field in
 #. DocType 'Payroll Settings'
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:675
+#: hrms/ars/doctype/leave/leave.json
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:653
 #: hrms/overrides/dashboard_overrides.py:12
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "Leave"
@@ -7827,10 +8073,6 @@ msgstr ""
 msgid "Leave Allocation"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:68
-msgid "Leave Allocation Exists"
-msgstr ""
-
 #. Label of the leave_allocations_section (Section Break) field in DocType
 #. 'Leave Policy'
 #: hrms/hr/doctype/leave_policy/leave_policy.json
@@ -7841,11 +8083,9 @@ msgstr ""
 #. Name of a DocType
 #. Label of a Link in the Leaves Workspace
 #. Label of a shortcut in the Leaves Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Leave Application"
 msgstr ""
 
@@ -7938,7 +8178,10 @@ msgstr ""
 msgid "Leave Control Panel"
 msgstr ""
 
+#. Label of the leave_details_table (Table) field in DocType 'Employee User
+#. Report'
 #. Label of the leave_details (Table) field in DocType 'Salary Slip'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Leave Details"
 msgstr ""
@@ -8017,7 +8260,7 @@ msgstr ""
 msgid "Leave Policy Assignment"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:69
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:65
 msgid "Leave Policy Assignment Overlap"
 msgstr ""
 
@@ -8031,7 +8274,7 @@ msgstr ""
 msgid "Leave Policy Details"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:63
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:59
 msgid "Leave Policy: {0} already assigned for Employee {1} for period {2} to {3}"
 msgstr ""
 
@@ -8083,11 +8326,11 @@ msgstr ""
 msgid "Leave Type Name"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:34
+#: hrms/hr/doctype/leave_type/leave_type.py:33
 msgid "Leave Type can either be compensatory or earned leave."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:46
+#: hrms/hr/doctype/leave_type/leave_type.py:45
 msgid "Leave Type can either be without pay or partial pay"
 msgstr ""
 
@@ -8114,7 +8357,7 @@ msgstr ""
 msgid "Leave Without Pay"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:471
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:480
 msgid "Leave Without Pay does not match with approved {} records"
 msgstr ""
 
@@ -8122,7 +8365,7 @@ msgstr ""
 msgid "Leave allocation {0} is linked with the Leave Application {1}"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:89
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:85
 msgid "Leave already have been assigned for this Leave Policy Assignment"
 msgstr ""
 
@@ -8132,7 +8375,7 @@ msgstr ""
 msgid "Leave and Expense Claim Settings"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:27
+#: hrms/hr/doctype/leave_type/leave_type.py:26
 msgid "Leave application is linked with leave allocations {0}. Leave application cannot be set as leave without pay"
 msgstr ""
 
@@ -8146,6 +8389,11 @@ msgstr ""
 
 #: hrms/hr/doctype/leave_application/leave_application.py:500
 msgid "Leave of type {0} cannot be longer than {1}."
+msgstr ""
+
+#. Name of a report
+#: hrms/ars/report/leave_report/leave_report.json
+msgid "Leave report"
 msgstr ""
 
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.py:72
@@ -8163,7 +8411,6 @@ msgstr ""
 
 #. Label of the leaves (Float) field in DocType 'Leave Ledger Entry'
 #. Name of a Workspace
-#. Label of a Card Break in the Overview Workspace
 #. Label of the leave_details_section (Tab Break) field in DocType 'Salary
 #. Slip'
 #: frontend/src/components/BottomTabs.vue:53
@@ -8172,12 +8419,12 @@ msgstr ""
 #: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment_dashboard.py:8
 #: hrms/hr/report/leave_ledger/leave_ledger.py:59
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Leaves"
 msgstr ""
 
 #: frontend/src/views/leave/Dashboard.vue:2
+#: hrms/public/frontend/assets/Dashboard-yRtV1AJm.js:1
 msgid "Leaves & Holidays"
 msgstr ""
 
@@ -8195,7 +8442,7 @@ msgstr ""
 msgid "Leaves Pending Approval"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:82
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:78
 msgid "Leaves for the Leave Type {0} won't be carry-forwarded since carry-forwarding is disabled."
 msgstr ""
 
@@ -8203,7 +8450,7 @@ msgstr ""
 msgid "Leaves per Year"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:42
+#: hrms/hr/doctype/leave_type/leave_type.js:30
 msgid "Leaves you can avail against a holiday you worked on. You can claim Compensatory Off Leave using Compensatory Leave Request. Click {0} to know more"
 msgstr ""
 
@@ -8233,6 +8480,38 @@ msgstr ""
 #. Label of the level (Select) field in DocType 'Training Event'
 #: hrms/hr/doctype/training_event/training_event.json
 msgid "Level"
+msgstr ""
+
+#. Label of the level_1_approval_comments (Data) field in DocType
+#. 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 1 approval comments"
+msgstr ""
+
+#. Label of the level_1_approval_time (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 1 approval time"
+msgstr ""
+
+#. Label of the level_1_approver (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 1 approver"
+msgstr ""
+
+#. Label of the level_2_approval_comments (Data) field in DocType
+#. 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 2 approval comments"
+msgstr ""
+
+#. Label of the level_2_approval_time (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 2 approval time"
+msgstr ""
+
+#. Label of the level_2_approver (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Level 2 approver"
 msgstr ""
 
 #. Label of the license_plate (Link) field in DocType 'Vehicle Log'
@@ -8341,6 +8620,7 @@ msgid "Login"
 msgstr ""
 
 #: frontend/src/views/InvalidEmployee.vue:7
+#: hrms/public/frontend/assets/InvalidEmployee-B0jRJkyO.js:1
 msgid "Login Failed"
 msgstr ""
 
@@ -8387,6 +8667,7 @@ msgstr ""
 msgid "Mandatory"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:214
 #: hrms/public/js/utils/index.js:37
 msgid "Mandatory fields required for this action:"
 msgstr ""
@@ -8408,6 +8689,7 @@ msgid "Manual Rating"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:14
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:509
 #: hrms/public/js/salary_slip_deductions_report_filters.js:21
 msgid "Mar"
 msgstr ""
@@ -8621,6 +8903,7 @@ msgid "Maximum leave allowed in the leave type {0} is {1}"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:16
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:511
 #: hrms/public/js/salary_slip_deductions_report_filters.js:23
 msgid "May"
 msgstr ""
@@ -8643,7 +8926,7 @@ msgstr ""
 #. Label of the message (Text Editor) field in DocType 'PWA Notification'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 #: hrms/hr/doctype/pwa_notification/pwa_notification.json
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1473
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1459
 msgid "Message"
 msgstr ""
 
@@ -8670,7 +8953,7 @@ msgstr ""
 msgid "Minimum working days required since Date of Joining to apply for this leave"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:47
+#: hrms/hr/doctype/employee_advance/employee_advance.py:46
 msgid "Missing Advance Account"
 msgstr ""
 
@@ -8679,6 +8962,7 @@ msgid "Missing Field"
 msgstr ""
 
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.js:205
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:218
 #: hrms/public/js/utils/index.js:41
 msgid "Missing Fields"
 msgstr ""
@@ -8699,7 +8983,7 @@ msgstr ""
 msgid "Missing Salary Components"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1577
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1585
 msgid "Missing Tax Slab"
 msgstr ""
 
@@ -8724,7 +9008,7 @@ msgstr ""
 msgid "Mode of Travel"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:312
+#: hrms/hr/doctype/expense_claim/expense_claim.py:293
 msgid "Mode of payment is required to make a payment"
 msgstr ""
 
@@ -8743,6 +9027,7 @@ msgstr ""
 #: hrms/hr/doctype/job_opening/job_opening.json
 #: hrms/hr/report/employee_birthday/employee_birthday.js:8
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:8
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:503
 #: hrms/public/js/salary_slip_deductions_report_filters.js:15
 msgid "Month"
 msgstr ""
@@ -8779,10 +9064,8 @@ msgid "Monthly"
 msgstr ""
 
 #. Name of a report
-#. Label of a Link in the Overview Workspace
 #. Label of a Link in the Shift & Attendance Workspace
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Monthly Attendance Sheet"
 msgstr ""
@@ -8836,6 +9119,7 @@ msgstr ""
 
 #. Label of the salary_component (Data) field in DocType 'Salary Component'
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.js:137
+#: hrms/hr/report/breakfast_allowance_report/breakfast_allowance_report.js:9
 #: hrms/hr/report/employee_analytics/employee_analytics.py:31
 #: hrms/hr/report/employee_birthday/employee_birthday.py:22
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.js:166
@@ -8843,8 +9127,8 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1243
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2237
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1252
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2245
 msgid "Name error"
 msgstr ""
 
@@ -8860,6 +9144,10 @@ msgstr ""
 #: hrms/hr/doctype/hr_settings/hr_settings.json
 #: hrms/hr/doctype/job_requisition/job_requisition.json
 msgid "Naming Series"
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:6
+msgid "Need More Info"
 msgstr ""
 
 #. Label of the net_pay (Currency) field in DocType 'Salary Slip'
@@ -8881,7 +9169,7 @@ msgstr ""
 msgid "Net Pay Info"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:191
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:195
 msgid "Net Pay cannot be less than 0"
 msgstr ""
 
@@ -8962,6 +9250,7 @@ msgid "No"
 msgstr ""
 
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.js:216
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:246
 #: hrms/public/js/utils/index.js:80
 msgid "No Data"
 msgstr ""
@@ -8990,7 +9279,7 @@ msgstr ""
 msgid "No Leaves Allocated to Employee: {0} for Leave Type: {1}"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:265
+#: hrms/payroll/doctype/gratuity/gratuity.py:267
 msgid "No Salary Slip found for Employee: {0}"
 msgstr ""
 
@@ -9015,10 +9304,11 @@ msgid "No Staffing Plans found for this Designation"
 msgstr ""
 
 #: frontend/src/views/InvalidEmployee.vue:8
+#: hrms/public/frontend/assets/InvalidEmployee-B0jRJkyO.js:1
 msgid "No active employee found associated with the email ID {0}. Try logging in with your employee email ID or contact your HR manager for access."
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:397
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:406
 msgid "No active or default Salary Structure found for employee {0} for the given dates"
 msgstr ""
 
@@ -9030,23 +9320,23 @@ msgstr ""
 msgid "No advances found"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:281
+#: hrms/payroll/doctype/gratuity/gratuity.py:283
 msgid "No applicable Earning component found in last salary slip for Gratuity Rule: {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:294
+#: hrms/payroll/doctype/gratuity/gratuity.py:296
 msgid "No applicable Earning components found for Gratuity Rule: {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:254
+#: hrms/payroll/doctype/gratuity/gratuity.py:256
 msgid "No applicable slab found for the calculation of gratuity amount as per the Gratuity Rule: {0}"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:53
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:52
 msgid "No attendance records found for this criteria."
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:46
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:45
 msgid "No attendance records found."
 msgstr ""
 
@@ -9086,7 +9376,7 @@ msgstr ""
 msgid "No items selected"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:197
+#: hrms/hr/doctype/attendance/attendance.py:196
 msgid "No leave record found for employee {0} on {1}"
 msgstr ""
 
@@ -9111,7 +9401,7 @@ msgstr ""
 msgid "No replies from"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1489
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1475
 msgid "No salary slip found to submit for the above selected criteria OR salary slip already submitted"
 msgstr ""
 
@@ -9127,6 +9417,7 @@ msgstr ""
 msgid "No valid shift found for log time"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:224
 #: hrms/public/js/utils/index.js:48
 msgid "No {0} Selected"
 msgstr ""
@@ -9175,8 +9466,8 @@ msgstr ""
 #: hrms/hr/doctype/goal/goal.py:76 hrms/hr/doctype/interview/interview.py:27
 #: hrms/hr/doctype/job_applicant/job_applicant.py:49
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:147
-#: hrms/hr/doctype/leave_type/leave_type.py:43
-#: hrms/hr/doctype/leave_type/leave_type.py:46
+#: hrms/hr/doctype/leave_type/leave_type.py:42
+#: hrms/hr/doctype/leave_type/leave_type.py:45
 msgid "Not Allowed"
 msgstr ""
 
@@ -9202,7 +9493,7 @@ msgstr ""
 msgid "Note: Total allocated leaves {0} shouldn't be less than already approved leaves {1} for the period"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1915
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1923
 msgid "Note: Your salary slip is password protected, the password to unlock the PDF is of the format {0}."
 msgstr ""
 
@@ -9239,6 +9530,7 @@ msgid "Notify users by email"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:22
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:517
 #: hrms/public/js/salary_slip_deductions_report_filters.js:29
 msgid "Nov"
 msgstr ""
@@ -9285,6 +9577,7 @@ msgid "Obtained Average Rating"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:21
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:516
 #: hrms/public/js/salary_slip_deductions_report_filters.js:28
 msgid "Oct"
 msgstr ""
@@ -9329,6 +9622,11 @@ msgstr ""
 #. Label of the old_parent (Link) field in DocType 'Goal'
 #: hrms/hr/doctype/goal/goal.json
 msgid "Old Parent"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Old_overtime"
 msgstr ""
 
 #: hrms/hr/report/recruitment_analytics/recruitment_analytics.js:17
@@ -9465,7 +9763,7 @@ msgstr ""
 msgid "Optional Holiday List not set for leave period {0}"
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:35
+#: hrms/hr/doctype/leave_type/leave_type.js:23
 msgid "Optional Leaves are holidays that Employees can choose to avail from a list of holidays published by the company."
 msgstr ""
 
@@ -9486,11 +9784,6 @@ msgstr ""
 #: hrms/hr/doctype/travel_itinerary/travel_itinerary.json
 #: hrms/hr/doctype/travel_request/travel_request.json
 msgid "Other Details"
-msgstr ""
-
-#. Label of a Card Break in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "Other Reports"
 msgstr ""
 
 #. Label of the other_settings_section (Section Break) field in DocType
@@ -9541,7 +9834,7 @@ msgstr ""
 msgid "Overlapping Attendance Request"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:123
+#: hrms/hr/doctype/attendance/attendance.py:122
 msgid "Overlapping Shift Attendance"
 msgstr ""
 
@@ -9551,6 +9844,35 @@ msgstr ""
 
 #: hrms/hr/doctype/shift_assignment/shift_assignment.py:147
 msgid "Overlapping Shifts"
+msgstr ""
+
+#. Name of a DocType
+#. Name of a report
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/report/overtime/overtime.json
+msgid "Overtime"
+msgstr ""
+
+#. Label of the overtime_details_table (Table) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "Overtime Details"
+msgstr ""
+
+#. Label of the overtime_summary_section (Section Break) field in DocType
+#. 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "Overtime Summary"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+msgid "Overtime work details table"
+msgstr ""
+
+#. Name of a report
+#: hrms/ars/report/overtime_report/overtime_report.json
+msgid "Overtime-Report"
 msgstr ""
 
 #. Label of the employee_details_tab (Tab Break) field in DocType 'Appraisal'
@@ -9624,7 +9946,7 @@ msgstr ""
 #: frontend/src/views/employee_advance/List.vue:68
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:70
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:67
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:22
 #: hrms/payroll/doctype/gratuity/gratuity.json
 msgid "Paid Amount"
@@ -9649,7 +9971,8 @@ msgstr ""
 msgid "Part-time"
 msgstr ""
 
-#: hrms/hr/utils.py:861 hrms/public/js/utils/index.js:154
+#: hrms/hr/utils.py:861 hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:308
+#: hrms/public/js/utils/index.js:154
 msgid "Partial Success"
 msgstr ""
 
@@ -9718,7 +10041,7 @@ msgstr ""
 msgid "Payable Account"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:127
+#: hrms/hr/doctype/expense_claim/expense_claim.py:110
 msgid "Payable Account is mandatory to submit an Expense Claim"
 msgstr ""
 
@@ -9728,7 +10051,7 @@ msgstr ""
 msgid "Payables"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.js:51
+#: hrms/hr/doctype/employee_advance/employee_advance.js:50
 #: hrms/hr/doctype/expense_claim/expense_claim.js:105
 #: hrms/hr/doctype/expense_claim/expense_claim_dashboard.py:9
 #: hrms/hr/doctype/leave_encashment/leave_encashment.js:58
@@ -9786,7 +10109,7 @@ msgstr ""
 msgid "Payment and Accounting"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1090
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1076
 msgid "Payment of {0} from {1} to {2}"
 msgstr ""
 
@@ -9811,11 +10134,6 @@ msgstr ""
 #. Structure Assignment'
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 msgid "Payroll Cost Centers"
-msgstr ""
-
-#. Label of a shortcut in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "Payroll Dashboard"
 msgstr ""
 
 #. Label of the payroll_date (Date) field in DocType 'Additional Salary'
@@ -9924,9 +10242,7 @@ msgstr ""
 msgid "Payroll Reports"
 msgstr ""
 
-#. Label of a Link in the Overview Workspace
 #. Name of a DocType
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "Payroll Settings"
 msgstr ""
@@ -9953,6 +10269,7 @@ msgstr ""
 #: hrms/hr/doctype/exit_interview/exit_interview.json
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/interview/interview.json
 #: hrms/hr/doctype/job_requisition/job_requisition.json
+#: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Pending"
 msgstr ""
 
@@ -9971,12 +10288,28 @@ msgstr ""
 msgid "Pending Asset Returns"
 msgstr ""
 
+#: hrms/ars/dummy_trans.py:5
+msgid "Pending CEO"
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:7
+msgid "Pending Final Review"
+msgstr ""
+
 #: hrms/hr/report/employee_exits/employee_exits.py:227
 msgid "Pending FnF"
 msgstr ""
 
+#: hrms/ars/dummy_trans.py:4
+msgid "Pending HR"
+msgstr ""
+
 #: hrms/hr/report/employee_exits/employee_exits.py:221
 msgid "Pending Interviews"
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:3
+msgid "Pending Manager"
 msgstr ""
 
 #: hrms/hr/report/employee_exits/employee_exits.py:233
@@ -10048,7 +10381,7 @@ msgstr ""
 msgid "Please add the remaining benefits {0} to the application as pro-rata component"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:791
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:800
 msgid "Please assign a Salary Structure for Employee {0} applicable from or before {1} first"
 msgstr ""
 
@@ -10080,7 +10413,7 @@ msgstr ""
 msgid "Please reduce {0} to avoid shift time overlapping with itself"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1904
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1912
 msgid "Please see attachment"
 msgstr ""
 
@@ -10117,10 +10450,13 @@ msgstr ""
 msgid "Please select a Company"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:8147
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_mobile.js:233
 msgid "Please select a company first"
 msgstr ""
 
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7556
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7713
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:103
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:299
 msgid "Please select a company first."
@@ -10130,7 +10466,7 @@ msgstr ""
 msgid "Please select a csv file"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:348
+#: hrms/hr/doctype/attendance/attendance.py:337
 msgid "Please select a date."
 msgstr ""
 
@@ -10146,11 +10482,12 @@ msgstr ""
 msgid "Please select at least one employee to perform this action."
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:223
 #: hrms/public/js/utils/index.js:47
 msgid "Please select at least one row to perform this action."
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:37
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:36
 msgid "Please select company."
 msgstr ""
 
@@ -10167,7 +10504,7 @@ msgstr ""
 msgid "Please select half day attendance status."
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:34
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:33
 msgid "Please select month and year."
 msgstr ""
 
@@ -10203,16 +10540,16 @@ msgstr ""
 msgid "Please set Earning Component for Leave type: {0}."
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:455
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:464
 msgid "Please set Payroll based on in Payroll settings"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:173
+#: hrms/payroll/doctype/gratuity/gratuity.py:175
 msgid "Please set Relieving Date for employee: {0}"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:227
-#: hrms/hr/doctype/employee_advance/employee_advance.py:331
+#: hrms/hr/doctype/employee_advance/employee_advance.py:212
+#: hrms/hr/doctype/employee_advance/employee_advance.py:316
 msgid "Please set a Default Cash Account in Company defaults"
 msgstr ""
 
@@ -10232,11 +10569,11 @@ msgstr ""
 msgid "Please set the Appraisal Template for all the {0} or select the template in the Employees table below."
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.js:363
+#: hrms/hr/doctype/expense_claim/expense_claim.js:340
 msgid "Please set the Company"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:264
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:273
 msgid "Please set the Date Of Joining for employee {0}"
 msgstr ""
 
@@ -10315,7 +10652,7 @@ msgstr ""
 #: hrms/hr/doctype/job_requisition/job_requisition.json
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:61
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:60
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 #: hrms/payroll/doctype/salary_withholding/salary_withholding.json
@@ -10349,19 +10686,13 @@ msgstr ""
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.json
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:674
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:652
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "Present"
 msgstr ""
 
 #: hrms/hr/report/shift_attendance/shift_attendance.py:162
 msgid "Present Records"
-msgstr ""
-
-#. Label of the prevent_self_expense_approval (Check) field in DocType 'HR
-#. Settings'
-#: hrms/hr/doctype/hr_settings/hr_settings.json
-msgid "Prevent self approval for expense claims even if user has permissions"
 msgstr ""
 
 #. Label of the prevent_self_leave_approval (Check) field in DocType 'HR
@@ -10611,6 +10942,7 @@ msgid "Quick Filters"
 msgstr ""
 
 #: frontend/src/components/QuickLinks.vue:3 frontend/src/views/Home.vue:6
+#: hrms/public/frontend/assets/QuickLinks-DqhlhYYU.js:1
 msgid "Quick Links"
 msgstr ""
 
@@ -10704,18 +11036,22 @@ msgid "Receivables"
 msgstr ""
 
 #: frontend/src/views/attendance/Dashboard.vue:14
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "Recent Attendance Requests"
 msgstr ""
 
 #: frontend/src/views/expense_claim/Dashboard.vue:23
+#: hrms/public/frontend/assets/Dashboard-BBVU9f_Y.js:1
 msgid "Recent Expenses"
 msgstr ""
 
 #: frontend/src/views/leave/Dashboard.vue:21
+#: hrms/public/frontend/assets/Dashboard-yRtV1AJm.js:1
 msgid "Recent Leaves"
 msgstr ""
 
 #: frontend/src/views/attendance/Dashboard.vue:40
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "Recent Shift Requests"
 msgstr ""
 
@@ -10736,10 +11072,8 @@ msgid "Recruitment"
 msgstr ""
 
 #. Name of a report
-#. Label of a Link in the Overview Workspace
 #. Label of a Link in the Recruitment Workspace
 #: hrms/hr/report/recruitment_analytics/recruitment_analytics.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 msgid "Recruitment Analytics"
 msgstr ""
@@ -10747,10 +11081,6 @@ msgstr ""
 #. Option for the 'Roster Color' (Select) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
 msgid "Red"
-msgstr ""
-
-#: hrms/hr/doctype/leave_type/leave_type.py:69
-msgid "Reducing maximum leaves allowed after allocation may cause scheduler to allocate incorrect number of earned leaves. Proceed with caution."
 msgstr ""
 
 #. Label of the reference (Link) field in DocType 'Full and Final Asset'
@@ -10876,6 +11206,7 @@ msgstr ""
 #: hrms/hr/doctype/job_requisition/job_requisition.json
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/shift_request/shift_request.json
+#: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Rejected"
 msgstr ""
 
@@ -11000,11 +11331,22 @@ msgstr ""
 msgid "Replies"
 msgstr ""
 
+#. Label of a shortcut in the Reports Workspace
+#: hrms/hr/workspace/reports/reports.json
+msgid "Report"
+msgstr ""
+
+#. Label of the reporting_manager (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "Reporting Manager"
+msgstr ""
+
 #. Label of a Card Break in the Employee Lifecycle Workspace
 #. Label of a Card Break in the Expense Claims Workspace
 #. Label of a Card Break in the Leaves Workspace
 #. Label of a Card Break in the Performance Workspace
 #. Label of a Card Break in the Recruitment Workspace
+#. Name of a Workspace
 #. Label of a Card Break in the Shift & Attendance Workspace
 #. Label of a Card Break in the Tax & Benefits Workspace
 #: hrms/hr/doctype/leave_application/leave_application_dashboard.py:8
@@ -11013,6 +11355,7 @@ msgstr ""
 #: hrms/hr/workspace/leaves/leaves.json
 #: hrms/hr/workspace/performance/performance.json
 #: hrms/hr/workspace/recruitment/recruitment.json
+#: hrms/hr/workspace/reports/reports.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "Reports"
@@ -11028,6 +11371,7 @@ msgid "Reports To"
 msgstr ""
 
 #: frontend/src/views/Home.vue:32 frontend/src/views/attendance/Dashboard.vue:9
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "Request Attendance"
 msgstr ""
 
@@ -11036,11 +11380,13 @@ msgid "Request Leave"
 msgstr ""
 
 #: frontend/src/views/leave/Dashboard.vue:17
+#: hrms/public/frontend/assets/Dashboard-yRtV1AJm.js:1
 msgid "Request a Leave"
 msgstr ""
 
 #: frontend/src/views/Home.vue:37
 #: frontend/src/views/attendance/Dashboard.vue:35
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "Request a Shift"
 msgstr ""
 
@@ -11171,12 +11517,12 @@ msgid "Retirement Age (In Years)"
 msgstr ""
 
 #. Option for the 'Action' (Select) field in DocType 'Full and Final Asset'
-#: hrms/hr/doctype/employee_advance/employee_advance.js:80
+#: hrms/hr/doctype/employee_advance/employee_advance.js:79
 #: hrms/hr/doctype/full_and_final_asset/full_and_final_asset.json
 msgid "Return"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:168
+#: hrms/hr/doctype/employee_advance/employee_advance.py:153
 msgid "Return amount cannot be greater than unclaimed amount"
 msgstr ""
 
@@ -11236,6 +11582,8 @@ msgstr ""
 
 #. Label of a shortcut in the Shift & Attendance Workspace
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:390
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:410
 #: hrms/public/js/utils/index.js:250 hrms/public/js/utils/index.js:271
 msgid "Roster"
 msgstr ""
@@ -11300,23 +11648,23 @@ msgstr ""
 msgid "Row #{0}: Timesheet amount will overwrite the Earning component amount for the Salary Component {1}"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:626
+#: hrms/hr/doctype/expense_claim/expense_claim.py:607
 msgid "Row No {0}: Amount cannot be greater than the Outstanding Amount against Expense Claim {1}. Outstanding Amount is {2}"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:374
+#: hrms/hr/doctype/expense_claim/expense_claim.py:355
 msgid "Row {0}# Allocated amount {1} cannot be greater than unclaimed amount {2}"
 msgstr ""
 
-#: hrms/hr/doctype/leave_encashment/leave_encashment.py:270
+#: hrms/hr/doctype/leave_encashment/leave_encashment.py:273
 msgid "Row {0}# Paid Amount cannot be greater than Encashment amount"
 msgstr ""
 
-#: hrms/payroll/doctype/gratuity/gratuity.py:133
+#: hrms/payroll/doctype/gratuity/gratuity.py:135
 msgid "Row {0}# Paid Amount cannot be greater than Total amount"
 msgstr ""
 
-#: hrms/hr/doctype/employee_advance/employee_advance.py:160
+#: hrms/hr/doctype/employee_advance/employee_advance.py:145
 msgid "Row {0}# Paid Amount cannot be greater than requested advance amount"
 msgstr ""
 
@@ -11340,7 +11688,7 @@ msgstr ""
 msgid "Row {0}: {1}"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:305
+#: hrms/hr/doctype/expense_claim/expense_claim.py:286
 msgid "Row {0}: {1} is required in the expenses table to book an expense claim."
 msgstr ""
 
@@ -11371,6 +11719,7 @@ msgstr ""
 #: hrms/payroll/doctype/salary_component/salary_component.json
 #: hrms/payroll/doctype/salary_structure/salary_structure.json
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:439
 #: hrms/public/js/utils/payroll_utils.js:23
 msgid "Salary Component"
 msgstr ""
@@ -11519,11 +11868,11 @@ msgstr ""
 msgid "Salary Slip creation is queued. It may take a few minutes"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:298
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:307
 msgid "Salary Slip of employee {0} already created for this period"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:304
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:313
 msgid "Salary Slip of employee {0} already created for time sheet {1}"
 msgstr ""
 
@@ -11531,7 +11880,7 @@ msgstr ""
 msgid "Salary Slip submission is queued. It may take a few minutes"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1428
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1414
 msgid "Salary Slip {0} failed for Payroll Entry {1}"
 msgstr ""
 
@@ -11553,11 +11902,11 @@ msgstr ""
 msgid "Salary Slips Submitted"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1470
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1456
 msgid "Salary Slips already exist for employees {}, and will not be processed by this payroll."
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1495
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1481
 msgid "Salary Slips submitted for period from {0} to {1}"
 msgstr ""
 
@@ -11585,6 +11934,7 @@ msgstr ""
 msgid "Salary Structure Assignment"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:446
 #: hrms/public/js/utils/payroll_utils.js:31
 msgid "Salary Structure Assignment field"
 msgstr ""
@@ -11593,7 +11943,7 @@ msgstr ""
 msgid "Salary Structure Assignment for Employee already exists"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:400
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:409
 msgid "Salary Structure Missing"
 msgstr ""
 
@@ -11657,7 +12007,7 @@ msgstr ""
 msgid "Salary components should be part of the Salary Structure."
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2386
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2394
 msgid "Salary slip emails have been enqueued for sending. Check {0} for status."
 msgstr ""
 
@@ -11681,7 +12031,7 @@ msgstr ""
 msgid "Sanctioned Amount"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:396
+#: hrms/hr/doctype/expense_claim/expense_claim.py:377
 msgid "Sanctioned Amount cannot be greater than Claim Amount in Row {0}."
 msgstr ""
 
@@ -11726,6 +12076,12 @@ msgstr ""
 msgid "Search for Jobs"
 msgstr ""
 
+#: hrms/public/js/disable_bar.js:31
+msgid "Search is disabled for your account."
+msgstr ""
+
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:7542
+#: hrms/public/dist/js/hierarchy-chart.bundle.C6LCZVVS.js:8024
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:86
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_mobile.js:77
 msgid "Select Company"
@@ -11760,7 +12116,7 @@ msgstr ""
 msgid "Select Payment Account to make Bank Entry"
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1633
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1619
 msgid "Select Payroll Frequency."
 msgstr ""
 
@@ -11787,7 +12143,7 @@ msgstr ""
 msgid "Select Users"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.js:406
+#: hrms/hr/doctype/expense_claim/expense_claim.js:383
 msgid "Select an employee to get the employee advance."
 msgstr ""
 
@@ -11835,6 +12191,7 @@ msgstr ""
 
 #: frontend/src/components/FormField.vue:19
 #: frontend/src/components/FormField.vue:116 frontend/src/components/Link.vue:6
+#: hrms/public/frontend/assets/Link-emrjvDX4.js:1
 msgid "Select {0}"
 msgstr ""
 
@@ -11860,10 +12217,6 @@ msgstr ""
 #. Option for the 'Type' (Select) field in DocType 'Training Event'
 #: hrms/hr/doctype/training_event/training_event.json
 msgid "Self-Study"
-msgstr ""
-
-#: hrms/hr/doctype/expense_claim/expense_claim.py:115
-msgid "Self-approval for Expense Claims is not allowed"
 msgstr ""
 
 #: hrms/hr/doctype/leave_application/leave_application.py:844
@@ -11905,6 +12258,14 @@ msgstr ""
 msgid "Send Leave Notification"
 msgstr ""
 
+#: hrms/ars/dummy_trans.py:11
+msgid "Send for Final Review"
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:10
+msgid "Send for Review"
+msgstr ""
+
 #. Label of the sender (Link) field in DocType 'HR Settings'
 #. Label of the hiring_sender (Link) field in DocType 'HR Settings'
 #. Label of the sender (Link) field in DocType 'Payroll Settings'
@@ -11935,6 +12296,7 @@ msgid "Sent Successfully: {0}"
 msgstr ""
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:20
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:515
 #: hrms/public/js/salary_slip_deductions_report_filters.js:27
 msgid "Sep"
 msgstr ""
@@ -12035,7 +12397,7 @@ msgstr ""
 msgid "Set optional filters to fetch employees in the appraisee list"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:524
+#: hrms/hr/doctype/expense_claim/expense_claim.py:505
 msgid "Set the default account for the {0} {1}"
 msgstr ""
 
@@ -12060,11 +12422,9 @@ msgstr ""
 
 #. Label of the settings_section (Section Break) field in DocType 'Appraisal
 #. Cycle'
-#. Label of a Card Break in the Overview Workspace
 #: frontend/src/views/AppSettings.vue:17
 #: frontend/src/views/Notifications.vue:38 frontend/src/views/Profile.vue:87
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Settings"
 msgstr ""
 
@@ -12087,9 +12447,7 @@ msgid "Settled"
 msgstr ""
 
 #. Label of a Card Break in the Leaves Workspace
-#. Label of a Card Break in the Overview Workspace
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Setup"
 msgstr ""
 
@@ -12109,7 +12467,7 @@ msgstr ""
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.js:171
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.json
 #: hrms/hr/doctype/employee_checkin/employee_checkin.json
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:164
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:154
 #: hrms/hr/report/shift_attendance/shift_attendance.py:36
 #: hrms/hr/report/shift_attendance/shift_attendance.py:205
 #: hrms/overrides/dashboard_overrides.py:33
@@ -12161,6 +12519,8 @@ msgstr ""
 #. Label of a Link in the Shift & Attendance Workspace
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:379
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:399
 #: hrms/public/js/utils/index.js:238 hrms/public/js/utils/index.js:260
 msgid "Shift Assignment Tool"
 msgstr ""
@@ -12293,6 +12653,10 @@ msgstr ""
 msgid "Shift Timings"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:387
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:394
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:407
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:414
 #: hrms/public/js/utils/index.js:246 hrms/public/js/utils/index.js:254
 #: hrms/public/js/utils/index.js:268 hrms/public/js/utils/index.js:275
 msgid "Shift Tools"
@@ -12405,6 +12769,38 @@ msgstr ""
 
 #: hrms/payroll/doctype/salary_structure/salary_structure.py:351
 msgid "Skipping Salary Structure Assignment for the following employees, as Salary Structure Assignment records already exists against them. {0}"
+msgstr ""
+
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "Slack"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "Slack channel opening application"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/slack_channel_opening_application_participant_list_table/slack_channel_opening_application_participant_list_table.json
+msgid "Slack channel opening application participant list table"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+msgid "Slack for external users table"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#: hrms/hr/workspace/overview/overview.json
+msgid "Slackチャンネル開設申請"
+msgstr ""
+
+#. Label of the solution (Long Text) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "Solution  "
 msgstr ""
 
 #. Label of the source (Link) field in DocType 'Job Applicant'
@@ -12521,7 +12917,7 @@ msgstr ""
 msgid "Start and end dates not in a valid Payroll Period, cannot calculate {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1519
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1527
 msgid "Start and end dates not in a valid Payroll Period, cannot calculate {0}."
 msgstr ""
 
@@ -12607,8 +13003,8 @@ msgstr ""
 #: hrms/hr/doctype/shift_request/shift_request.json
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
 #: hrms/hr/doctype/training_program/training_program.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.js:37
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:83
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.js:35
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:74
 #: hrms/hr/report/employees_working_on_a_holiday/employees_working_on_a_holiday.py:41
 #: hrms/hr/report/shift_attendance/shift_attendance.py:49
 #: hrms/payroll/doctype/gratuity/gratuity.json
@@ -12659,7 +13055,7 @@ msgstr ""
 msgid "Submission Date"
 msgstr ""
 
-#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:400
+#: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.py:343
 msgid "Submission Failed"
 msgstr ""
 
@@ -12669,6 +13065,7 @@ msgstr ""
 
 #: frontend/src/components/RequestActionSheet.vue:126
 #: hrms/hr/doctype/job_requisition/job_requisition.js:75
+#: hrms/public/dist/js/performance.bundle.HWRHZE2C.js:81
 #: hrms/public/js/performance/performance_feedback.js:99
 msgid "Submit"
 msgstr ""
@@ -12716,7 +13113,7 @@ msgstr ""
 msgid "Submitting Salary Slips and creating Journal Entry..."
 msgstr ""
 
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1550
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1536
 msgid "Submitting Salary Slips..."
 msgstr ""
 
@@ -12732,7 +13129,8 @@ msgstr ""
 #: frontend/src/views/AppSettings.vue:95
 #: hrms/hr/doctype/employee_referral/employee_referral.py:54
 #: hrms/hr/utils.py:866
-#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1498
+#: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1484
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:295
 #: hrms/public/js/utils/index.js:139
 msgid "Success"
 msgstr ""
@@ -12741,6 +13139,7 @@ msgstr ""
 msgid "Successfully created {0} for employees:"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:313
 #: hrms/public/js/utils/index.js:160
 msgid "Successfully {0} {1} for the following employees:"
 msgstr ""
@@ -12769,6 +13168,11 @@ msgstr ""
 msgid "Supplier"
 msgstr ""
 
+#. Name of a DocType
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "Support Case"
+msgstr ""
+
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.js:46
 #: hrms/hr/report/employee_leave_balance_summary/employee_leave_balance_summary.js:42
 #: hrms/hr/report/leave_ledger/leave_ledger.js:40
@@ -12779,15 +13183,25 @@ msgstr ""
 msgid "Sync {0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1250
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1259
 msgid "Syntax error"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2240
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2248
 msgid "Syntax error in condition: {0} in Income Tax Slab"
 msgstr ""
 
 #. Name of a role
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/support_case/support_case.json
 #: hrms/hr/doctype/appointment_letter/appointment_letter.json
 #: hrms/hr/doctype/appointment_letter_template/appointment_letter_template.json
 #: hrms/hr/doctype/appraisal/appraisal.json
@@ -12841,6 +13255,10 @@ msgstr ""
 #: hrms/payroll/doctype/retention_bonus/retention_bonus.json
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 #: hrms/payroll/doctype/salary_withholding/salary_withholding.json
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/repayment/repayment.json
+#: hrms/zoho/doctype/ringi/ringi.json
 msgid "System Manager"
 msgstr ""
 
@@ -13026,7 +13444,7 @@ msgstr ""
 msgid "The first Approver in the list will be set as the default Approver."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:51
+#: hrms/hr/doctype/leave_type/leave_type.py:50
 msgid "The fraction of Daily Salary per Leave should be between 0 and 1"
 msgstr ""
 
@@ -13073,7 +13491,7 @@ msgstr ""
 msgid "Theory"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:452
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:461
 msgid "There are more holidays than working days this month."
 msgstr ""
 
@@ -13112,23 +13530,23 @@ msgstr ""
 msgid "This employee already has a log with the same timestamp.{0}"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1258
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1267
 msgid "This error can be due to invalid formula or condition."
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1251
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1260
 msgid "This error can be due to invalid syntax."
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1244
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1253
 msgid "This error can be due to missing or deleted field."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:28
+#: hrms/hr/doctype/leave_type/leave_type.js:16
 msgid "This field allows you to set the maximum number of consecutive leaves an Employee can apply for."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.js:21
+#: hrms/hr/doctype/leave_type/leave_type.js:9
 msgid "This field allows you to set the maximum number of leaves that can be allocated annually for this Leave Type while creating the Leave Policy"
 msgstr ""
 
@@ -13219,7 +13637,7 @@ msgstr ""
 #: hrms/hr/doctype/employee_separation_template/employee_separation_template.json
 #: hrms/hr/doctype/job_offer_term_template/job_offer_term_template.json
 #: hrms/hr/doctype/kra/kra.json hrms/hr/doctype/leave_policy/leave_policy.json
-#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:41
+#: hrms/hr/report/employee_advance_summary/employee_advance_summary.py:40
 msgid "Title"
 msgstr ""
 
@@ -13277,6 +13695,7 @@ msgstr ""
 #: frontend/src/views/attendance/AttendanceRequestForm.vue:93
 #: frontend/src/views/attendance/ShiftRequestForm.vue:90
 #: frontend/src/views/leave/Form.vue:179
+#: hrms/public/frontend/assets/ShiftRequestForm-DRCXAAYr.js:1
 msgid "To Date cannot be before From Date"
 msgstr ""
 
@@ -13356,7 +13775,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:131
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:121
 msgid "Total Absent"
 msgstr ""
 
@@ -13416,7 +13835,6 @@ msgstr ""
 
 #. Label of the total_claimed_amount (Currency) field in DocType 'Expense
 #. Claim'
-#: frontend/src/components/ExpenseClaimSummary.vue:9
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 msgid "Total Claimed Amount"
 msgstr ""
@@ -13441,7 +13859,7 @@ msgstr ""
 msgid "Total Deduction (Company Currency)"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:156
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:146
 msgid "Total Early Exits"
 msgstr ""
 
@@ -13476,6 +13894,11 @@ msgstr ""
 msgid "Total Exemption Amount"
 msgstr ""
 
+#: frontend/src/components/ExpenseClaimSummary.vue:9
+#: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
+msgid "Total Expense Amount"
+msgstr ""
+
 #: hrms/setup.py:292
 msgid "Total Expense Claim (via Expense Claim)"
 msgstr ""
@@ -13494,7 +13917,7 @@ msgstr ""
 msgid "Total Gross Pay"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:133
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:123
 msgid "Total Holidays"
 msgstr ""
 
@@ -13511,7 +13934,7 @@ msgstr ""
 msgid "Total Interest Amount"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:150
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:140
 msgid "Total Late Entries"
 msgstr ""
 
@@ -13520,7 +13943,7 @@ msgstr ""
 msgid "Total Leave Days"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:130
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:120
 msgid "Total Leaves"
 msgstr ""
 
@@ -13552,6 +13975,16 @@ msgstr ""
 msgid "Total Non-Billed Hours"
 msgstr ""
 
+#. Label of the normal_hours (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "Total Normal Hours"
+msgstr ""
+
+#. Label of the total_normal_ot (Int) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "Total Normal OT"
+msgstr ""
+
 #. Label of the total_payable_amount (Currency) field in DocType 'Full and
 #. Final Statement'
 #: hrms/hr/doctype/full_and_final_statement/full_and_final_statement.json
@@ -13563,7 +13996,7 @@ msgstr ""
 msgid "Total Payment"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:125
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:115
 msgid "Total Present"
 msgstr ""
 
@@ -13598,6 +14031,16 @@ msgstr ""
 msgid "Total Self Score"
 msgstr ""
 
+#. Label of the special_hours (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "Total Special Hours"
+msgstr ""
+
+#. Label of the total_special_ot (Int) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "Total Special OT"
+msgstr ""
+
 #. Label of the total_taxes_and_charges (Currency) field in DocType 'Expense
 #. Claim'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
@@ -13610,7 +14053,7 @@ msgstr ""
 msgid "Total Working Hours"
 msgstr ""
 
-#: hrms/hr/doctype/expense_claim/expense_claim.py:390
+#: hrms/hr/doctype/expense_claim/expense_claim.py:371
 msgid "Total advance amount cannot be greater than total sanctioned amount"
 msgstr ""
 
@@ -13668,13 +14111,13 @@ msgstr ""
 msgid "Total weightage for all {0} must add up to 100. Currently, it is {1}%"
 msgstr ""
 
-#. Label of the total_working_days_per_year (Float) field in DocType 'Gratuity
+#. Label of the total_working_days_per_year (Int) field in DocType 'Gratuity
 #. Rule'
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule.json
 msgid "Total working Days Per Year"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:164
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:168
 msgid "Total working hours should not be greater than max working hours {0}"
 msgstr ""
 
@@ -13861,10 +14304,8 @@ msgstr ""
 
 #. Name of a DocType
 #. Label of a Link in the Expense Claims Workspace
-#. Label of a Link in the Overview Workspace
 #: hrms/hr/doctype/travel_request/travel_request.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
-#: hrms/hr/workspace/overview/overview.json
 msgid "Travel Request"
 msgstr ""
 
@@ -13908,6 +14349,7 @@ msgstr ""
 msgid "Unable to find Salary Component {0}"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:353
 #: hrms/public/js/utils/index.js:206
 msgid "Unable to retrieve your location"
 msgstr ""
@@ -13934,11 +14376,11 @@ msgstr ""
 msgid "Unlink Payment"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:231
+#: hrms/hr/doctype/attendance/attendance.py:230
 msgid "Unlinked Attendance record from Employee Checkins: {}"
 msgstr ""
 
-#: hrms/hr/doctype/attendance/attendance.py:234
+#: hrms/hr/doctype/attendance/attendance.py:233
 msgid "Unlinked logs"
 msgstr ""
 
@@ -13950,7 +14392,7 @@ msgstr ""
 msgid "Unmarked Check-in Logs Found"
 msgstr ""
 
-#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:139
+#: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:129
 #: hrms/public/js/templates/employees_with_unmarked_attendance.html:19
 msgid "Unmarked Days"
 msgstr ""
@@ -14032,6 +14474,7 @@ msgid "Upcoming Holidays Reminder"
 msgstr ""
 
 #: frontend/src/views/attendance/Dashboard.vue:23
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "Upcoming Shifts"
 msgstr ""
 
@@ -14070,7 +14513,7 @@ msgstr ""
 msgid "Update Tax"
 msgstr ""
 
-#: hrms/hr/doctype/attendance_request/attendance_request.py:115
+#: hrms/hr/doctype/attendance_request/attendance_request.py:109
 msgid "Updated status from {0} to {1} for date {2} in the attendance record {3}"
 msgstr ""
 
@@ -14099,6 +14542,7 @@ msgid "Upload HTML"
 msgstr ""
 
 #: frontend/src/components/FileUploaderView.vue:11
+#: hrms/public/frontend/assets/FileUploaderView-CbjRJmXe.js:1
 msgid "Upload images or documents"
 msgstr ""
 
@@ -14136,7 +14580,10 @@ msgstr ""
 msgid "User"
 msgstr ""
 
+#. Label of the users_section (Section Break) field in DocType 'Slack for
+#. external users table'
 #. Label of the users (Table) field in DocType 'Daily Work Summary Group'
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "Users"
 msgstr ""
@@ -14248,8 +14695,8 @@ msgstr ""
 #: hrms/hr/doctype/employee_separation/employee_separation.js:19
 #: hrms/hr/doctype/employee_separation/employee_separation.js:28
 #: hrms/hr/doctype/employee_separation/employee_separation.js:35
-#: hrms/hr/doctype/expense_claim/expense_claim.js:134
-#: hrms/hr/doctype/expense_claim/expense_claim.js:165
+#: hrms/hr/doctype/expense_claim/expense_claim.js:133
+#: hrms/hr/doctype/expense_claim/expense_claim.js:164
 #: hrms/hr/doctype/job_applicant/job_applicant.js:42
 msgid "View"
 msgstr ""
@@ -14267,12 +14714,14 @@ msgstr ""
 msgid "View Leave History"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:477
 #: hrms/public/js/utils/leave_utils.js:5
 msgid "View Ledger"
 msgstr ""
 
 #: frontend/src/components/RequestList.vue:27
 #: frontend/src/views/expense_claim/Dashboard.vue:41
+#: hrms/public/frontend/assets/Dashboard-BBVU9f_Y.js:1
 msgid "View List"
 msgstr ""
 
@@ -14362,7 +14811,7 @@ msgstr ""
 msgid "When set to 'Inactive', employees with conflicting active shifts will not be excluded."
 msgstr ""
 
-#: hrms/hr/doctype/leave_type/leave_type.py:36
+#: hrms/hr/doctype/leave_type/leave_type.py:35
 msgid "Whereas allocation for Compensatory Leaves is automatically created or updated on submission of Compensatory Leave Request."
 msgstr ""
 
@@ -14491,6 +14940,7 @@ msgstr ""
 #. Option for the 'Salary Paid Per' (Select) field in DocType 'Job Opening'
 #: hrms/hr/doctype/job_opening/job_opening.json
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:29
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:524
 #: hrms/public/js/salary_slip_deductions_report_filters.js:36
 msgid "Year"
 msgstr ""
@@ -14561,7 +15011,7 @@ msgstr ""
 msgid "You can only submit Leave Encashment for a valid encashment amount"
 msgstr ""
 
-#: hrms/api/__init__.py:726
+#: hrms/api/__init__.py:722
 msgid "You can only upload JPG, PNG, PDF, TXT or Microsoft documents."
 msgstr ""
 
@@ -14590,6 +15040,7 @@ msgid "You have no upcoming holidays"
 msgstr ""
 
 #: frontend/src/views/attendance/Dashboard.vue:29
+#: hrms/public/frontend/assets/Dashboard-mdCNQl4R.js:1
 msgid "You have no upcoming shifts"
 msgstr ""
 
@@ -14613,12 +15064,28 @@ msgstr ""
 msgid "Your password has expired. Please reset your password to continue"
 msgstr ""
 
+#. Name of a Workspace
+#: hrms/hr/workspace/zoho/zoho.json
+msgid "Zoho"
+msgstr ""
+
 #: hrms/hr/doctype/compensatory_leave_request/compensatory_leave_request.py:100
 msgid "active"
 msgstr ""
 
+#. Label of the advance_payment_details_section (Section Break) field in
+#. DocType 'Advance payment table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+msgid "advance payment details"
+msgstr ""
+
 #: hrms/public/js/templates/feedback_summary.html:16
 msgid "based on"
+msgstr ""
+
+#. Name of a report
+#: hrms/ars/report/breakfast/breakfast.json
+msgid "breakfast"
 msgstr ""
 
 #: frontend/src/components/RequestActionSheet.vue:292
@@ -14629,10 +15096,16 @@ msgstr ""
 msgid "cancelled"
 msgstr ""
 
+#: hrms/hr/doctype/attendance_request/attendance_request.py:103
+msgid "changed the status from {0} to {1} via Attendance Request"
+msgstr ""
+
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:288
 #: hrms/public/js/utils/index.js:131
 msgid "create/submit"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:289
 #: hrms/public/js/utils/index.js:132
 msgid "created"
 msgstr ""
@@ -14641,6 +15114,16 @@ msgstr ""
 #. User'
 #: hrms/hr/doctype/daily_work_summary_group_user/daily_work_summary_group_user.json
 msgid "email"
+msgstr ""
+
+#. Label of the flag (Int) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "flag"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "inquiry_details_table"
 msgstr ""
 
 #: frontend/src/views/Login.vue:16
@@ -14652,16 +15135,58 @@ msgstr ""
 msgid "modify_half_day_status"
 msgstr ""
 
+#. Name of a DocType
+#: hrms/zoho/doctype/old_leave/old_leave.json
+msgid "old-leave"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "old_breakTable"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+msgid "old_breakfast"
+msgstr ""
+
 #: hrms/hr/doctype/department_approver/department_approver.py:89
 msgid "or for the Employee's Department: {0}"
 msgstr ""
 
+#. Label of the overtime_leaves (Int) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "overtime_leaves"
+msgstr ""
+
+#. Label of the overtime_mins (Int) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "overtime_mins"
+msgstr ""
+
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:291
 #: hrms/public/js/utils/index.js:134
 msgid "process"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:292
 #: hrms/public/js/utils/index.js:135
 msgid "processed"
+msgstr ""
+
+#. Name of a report
+#: hrms/ars/report/r6/r6.json
+msgid "r6"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/zoho/doctype/repayment/repayment.json
+msgid "repayment"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "repayment_table"
 msgstr ""
 
 #: hrms/www/jobs/index.html:122
@@ -14680,8 +15205,38 @@ msgstr ""
 msgid "reviews"
 msgstr ""
 
+#. Name of a DocType
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "ringi"
+msgstr ""
+
 #: frontend/src/components/RequestActionSheet.vue:283
 msgid "submitted"
+msgstr ""
+
+#. Name of a report
+#: hrms/ars/report/test_overtime/test_overtime.json
+msgid "test-overtime"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+msgid "user Advance Payment report"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
+msgid "user breakfast report"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "user overtime report"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "user report Leave"
 msgstr ""
 
 #: hrms/payroll/doctype/salary_component/salary_component.py:101
@@ -14698,7 +15253,7 @@ msgstr ""
 msgid "{0} & {1} more"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:2236
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:2244
 msgid "{0} <br> This error can be due to missing or deleted field."
 msgstr ""
 
@@ -14706,6 +15261,7 @@ msgstr ""
 msgid "{0} Appraisal(s) are not submitted yet"
 msgstr ""
 
+#: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:372
 #: hrms/public/js/utils/index.js:229
 msgid "{0} Field"
 msgstr ""
@@ -14841,7 +15397,7 @@ msgstr ""
 msgid "{0} {1} {2}?"
 msgstr ""
 
-#: hrms/payroll/doctype/salary_slip/salary_slip.py:1936
+#: hrms/payroll/doctype/salary_slip/salary_slip.py:1944
 msgid "{0}: Employee email not found, hence email not sent"
 msgstr ""
 
@@ -14850,6 +15406,8 @@ msgid "{0}: From {0} of type {1}"
 msgstr ""
 
 #: hrms/overrides/company.py:37 hrms/overrides/company.py:50
+#: hrms/public/frontend/assets/ExpenseItems-Cxeon9Aa.js:1
+#: hrms/public/frontend/assets/SalarySlipItem-RorGaxbE.js:1
 msgid "{0}: {1}"
 msgstr ""
 
@@ -14857,6 +15415,10 @@ msgstr ""
 #: frontend/src/components/LeaveRequestItem.vue:16
 #: frontend/src/components/ShiftAssignmentItem.vue:12
 #: frontend/src/components/ShiftRequestItem.vue:17
+#: hrms/public/frontend/assets/AttendanceRequestItem-C_0ngWYf.js:1
+#: hrms/public/frontend/assets/LeaveRequestItem-osNpF9Kd.js:1
+#: hrms/public/frontend/assets/ShiftAssignmentItem-DxW3ptgp.js:1
+#: hrms/public/frontend/assets/ShiftRequestItem-tzHpY6Mj.js:1
 msgid "{0}d"
 msgstr ""
 
@@ -14870,11 +15432,6 @@ msgstr ""
 msgid "{} Accepted"
 msgstr ""
 
-#. Count format of shortcut in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "{} Active"
-msgstr ""
-
 #. Count format of shortcut in the Salary Payout Workspace
 #. Count format of shortcut in the Tax & Benefits Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
@@ -14884,11 +15441,9 @@ msgstr ""
 
 #. Count format of shortcut in the Employee Lifecycle Workspace
 #. Count format of shortcut in the Leaves Workspace
-#. Count format of shortcut in the Overview Workspace
 #. Count format of shortcut in the Recruitment Workspace
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
 #: hrms/hr/workspace/leaves/leaves.json
-#: hrms/hr/workspace/overview/overview.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 msgid "{} Open"
 msgstr ""
@@ -14915,5 +15470,1649 @@ msgstr ""
 
 #: hrms/hr/doctype/job_requisition/job_requisition.js:22
 msgid "{} {} open for this position."
+msgstr ""
+
+#: hrms/ars/dummy_trans.py:8
+msgid "~Pending Manager"
+msgstr ""
+
+#. Label of the purpose (Data) field in DocType 'user Advance Payment report'
+#. Label of the select_month (Data) field in DocType 'user breakfast report'
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+#: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
+msgid "⽉"
+msgstr ""
+
+#. Label of the select_from (Datetime) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "から"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "さいき"
+msgstr ""
+
+#. Option for the '目的' (Select) field in DocType 'Add slack for external users'
+#. Option for the '立替区分' (Select) field in DocType 'Advance payment table'
+#. Label of the total_leave_c17 (Data) field in DocType 'Employee User Report'
+#. Label of the cat4 (Data) field in DocType 'Employee User Report'
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '支払方法' (Select) field in DocType 'Internal approval'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#. Option for the '目的' (Select) field in DocType 'Slack channel opening
+#. application'
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/leave/leave.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "その他"
+msgstr ""
+
+#. Label of the report_to (Data) field in DocType 'Add Business trip request'
+#. Label of the reporting_to (Data) field in DocType 'Add slack for external
+#. users'
+#. Label of the department (Data) field in DocType 'Advance Payment'
+#. Label of the report_to (Data) field in DocType 'Breakfast'
+#. Label of the report_to (Data) field in DocType 'Business trip report'
+#. Label of the report__to (Data) field in DocType 'Leave'
+#. Label of the report_to (Data) field in DocType 'Overtime'
+#. Label of the reporting_to (Data) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "に報告する"
+msgstr ""
+
+#. Label of the select_to (Datetime) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "まで"
+msgstr ""
+
+#. Label of the no_interactions (Int) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "やり取り 回数"
+msgstr ""
+
+#. Label of the attachment (Attach) field in DocType 'Breakfast table'
+#. Label of the attachment1 (Attach) field in DocType 'Breakfast table'
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+msgid "アタッチメント"
+msgstr ""
+
+#. Option for the 'ﾁｬﾝﾈﾙﾀｲﾌﾟ' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "オーペン"
+msgstr ""
+
+#. Option for the '支払方法' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "クレジットカード"
+msgstr ""
+
+#. Label of the status (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ステータス"
+msgstr ""
+
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "スプレッドシート"
+msgstr ""
+
+#. Label of the section_break_cyoh (Section Break) field in DocType 'Slack
+#. channel opening application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "チャンネルの詳細"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ニッピコラーゲン化粧品"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ビックウェスト社"
+msgstr ""
+
+#. Label of the file_upload_1 (Attach) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ファイルのアップロード1"
+msgstr ""
+
+#. Label of the file_upload_2 (Attach) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ファイルのアップロード2"
+msgstr ""
+
+#. Label of the file_upload_3 (Attach) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "ファイルのアップロード3"
+msgstr ""
+
+#. Label of the furigana (Data) field in DocType 'Slack for external users
+#. table'
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+msgid "フリガナ"
+msgstr ""
+
+#. Option for the 'ﾁｬﾝﾈﾙﾀｲﾌﾟ' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "プライベート"
+msgstr ""
+
+#. Option for the '目的' (Select) field in DocType 'Add slack for external users'
+#. Option for the '目的' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "プロジェクトにおける連絡・意見交換 等"
+msgstr ""
+
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "メール"
+msgstr ""
+
+#. Label of the email (Data) field in DocType 'Slack channel opening
+#. application participant list table'
+#. Label of the email (Data) field in DocType 'Slack for external users table'
+#: hrms/ars/doctype/slack_channel_opening_application_participant_list_table/slack_channel_opening_application_participant_list_table.json
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+msgid "メールアドレス"
+msgstr ""
+
+#. Label of the email_address_1 (Data) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "メールアドレス1"
+msgstr ""
+
+#. Label of the participant_details_section (Section Break) field in DocType
+#. 'Add slack for external users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "ユーザー"
+msgstr ""
+
+#. Label of the total_leave_c15 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "リフレッシュ休暇"
+msgstr ""
+
+#. Label of the supervisor_approval (Data) field in DocType 'Internal approval'
+#. Label of the manager_approval (Data) field in DocType 'Old_overtime'
+#. Label of the var_joushi_shounin (Data) field in DocType 'ringi'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "上司の承認"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "不具合"
+msgstr ""
+
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "中"
+msgstr ""
+
+#. Label of the remark (Small Text) field in DocType 'Leave'
+#. Label of the var_jiyuu (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/leave/leave.json hrms/zoho/doctype/old_leave/old_leave.json
+msgid "事由"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "井上"
+msgstr ""
+
+#. Option for the '立替区分' (Select) field in DocType 'Advance payment table'
+#. Label of the cat1 (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "交通費"
+msgstr ""
+
+#. Option for the '立替区分' (Select) field in DocType 'Advance payment table'
+#. Label of the cat5 (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "交際費"
+msgstr ""
+
+#. Label of the today_total_working_hour (Float) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "今日 残業時間 (分)"
+msgstr ""
+
+#. Label of the total_leave_c4 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "代休（無給）"
+msgstr ""
+
+#. Label of the subject (Small Text) field in DocType 'Add Business trip
+#. request'
+#. Label of the subject (Small Text) field in DocType 'Business trip report'
+#. Label of the subject (Data) field in DocType 'Internal approval'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "件名"
+msgstr ""
+
+#. Option for the '残業調整' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "休暇"
+msgstr ""
+
+#. Label of the start_date (Datetime) field in DocType 'Leave'
+#. Label of the var_kyuuka_from (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/leave/leave.json hrms/zoho/doctype/old_leave/old_leave.json
+msgid "休暇日（から）"
+msgstr ""
+
+#. Label of the end_date (Datetime) field in DocType 'Leave'
+#. Label of the var_kyuuka_to (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/leave/leave.json hrms/zoho/doctype/old_leave/old_leave.json
+msgid "休暇日（まで）"
+msgstr ""
+
+#. Label of the days_difference (Int) field in DocType 'Leave'
+#. Label of the var_kyuuka_kikan (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/leave/leave.json hrms/zoho/doctype/old_leave/old_leave.json
+msgid "休暇期間"
+msgstr ""
+
+#. Label of the leave_summary_section (Section Break) field in DocType
+#. 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "休暇概要"
+msgstr ""
+
+#. Label of the leave_type (Data) field in DocType 'user report Leave'
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "休暇種類"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#. Label of a shortcut in the Zoho Workspace
+#: hrms/hr/workspace/overview/overview.json hrms/hr/workspace/zoho/zoho.json
+msgid "休暇等申請書"
+msgstr ""
+
+#. Label of the company_name (Data) field in DocType 'Slack for external users
+#. table'
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+msgid "会社_氏名"
+msgstr ""
+
+#. Option for the '立替区分' (Select) field in DocType 'Advance payment table'
+#. Label of the cat2 (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "会議費"
+msgstr ""
+
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "低"
+msgstr ""
+
+#. Label of the subject (Data) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "作名"
+msgstr ""
+
+#. Label of the name1 (Data) field in DocType 'Internal approval'
+#. Label of the name1 (Data) field in DocType 'Leave'
+#. Label of the name1 (Data) field in DocType 'Overtime'
+#. Label of the var_sakuseisha (Data) field in DocType 'old-leave'
+#. Label of the applicant (Data) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "作成者"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "作業依頼"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "保留"
+msgstr ""
+
+#. Label of the remark (Small Text) field in DocType 'Add Business trip
+#. request'
+#. Label of the remark (Small Text) field in DocType 'Internal approval'
+#. Label of the remark (Data) field in DocType 'Overtime work details table'
+#. Label of the var_備考 (Data) field in DocType 'old_breakTable'
+#. Label of the var_bikou (Data) field in DocType 'old-leave'
+#. Label of the var_bikou (Text) field in DocType 'ringi'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "備考"
+msgstr ""
+
+#. Label of the priority (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "優先度"
+msgstr ""
+
+#. Label of the breakdown (Small Text) field in DocType 'Advance payment table'
+#. Label of the var_uchiwake (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "内訳"
+msgstr ""
+
+#. Label of the 内部コメント (Long Text) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "内部コメント"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#: hrms/hr/workspace/overview/overview.json
+msgid "出張報告書"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#: hrms/hr/workspace/overview/overview.json
+msgid "出張申請"
+msgstr ""
+
+#. Label of the business_trip_details (Table) field in DocType 'Add Business
+#. trip request'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+msgid "出張詳細"
+msgstr ""
+
+#. Label of the business_trip_details_section (Section Break) field in DocType
+#. 'Business trip report'
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "出張詳細①"
+msgstr ""
+
+#. Label of the scheduled_departure_date_and_time (Datetime) field in DocType
+#. 'Add Business trip request'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+msgid "出発予定日時"
+msgstr ""
+
+#. Label of the var_出社日時 (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "出社日時"
+msgstr ""
+
+#. Label of the var_出社月度 (Data) field in DocType 'old_breakfast'
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+msgid "出社月度"
+msgstr ""
+
+#. Label of the usage_form (Select) field in DocType 'Add slack for external
+#. users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "利用形態"
+msgstr ""
+
+#. Label of the channel_used (Data) field in DocType 'Add slack for external
+#. users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "利用ﾁｬﾝﾈﾙ"
+msgstr ""
+
+#. Option for the '申請区分' (Select) field in DocType 'Add slack for external
+#. users'
+#. Option for the '申請区分' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "削除"
+msgstr ""
+
+#. Label of the advance_payment_count (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "前払い回数"
+msgstr ""
+
+#. Label of the section_break_dmiw (Section Break) field in DocType 'Employee
+#. User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "前払い概要"
+msgstr ""
+
+#. Label of the total_advance_payment (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "前払い総額"
+msgstr ""
+
+#. Label of the developer (Link) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "前発担当者"
+msgstr ""
+
+#. Label of the today_total_working_hour (Data) field in DocType 'user overtime
+#. report'
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "勤務時間（分）"
+msgstr ""
+
+#. Label of the leave_type (Select) field in DocType 'Leave'
+#. Label of the var_kubun (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/leave/leave.json hrms/zoho/doctype/old_leave/old_leave.json
+msgid "区分"
+msgstr ""
+
+#. Label of the var_kubun_shousai (Data) field in DocType 'old-leave'
+#: hrms/zoho/doctype/old_leave/old_leave.json
+msgid "区分詳細"
+msgstr ""
+
+#. Label of the total_leave_c2 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "午前有給休暇"
+msgstr ""
+
+#. Label of the total_leave_c3 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "午後有給休暇"
+msgstr ""
+
+#. Option for the '支払区分' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "単発"
+msgstr ""
+
+#. Label of the participants_details_section (Section Break) field in DocType
+#. 'Slack channel opening application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "参加者リスト"
+msgstr ""
+
+#. Label of the attachment_1 (Attach) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "参考資料 1"
+msgstr ""
+
+#. Label of the attachment_2 (Attach) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "参考資料 2"
+msgstr ""
+
+#. Label of the attachment_3 (Attach) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "参考資料 3"
+msgstr ""
+
+#. Label of the var_sankou_shiryou_1 (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "参考資料①"
+msgstr ""
+
+#. Label of the var_sankou_shiryou_2 (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "参考資料②"
+msgstr ""
+
+#. Label of the var_sankou_shiryou_3 (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "参考資料③"
+msgstr ""
+
+#. Label of the account_name (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "取引先名"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "合同会社ローレルプランニング"
+msgstr ""
+
+#. Label of the total_days (Data) field in DocType 'Breakfast'
+#. Label of the days_difference (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "合計日数"
+msgstr ""
+
+#. Label of the multiple_data_sources (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "問い合わせのデータ元"
+msgstr ""
+
+#. Label of the inquiry_handler (Link) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "問い合わせの担当者"
+msgstr ""
+
+#. Label of the inquiry_details (Long Text) field in DocType
+#. 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "問合せ内容"
+msgstr ""
+
+#. Label of the inquiry_date (Date) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "問合せ日付"
+msgstr ""
+
+#. Label of the 問合内容_column (Column Break) field in DocType 'Support Case'
+#. Label of the inquiry_table (Table) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "問合内容"
+msgstr ""
+
+#. Label of the answer (Long Text) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "回答"
+msgstr ""
+
+#. Label of the answer_date (Date) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "回答 日付"
+msgstr ""
+
+#. Label of the report (Small Text) field in DocType 'Business trip report'
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "報告"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "完了"
+msgstr ""
+
+#. Label of the completion_date (Date) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "完了日"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "宮本"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "対応中 - CS対応中"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "対応中 - PG対応中"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "対応中 - お客様確認待ち"
+msgstr ""
+
+#. Option for the '本案件はカスタマイズ対応' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "対象"
+msgstr ""
+
+#. Option for the '本案件はカスタマイズ対応' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "対象外"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "小櫻"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "山下"
+msgstr ""
+
+#. Label of the man_hours (Int) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "工数(H)"
+msgstr ""
+
+#. Label of the reason_for_return (Small Text) field in DocType 'Slack channel
+#. opening application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "差し戻す理由（承認者記入）"
+msgstr ""
+
+#. Label of the scheduled_return_date_and_time (Datetime) field in DocType 'Add
+#. Business trip request'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+msgid "帰着予定日時"
+msgstr ""
+
+#. Label of the total_overtime_c1_sp (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "平日 (早朝･深夜)"
+msgstr ""
+
+#. Option for the '支払方法' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "引落"
+msgstr ""
+
+#. Label of the employee (Link) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "従業員"
+msgstr ""
+
+#. Label of the total_overtime_c3 (Data) field in DocType 'Employee User
+#. Report'
+#. Option for the '残業時間帯' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "所定休日"
+msgstr ""
+
+#. Label of the total_overtime_c3_sp (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "所定休日(早朝･深夜)"
+msgstr ""
+
+#. Label of the duration (Data) field in DocType 'Overtime work details table'
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+msgid "所要時間"
+msgstr ""
+
+#. Label of the manager (Link) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "担当者"
+msgstr ""
+
+#. Option for the '支払方法' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "振込"
+msgstr ""
+
+#. Label of the name1 (Data) field in DocType 'Add Business trip request'
+#. Label of the name1 (Data) field in DocType 'Add slack for external users'
+#. Label of the name1 (Data) field in DocType 'Advance Payment'
+#. Label of the username (Data) field in DocType 'Breakfast'
+#. Label of the name1 (Data) field in DocType 'Business trip report'
+#. Label of the name1 (Data) field in DocType 'Slack channel opening
+#. application'
+#. Label of the name1 (Data) field in DocType 'Slack for external users table'
+#. Label of the var_提出者 (Data) field in DocType 'old_breakfast'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+msgid "提出者"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "操作説明"
+msgstr ""
+
+#. Label of the payment_catogrey (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "支払区分"
+msgstr ""
+
+#. Label of the total_overtime_min (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "支払対象残業合計"
+msgstr ""
+
+#. Label of the payment_method (Select) field in DocType 'Internal approval'
+#. Label of the var_shiharai_houhou (Data) field in DocType 'ringi'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "支払方法"
+msgstr ""
+
+#. Label of the var_shiharai_bi2 (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "支払日2（日付が不確定な場合）"
+msgstr ""
+
+#. Label of the var_shiharai_kingaku (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "支払金額（円）"
+msgstr ""
+
+#. Label of the subsidy_given (Float) field in DocType 'Breakfast table'
+#. Label of the subsidy_given (Float) field in DocType 'user breakfast report'
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+#: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
+msgid "支給された補助金"
+msgstr ""
+
+#. Label of the total_subsidy_given (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "支給された補助金の合計"
+msgstr ""
+
+#. Option for the '申請区分' (Select) field in DocType 'Add slack for external
+#. users'
+#. Option for the '申請区分' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "新規"
+msgstr ""
+
+#. Label of the date (Date) field in DocType 'Advance Payment'
+#. Label of the date (Date) field in DocType 'Advance payment table'
+#. Label of the date (Datetime) field in DocType 'Breakfast table'
+#. Label of the date (Date) field in DocType 'user overtime report'
+#. Label of the var_hizuke (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "日付"
+msgstr ""
+
+#. Label of the days (Data) field in DocType 'user report Leave'
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "日数"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "日本トータルテレマーケティング株式会社"
+msgstr ""
+
+#. Label of the total_leave_c7 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "早退"
+msgstr ""
+
+#. Label of the details_section (Section Break) field in DocType 'Advance
+#. Payment'
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+msgid "明細"
+msgstr ""
+
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "易 - 営業あて 導入前などの質問"
+msgstr ""
+
+#. Label of the overtime_work_details_section (Section Break) field in DocType
+#. 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "時間外労働 詳細"
+msgstr ""
+
+#. Label of the apply_for_overtime_section (Section Break) field in DocType
+#. 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "時間外勤務の申請"
+msgstr ""
+
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "普 - CSあて AI学習させる質問"
+msgstr ""
+
+#. Option for the '申請区分' (Select) field in DocType 'Add slack for external
+#. users'
+#. Option for the '申請区分' (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "更新"
+msgstr ""
+
+#. Label of the max_allowance_range (Int) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "最大手当"
+msgstr ""
+
+#. Label of the latest_contact (Date) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "最新コンタクト"
+msgstr ""
+
+#. Label of the select_month (Select) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "月を選択"
+msgstr ""
+
+#. Label of the total_leave_c1 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "有給休暇"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "有限会社ユニゲ"
+msgstr ""
+
+#. Label of the morning_overtime_breakfast (Data) field in DocType 'Employee
+#. User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "朝の残業（朝食手当）"
+msgstr ""
+
+#. Label of the apply_for_breakfast_allowance_section (Section Break) field in
+#. DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "朝食手当を申請する"
+msgstr ""
+
+#. Label of the breakfast_table (Table) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "朝食補助明細"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#. Label of a shortcut in the Zoho Workspace
+#: hrms/hr/workspace/overview/overview.json hrms/hr/workspace/zoho/zoho.json
+msgid "朝食補助申請"
+msgstr ""
+
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "未分類"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "未対応"
+msgstr ""
+
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "未確定"
+msgstr ""
+
+#. Label of the is_customization (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "本案件はカスタマイズ対応"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "松崎"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社TLC"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社サブスクリプション"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社ジェイシークリエイティヴ"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社マッシュビューティーラボ"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社山田養蜂場"
+msgstr ""
+
+#. Option for the '取引先名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "株式会社ＧＳＴＶ"
+msgstr ""
+
+#. Label of the summary_section (Section Break) field in DocType 'Breakfast'
+#. Label of the summary_section (Section Break) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "概要"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "機能要望"
+msgstr ""
+
+#. Label of the total_leave_c5 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "欠勤"
+msgstr ""
+
+#. Label of the section_break_bvqf (Section Break) field in DocType 'Overtime'
+#. Label of a shortcut in the Overview Workspace
+#. Label of a shortcut in the Zoho Workspace
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/hr/workspace/overview/overview.json hrms/hr/workspace/zoho/zoho.json
+msgid "残業の事前申請"
+msgstr ""
+
+#. Label of the overtime_summary_section (Section Break) field in DocType
+#. 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "残業の概要"
+msgstr ""
+
+#. Label of the shift (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "残業シフト"
+msgstr ""
+
+#. Label of the total_overtime (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "残業合計"
+msgstr ""
+
+#. Label of the date (Date) field in DocType 'Internal approval'
+#. Label of the date (Date) field in DocType 'Overtime'
+#. Label of the overtime_date (Data) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業日"
+msgstr ""
+
+#. Label of the days_difference (Data) field in DocType 'Overtime'
+#. Label of the total_minutes (Float) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業時間 (分)"
+msgstr ""
+
+#. Label of the shift (Select) field in DocType 'Overtime'
+#. Label of the overtime_band (Data) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業時間帯"
+msgstr ""
+
+#. Label of the remark (Small Text) field in DocType 'Overtime'
+#. Label of the overtime_reason (Small Text) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業理由"
+msgstr ""
+
+#. Label of the end_date (Datetime) field in DocType 'Overtime'
+#. Label of the overtime_end (Date) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業終了"
+msgstr ""
+
+#. Label of the overtime_adjustment (Select) field in DocType 'Overtime'
+#. Label of the overtime_adjustment (Data) field in DocType 'user overtime
+#. report'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "残業調整"
+msgstr ""
+
+#. Label of the start_date (Datetime) field in DocType 'Overtime'
+#. Label of the overtime_start (Date) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "残業開始"
+msgstr ""
+
+#. Label of the total_leave_c10 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "母性健康管理のための休暇"
+msgstr ""
+
+#. Label of the full_name (Data) field in DocType 'Slack channel opening
+#. application participant list table'
+#: hrms/ars/doctype/slack_channel_opening_application_participant_list_table/slack_channel_opening_application_participant_list_table.json
+msgid "氏名"
+msgstr ""
+
+#. Label of the total_overtime_c4 (Data) field in DocType 'Employee User
+#. Report'
+#. Option for the '残業時間帯' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "法定休日"
+msgstr ""
+
+#. Label of the total_overtime_c4_sp (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "法定休日(早朝･深夜)"
+msgstr ""
+
+#. Option for the '立替区分' (Select) field in DocType 'Advance payment table'
+#. Label of the cat3 (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "消耗品費"
+msgstr ""
+
+#. Label of the attachment (Attach) field in DocType 'Leave'
+#. Label of the attachment (Attach) field in DocType 'Overtime'
+#. Label of the attachment (Attach) field in DocType 'Overtime work details
+#. table'
+#. Label of the var_tenpu_file (Data) field in DocType 'old-leave'
+#. Label of the attachment (Attach) field in DocType 'Old_overtime'
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "添付ファイル"
+msgstr ""
+
+#. Label of the attachment (Attach) field in DocType 'Add Business trip
+#. request'
+#. Label of the attachment (Attach) field in DocType 'Business trip report'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "添付ファイル①"
+msgstr ""
+
+#. Label of the attachment1 (Attach) field in DocType 'Add Business trip
+#. request'
+#. Label of the attachment_1 (Attach) field in DocType 'Business trip report'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "添付ファイル②"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "渡辺"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "渡邊"
+msgstr ""
+
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "特 - カスタマイズ"
+msgstr ""
+
+#. Label of the total_leave_c16 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "特別休暇"
+msgstr ""
+
+#. Label of the status (Data) field in DocType 'user report Leave'
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "状態"
+msgstr ""
+
+#. Label of the current_table_total_days (Int) field in DocType 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "現在の合計日数"
+msgstr ""
+
+#. Label of the current_table_total_subsidy_amount (Float) field in DocType
+#. 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "現在の合計補助金額"
+msgstr ""
+
+#. Option for the '支払方法' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "現金"
+msgstr ""
+
+#. Label of the total_leave_c13 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "生理休暇"
+msgstr ""
+
+#. Label of the total_leave_c9 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "産前産後休暇"
+msgstr ""
+
+#. Label of the var_shinsei_no (Data) field in DocType 'ringi'
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "申請No."
+msgstr ""
+
+#. Label of the application_title (Data) field in DocType 'Add slack for
+#. external users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "申請タイトル\t"
+msgstr ""
+
+#. Label of the application_category (Select) field in DocType 'Add slack for
+#. external users'
+#. Label of the application_category (Select) field in DocType 'Slack channel
+#. opening application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "申請区分"
+msgstr ""
+
+#. Label of the date (Date) field in DocType 'Add Business trip request'
+#. Label of the date (Date) field in DocType 'Add slack for external users'
+#. Label of the date (Date) field in DocType 'Business trip report'
+#. Label of the date (Date) field in DocType 'Leave'
+#. Label of the date (Date) field in DocType 'Slack channel opening
+#. application'
+#. Label of the date (Data) field in DocType 'user Advance Payment report'
+#. Label of the var_shinseibi (Data) field in DocType 'old-leave'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/leave/leave.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+#: hrms/zoho/doctype/old_leave/old_leave.json
+msgid "申請日"
+msgstr ""
+
+#. Label of the creation_tijme (Data) field in DocType 'Old_overtime'
+#: hrms/zoho/doctype/old_overtime/old_overtime.json
+msgid "申請日時"
+msgstr ""
+
+#. Label of the applied_total_subsidy_amount (Float) field in DocType
+#. 'Breakfast'
+#: hrms/ars/doctype/breakfast/breakfast.json
+msgid "申請済み補助金額"
+msgstr ""
+
+#. Label of the image_upload_1 (Attach Image) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "画像のアップロード1"
+msgstr ""
+
+#. Label of the supplier (Data) field in DocType 'Internal approval'
+#. Label of the var_hacchusaki (Data) field in DocType 'ringi'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/zoho/doctype/ringi/ringi.json
+msgid "発注先"
+msgstr ""
+
+#. Label of the purpose (Select) field in DocType 'Add slack for external
+#. users'
+#. Label of the purpose (Data) field in DocType 'Advance payment table'
+#. Label of the purpose (Data) field in DocType 'Business trip request table'
+#. Label of the purpose (Select) field in DocType 'Slack channel opening
+#. application'
+#. Label of the var_mokuteki (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "目的"
+msgstr ""
+
+#. Label of the objective_memo (Small Text) field in DocType 'Add slack for
+#. external users'
+#. Label of the objective_memo (Data) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "目的のメモ"
+msgstr ""
+
+#. Label of the total_leave_c12 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "看護休暇"
+msgstr ""
+
+#. Label of a shortcut in the Overview Workspace
+#. Label of a shortcut in the Zoho Workspace
+#: hrms/hr/workspace/overview/overview.json hrms/hr/workspace/zoho/zoho.json
+msgid "社内稟議申請"
+msgstr ""
+
+#. Label of the employee_id (Link) field in DocType 'Add Business trip request'
+#. Label of the employee_id (Link) field in DocType 'Add slack for external
+#. users'
+#. Label of the employee_id (Link) field in DocType 'Advance Payment'
+#. Label of the employee_id (Link) field in DocType 'Breakfast'
+#. Label of the employee_id (Link) field in DocType 'Business trip report'
+#. Label of the employee_id (Link) field in DocType 'Internal approval'
+#. Label of the employee_id (Link) field in DocType 'Leave'
+#. Label of the employee_id (Link) field in DocType 'Overtime'
+#. Label of the employee_id (Link) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/ars/doctype/breakfast/breakfast.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "社員ID"
+msgstr ""
+
+#. Label of the total_leave_c8 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "私用外出"
+msgstr ""
+
+#. Label of the type (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "種類"
+msgstr ""
+
+#. Label of the advance_classification (Select) field in DocType 'Advance
+#. payment table'
+#. Label of the category (Data) field in DocType 'user Advance Payment report'
+#. Label of the var_tatekae_kubun (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "立替区分"
+msgstr ""
+
+#. Label of the section_break_kzfd (Section Break) field in DocType 'Advance
+#. Payment'
+#. Label of a shortcut in the Overview Workspace
+#: hrms/ars/doctype/advance_payment/advance_payment.json
+#: hrms/hr/workspace/overview/overview.json
+msgid "立替金精算"
+msgstr ""
+
+#. Label of the to (Datetime) field in DocType 'Business trip request table'
+#. Label of the to_date (Data) field in DocType 'user report Leave'
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "終了"
+msgstr ""
+
+#. Label of the end_date (Date) field in DocType 'Slack channel opening
+#. application'
+#. Label of the end_date (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "終了日"
+msgstr ""
+
+#. Label of the end_time (Datetime) field in DocType 'Overtime work details
+#. table'
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+msgid "終了時刻"
+msgstr ""
+
+#. Option for the '残業調整' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "給与"
+msgstr ""
+
+#. Option for the '支払区分' (Select) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "継続"
+msgstr ""
+
+#. Label of the total_leave (Int) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "総休暇"
+msgstr ""
+
+#. Label of the total_leave_c11 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "育児・介護休暇"
+msgstr ""
+
+#. Label of the destination (Data) field in DocType 'Advance payment table'
+#. Label of the var_ikisaki (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "行先"
+msgstr ""
+
+#. Label of the total_leave_c14 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "裁判員休暇"
+msgstr ""
+
+#. Label of the subsidy (Int) field in DocType 'Breakfast table'
+#. Label of the subsidy (Int) field in DocType 'user breakfast report'
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+#: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
+msgid "補助金"
+msgstr ""
+
+#. Label of the all_time_subsidy_days (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "補助金の合計日数"
+msgstr ""
+
+#. Label of the total_subsidy_days (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "補助金日"
+msgstr ""
+
+#. Label of the total_subsidy_amount (Data) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "補助金総額"
+msgstr ""
+
+#. Label of the var_補助金額 (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "補助金額"
+msgstr ""
+
+#. Label of the product_name (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "製品名"
+msgstr ""
+
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "複数の手段"
+msgstr ""
+
+#. Label of the destination_visited (Data) field in DocType 'Business trip
+#. report'
+#. Label of the visit_destination (Data) field in DocType 'Business trip
+#. request table'
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+msgid "訪問先"
+msgstr ""
+
+#. Label of the place_to_visit (Data) field in DocType 'Business trip request
+#. table'
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+msgid "訪問地"
+msgstr ""
+
+#. Label of the visit_period_from (Date) field in DocType 'Business trip
+#. report'
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "訪問期間(From)"
+msgstr ""
+
+#. Label of the visit_period_to (Date) field in DocType 'Business trip report'
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+msgid "訪問期間(To)"
+msgstr ""
+
+#. Label of the section_break_aosj (Section Break) field in DocType 'Add slack
+#. for external users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "詳細"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "請求書、合意書"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "谷口"
+msgstr ""
+
+#. Label of the question_level (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "質問レベル"
+msgstr ""
+
+#. Label of the var_起案日 (Data) field in DocType 'old_breakfast'
+#: hrms/zoho/doctype/old_breakfast/old_breakfast.json
+msgid "起案日"
+msgstr ""
+
+#. Label of the reason_for_proposal_effect_of_investment (Small Text) field in
+#. DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "起案理由 （投資効果）"
+msgstr ""
+
+#. Label of the remark (Data) field in DocType 'Breakfast table'
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+msgid "述べる"
+msgstr ""
+
+#. Option for the '利用形態' (Select) field in DocType 'Add slack for external
+#. users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "通常メンバー（ARS社員）"
+msgstr ""
+
+#. Option for the '製品名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "通販Ace"
+msgstr ""
+
+#. Option for the '製品名' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "通販プロ"
+msgstr ""
+
+#. Label of the medium (Select) field in DocType 'inquiry_details_table'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+msgid "連絡手段"
+msgstr ""
+
+#. Label of the total_leave_c6 (Data) field in DocType 'Employee User Report'
+#. Option for the '区分' (Select) field in DocType 'Leave'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+#: hrms/ars/doctype/leave/leave.json
+msgid "遅刻"
+msgstr ""
+
+#. Label of the department (Data) field in DocType 'Add Business trip request'
+#. Label of the department (Data) field in DocType 'Add slack for external
+#. users'
+#. Label of the department (Data) field in DocType 'Business trip report'
+#. Label of the department (Data) field in DocType 'Internal approval'
+#. Label of the department (Data) field in DocType 'Slack channel opening
+#. application'
+#. Label of the department (Data) field in DocType 'user Advance Payment
+#. report'
+#: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/business_trip_report/business_trip_report.json
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+msgid "部署"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "金澤"
+msgstr ""
+
+#. Label of the amount (Currency) field in DocType 'Advance payment table'
+#. Label of the amount (Float) field in DocType 'user Advance Payment report'
+#. Label of the current_table_total_subsidy_amount (Data) field in DocType
+#. 'user breakfast report'
+#. Label of the var_kingaku (Data) field in DocType 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
+#: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "金額"
+msgstr ""
+
+#. Label of the from (Datetime) field in DocType 'Business trip request table'
+#. Label of the from_date (Data) field in DocType 'user report Leave'
+#: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
+#: hrms/ars/doctype/user_report_leave/user_report_leave.json
+msgid "開始"
+msgstr ""
+
+#. Label of the start_date (Date) field in DocType 'Add slack for external
+#. users'
+#. Label of the start_date (Date) field in DocType 'Slack channel opening
+#. application'
+#. Label of the start_date (Date) field in DocType 'Support Case'
+#. Label of the start_date (Data) field in DocType 'user overtime report'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+msgid "開始日"
+msgstr ""
+
+#. Label of the start_time (Datetime) field in DocType 'Overtime work details
+#. table'
+#: hrms/ars/doctype/overtime_work_details_table/overtime_work_details_table.json
+msgid "開始時刻"
+msgstr ""
+
+#. Label of the related_to (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "関係者"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "障害"
+msgstr ""
+
+#. Label of the hours (Int) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "集計工数（H)"
+msgstr ""
+
+#. Option for the '質問レベル' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "難 - CSあて AI学習させない質問"
+msgstr ""
+
+#. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "電話"
+msgstr ""
+
+#. Label of the phone (Phone) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "電話番号"
+msgstr ""
+
+#. Label of the receipt_upload (Attach) field in DocType 'Advance payment
+#. table'
+#. Label of the var_ryoushuusho_upload_1 (Data) field in DocType
+#. 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "領収書アップロード①"
+msgstr ""
+
+#. Label of the receipt_upload_1 (Attach) field in DocType 'Advance payment
+#. table'
+#. Label of the var_ryoushuusho_upload_2 (Data) field in DocType
+#. 'repayment_table'
+#: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/zoho/doctype/repayment_table/repayment_table.json
+msgid "領収書アップロード②"
+msgstr ""
+
+#. Label of the var_領収書金額 (Data) field in DocType 'old_breakTable'
+#: hrms/zoho/doctype/old_breaktable/old_breaktable.json
+msgid "領収書金額（円）"
+msgstr ""
+
+#. Label of the amount (Float) field in DocType 'Breakfast table'
+#: hrms/ars/doctype/breakfast_table/breakfast_table.json
+msgid "額"
+msgstr ""
+
+#. Option for the '関係者' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "駄道"
+msgstr ""
+
+#. Option for the '優先度' (Select) field in DocType 'Support Case'
+#: hrms/ars/doctype/support_case/support_case.json
+msgid "高"
+msgstr ""
+
+#. Label of the channels_section (Section Break) field in DocType 'Add slack
+#. for external users'
+#: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
+msgid "ﾁｬﾝﾈﾙ"
+msgstr ""
+
+#. Label of the channel_name (Data) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "ﾁｬﾝﾈﾙ名称"
+msgstr ""
+
+#. Label of the channel_type (Select) field in DocType 'Slack channel opening
+#. application'
+#: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+msgid "ﾁｬﾝﾈﾙﾀｲﾌﾟ"
 msgstr ""
 

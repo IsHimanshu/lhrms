@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 12:44:09.530640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "total",
+  "backlog",
+  "completed_items",
+  "in_progress_cs",
+  "in_progress_pg",
+  "waiting_customer_confirmation",
+  "pending",
+  "completion_rate",
+  "in_progress_rate",
+  "not_started_rate",
+  "not_processed_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "\u6708"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "\u7dcf\u6570"
+  },
+  {
+   "fieldname": "backlog",
+   "fieldtype": "Int",
+   "label": "\u6b8b\u4ef6"
+  },
+  {
+   "fieldname": "completed_items",
+   "fieldtype": "Int",
+   "label": "\u5b8c\u4e86\u4ef6\u6570"
+  },
+  {
+   "fieldname": "in_progress_cs",
+   "fieldtype": "Int",
+   "label": "CS\u5bfe\u5fdc\u4e2d"
+  },
+  {
+   "fieldname": "in_progress_pg",
+   "fieldtype": "Int",
+   "label": "PG\u5bfe\u5fdc\u4e2d"
+  },
+  {
+   "fieldname": "waiting_customer_confirmation",
+   "fieldtype": "Int",
+   "label": "\u304a\u5ba2\u69d8\u78ba\u8a8d\u4e2d"
+  },
+  {
+   "fieldname": "pending",
+   "fieldtype": "Int",
+   "label": "\u4fdd\u7559"
+  },
+  {
+   "fieldname": "completion_rate",
+   "fieldtype": "Percent",
+   "label": "\u51e6\u7406\u7387",
+   "precision": "2"
+  },
+  {
+   "fieldname": "in_progress_rate",
+   "fieldtype": "Percent",
+   "label": "\u5bfe\u5fdc\u4e2d\u6bd4\u7387",
+   "precision": "2"
+  },
+  {
+   "fieldname": "not_started_rate",
+   "fieldtype": "Percent",
+   "label": "\u672a\u5bfe\u5fdc",
+   "precision": "2"
+  },
+  {
+   "fieldname": "not_processed_rate",
+   "fieldtype": "Percent",
+   "label": "\u672a\u51e6\u7406\u7387",
+   "precision": "2"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-14 12:57:44.358397",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support report - inquiry response status summary - t1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

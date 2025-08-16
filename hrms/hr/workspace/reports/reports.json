@@ -1,0 +1,41 @@
+{
+ "app": "hrms",
+ "charts": [],
+ "content": "[{\"id\":\"HaLtKRQXGL\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u5831\u544a</span>\",\"col\":12}},{\"id\":\"VtTzq_EDVZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report\",\"col\":3}},{\"id\":\"tqOxc_iDIx\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2025-07-23 10:24:01.814781",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "notebook-text",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Reports",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-07-31 14:08:47.479620",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Reports",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 27.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Report",
+   "link_to": "Employee User Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Reports",
+ "type": "Workspace"
+}

@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Slack_External_Users-{name1}-{DD-MM-YYYY}",
+ "creation": "2025-07-07 14:31:09.663193",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9vly",
+  "amended_from",
+  "name1",
+  "employee_id",
+  "date",
+  "column_break_nkgg",
+  "reporting_to",
+  "department",
+  "section_break_aosj",
+  "application_title",
+  "application_category",
+  "usage_form",
+  "purpose",
+  "column_break_pnpp",
+  "start_date",
+  "objective_memo",
+  "participant_details_section",
+  "table_nudx",
+  "channels_section",
+  "channel_used"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9vly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Add slack for external users",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u63d0\u51fa\u8005",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u7533\u8acb\u65e5"
+  },
+  {
+   "fieldname": "column_break_nkgg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "reporting_to",
+   "fieldtype": "Data",
+   "label": "\u306b\u5831\u544a\u3059\u308b",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "\u90e8\u7f72",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_aosj",
+   "fieldtype": "Section Break",
+   "label": "\u8a73\u7d30"
+  },
+  {
+   "fieldname": "application_title",
+   "fieldtype": "Data",
+   "label": "\u7533\u8acb\u30bf\u30a4\u30c8\u30eb\t"
+  },
+  {
+   "fieldname": "application_category",
+   "fieldtype": "Select",
+   "label": "\u7533\u8acb\u533a\u5206",
+   "options": "\u65b0\u898f\n\u66f4\u65b0\n\u524a\u9664"
+  },
+  {
+   "fieldname": "usage_form",
+   "fieldtype": "Select",
+   "label": "\u5229\u7528\u5f62\u614b",
+   "options": "\u901a\u5e38\u30e1\u30f3\u30d0\u30fc\uff08ARS\u793e\u54e1\uff09"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "\u76ee\u7684",
+   "options": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u304a\u3051\u308b\u9023\u7d61\u30fb\u610f\u898b\u4ea4\u63db \u7b49\n\u305d\u306e\u4ed6"
+  },
+  {
+   "fieldname": "column_break_pnpp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "\u958b\u59cb\u65e5"
+  },
+  {
+   "fieldname": "objective_memo",
+   "fieldtype": "Small Text",
+   "label": "\u76ee\u7684\u306e\u30e1\u30e2"
+  },
+  {
+   "fieldname": "participant_details_section",
+   "fieldtype": "Section Break",
+   "label": "\u30e6\u30fc\u30b6\u30fc"
+  },
+  {
+   "fieldname": "table_nudx",
+   "fieldtype": "Table",
+   "options": "Slack for external users table"
+  },
+  {
+   "fieldname": "channels_section",
+   "fieldtype": "Section Break",
+   "label": "\uff81\uff6c\uff9d\uff88\uff99"
+  },
+  {
+   "fieldname": "channel_used",
+   "fieldtype": "Data",
+   "label": "\u5229\u7528\uff81\uff6c\uff9d\uff88\uff99"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-18 12:25:32.386411",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Add slack for external users",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

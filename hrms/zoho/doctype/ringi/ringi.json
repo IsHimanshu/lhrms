@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-21 14:20:50.581257",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cogs",
+  "amended_from",
+  "var_shinsei_no",
+  "var_hacchusaki",
+  "var_shiharai_houhou",
+  "var_sankou_shiryou_1",
+  "var_bikou",
+  "var_shiharai_bi2",
+  "var_shiharai_kingaku",
+  "var_joushi_shounin",
+  "var_sankou_shiryou_2",
+  "var_sankou_shiryou_3",
+  "var_approval_status",
+  "var_approver",
+  "var_approval_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cogs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ringi",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "var_shinsei_no",
+   "fieldtype": "Data",
+   "label": "\u7533\u8acbNo."
+  },
+  {
+   "fieldname": "var_hacchusaki",
+   "fieldtype": "Data",
+   "label": "\u767a\u6ce8\u5148"
+  },
+  {
+   "fieldname": "var_shiharai_houhou",
+   "fieldtype": "Data",
+   "label": "\u652f\u6255\u65b9\u6cd5"
+  },
+  {
+   "fieldname": "var_sankou_shiryou_1",
+   "fieldtype": "Data",
+   "label": "\u53c2\u8003\u8cc7\u6599\u2460"
+  },
+  {
+   "fieldname": "var_bikou",
+   "fieldtype": "Text",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "var_shiharai_bi2",
+   "fieldtype": "Data",
+   "label": "\u652f\u6255\u65e52\uff08\u65e5\u4ed8\u304c\u4e0d\u78ba\u5b9a\u306a\u5834\u5408\uff09"
+  },
+  {
+   "fieldname": "var_shiharai_kingaku",
+   "fieldtype": "Data",
+   "label": "\u652f\u6255\u91d1\u984d\uff08\u5186\uff09"
+  },
+  {
+   "fieldname": "var_joushi_shounin",
+   "fieldtype": "Data",
+   "label": "\u4e0a\u53f8\u306e\u627f\u8a8d"
+  },
+  {
+   "fieldname": "var_sankou_shiryou_2",
+   "fieldtype": "Data",
+   "label": "\u53c2\u8003\u8cc7\u6599\u2461"
+  },
+  {
+   "fieldname": "var_sankou_shiryou_3",
+   "fieldtype": "Data",
+   "label": "\u53c2\u8003\u8cc7\u6599\u2462"
+  },
+  {
+   "fieldname": "var_approval_status",
+   "fieldtype": "Data",
+   "label": "Approval Status"
+  },
+  {
+   "fieldname": "var_approver",
+   "fieldtype": "Data",
+   "label": "Approver"
+  },
+  {
+   "fieldname": "var_approval_time",
+   "fieldtype": "Data",
+   "label": "Approval Time"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-21 14:29:47.932836",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "ringi",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

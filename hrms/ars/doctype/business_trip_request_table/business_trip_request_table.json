@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-07 13:25:54.052423",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from",
+  "to",
+  "visit_destination",
+  "place_to_visit",
+  "purpose"
+ ],
+ "fields": [
+  {
+   "fieldname": "from",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u958b\u59cb",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u7d42\u4e86",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visit_destination",
+   "fieldtype": "Data",
+   "label": "\u8a2a\u554f\u5148",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place_to_visit",
+   "fieldtype": "Data",
+   "label": "\u8a2a\u554f\u5730",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "\u76ee\u7684",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-25 13:54:56.280120",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Business trip request table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 13:13:48.804135",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "last_month",
+  "new_day",
+  "unanswered",
+  "in_progress_cs",
+  "in_progress_pg",
+  "in_progress_customer",
+  "feature_requests",
+  "pending",
+  "completed",
+  "total_balance_including_currentmonth",
+  "inquiries_backlog",
+  "backlog_completed",
+  "backlog_remaining",
+  "overall_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "last_month",
+   "fieldtype": "Int",
+   "label": "\u524d\u6708\u6b8b"
+  },
+  {
+   "fieldname": "new_day",
+   "fieldtype": "Int",
+   "label": "\u65b0\u898f/\u65e5"
+  },
+  {
+   "fieldname": "unanswered",
+   "fieldtype": "Int",
+   "label": "\u672a\u5bfe\u5fdc"
+  },
+  {
+   "fieldname": "in_progress_cs",
+   "fieldtype": "Int",
+   "label": "\u5bfe\u5fdc\u4e2d(CS)"
+  },
+  {
+   "fieldname": "in_progress_pg",
+   "fieldtype": "Int",
+   "label": "\u5bfe\u5fdc\u4e2d(PG)"
+  },
+  {
+   "fieldname": "in_progress_customer",
+   "fieldtype": "Int",
+   "label": "\u5bfe\u5fdc\u4e2d(\u5ba2)"
+  },
+  {
+   "fieldname": "feature_requests",
+   "fieldtype": "Int",
+   "label": "\u6a5f\u80fd\u8981\u671b"
+  },
+  {
+   "fieldname": "pending",
+   "fieldtype": "Int",
+   "label": "\u4fdd\u7559"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "label": "\u5b8c\u4e86"
+  },
+  {
+   "fieldname": "total_balance_including_currentmonth",
+   "fieldtype": "Int",
+   "label": "\u5168\u4f53\u6b8b\u9ad8(\u5f53\u6708\u306e\u5408\u8a08\u6b8b\u9ad8\u3092\u542b\u3080)"
+  },
+  {
+   "fieldname": "inquiries_backlog",
+   "fieldtype": "Int",
+   "label": "\u554f\u5408\u305b\u6ede\u7559"
+  },
+  {
+   "fieldname": "backlog_completed",
+   "fieldtype": "Int",
+   "label": "\u6ede\u7559\u5b8c\u4e86"
+  },
+  {
+   "fieldname": "backlog_remaining",
+   "fieldtype": "Int",
+   "label": "\u6ede\u7559\u6b8b"
+  },
+  {
+   "fieldname": "overall_balance",
+   "fieldtype": "Int",
+   "label": "\u5168\u4f53\u6b8b"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-14 13:25:16.385154",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support report - inquiry response status summary - t5",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

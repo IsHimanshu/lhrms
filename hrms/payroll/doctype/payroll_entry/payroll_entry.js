@@ -18,16 +18,6 @@ frappe.ui.form.on("Payroll Entry", {
 		frm.events.department_filters(frm);
 		frm.events.payroll_payable_account_filters(frm);
 
-		frappe.realtime.off("completed_overtime_slip_creation");
-		frappe.realtime.on("completed_overtime_slip_creation", function () {
-			frm.reload_doc();
-		});
-
-		frappe.realtime.off("completed_overtime_slip_submission");
-		frappe.realtime.on("completed_overtime_slip_submission", function () {
-			frm.reload_doc();
-		});
-
 		frappe.realtime.off("completed_salary_slip_creation");
 		frappe.realtime.on("completed_salary_slip_creation", function () {
 			frm.reload_doc();
@@ -61,7 +51,7 @@ frappe.ui.form.on("Payroll Entry", {
 		});
 	},
 
-	refresh: (frm) => {
+	refresh: function (frm) {
 		if (frm.doc.status === "Queued") frm.page.btn_secondary.hide();
 
 		if (frm.doc.docstatus === 0 && !frm.is_new()) {
@@ -79,25 +69,12 @@ frappe.ui.form.on("Payroll Entry", {
 		) {
 			if (frm.doc.docstatus == 0 && !frm.is_new()) {
 				frm.page.clear_primary_action();
-				if (frm.doc.overtime_step === "Create") {
-					frm.add_custom_button(__("Create Overtime Slips"), () => {
-						frm.call({
-							doc: frm.doc,
-							method: "create_overtime_slips",
-						});
+				frm.page.set_primary_action(__("Create Salary Slips"), () => {
+					frm.save("Submit").then(() => {
+						frm.page.clear_primary_action();
+						frm.refresh();
 					});
-				} else if (frm.doc.overtime_step === "Submit") {
-					frm.add_custom_button(__("Submit Overtime Slips"), () => {
-						frm.call({
-							doc: frm.doc,
-							method: "submit_overtime_slips",
-						});
-					});
-				} else {
-					frm.add_custom_button(__("Create Salary Slips"), function () {
-						frm.call("create_salary_slips");
-					}).addClass("btn-primary");
-				}
+				});
 			} else if (frm.doc.docstatus == 1 && frm.doc.status == "Failed") {
 				frm.add_custom_button(__("Create Salary Slips"), function () {
 					frm.call("create_salary_slips");
@@ -151,7 +128,7 @@ frappe.ui.form.on("Payroll Entry", {
 			});
 	},
 
-	create_salary_slip: function (frm) {
+	create_salary_slips: function (frm) {
 		frm.call({
 			doc: frm.doc,
 			method: "run_doc_method",

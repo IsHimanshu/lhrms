@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Advance_payment-{name1}-{DD-MM-YYYY}",
+ "creation": "2025-07-07 12:50:06.078833",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kzfd",
+  "amended_from",
+  "name1",
+  "employee_id",
+  "department",
+  "column_break_adun",
+  "date",
+  "details_section",
+  "advance_payment_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kzfd",
+   "fieldtype": "Section Break",
+   "label": "\u7acb\u66ff\u91d1\u7cbe\u7b97"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Advance Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u63d0\u51fa\u8005",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "\u306b\u5831\u544a\u3059\u308b",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_adun",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u65e5\u4ed8",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "\u660e\u7d30"
+  },
+  {
+   "fieldname": "advance_payment_table",
+   "fieldtype": "Table",
+   "options": "Advance payment table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-25 12:13:29.462897",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Advance Payment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

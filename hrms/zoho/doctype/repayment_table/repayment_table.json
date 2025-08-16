@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-21 14:40:28.706726",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rrmv"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rrmv",
+   "fieldtype": "Section Break"
+  },
+  {
+    "fieldname": "var_hizuke",
+    "label": "日付",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kingaku",
+    "label": "金額",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_mokuteki",
+    "label": "目的",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_tatekae_kubun",
+    "label": "立替区分",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_ikisaki",
+    "label": "行先",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_uchiwake",
+    "label": "内訳",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_ryoushuusho_upload_1",
+    "label": "領収書アップロード①",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_ryoushuusho_upload_2",
+    "label": "領収書アップロード②",
+    "fieldtype": "Data"
+  }
+
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-21 14:40:28.706726",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "repayment_table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

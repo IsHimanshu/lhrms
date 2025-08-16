@@ -27,7 +27,6 @@ frappe.ui.form.on("Employee Advance", {
 					is_group: 0,
 					company: frm.doc.company,
 					account_currency: ["in", currencies],
-					account_type: "Receivable",
 				},
 			};
 		});

@@ -41,11 +41,6 @@
 								onClick: () => (showDeleteDialog = true),
 							},
 							{ label: __('Reload'), onClick: () => reloadDoc() },
-							{
-								label: __('Download PDF'),
-								condition: () => props.showDownloadPDFButton,
-								onClick: () => (handleDownload()),
-							},
 						]"
 						:button="{
 							label: __('Menu'),
@@ -337,7 +332,6 @@ import { FileAttachment, guessStatusColor } from "@/composables"
 import useWorkflow from "@/composables/workflow"
 import { getCompanyCurrency } from "@/data/currencies"
 import { formatCurrency } from "@/utils/formatters"
-import { useDownloadPDF } from "@/utils/commonUtils"
 
 const props = defineProps({
 	doctype: {
@@ -380,15 +374,9 @@ const props = defineProps({
 		required: false,
 		default: true,
 	},
-	showDownloadPDFButton: {
-		type: Boolean,
-		required: false,
-		default: false,
-	},
 })
 const emit = defineEmits(["validateForm", "update:modelValue"])
 const router = useRouter()
-const { downloadPDF } = useDownloadPDF()
 
 const __ = inject("$translate")
 
@@ -674,7 +662,7 @@ async function handleDocUpdate(action) {
 		} else if (action == "cancel") {
 			params.docstatus = 2
 		}
-		
+
 		await documentResource.setValue.submit(params)
 		await documentResource.get.promise
 		resetForm()
@@ -720,14 +708,6 @@ function resetForm() {
 	nextTick(() => {
 		isFormDirty.value = false
 		isFormUpdated.value = true
-	})
-}
-function handleDownload() {
-	if (!props.id) return
-	downloadPDF({
-		doctype: props.doctype,
-		docname: props.id,
-		filename: props.id,
 	})
 }
 

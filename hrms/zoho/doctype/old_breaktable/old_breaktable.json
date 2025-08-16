@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-21 21:05:05.707474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9u6y"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9u6y",
+   "fieldtype": "Section Break"
+  },
+
+{"fieldname":"var_Employee_Id","label":"Employee Id","fieldtype":"Data"},
+{"fieldname":"var_Email_ID","label":"Email ID","fieldtype":"Data"},
+{"fieldname":"var_First_name","label":"First name","fieldtype":"Data"},
+{"fieldname":"var_Last_name","label":"Last name","fieldtype":"Data"},
+{"fieldname":"var_出社日時","label":"出社日時","fieldtype":"Data"},
+{"fieldname":"var_領収書金額","label":"領収書金額（円）","fieldtype":"Data"},
+{"fieldname":"var_備考","label":"備考","fieldtype":"Data"},
+{"fieldname":"var_補助金額","label":"補助金額","fieldtype":"Data"}
+
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-21 21:05:05.707474",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "old_breakTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

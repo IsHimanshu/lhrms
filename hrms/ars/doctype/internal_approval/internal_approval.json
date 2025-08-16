@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "internal_approval-{name1}-{DD-MM-YYYY}",
+ "creation": "2025-07-07 12:29:31.408239",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xx9m",
+  "amended_from",
+  "name1",
+  "employee_id",
+  "department",
+  "supervisor_approval",
+  "column_break_rxrj",
+  "date",
+  "remark",
+  "section_break_tbdh",
+  "subject",
+  "supplier",
+  "payment_catogrey",
+  "payment_method",
+  "column_break_cjcb",
+  "reason_for_proposal_effect_of_investment",
+  "attachment_1",
+  "attachment_2",
+  "attachment_3"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xx9m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Internal approval",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "\u4f5c\u6210\u8005"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u90e8\u7f72",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "supervisor_approval",
+   "fieldtype": "Data",
+   "label": "\u4e0a\u53f8\u306e\u627f\u8a8d"
+  },
+  {
+   "fieldname": "column_break_rxrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u6b8b\u696d\u65e5"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "section_break_tbdh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "\u4ef6\u540d"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "\u767a\u6ce8\u5148"
+  },
+  {
+   "fieldname": "column_break_cjcb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_proposal_effect_of_investment",
+   "fieldtype": "Small Text",
+   "label": "\u8d77\u6848\u7406\u7531 \uff08\u6295\u8cc7\u52b9\u679c\uff09"
+  },
+  {
+   "fieldname": "attachment_1",
+   "fieldtype": "Attach",
+   "label": "\u53c2\u8003\u8cc7\u6599 1"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach",
+   "label": "\u53c2\u8003\u8cc7\u6599 2"
+  },
+  {
+   "fieldname": "attachment_3",
+   "fieldtype": "Attach",
+   "label": "\u53c2\u8003\u8cc7\u6599 3"
+  },
+  {
+   "fieldname": "payment_catogrey",
+   "fieldtype": "Select",
+   "label": "\u652f\u6255\u533a\u5206",
+   "options": "\u5358\u767a\n\u7d99\u7d9a"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "\u652f\u6255\u65b9\u6cd5",
+   "options": "\u30af\u30ec\u30b8\u30c3\u30c8\u30ab\u30fc\u30c9\n\u73fe\u91d1\n\u632f\u8fbc\n\u5f15\u843d\n\u305d\u306e\u4ed6"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-01 14:59:30.272180",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Internal approval",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

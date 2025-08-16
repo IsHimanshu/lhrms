@@ -1,0 +1,22 @@
+{
+ "cards": [],
+ "chart_options": "",
+ "charts": [
+  {
+   "chart": "Overtime",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-07-17 10:44:11.782671",
+ "dashboard_name": "User charts",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-07-17 10:44:11.782671",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "User charts",
+ "owner": "Administrator"
+}

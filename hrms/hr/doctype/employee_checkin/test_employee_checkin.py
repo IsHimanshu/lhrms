@@ -881,7 +881,7 @@ def make_n_checkins(employee, n, hours_to_reverse=1):
 	return logs
 
 
-def make_checkin(employee, time=None, latitude=None, longitude=None, log_type="IN"):
+def make_checkin(employee, time=None, latitude=None, longitude=None):
 	if not time:
 		time = now_datetime()
 
@@ -891,7 +891,7 @@ def make_checkin(employee, time=None, latitude=None, longitude=None, log_type="I
 			"employee": employee,
 			"time": time,
 			"device_id": "device1",
-			"log_type": log_type,
+			"log_type": "IN",
 			"latitude": latitude,
 			"longitude": longitude,
 		}

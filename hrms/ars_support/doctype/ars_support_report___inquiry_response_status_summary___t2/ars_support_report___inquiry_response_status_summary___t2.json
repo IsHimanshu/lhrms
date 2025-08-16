@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 12:58:53.863578",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "average_backlog_days",
+  "within_3_days",
+  "within_4_to_7_days",
+  "equal_or_more_than_8_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "average_backlog_days",
+   "fieldtype": "Float",
+   "label": "\u6ede\u7559\u5e73\u5747\u65e5\u6570"
+  },
+  {
+   "fieldname": "within_3_days",
+   "fieldtype": "Int",
+   "label": "\u6ede\u75593\u65e5\u4ee5\u5185"
+  },
+  {
+   "fieldname": "within_4_to_7_days",
+   "fieldtype": "Int",
+   "label": "\u6ede\u75594\u20137\u65e5"
+  },
+  {
+   "fieldname": "equal_or_more_than_8_days",
+   "fieldtype": "Int",
+   "label": "\u6ede\u75598\u65e5\u4ee5\u4e0a"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-14 13:02:25.523827",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support report - inquiry response status summary - t2",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

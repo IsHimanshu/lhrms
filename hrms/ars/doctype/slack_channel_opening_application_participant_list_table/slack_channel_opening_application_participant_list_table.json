@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-07 14:11:35.897288",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "full_name",
+  "column_break_auxg",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "\u6c0f\u540d"
+  },
+  {
+   "fieldname": "column_break_auxg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 11:57:37.952378",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Slack channel opening application participant list table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

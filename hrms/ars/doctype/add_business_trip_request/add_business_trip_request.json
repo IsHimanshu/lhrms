@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Business_trip_request-{name1}-{DD-MM-YYYY}",
+ "creation": "2025-07-07 13:16:21.311345",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fiek",
+  "amended_from",
+  "name1",
+  "employee_id",
+  "department",
+  "report_to",
+  "date",
+  "column_break_zepy",
+  "subject",
+  "scheduled_departure_date_and_time",
+  "scheduled_return_date_and_time",
+  "section_break_mnje",
+  "business_trip_details",
+  "section_break_lwqt",
+  "remark",
+  "column_break_dyho",
+  "attachment",
+  "attachment1"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fiek",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Add Business trip request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u63d0\u51fa\u8005",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "\u90e8\u7f72",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "report_to",
+   "fieldtype": "Data",
+   "label": "\u306b\u5831\u544a\u3059\u308b",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u7533\u8acb\u65e5"
+  },
+  {
+   "fieldname": "column_break_zepy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "\u4ef6\u540d"
+  },
+  {
+   "fieldname": "scheduled_departure_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "\u51fa\u767a\u4e88\u5b9a\u65e5\u6642",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scheduled_return_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "\u5e30\u7740\u4e88\u5b9a\u65e5\u6642",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mnje",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "business_trip_details",
+   "fieldtype": "Table",
+   "label": "\u51fa\u5f35\u8a73\u7d30",
+   "options": "Business trip request table"
+  },
+  {
+   "fieldname": "section_break_lwqt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "column_break_dyho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2460"
+  },
+  {
+   "fieldname": "attachment1",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2461"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-18 12:32:49.286612",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Add Business trip request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

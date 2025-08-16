@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2025-07-21 13:25:43.834884",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "applicant",
+  "creation_tijme",
+  "overtime_date",
+  "manager_approval",
+  "overtime_band",
+  "overtime_start",
+  "overtime_end",
+  "overtime_reason",
+  "attachment",
+  "department",
+  "reporting_manager",
+  "total_minutes",
+  "approval_status",
+  "approval_submission",
+  "level_1_approver",
+  "level_1_approval_comments",
+  "level_1_approval_time",
+  "level_2_approver",
+  "level_2_approval_comments",
+  "level_2_approval_time",
+  "approval_completion_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "applicant",
+   "fieldtype": "Data",
+   "label": "\u4f5c\u6210\u8005"
+  },
+  {
+   "fieldname": "creation_tijme",
+   "fieldtype": "Data",
+   "label": "\u7533\u8acb\u65e5\u6642"
+  },
+  {
+   "fieldname": "overtime_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u6b8b\u696d\u65e5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manager_approval",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u4e0a\u53f8\u306e\u627f\u8a8d",
+   "reqd": 1
+  },
+  {
+   "fieldname": "overtime_band",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u6b8b\u696d\u6642\u9593\u5e2f",
+   "reqd": 1
+  },
+  {
+   "fieldname": "overtime_start",
+   "fieldtype": "Date",
+   "label": "\u6b8b\u696d\u958b\u59cb"
+  },
+  {
+   "fieldname": "overtime_end",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u6b8b\u696d\u7d42\u4e86",
+   "reqd": 1
+  },
+  {
+   "fieldname": "overtime_reason",
+   "fieldtype": "Small Text",
+   "label": "\u6b8b\u696d\u7406\u7531"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reporting_manager",
+   "fieldtype": "Data",
+   "label": "Reporting Manager",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_minutes",
+   "fieldtype": "Float",
+   "label": "\u6b8b\u696d\u6642\u9593 (\u5206)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Data",
+   "label": "Approval Status"
+  },
+  {
+   "fieldname": "approval_submission",
+   "fieldtype": "Data",
+   "label": "Approval Sub"
+  },
+  {
+   "fieldname": "approval_completion_time",
+   "fieldtype": "Data",
+   "label": "Approval Completion time"
+  },
+  {
+   "fieldname": "level_1_approver",
+   "fieldtype": "Data",
+   "label": "Level 1 approver"
+  },
+  {
+   "fieldname": "level_1_approval_comments",
+   "fieldtype": "Data",
+   "label": "Level 1 approval comments"
+  },
+  {
+   "fieldname": "level_1_approval_time",
+   "fieldtype": "Data",
+   "label": "Level 1 approval time"
+  },
+  {
+   "fieldname": "level_2_approver",
+   "fieldtype": "Data",
+   "label": "Level 2 approver"
+  },
+  {
+   "fieldname": "level_2_approval_comments",
+   "fieldtype": "Data",
+   "label": "Level 2 approval comments"
+  },
+  {
+   "fieldname": "level_2_approval_time",
+   "fieldtype": "Data",
+   "label": "Level 2 approval time"
+  }
+ ],
+ "links": [],
+ "modified": "2025-07-21 13:43:03.822327",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "Old_overtime",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Employee",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "overtime_date",
+ "track_changes": 1,
+ "track_seen": 1
+}

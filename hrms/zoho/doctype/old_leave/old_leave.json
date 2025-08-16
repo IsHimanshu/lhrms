@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-21 13:55:29.960902",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_d2lw",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_d2lw",
+   "fieldtype": "Section Break"
+  },
+  {
+    "fieldname": "var_shinseibi",
+    "label": "申請日",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_jiyuu",
+    "label": "事由",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_sakuseisha",
+    "label": "作成者",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_added_time",
+    "label": "Added Time",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_tenpu_file",
+    "label": "添付ファイル",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kubun",
+    "label": "区分",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kubun_shousai",
+    "label": "区分詳細",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kyuuka_from",
+    "label": "休暇日（から）",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kyuuka_to",
+    "label": "休暇日（まで）",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_kyuuka_kikan",
+    "label": "休暇期間",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_bikou",
+    "label": "備考",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_approval_status",
+    "label": "Approval Status",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_approver",
+    "label": "Approver",
+    "fieldtype": "Data"
+  },
+  {
+    "fieldname": "var_approval_time",
+    "label": "Approval Time",
+    "fieldtype": "Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "old-leave",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-21 13:55:29.960902",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "old-leave",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

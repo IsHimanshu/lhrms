@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-07 14:46:10.056617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "users_section",
+  "name1",
+  "email",
+  "company_name",
+  "furigana"
+ ],
+ "fields": [
+  {
+   "fieldname": "users_section",
+   "fieldtype": "Section Break",
+   "label": "Users"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u63d0\u51fa\u8005",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "\u4f1a\u793e_\u6c0f\u540d"
+  },
+  {
+   "fieldname": "furigana",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u30d5\u30ea\u30ac\u30ca",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 12:52:34.376176",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Slack for external users table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

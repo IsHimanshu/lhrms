@@ -1,9 +1,26 @@
 {
  "app": "hrms",
  "charts": [],
- "content": "[{\"id\":\"pu9Ft3mUeT\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"-xxN9AyGlK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"mYg4h6H7aX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"HR Dashboard\",\"col\":3}},{\"id\":\"OBOPP0dnjY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payroll Dashboard\",\"col\":3}},{\"id\":\"zyVHu4rF3u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"HSmKHOvqMN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"lKeffKf1va\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}},{\"id\":\"UnVtsnxLo_\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee\",\"col\":4}},{\"id\":\"YXISc0V2sT\",\"type\":\"card\",\"data\":{\"card_name\":\"Leaves\",\"col\":4}},{\"id\":\"TH5ZW37wDA\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"vx8pBTHNsf\",\"type\":\"card\",\"data\":{\"card_name\":\"Attendance\",\"col\":4}},{\"id\":\"wv3Sy37NgW\",\"type\":\"card\",\"data\":{\"card_name\":\"Expense Claim\",\"col\":4}},{\"id\":\"v82YqH3rek\",\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"id\":\"60GScqYEk0\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}}]",
+ "content": "[{\"id\":\"xpmg6I9kuf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1J7_vm3Yxx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u671d\u98df\u88dc\u52a9\u7533\u8acb\",\"col\":4}},{\"id\":\"FmOSDgJCov\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb\",\"col\":4}},{\"id\":\"dkAUQgXFXq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u4f11\u6687\u7b49\u7533\u8acb\u66f8\",\"col\":4}},{\"id\":\"9pvrdPo6M-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJK6zjCmvD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u7533\u8acb\",\"col\":4}},{\"id\":\"UJrKIblpSK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u5831\u544a\u66f8\",\"col\":4}},{\"id\":\"r7v9tFraAz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wTmVywQrXh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u7acb\u66ff\u91d1\u7cbe\u7b97\",\"col\":4}},{\"id\":\"ZP5WLNVDq8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u793e\u5185\u7a1f\u8b70\u7533\u8acb\",\"col\":4}},{\"id\":\"YYjNGqLC3s\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"3KD0JCeOyE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Slack\u30c1\u30e3\u30f3\u30cd\u30eb\u958b\u8a2d\u7533\u8acb\",\"col\":4}},{\"id\":\"r_rdAxMins\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\" Slack\u793e\u5916\u5229\u7528\u8005\",\"col\":4}},{\"id\":\"kjFhEt733T\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"11v0D5aGp5\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"leave bar chart\",\"col\":12}},{\"id\":\"LAggHRC5ng\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Overtime\",\"col\":12}},{\"id\":\"odyT4Oj9TY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"breakfast bar line chart\",\"col\":12}},{\"id\":\"N4RBMl-Ox6\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"business trip report\",\"col\":12}}]",
  "creation": "2020-03-02 15:48:58.322521",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "leave bar chart",
+   "label": "leave bar chart"
+  },
+  {
+   "custom_block_name": "breakfast bar line chart",
+   "label": "breakfast bar line chart"
+  },
+  {
+   "custom_block_name": "business trip report",
+   "label": "business trip report"
+  },
+  {
+   "custom_block_name": "Overtime + breakfast",
+   "label": "Overtime"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -12,379 +29,8 @@
  "idx": 0,
  "is_hidden": 0,
  "label": "Overview",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee",
-   "link_count": 0,
-   "link_to": "Employee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee Group",
-   "link_count": 0,
-   "link_to": "Employee Group",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee Grade",
-   "link_count": 0,
-   "link_to": "Employee Grade",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Key Reports",
-   "link_count": 7,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "Attendance",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Monthly Attendance Sheet",
-   "link_count": 0,
-   "link_to": "Monthly Attendance Sheet",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Staffing Plan",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Recruitment Analytics",
-   "link_count": 0,
-   "link_to": "Recruitment Analytics",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Analytics",
-   "link_count": 0,
-   "link_to": "Employee Analytics",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Leave Balance",
-   "link_count": 0,
-   "link_to": "Employee Leave Balance",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Leave Balance Summary",
-   "link_count": 0,
-   "link_to": "Employee Leave Balance Summary",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee Advance",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Advance Summary",
-   "link_count": 0,
-   "link_to": "Employee Advance Summary",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Exits",
-   "link_count": 0,
-   "link_to": "Employee Exits",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Other Reports",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Information",
-   "link_count": 0,
-   "link_to": "Employee Information",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employee Birthday",
-   "link_count": 0,
-   "link_to": "Employee Birthday",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Employee",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Employees Working on a Holiday",
-   "link_count": 0,
-   "link_to": "Employees working on a holiday",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Daily Work Summary",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Daily Work Summary Replies",
-   "link_count": 0,
-   "link_to": "Daily Work Summary Replies",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Setup",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Company",
-   "link_count": 0,
-   "link_to": "Company",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Branch",
-   "link_count": 0,
-   "link_to": "Branch",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Department",
-   "link_count": 0,
-   "link_to": "Department",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Designation",
-   "link_count": 0,
-   "link_to": "Designation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Leaves",
-   "link_count": 2,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Leave Application",
-   "link_count": 0,
-   "link_to": "Leave Application",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Compensatory Leave Request",
-   "link_count": 0,
-   "link_to": "Compensatory Leave Request",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Attendance",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Attendance",
-   "link_count": 0,
-   "link_to": "Attendance",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Attendance Request",
-   "link_count": 0,
-   "link_to": "Attendance Request",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee Checkin",
-   "link_count": 0,
-   "link_to": "Employee Checkin",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Expense Claim",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Expense Claim",
-   "link_count": 0,
-   "link_to": "Expense Claim",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee Advance",
-   "link_count": 0,
-   "link_to": "Employee Advance",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Travel Request",
-   "link_count": 0,
-   "link_to": "Travel Request",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Settings",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "HR Settings",
-   "link_count": 0,
-   "link_to": "HR Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payroll Settings",
-   "link_count": 0,
-   "link_to": "Payroll Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Daily Work Summary Group",
-   "link_count": 0,
-   "link_to": "Daily Work Summary Group",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2025-01-16 11:34:44.156649",
+ "links": [],
+ "modified": "2025-08-01 18:23:34.686190",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Overview",
@@ -398,25 +44,75 @@
  "sequence_id": 1.0,
  "shortcuts": [
   {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "\u671d\u98df\u88dc\u52a9\u7533\u8acb",
+   "link_to": "Breakfast",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb",
+   "link_to": "Overtime",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "\u4f11\u6687\u7b49\u7533\u8acb\u66f8",
+   "link_to": "Leave",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Payroll Dashboard",
-   "link_to": "Payroll",
-   "type": "Dashboard"
+   "label": "\u51fa\u5f35\u7533\u8acb",
+   "link_to": "Add Business trip request",
+   "stats_filter": "[]",
+   "type": "DocType"
   },
   {
-   "format": "{} Open",
-   "label": "HR Dashboard",
-   "link_to": "Human Resource",
-   "stats_filter": "{\n    \"status\": \"Open\"\n}",
-   "type": "Dashboard"
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u51fa\u5f35\u5831\u544a\u66f8",
+   "link_to": "Business trip report",
+   "stats_filter": "[]",
+   "type": "DocType"
   },
   {
-   "color": "Green",
-   "format": "{} Active",
-   "label": "Employee",
-   "link_to": "Employee",
-   "stats_filter": "{\"status\":\"Active\"}",
+   "color": "Red",
+   "doc_view": "List",
+   "label": "\u7acb\u66ff\u91d1\u7cbe\u7b97",
+   "link_to": "Advance Payment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "\u793e\u5185\u7a1f\u8b70\u7533\u8acb",
+   "link_to": "Internal approval",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Slack\u30c1\u30e3\u30f3\u30cd\u30eb\u958b\u8a2d\u7533\u8acb",
+   "link_to": "Slack channel opening application",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": " Slack\u793e\u5916\u5229\u7528\u8005",
+   "link_to": "Add slack for external users",
+   "stats_filter": "[]",
    "type": "DocType"
   }
  ],

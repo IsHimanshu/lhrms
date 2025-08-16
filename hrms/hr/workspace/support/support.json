@@ -1,0 +1,191 @@
+{
+ "app": "hrms",
+ "charts": [],
+ "content": "[{\"id\":\"qzP2mZrGOu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"UVJrlliYRx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":4}},{\"id\":\"1d1fxJYko2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Maintenance Visit\",\"col\":4}},{\"id\":\"HI8Ahp73oR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Level Agreement\",\"col\":4}},{\"id\":\"jmyoTVWu3H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Overview - Ars Support\",\"col\":4}},{\"id\":\"WCqL_gBYGU\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oxhWhXp9b2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"SeXeFNS1rj\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"ars support number of inquires handled by incharge\",\"col\":12}},{\"id\":\"HrVvBmy_FZ\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"ars support issues count per client wise bar chart\",\"col\":12}},{\"id\":\"4OAwxQVqUo\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"ars support issue type wise\",\"col\":12}},{\"id\":\"vtsW5abOQk\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"ars support issue client wise\",\"col\":12}}]",
+ "creation": "2020-03-02 15:48:23.224699",
+ "custom_blocks": [
+  {
+   "custom_block_name": "ars support number of inquires handled by incharge",
+   "label": "ars support number of inquires handled by incharge"
+  },
+  {
+   "custom_block_name": "ars support issues count per client wise bar chart",
+   "label": "ars support issues count per client wise bar chart"
+  },
+  {
+   "custom_block_name": "ars support issue type wise",
+   "label": "ars support issue type wise"
+  },
+  {
+   "custom_block_name": "ars support issue client wise",
+   "label": "ars support issue client wise"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "support",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Support",
+ "links": [
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue",
+   "link_count": 0,
+   "link_to": "Issue",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Type",
+   "link_count": 0,
+   "link_to": "Issue Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Priority",
+   "link_count": 0,
+   "link_to": "Issue Priority",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Schedule",
+   "link_count": 0,
+   "link_to": "Maintenance Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Visit",
+   "link_count": 0,
+   "link_to": "Maintenance Visit",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service Level Agreement",
+   "link_count": 0,
+   "link_to": "Service Level Agreement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Warranty Claim",
+   "link_count": 0,
+   "link_to": "Warranty Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Serial No",
+   "link_count": 0,
+   "link_to": "Serial No",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Support Settings",
+   "link_count": 0,
+   "link_to": "Support Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "Issue",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "First Response Time for Issues",
+   "link_count": 0,
+   "link_to": "First Response Time for Issues",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-08-15 15:11:39.068344",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Support",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 12.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Overview - Ars Support",
+   "type": "URL",
+   "url": "/support_overview"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Issue",
+   "link_to": "ars support issue",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Maintenance Visit",
+   "link_to": "Maintenance Visit",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Level Agreement",
+   "link_to": "Service Level Agreement",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Support",
+ "type": "Workspace"
+}

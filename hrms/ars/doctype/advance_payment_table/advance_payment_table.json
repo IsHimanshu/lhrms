@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-07 12:54:49.334989",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "advance_payment_details_section",
+  "date",
+  "amount",
+  "purpose",
+  "advance_classification",
+  "destination",
+  "breakdown",
+  "receipt_upload",
+  "receipt_upload_1"
+ ],
+ "fields": [
+  {
+   "fieldname": "advance_payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "advance payment details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u65e5\u4ed8"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "\u91d1\u984d"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "\u76ee\u7684"
+  },
+  {
+   "fieldname": "advance_classification",
+   "fieldtype": "Select",
+   "label": "\u7acb\u66ff\u533a\u5206",
+   "options": "\u4ea4\u901a\u8cbb\n\u4f1a\u8b70\u8cbb\n\u6d88\u8017\u54c1\u8cbb\n\u305d\u306e\u4ed6\n\u4ea4\u969b\u8cbb"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "\u884c\u5148"
+  },
+  {
+   "fieldname": "breakdown",
+   "fieldtype": "Small Text",
+   "label": "\u5185\u8a33"
+  },
+  {
+   "fieldname": "receipt_upload",
+   "fieldtype": "Attach",
+   "label": "\u9818\u53ce\u66f8\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u2460"
+  },
+  {
+   "fieldname": "receipt_upload_1",
+   "fieldtype": "Attach",
+   "label": "\u9818\u53ce\u66f8\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u2461"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 10:59:16.318335",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Advance payment table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

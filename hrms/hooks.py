@@ -8,12 +8,27 @@ required_apps = ["frappe/erpnext"]
 source_link = "http://github.com/frappe/hrms"
 app_logo_url = "/assets/hrms/images/frappe-hr-logo.svg"
 app_home = "/app/overview"
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "=", "Employee"]
+        ]
+    },
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "=", "Department"]
+        ]
+    }
+]
+
 
 add_to_apps_screen = [
 	{
 		"name": "hrms",
-		"logo": "/assets/hrms/images/frappe-hr-logo.svg",
-		"title": "Frappe HR",
+		"logo": "/assets/hrms/images/image.png",
+		"title": "ARS HR",
 		"route": "/app/overview",
 		"has_permission": "hrms.hr.utils.check_app_permission",
 	}
@@ -26,7 +41,9 @@ add_to_apps_screen = [
 # app_include_css = "/assets/hrms/css/hrms.css"
 app_include_js = [
 	"hrms.bundle.js",
+	"/assets/hrms/js/disable_bar.js"
 ]
+desk_include_js = "/assets/hrms/js/disable_bar.js"
 app_include_css = "hrms.bundle.css"
 
 # website
@@ -160,6 +177,22 @@ override_doctype_class = {
 # Hook on document methods and events
 
 doc_events = {
+	"Leave" : {
+        "on_update_after_submit":[
+		"hrms.ars.appautomation.handle_workflow_automation",
+		"hrms.ars.emailapprover.start_email_sending"
+		],
+		"on_update":[
+		"hrms.ars.appautomation.handle_workflow_automation",
+		"hrms.ars.emailapprover.start_email_sending"
+		]
+	},
+	"Breakfast" : {
+        "on_update":"hrms.ars.appautomation.breakfast_allowance"
+	},
+	"Overtime" : {
+        "on_update":"hrms.ars.appautomation.overtime_allowance"
+	},
 	"User": {
 		"validate": "erpnext.setup.doctype.employee.employee.validate_employee_role",
 	},

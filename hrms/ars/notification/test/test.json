@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2025-08-11 15:34:09.508039",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Internal approval",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2025-08-11 15:34:09.508039",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "test",
+ "owner": "Administrator",
+ "recipients": [
+  {}
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "ARS Support",
+ "sender_email": "ai@ar-system.co.jp",
+ "subject": "test",
+ "value_changed": "workflow_state"
+}

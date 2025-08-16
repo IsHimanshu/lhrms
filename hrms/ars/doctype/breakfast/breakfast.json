@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Breakfast-{username}-{DD-MM-YYYY}",
+ "creation": "2025-07-04 12:56:00.869981",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_haxx",
+  "amended_from",
+  "username",
+  "employee_id",
+  "report_to",
+  "column_break_deap",
+  "max_allowance_range",
+  "total_days",
+  "apply_for_breakfast_allowance_section",
+  "select_month",
+  "breakfast_table",
+  "summary_section",
+  "applied_total_subsidy_amount",
+  "current_table_total_subsidy_amount",
+  "column_break_wdsr",
+  "current_table_total_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_haxx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Breakfast",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "\u63d0\u51fa\u8005",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "report_to",
+   "fieldtype": "Data",
+   "label": "\u306b\u5831\u544a\u3059\u308b"
+  },
+  {
+   "fieldname": "column_break_deap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.allowance",
+   "fieldname": "max_allowance_range",
+   "fieldtype": "Int",
+   "label": "\u6700\u5927\u624b\u5f53"
+  },
+  {
+   "fetch_from": "employee_id.days",
+   "fieldname": "total_days",
+   "fieldtype": "Data",
+   "label": "\u5408\u8a08\u65e5\u6570"
+  },
+  {
+   "fieldname": "apply_for_breakfast_allowance_section",
+   "fieldtype": "Section Break",
+   "label": "\u671d\u98df\u624b\u5f53\u3092\u7533\u8acb\u3059\u308b"
+  },
+  {
+   "fieldname": "select_month",
+   "fieldtype": "Select",
+   "label": "\u6708\u3092\u9078\u629e",
+   "options": "1\u6708\n2\u6708\n3\u6708\n4\u6708\n5\u6708\n6\u6708\n7\u6708\n8\u6708\n9\u6708\n10\u6708\n11\u6708\n12\u6708",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breakfast_table",
+   "fieldtype": "Table",
+   "label": "\u671d\u98df\u88dc\u52a9\u660e\u7d30",
+   "options": "Breakfast table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "\u6982\u8981"
+  },
+  {
+   "default": "0000",
+   "fieldname": "current_table_total_subsidy_amount",
+   "fieldtype": "Float",
+   "label": "\u73fe\u5728\u306e\u5408\u8a08\u88dc\u52a9\u91d1\u984d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wdsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "current_table_total_days",
+   "fieldtype": "Int",
+   "label": "\u73fe\u5728\u306e\u5408\u8a08\u65e5\u6570",
+   "read_only": 1
+  },
+  {
+   "default": "0000",
+   "fieldname": "applied_total_subsidy_amount",
+   "fieldtype": "Float",
+   "label": "\u7533\u8acb\u6e08\u307f\u88dc\u52a9\u91d1\u984d",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-04 14:48:18.648240",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Breakfast",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "username"
+}

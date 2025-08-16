@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 13:04:49.077065",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "average_lead_time",
+  "sla_breach_count",
+  "claim_risk_index"
+ ],
+ "fields": [
+  {
+   "fieldname": "average_lead_time",
+   "fieldtype": "Float",
+   "label": "\u30ea\u30fc\u30c9\u30bf\u30a4\u30e0\u4e2d\u592e\u5024"
+  },
+  {
+   "fieldname": "sla_breach_count",
+   "fieldtype": "Float",
+   "label": "SLA \u8d85\u904e\u4ef6\u6570"
+  },
+  {
+   "fieldname": "claim_risk_index",
+   "fieldtype": "Float",
+   "label": "\u30af\u30ec\u30fc\u30e0\u30ea\u30b9\u30af\u6307\u6570"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-14 13:07:47.676842",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "ars support report - inquiry response status summary - t4",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

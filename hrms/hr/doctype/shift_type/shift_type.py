@@ -116,7 +116,6 @@ class ShiftType(Document):
 			if not self.should_mark_attendance(employee, attendance_date):
 				continue
 
-			overtime_type = single_shift_logs[0].get("overtime_type")
 			(
 				attendance_status,
 				working_hours,
@@ -136,7 +135,6 @@ class ShiftType(Document):
 				in_time,
 				out_time,
 				self.name,
-				overtime_type,
 			)
 
 		# commit after processing checkin logs to avoid losing progress
@@ -166,7 +164,6 @@ class ShiftType(Document):
 				"shift_actual_start",
 				"shift_actual_end",
 				"device_id",
-				"overtime_type",
 			],
 			filters={
 				"skip_auto_attendance": 0,

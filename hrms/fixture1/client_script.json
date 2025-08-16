@@ -1,0 +1,134 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Breakfast",
+  "enabled": 1,
+  "modified": "2025-07-14 11:14:32.586510",
+  "module": "Ars",
+  "name": "Breakfast pre-filled data",
+  "script": "frappe.ui.form.on('Breakfast', {\r\n    refresh(frm) {\r\n        if (frm.is_new()) {\r\n            let current_user = frappe.session.user;\r\n            console.log(\"Current User:\", current_user);\r\n\r\n            let currentMonthName = new Date().toLocaleString('default', { month: 'long' });\r\n            console.log(\"Current Month Name:\", currentMonthName);\r\n            frm.set_value('select_month', currentMonthName);\r\n\r\n            // Fetch the Employee linked to the current user\r\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\r\n                .then(function(response) {\r\n                    let employee = response.message;\r\n                    console.log(\"Employee:\", employee);\r\n                    if (employee) {\r\n                        // Set the employee field with the Employee ID\r\n                        frm.set_value('employee_id', employee.name);\r\n                        console.log(\"Employee name:\", employee.name);\r\n                    } else {\r\n                        frappe.msgprint({\r\n                            title: __('Warning'),\r\n                            message: __('No Employee record found for the current user. Contact HR or technical team.'),\r\n                            indicator: 'orange'\r\n                        });\r\n                    }\r\n                });\r\n        }\r\n    },\r\n\r\n    validate(frm) {\r\n        const dates = [];\r\n        const duplicates = [];\r\n\r\n        (frm.doc.breakfast_table || []).forEach(row => {\r\n            if (row.date) {\r\n                // Extract only the date part (YYYY-MM-DD) from the datetime string\r\n                const dateOnly = row.date.split(' ')[0];\r\n                if (dates.includes(dateOnly)) {\r\n                    duplicates.push(dateOnly);\r\n                } else {\r\n                    dates.push(dateOnly);\r\n                }\r\n            }\r\n        });\r\n\r\n        if (duplicates.length > 0) {\r\n            frappe.throw(`Duplicate dates found in breakfast table: ${duplicates.join(\", \")}`);\r\n        }\r\n    },\r\n\r\n    before_save(frm) {\r\n        // Set initial values for total days and subsidy amount in the form\r\n        frm.set_value('current_table_total_days', 0);\r\n        frm.set_value('current_table_total_subsidy_amount', 0);\r\n\r\n        // Function to determine the subsidy cap based on the total number of days\r\n        function get_subsidy_cap(total_days) {\r\n            if (total_days < 50) {\r\n                return 700;\r\n            } else if (total_days < 100) {\r\n                return 750;\r\n            } else {\r\n                return 1000;\r\n            }\r\n        }\r\n\r\n        // Check if breakfast_table exists in the form\r\n        if (!frm.doc.breakfast_table || frm.doc.breakfast_table.length === 0) {\r\n            frm.set_value('current_table_total_days', 0);\r\n            frm.set_value('current_table_total_subsidy_amount', 0);\r\n        } else {\r\n            // Calculate the total number of rows in breakfast_table\r\n            frm.set_value('current_table_total_days', frm.doc.breakfast_table.length);\r\n\r\n            // Initialize variables for subsidy calculation\r\n            let total_subsidy = 0;\r\n            let current_total_days = parseInt(frm.doc.total_days) || 0;\r\n\r\n            // Iterate through each row in breakfast_table to calculate subsidies\r\n            frm.doc.breakfast_table.forEach((row, index) => {\r\n                try {\r\n                    // Determine the subsidy cap for the current total days\r\n                    let subsidy_cap = get_subsidy_cap(current_total_days);\r\n\r\n                    // Convert row amount to float, default to 0 if invalid\r\n                    let row_amount = parseFloat(row.amount) || 0;\r\n\r\n                    // Calculate subsidy for the row as the minimum of row amount and subsidy cap\r\n                    let row_subsidy = Math.min(row_amount, subsidy_cap);\r\n                    total_subsidy += row_subsidy;\r\n\r\n                    // Increment total days for the next iteration\r\n                    current_total_days += 1;\r\n                } catch (e) {\r\n                    // Log any errors encountered during row processing\r\n                    frappe.msgprint({\r\n                        title: __('Error'),\r\n                        message: __(`Error processing row ${index + 1}: ${e.message}`),\r\n                        indicator: 'red'\r\n                    });\r\n                }\r\n            });\r\n\r\n            // Update form with the calculated total subsidy amount\r\n            frm.set_value('current_table_total_subsidy_amount', total_subsidy);\r\n            // console.log(\"Total subsidy : \",total_subsidy);\r\n            // console.log(\"current_total_days : \",current_total_days);\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Overtime",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.791947",
+  "module": "Ars",
+  "name": "Overtime Pre-filled Data",
+  "script": "frappe.ui.form.on('Overtime', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave",
+  "enabled": 1,
+  "modified": "2025-07-15 14:38:08.359342",
+  "module": "Ars",
+  "name": "Leave pre-filled data",
+  "script": "frappe.ui.form.on('Leave', {\n    refresh(frm) {\n        \n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name','designation'])\n                .then(function(response) {\n                    let employee = response.message;\n                    // console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        // console.log(\"Employee name :\", employee.name);\n                        // console.log(\"Employee deg :\", employee.designation);\n            \n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Internal approval",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.736507",
+  "module": "Ars",
+  "name": "internal approval pre-filled data",
+  "script": "frappe.ui.form.on('Internal approval', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Advance Payment",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.714747",
+  "module": "Ars",
+  "name": "Advance Payment pre-filled data",
+  "script": "frappe.ui.form.on('Advance Payment', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            let currentMonthName = new Date().toLocaleString('default', { month: 'long' });\n            console.log(\"current Month Name\",currentMonthName);\n            frm.set_value('month',currentMonthName);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Add Business trip request",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.693041",
+  "module": "Ars",
+  "name": "Business trip request pre-filled data",
+  "script": "frappe.ui.form.on('Add Business trip request', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Business trip report",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.671760",
+  "module": "Ars",
+  "name": "Add Business trip report Pre-filled data",
+  "script": "frappe.ui.form.on('Business trip report', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Slack channel opening application",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.649276",
+  "module": "Ars",
+  "name": "Slack channel opening application pre-filled data",
+  "script": "frappe.ui.form.on('Slack channel opening application', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Add slack for external users",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.627867",
+  "module": "Ars",
+  "name": "Slack channel external users",
+  "script": "frappe.ui.form.on('Add slack for external users', {\n    refresh(frm) {\n        if (frm.is_new()) {\n    \n            // current_date = nowdate()\n            let current_user = frappe.session.user;\n            console.log(\"Current User:\", current_user);\n            \n            let currentDate = frappe.datetime.now_date();\n            console.log(\"current Date\",currentDate);\n            frm.set_value('date',currentDate);\n            \n            // Fetch the Employee linked to the current user\n            frappe.db.get_value('Employee', { 'user_id': current_user }, ['name', 'employee_name'])\n                .then(function(response) {\n                    let employee = response.message;\n                    console.log(\"Employee :\", employee);\n                    if (employee) {\n                        // Set the employee field with the Employee ID\n                        frm.set_value('employee_id', employee.name);\n                        console.log(\"Employee name :\", employee.name);\n                    } else {\n                        frappe.msgprint(__('No Employee record found for the current user. Contact HR or technical Team.'));\n                    }\n                });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Overtime",
+  "enabled": 1,
+  "modified": "2025-07-16 10:54:04.643659",
+  "module": "Ars",
+  "name": "difference calculator overtime",
+  "script": "frappe.ui.form.on('Overtime', {\r\n    refresh(frm) {\r\n        // Optional initialization logic\r\n    },\r\n    start_date(frm) {\r\n        waitforinput(frm);\r\n    },\r\n    end_date(frm) {\r\n        waitforinput(frm);\r\n    }\r\n});\r\n\r\nlet timer;\r\nfunction waitforinput(frm) {\r\n    if (timer) {\r\n        clearTimeout(timer);\r\n    }\r\n\r\n    timer = setTimeout(() => {\r\n        calculate_time_difference(frm);\r\n    }, 2000); // 2-second delay\r\n}\r\n\r\nfunction calculate_time_difference(frm) {\r\n    if (frm.doc.start_date && frm.doc.end_date) {\r\n        let start_date = new Date(frm.doc.start_date);\r\n        let end_date = new Date(frm.doc.end_date);\r\n\r\n        // Validate that end_date is not before start_date\r\n        if (end_date < start_date) {\r\n            frappe.msgprint(__('End Date cannot be before Start Date'));\r\n            frm.set_value('end_date', null);\r\n            frm.set_value('days_difference', '');\r\n            return;\r\n        }\r\n\r\n        // Calculate time difference in milliseconds\r\n        let diff_time = end_date - start_date;\r\n\r\n        // Convert to days, hours, minutes, seconds\r\n        let days = Math.floor(diff_time / (1000 * 60 * 60 * 24));\r\n        let hours = Math.floor((diff_time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));\r\n        let minutes = Math.floor((diff_time % (1000 * 60 * 60)) / (1000 * 60));\r\n        let seconds = Math.floor((diff_time % (1000 * 60)) / 1000);\r\n\r\n        // Format the output (e.g., \"0 days, 0 hours, 0 minutes, 51 seconds\")\r\n        let time_diff_str = '';\r\n        if (days > 0) time_diff_str += `${days} 日${days > 1 ? 's' : ''}, `;\r\n        if (hours > 0 || days > 0) time_diff_str += `${hours} 時間${hours > 1 ? 's' : ''}, `;\r\n        if (minutes > 0 || hours > 0 || days > 0) time_diff_str += `${minutes} 分${minutes > 1 ?'' : ''}, `;\r\n        time_diff_str += `${seconds} 秒${seconds > 1 ? 's' : ''}`;\r\n\r\n        // Set the formatted string to a field (e.g., time_difference or days_difference)\r\n        frm.set_value('days_difference', time_diff_str);\r\n    } else {\r\n        frm.set_value('days_difference', '');\r\n    }\r\n}",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave",
+  "enabled": 1,
+  "modified": "2025-07-13 16:14:33.576808",
+  "module": "Ars",
+  "name": "Difference calculator Leave",
+  "script": "frappe.ui.form.on('Leave', {\r\n    refresh(frm) {\r\n        // Optional initialization logic\r\n    },\r\n    from_date(frm) {\r\n        calculate_days_difference(frm);\r\n    },\r\n    to_date(frm) {\r\n        calculate_days_difference(frm);\r\n    }\r\n});\r\n\r\nfunction calculate_days_difference(frm) {\r\n    if (frm.doc.from_date && frm.doc.to_date) {\r\n        let start_date = new Date(frm.doc.from_date);\r\n        let end_date = new Date(frm.doc.to_date);\r\n\r\n        // Validate that to_date is not before from_date\r\n        if (end_date < start_date) {\r\n            frappe.msgprint(__('To Date cannot be before From Date'));\r\n            frm.set_value('to_date', null);\r\n            frm.set_value('days_difference', 0);\r\n            return;\r\n        }\r\n\r\n        // Calculate time difference in milliseconds\r\n        let diff_time = end_date - start_date;\r\n\r\n        // Convert to days (round up to include partial days, common in leave systems)\r\n        let days = Math.ceil(diff_time / (1000 * 60 * 60 * 24));\r\n\r\n        // Set the number of days to days_difference\r\n        frm.set_value('days_difference', days);\r\n    } else {\r\n        frm.set_value('days_difference', 0);\r\n    }\r\n}",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Support timesheet",
+  "enabled": 1,
+  "modified": "2025-07-17 12:09:26.699082",
+  "module": "Ars",
+  "name": "Support timeSheet timer",
+  "script": "let timerInterval = null;\r\nlet current_row_index = null;\r\n\r\nfrappe.ui.form.on('Support timesheet', {\r\n    refresh(frm) {\r\n        // Add Timer Button\r\n        if (!frm.is_new()) {\r\n            if (frm.doc.timer_status === 'On') {\r\n                frm.add_custom_button('Complete Timer', () => stop_timer(frm));\r\n                start_timer_display(frm);\r\n            } else {\r\n                frm.add_custom_button('Start Timer', () => start_timer(frm));\r\n            }\r\n        }\r\n    }\r\n});\r\n\r\nfunction start_timer(frm) {\r\n    const now = frappe.datetime.now_datetime();\r\n\r\n    // Add new row to time_logs table\r\n    const new_row = frm.add_child('time_logs');\r\n    new_row.from_time = now;\r\n    new_row.to_time = '';\r\n    new_row.hours = 0;\r\n\r\n    current_row_index = frm.doc.time_logs.length - 1; // Store index of current timer row\r\n\r\n    frm.set_value('timer_status', 'On');\r\n    frm.save().then(() => {\r\n        frm.reload_doc();\r\n    });\r\n}\r\n\r\nfunction stop_timer(frm) {\r\n    const now = frappe.datetime.now_datetime();\r\n\r\n    if (current_row_index == null || !frm.doc.time_logs[current_row_index]) {\r\n        frappe.msgprint(\"No running timer found.\");\r\n        return;\r\n    }\r\n\r\n    const row = frm.doc.time_logs[current_row_index];\r\n    row.to_time = now;\r\n\r\n    const from = frappe.datetime.str_to_obj(row.from_time);\r\n    const to = new Date(now);\r\n    const diff_sec = Math.floor((to - from) / 1000);\r\n    const diff_hours = diff_sec / 3600;\r\n\r\n    row.hours = diff_hours;\r\n\r\n    frm.set_value('timer_status', 'Off');\r\n\r\n    frm.save().then(() => {\r\n        if (timerInterval) clearInterval(timerInterval);\r\n        frm.reload_doc();\r\n        current_row_index = null;\r\n    });\r\n}\r\n\r\nfunction start_timer_display(frm) {\r\n    if (\r\n        current_row_index == null ||\r\n        !frm.doc.time_logs[current_row_index] ||\r\n        !frm.doc.time_logs[current_row_index].from_time\r\n    ) {\r\n        return;\r\n    }\r\n\r\n    const from = frappe.datetime.str_to_obj(frm.doc.time_logs[current_row_index].from_time);\r\n\r\n    timerInterval = setInterval(() => {\r\n        const now = new Date();\r\n        const diff_sec = Math.floor((now - from) / 1000);\r\n        const display = secondsToHHMMSS(diff_sec);\r\n\r\n        frappe.show_alert({\r\n            message: `⏱️ Timer: ${display}`,\r\n            indicator: 'blue'\r\n        }, 1);\r\n    }, 1000);\r\n}\r\n\r\nfunction secondsToHHMMSS(seconds) {\r\n    const h = Math.floor(seconds / 3600).toString().padStart(2, '0');\r\n    const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');\r\n    const s = Math.floor(seconds % 60).toString().padStart(2, '0');\r\n    return `${h}:${m}:${s}`;\r\n}\r\n",
+  "view": "Form"
+ }
+]

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-23 11:10:31.014801",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5oqd",
+  "select_month",
+  "current_table_total_subsidy_amount",
+  "subsidy_given",
+  "subsidy"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5oqd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_month",
+   "fieldtype": "Data",
+   "label": "\u2f49"
+  },
+  {
+   "fieldname": "current_table_total_subsidy_amount",
+   "fieldtype": "Data",
+   "label": "\u91d1\u984d"
+  },
+  {
+   "fieldname": "subsidy",
+   "fieldtype": "Int",
+   "label": "\u88dc\u52a9\u91d1"
+  },
+  {
+   "fieldname": "subsidy_given",
+   "fieldtype": "Float",
+   "label": "\u652f\u7d66\u3055\u308c\u305f\u88dc\u52a9\u91d1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-25 17:47:34.229151",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "user breakfast report",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
