@@ -1,0 +1,542 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-09-11 12:23:07.805878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zoja",
+  "column_break_nmax",
+  "amended_from",
+  "created_by",
+  "modified_by1",
+  "account_owner",
+  "account_name",
+  "\u4f01\u696d\u5074\u306e\u6c7a\u6e08\u8005id",
+  "\u4f01\u696d\u5074\u306e\u62c5\u5f53\u8005",
+  "account_site",
+  "account_number",
+  "account_type",
+  "annual_revenue",
+  "ec\u5e74\u5546",
+  "\u30ea\u30fc\u30c9\u30af\u30aa\u30ea\u30d5\u30a3\u30b1\u30fc\u30b7\u30e7\u30f3",
+  "\u73fe\u72b6\u30b9\u30c6\u30fc\u30bf\u30b9",
+  "\u9867\u5ba2\u30d5\u30e9\u30b0",
+  "\u9867\u5ba2\u30bf\u30a4\u30d7",
+  "hubspot\u304b\u3089\u79fb\u884c",
+  "record_id",
+  "account_ownerid",
+  "created_byid",
+  "connected_toid",
+  "column_break_qwhn",
+  "created_time",
+  "modified_time",
+  "phone",
+  "fax",
+  "website",
+  "ticker_symbol",
+  "employees",
+  "sic_code",
+  "\u8ca9\u58f2\u30c1\u30e3\u30cd\u30eb",
+  "\u6d41\u5165\u7d4c\u8def",
+  "\u5546\u6750",
+  "\u7d39\u4ecb\u5143",
+  "tag",
+  "change_log_time",
+  "locked",
+  "last_enriched_time",
+  "enrich_status",
+  "\u7d39\u4ecb\u5143id",
+  "data_xcdo",
+  "modified_byid",
+  "ace\u30b7\u30b9\u30c6\u30e0\u69cb\u6210_section",
+  "idc\u533a\u5206",
+  "\u30b5\u30fc\u30d0\u69cb\u6210",
+  "\u69cb\u6210\u5099\u8003",
+  "column_break_nlyh",
+  "rds\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+  "db\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+  "api\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+  "oracle_\u30d0\u30fc\u30b8\u30e7\u30f3",
+  "section_break_ncxn",
+  "\u914d\u9001\u4f1a\u793e",
+  "\u6708\u9593\u51fa\u8377\u4ef6\u6570",
+  "column_break_jjue",
+  "address_information_section",
+  "billing_street",
+  "billing_state",
+  "billing_city",
+  "billing_code",
+  "billing_country",
+  "column_break_kdkp",
+  "shipping_street",
+  "shipping_city",
+  "shipping_state",
+  "shipping_code",
+  "shipping_country",
+  "\u81ea\u52d5\u8a18\u5165_section",
+  "\u90f5\u4fbf\u756a\u53f7",
+  "\u81ea\u52d5\u5099\u8003",
+  "\u4f4f\u6240",
+  "\u6cd5\u4eba\u756a\u53f7",
+  "column_break_sahk",
+  "\u7d50\u679c",
+  "\u51fa\u529b\u4f1a\u793e\u540d",
+  "\u30a4\u30f3\u30dc\u30a4\u30b9\u756a\u53f7",
+  "description_information_section",
+  "parent_account",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zoja",
+   "fieldtype": "Section Break",
+   "label": "Account Information"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "zoho crm accounts",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "account_owner",
+   "fieldtype": "Data",
+   "label": "Account Owner"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "parent_account",
+   "fieldtype": "Data",
+   "label": "Parent Account"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "ticker_symbol",
+   "fieldtype": "Data",
+   "label": "Ticker Symbol"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "label": "Account Type"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Int",
+   "label": "Employees"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Float",
+   "label": "Annual Revenue"
+  },
+  {
+   "fieldname": "sic_code",
+   "fieldtype": "Data",
+   "label": "SIC Code"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Created By"
+  },
+  {
+   "fieldname": "modified_by1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Modified By"
+  },
+  {
+   "fieldname": "created_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Created Time"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "account_site",
+   "fieldtype": "Data",
+   "label": "Account Site"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tag"
+  },
+  {
+   "fieldname": "change_log_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Change Log Time"
+  },
+  {
+   "fieldname": "billing_street",
+   "fieldtype": "Data",
+   "label": "Billing Street"
+  },
+  {
+   "fieldname": "shipping_street",
+   "fieldtype": "Data",
+   "label": "Shipping Street"
+  },
+  {
+   "fieldname": "billing_city",
+   "fieldtype": "Data",
+   "label": "Billing City"
+  },
+  {
+   "fieldname": "shipping_city",
+   "fieldtype": "Data",
+   "label": "Shipping City"
+  },
+  {
+   "fieldname": "billing_state",
+   "fieldtype": "Data",
+   "label": "Billing State"
+  },
+  {
+   "fieldname": "shipping_state",
+   "fieldtype": "Data",
+   "label": "Shipping State"
+  },
+  {
+   "fieldname": "billing_code",
+   "fieldtype": "Data",
+   "label": "Billing Code"
+  },
+  {
+   "fieldname": "shipping_code",
+   "fieldtype": "Data",
+   "label": "Shipping Code"
+  },
+  {
+   "fieldname": "billing_country",
+   "fieldtype": "Data",
+   "label": "Billing Country"
+  },
+  {
+   "fieldname": "shipping_country",
+   "fieldtype": "Data",
+   "label": "Shipping Country"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "locked",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Locked"
+  },
+  {
+   "fieldname": "last_enriched_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Enriched Time"
+  },
+  {
+   "fieldname": "enrich_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Enrich Status"
+  },
+  {
+   "fieldname": "\u8ca9\u58f2\u30c1\u30e3\u30cd\u30eb",
+   "fieldtype": "Data",
+   "label": "\u8ca9\u58f2\u30c1\u30e3\u30cd\u30eb"
+  },
+  {
+   "fieldname": "ec\u5e74\u5546",
+   "fieldtype": "Data",
+   "label": "EC\u5e74\u5546"
+  },
+  {
+   "fieldname": "\u6d41\u5165\u7d4c\u8def",
+   "fieldtype": "Data",
+   "label": "\u6d41\u5165\u7d4c\u8def"
+  },
+  {
+   "fieldname": "\u30ea\u30fc\u30c9\u30af\u30aa\u30ea\u30d5\u30a3\u30b1\u30fc\u30b7\u30e7\u30f3",
+   "fieldtype": "Data",
+   "label": "\u30ea\u30fc\u30c9\u30af\u30aa\u30ea\u30d5\u30a3\u30b1\u30fc\u30b7\u30e7\u30f3"
+  },
+  {
+   "fieldname": "\u5546\u6750",
+   "fieldtype": "Data",
+   "label": "\u5546\u6750"
+  },
+  {
+   "fieldname": "\u73fe\u72b6\u30b9\u30c6\u30fc\u30bf\u30b9",
+   "fieldtype": "Data",
+   "label": "\u73fe\u72b6\u30b9\u30c6\u30fc\u30bf\u30b9"
+  },
+  {
+   "fieldname": "\u9867\u5ba2\u30d5\u30e9\u30b0",
+   "fieldtype": "Data",
+   "label": "\u9867\u5ba2\u30d5\u30e9\u30b0"
+  },
+  {
+   "fieldname": "\u9867\u5ba2\u30bf\u30a4\u30d7",
+   "fieldtype": "Data",
+   "label": "\u9867\u5ba2\u30bf\u30a4\u30d7"
+  },
+  {
+   "default": "0",
+   "fieldname": "hubspot\u304b\u3089\u79fb\u884c",
+   "fieldtype": "Check",
+   "label": "Hubspot\u304b\u3089\u79fb\u884c"
+  },
+  {
+   "fieldname": "\u7d39\u4ecb\u5143",
+   "fieldtype": "Data",
+   "label": "\u7d39\u4ecb\u5143"
+  },
+  {
+   "fieldname": "\u6cd5\u4eba\u756a\u53f7",
+   "fieldtype": "Data",
+   "label": "\u6cd5\u4eba\u756a\u53f7"
+  },
+  {
+   "fieldname": "\u4f01\u696d\u5074\u306e\u6c7a\u6e08\u8005id",
+   "fieldtype": "Data",
+   "label": "\u4f01\u696d\u5074\u306e\u6c7a\u6e08\u8005"
+  },
+  {
+   "fieldname": "\u4f01\u696d\u5074\u306e\u62c5\u5f53\u8005",
+   "fieldtype": "Data",
+   "label": "\u4f01\u696d\u5074\u306e\u62c5\u5f53\u8005"
+  },
+  {
+   "fieldname": "\u90f5\u4fbf\u756a\u53f7",
+   "fieldtype": "Data",
+   "label": "\u90f5\u4fbf\u756a\u53f7"
+  },
+  {
+   "fieldname": "\u7d50\u679c",
+   "fieldtype": "Data",
+   "label": "\u7d50\u679c"
+  },
+  {
+   "fieldname": "\u4f4f\u6240",
+   "fieldtype": "Data",
+   "label": "\u4f4f\u6240"
+  },
+  {
+   "fieldname": "\u51fa\u529b\u4f1a\u793e\u540d",
+   "fieldtype": "Data",
+   "label": "\u51fa\u529b\u4f1a\u793e\u540d"
+  },
+  {
+   "fieldname": "\u81ea\u52d5\u5099\u8003",
+   "fieldtype": "Data",
+   "label": "\u81ea\u52d5\u5099\u8003"
+  },
+  {
+   "fieldname": "\u30a4\u30f3\u30dc\u30a4\u30b9\u756a\u53f7",
+   "fieldtype": "Data",
+   "label": "\u30a4\u30f3\u30dc\u30a4\u30b9\u756a\u53f7"
+  },
+  {
+   "fieldname": "\u914d\u9001\u4f1a\u793e",
+   "fieldtype": "Data",
+   "label": "\u914d\u9001\u4f1a\u793e"
+  },
+  {
+   "fieldname": "\u6708\u9593\u51fa\u8377\u4ef6\u6570",
+   "fieldtype": "Data",
+   "label": "\u6708\u9593\u51fa\u8377\u4ef6\u6570"
+  },
+  {
+   "fieldname": "\u30b5\u30fc\u30d0\u69cb\u6210",
+   "fieldtype": "Data",
+   "label": "\u30b5\u30fc\u30d0\u69cb\u6210"
+  },
+  {
+   "fieldname": "\u69cb\u6210\u5099\u8003",
+   "fieldtype": "Data",
+   "label": "\u69cb\u6210\u5099\u8003"
+  },
+  {
+   "fieldname": "idc\u533a\u5206",
+   "fieldtype": "Data",
+   "label": "IDC\u533a\u5206"
+  },
+  {
+   "fieldname": "oracle_\u30d0\u30fc\u30b8\u30e7\u30f3",
+   "fieldtype": "Data",
+   "label": "Oracle \u30d0\u30fc\u30b8\u30e7\u30f3"
+  },
+  {
+   "fieldname": "db\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+   "fieldtype": "Data",
+   "label": "DB\u30b5\u30fc\u30d0OS\u30d0\u30fc\u30b8\u30e7\u30f3"
+  },
+  {
+   "fieldname": "rds\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+   "fieldtype": "Data",
+   "label": "RDS\u30b5\u30fc\u30d0OS\u30d0\u30fc\u30b8\u30e7\u30f3"
+  },
+  {
+   "fieldname": "column_break_qwhn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_information_section",
+   "fieldtype": "Section Break",
+   "label": "Address Information"
+  },
+  {
+   "fieldname": "column_break_kdkp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_information_section",
+   "fieldtype": "Section Break",
+   "label": "Description Information"
+  },
+  {
+   "fieldname": "section_break_ncxn",
+   "fieldtype": "Section Break",
+   "label": "\u914d\u9001\u60c5\u5831"
+  },
+  {
+   "fieldname": "column_break_jjue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "\u81ea\u52d5\u8a18\u5165_section",
+   "fieldtype": "Section Break",
+   "label": "\u81ea\u52d5\u8a18\u5165"
+  },
+  {
+   "fieldname": "column_break_sahk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nmax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ace\u30b7\u30b9\u30c6\u30e0\u69cb\u6210_section",
+   "fieldtype": "Section Break",
+   "label": "Ace\u30b7\u30b9\u30c6\u30e0\u69cb\u6210"
+  },
+  {
+   "fieldname": "column_break_nlyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "api\u30b5\u30fc\u30d0os\u30d0\u30fc\u30b8\u30e7\u30f3",
+   "fieldtype": "Data",
+   "label": "API\u30b5\u30fc\u30d0OS\u30d0\u30fc\u30b8\u30e7\u30f3"
+  },
+  {
+   "fieldname": "record_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Record Id"
+  },
+  {
+   "fieldname": "account_ownerid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Account Owner.id"
+  },
+  {
+   "fieldname": "created_byid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Created By.id"
+  },
+  {
+   "fieldname": "modified_byid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Modified By.id"
+  },
+  {
+   "fieldname": "data_xcdo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Account.id"
+  },
+  {
+   "fieldname": "\u7d39\u4ecb\u5143id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u7d39\u4ecb\u5143.id"
+  },
+  {
+   "fieldname": "connected_toid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Connected To.id"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-11 16:29:38.142846",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "zoho crm accounts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

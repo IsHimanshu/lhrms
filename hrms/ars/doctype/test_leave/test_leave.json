@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Leave-{name1}-{DD-MM-YYYY}",
+ "creation": "2025-10-01 10:33:52.082432",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_iyp7",
+  "amended_from",
+  "name1",
+  "employee_id",
+  "column_break_mlje",
+  "report__to",
+  "date",
+  "section_break_hoym",
+  "leave_type",
+  "leave_type_sub_catogrey",
+  "start_date",
+  "end_date",
+  "days_difference",
+  "column_break_ausp",
+  "remark",
+  "attachment",
+  "dept"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_iyp7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "test leave",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u4f5c\u6210\u8005",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u793e\u54e1ID",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mlje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "report__to",
+   "fieldtype": "Data",
+   "label": "\u306b\u5831\u544a\u3059\u308b"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u7533\u8acb\u65e5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hoym",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Select",
+   "label": "\u533a\u5206",
+   "options": "\u6709\u7d66\u4f11\u6687\n\u4ee3\u4f11\n\u6b20\u52e4\n\u9045\u523b\n\u65e9\u9000\n\u79c1\u7528\u5916\u51fa\n\u7279\u5225\u4f11\u6687\n\u305d\u306e\u4ed6",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "\u4f11\u6687\u65e5\uff08\u304b\u3089\uff09",
+   "mandatory_depends_on": "eval:doc.leave_type !== '\u4ee3\u4f11'",
+   "read_only_depends_on": "eval:doc.leave_type === '\u6709\u7d66\u4f11\u6687' || doc.leave_type === '\u7279\u5225\u4f11\u6687'\r\n"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "\u4f11\u6687\u65e5\uff08\u307e\u3067\uff09",
+   "mandatory_depends_on": "eval:doc.leave_type !== '\u4ee3\u4f11'\r\n",
+   "read_only_depends_on": "eval:doc.leave_type === '\u6709\u7d66\u4f11\u6687' || doc.leave_type === '\u7279\u5225\u4f11\u6687'\r\n"
+  },
+  {
+   "fieldname": "days_difference",
+   "fieldtype": "Int",
+   "label": "\u4f11\u6687\u671f\u9593",
+   "mandatory_depends_on": "eval:doc.leave_type !== '\u4ee3\u4f11'\r\n",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ausp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "\u4e8b\u7531",
+   "max_height": "100px"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "dept",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department"
+  },
+  {
+   "depends_on": "eval:doc.leave_type === '\u6709\u7d66\u4f11\u6687' || doc.leave_type === '\u7279\u5225\u4f11\u6687'",
+   "fieldname": "leave_type_sub_catogrey",
+   "fieldtype": "Select",
+   "options": "\u5348\u524d\n\u5348\u5f8c\n\u7d42\u65e5"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-01 10:47:48.389300",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "test leave",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

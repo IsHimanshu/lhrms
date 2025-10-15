@@ -1,0 +1,239 @@
+frappe.provide("ars_support.timesheet");
+
+ars_support.timesheet.timer = function (frm, row, timestamp = 0) {
+	//let lapTimes = [];
+	//let lapContainer = dialog.$wrapper.find('.lap-times');
+	let dialog = new frappe.ui.Dialog({
+		title: __("Timer"),
+		fields: [
+			{
+				fieldtype: "Select",
+				label: __("Activity"),
+				fieldname: "activity",
+				options : "CS調査作業\n電話対応\n社外との会議\n外との会議\nプロジェクト資料作成中\n検証中、\n開発依頼\nxxx",
+				reqd: 1,
+			},
+			{ fieldtype: "Link", label: __("Issue"), fieldname: "issue", options: "ars support issue" },
+			{ fieldtype: "Link", label: __("Project"), fieldname: "project", options: "Project" },
+			///{ fieldtype: "Float", label: __("Expected Hrs"), fieldname: "expected_hours" },
+			{
+					fieldtype : "Select",
+					label : "Work Type",
+					fieldname : "work_type",
+					options : "Internal\n課題対応(CSMS登録済)\n課題対応(CMS未登録)"
+			},
+			{ fieldtype: "Section Break" },
+			{ fieldtype: "HTML", fieldname: "timer_html" },
+		],
+	});
+	if (row) {
+		dialog.set_values({
+			activity: row.activity,
+			issue: row.issue,
+			project: row.project,
+			work_type: row.work_type,
+		});
+	} else {
+		dialog.set_values({
+			project: frm.doc.parent_issue,
+		});
+	}
+	dialog.get_field("timer_html").$wrapper.append(get_timer_html());
+	function get_timer_html() {
+		return `
+			<div class="stopwatch">
+				<span class="hours">00</span>
+				<span class="colon">:</span>
+				<span class="minutes">00</span>
+				<span class="colon">:</span>
+				<span class="seconds">00</span>
+			</div>
+			<div class="playpause text-center">
+				<button class= "btn btn-primary btn-start"> ${__("Start")} </button>
+				<button class="btn btn-secondary btn-lap">${__("Lap")}</button>
+				<button class= "btn btn-primary btn-complete"> ${__("Complete")} </button>
+			</div>
+			<div class="lap-times">
+		`;
+	}
+	ars_support.timesheet.control_timer(frm, dialog, row, timestamp);
+	dialog.show();
+};
+
+ars_support.timesheet.control_timer = function (frm, dialog, row, timestamp = 0) {
+	var $btn_start = dialog.$wrapper.find(".playpause .btn-start");
+	var $btn_complete = dialog.$wrapper.find(".playpause .btn-complete");
+	var $btn_lap = dialog.$wrapper.find(".playpause .btn-lap");
+	var interval = null;
+	var currentIncrement = timestamp;
+	var initialized = row ? true : false;
+	var clicked = false;
+	var flag = true; // Alert only once
+	// If row with not completed status, initialize timer with the time elapsed on click of 'Start Timer'.
+	// if (row) {
+	// 	initialized = true;
+	// 	$btn_start.hide();
+	// 	$btn_complete.show();
+	// 	initializeTimer();
+	// }
+
+	// if (!initialized) {
+	// 	$btn_complete.hide();
+	// }
+	if (row && !row.to_time) {
+    // Active (incomplete) row → resume timer
+    initialized = true;
+    $btn_start.hide();
+    $btn_complete.show();
+
+    // Resume from elapsed time
+    if (row.from_time) {
+        let elapsed = moment().diff(moment(row.from_time), "seconds");
+        currentIncrement = elapsed;
+    }
+    initializeTimer();
+	} else {
+		// Row is completed (has to_time) or doesn't exist → no auto-start
+		initialized = false;
+		$btn_complete.hide();
+		$btn_start.show();
+	}
+
+	$btn_start.click(function (e) {
+		if (!initialized) {
+			// New activity if no activities found
+			var args = dialog.get_values();
+			if (!args) return;
+			if (
+				frm.doc.time_logs.length == 1 &&
+				!frm.doc.time_logs[0].activity &&
+				!frm.doc.time_logs[0].from_time
+			) {
+				frm.doc.time_logs = [];
+			}
+			row = frappe.model.add_child(frm.doc, "Support Timesheet Details", "time_logs");
+			row.activity = args.activity;
+			row.from_time = frappe.datetime.get_datetime_as_string();
+			row.issue = args.issue;
+			row.task = args.task;
+			row.expected_hours = args.expected_hours;
+			row.completed = 0;
+			let d = moment(row.from_time);
+			if (row.expected_hours) {
+				d.add(row.expected_hours, "hours");
+				row.to_time = frappe.datetime.get_datetime_as_string(d);
+			}
+			frm.refresh_field("time_logs");
+			frm.save();
+		}
+
+		if (clicked) {
+			e.preventDefault();
+			return false;
+		}
+
+		if (!initialized) {
+			initialized = true;
+			$btn_start.hide();
+			$btn_complete.show();
+			initializeTimer();
+		}
+	});
+
+	function complete_current_row(dialog) {
+		if (!row) return;
+
+		var grid_row = frm.fields_dict["time_logs"].grid.get_row(row.idx - 1);
+		var args = dialog.get_values(dialog);
+
+		grid_row.doc.completed = 1;
+		grid_row.doc.activity_type = args.activity_type;
+		grid_row.doc.issue = args.issue;
+		grid_row.doc.task = args.task;
+		grid_row.doc.expected_hours = args.expected_hours;
+		grid_row.doc.to_time = frappe.datetime.get_datetime_as_string();
+
+		grid_row.refresh();
+		frm.dirty();
+}
+
+
+	// Stop the timer and update the time logged by the timer on click of 'Complete' button
+	$btn_complete.click(function () {
+		// var grid_row = frm.fields_dict["time_logs"].grid.get_row(row.idx - 1);
+		// var args = dialog.get_values();
+		// grid_row.doc.completed = 1;
+		// grid_row.doc.activity_type = args.activity_type;
+		// grid_row.doc.project = args.project;
+		// grid_row.doc.task = args.task;
+		// grid_row.doc.expected_hours = args.expected_hours;
+		// grid_row.doc.to_time = frappe.datetime.get_datetime_as_string();
+		// grid_row.refresh();
+		complete_current_row(dialog)
+		frm.dirty();
+		frm.save();
+		reset();
+		dialog.hide();
+	});
+	$btn_lap.click(function(){
+		if (!initialized || !row) return;
+		complete_current_row(dialog);
+		const now = frappe.datetime.get_datetime_as_string();
+		const newRow = frappe.model.add_child(frm.doc, "Support Timesheet Details", "time_logs");
+
+		newRow.activity = "xxx"; 
+		newRow.from_time = now;
+		newRow.completed = 0;
+
+		row = newRow;
+		currentIncrement = 0;
+
+		frm.refresh_field("time_logs");
+		frm.save();
+	});
+
+	function initializeTimer() {
+		interval = setInterval(function () {
+			var current = setCurrentIncrement();
+			updateStopwatch(current);
+		}, 1000);
+	}
+
+	function updateStopwatch(increment) {
+		var hours = Math.floor(increment / 3600);
+		var minutes = Math.floor((increment - hours * 3600) / 60);
+		var seconds = increment - hours * 3600 - minutes * 60;
+
+		// If modal is closed by clicking anywhere outside, reset the timer
+		if (!$(".modal-dialog").is(":visible")) {
+			reset();
+		}
+		if (hours > 99999) reset();
+		if (cur_dialog && cur_dialog.get_value("expected_hours") > 0) {
+			if (flag && currentIncrement >= cur_dialog.get_value("expected_hours") * 3600) {
+				frappe.utils.play_sound("alert");
+				frappe.msgprint(__("Timer exceeded the given hours."));
+				flag = false;
+			}
+		}
+		$(".hours").text(hours < 10 ? "0" + hours.toString() : hours.toString());
+		$(".minutes").text(minutes < 10 ? "0" + minutes.toString() : minutes.toString());
+		$(".seconds").text(seconds < 10 ? "0" + seconds.toString() : seconds.toString());
+	}
+
+	function setCurrentIncrement() {
+		currentIncrement += 1;
+		return currentIncrement;
+	}
+
+	function reset() {
+		currentIncrement = 0;
+		initialized = false;
+		clearInterval(interval);
+		$(".hours").text("00");
+		$(".minutes").text("00");
+		$(".seconds").text("00");
+		$btn_complete.hide();
+		$btn_start.show();
+	}
+};

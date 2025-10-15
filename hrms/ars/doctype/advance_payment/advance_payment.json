@@ -13,6 +13,7 @@
   "department",
   "column_break_adun",
   "date",
+  "\u5bfe\u8c61\u6708",
   "details_section",
   "advance_payment_table"
  ],
@@ -65,8 +66,7 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "\u65e5\u4ed8",
-   "reqd": 1
+   "label": "\u65e5\u4ed8"
   },
   {
    "fieldname": "details_section",
@@ -77,13 +77,19 @@
    "fieldname": "advance_payment_table",
    "fieldtype": "Table",
    "options": "Advance payment table"
+  },
+  {
+   "fieldname": "\u5bfe\u8c61\u6708",
+   "fieldtype": "Date",
+   "label": "\u5bfe\u8c61\u6708",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-25 12:13:29.462897",
+ "modified": "2025-09-25 10:42:58.609435",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Advance Payment",

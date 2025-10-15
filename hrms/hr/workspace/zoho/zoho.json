@@ -1,7 +1,7 @@
 {
  "app": "hrms",
  "charts": [],
- "content": "[{\"id\":\"Q5W5-HK2g-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Zoho</span>\",\"col\":12}},{\"id\":\"C5maRjQPVo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb\",\"col\":3}},{\"id\":\"ZiMCE8vzqg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u4f11\u6687\u7b49\u7533\u8acb\u66f8\",\"col\":3}},{\"id\":\"sT7BbagD5G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u793e\u5185\u7a1f\u8b70\u7533\u8acb\",\"col\":3}},{\"id\":\"P7FmUXXb4P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u671d\u98df\u88dc\u52a9\u7533\u8acb\",\"col\":3}},{\"id\":\"ot6r17HU71\",\"type\":\"paragraph\",\"data\":{\"text\":\"<br>\",\"col\":12}}]",
+ "content": "[{\"id\":\"Q5W5-HK2g-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Zoho</span>\",\"col\":12}},{\"id\":\"xTCiVWiiRr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Zoho CRM\",\"col\":3}},{\"id\":\"IYE7uHe1EA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Zoho People\",\"col\":3}}]",
  "creation": "2025-07-21 12:25:30.052840",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
  "label": "Zoho",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-07-22 17:41:02.278078",
+ "modified": "2025-09-11 11:39:50.785697",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Zoho",
@@ -30,34 +30,16 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "\u671d\u98df\u88dc\u52a9\u7533\u8acb",
-   "link_to": "old_breakfast",
-   "stats_filter": "[]",
-   "type": "DocType"
+   "label": "Zoho CRM",
+   "type": "URL",
+   "url": "/app/zoho-crm"
   },
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb",
-   "link_to": "Old_overtime",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "\u4f11\u6687\u7b49\u7533\u8acb\u66f8",
-   "link_to": "old-leave",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "\u793e\u5185\u7a1f\u8b70\u7533\u8acb",
-   "link_to": "ringi",
-   "stats_filter": "[]",
-   "type": "DocType"
+   "label": "Zoho People",
+   "type": "URL",
+   "url": "/app/zoho-people"
   }
  ],
  "title": "Zoho",

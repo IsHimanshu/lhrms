@@ -74,7 +74,7 @@
   {
    "fetch_from": "employee_id.days",
    "fieldname": "total_days",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "\u5408\u8a08\u65e5\u6570"
   },
   {
@@ -90,6 +90,7 @@
    "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "breakfast_table",
    "fieldtype": "Table",
    "label": "\u671d\u98df\u88dc\u52a9\u660e\u7d30",
@@ -102,6 +103,7 @@
    "label": "\u6982\u8981"
   },
   {
+   "allow_on_submit": 1,
    "default": "0000",
    "fieldname": "current_table_total_subsidy_amount",
    "fieldtype": "Float",
@@ -113,6 +115,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "default": "0",
    "fieldname": "current_table_total_days",
    "fieldtype": "Int",
@@ -120,6 +123,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "default": "0000",
    "fieldname": "applied_total_subsidy_amount",
    "fieldtype": "Float",
@@ -131,7 +135,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-04 14:48:18.648240",
+ "modified": "2025-09-10 14:15:12.169378",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Breakfast",

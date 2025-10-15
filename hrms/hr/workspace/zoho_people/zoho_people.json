@@ -1,0 +1,89 @@
+{
+ "app": "hrms",
+ "charts": [],
+ "content": "[{\"id\":\"em21ElRATA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Zoho People</span>\",\"col\":12}},{\"id\":\"5jxXgoX19e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb\",\"col\":6}},{\"id\":\"nO8A0VQcIj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u4f11\u6687\u7b49\u7533\u8acb\u66f8\",\"col\":6}},{\"id\":\"EU2wEV4rq1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u793e\u5185\u7a1f\u8b70\u7533\u8acb\",\"col\":6}},{\"id\":\"3vecSszJE3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u671d\u98df\u88dc\u52a9\u7533\u8acb\",\"col\":6}},{\"id\":\"s8v1vQmeK9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u5831\u544a\u66f8\",\"col\":6}},{\"id\":\"k87_07A8GX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u7533\u8acb\",\"col\":6}},{\"id\":\"hM_mAQ8SBJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u7acb\u66ff\u91d1\u7cbe\u7b97\",\"col\":6}}]",
+ "creation": "2025-09-11 11:29:44.336351",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "grid",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Zoho People",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-09-13 19:10:54.198629",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Zoho People",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 29.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb",
+   "link_to": "Old_overtime",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u4f11\u6687\u7b49\u7533\u8acb\u66f8",
+   "link_to": "old-leave",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u671d\u98df\u88dc\u52a9\u7533\u8acb",
+   "link_to": "old_breakfast",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u793e\u5185\u7a1f\u8b70\u7533\u8acb",
+   "link_to": "Zoho ringi",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u7acb\u66ff\u91d1\u7cbe\u7b97",
+   "link_to": "zoho people Advance payment system",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u51fa\u5f35\u5831\u544a\u66f8",
+   "link_to": "zoho people business trip report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u51fa\u5f35\u7533\u8acb",
+   "link_to": "zoho people business trip request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Zoho People",
+ "type": "Workspace"
+}

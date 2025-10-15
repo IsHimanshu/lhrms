@@ -12,7 +12,11 @@
   "case_reply",
   "incharge",
   "pg_incharge",
-  "ai_data"
+  "ai_data",
+  "client_id",
+  "stakeholder",
+  "phone_number",
+  "emal_address"
  ],
  "fields": [
   {
@@ -59,13 +63,34 @@
    "fieldtype": "Check",
    "label": "AI",
    "mandatory_depends_on": "eval:frappe.session.user !== 'Administrator'"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Link",
+   "label": "Customer id",
+   "options": "ars support customer"
+  },
+  {
+   "fieldname": "stakeholder",
+   "fieldtype": "Select",
+   "label": "stakeholder"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "no"
+  },
+  {
+   "fieldname": "emal_address",
+   "fieldtype": "Data",
+   "label": "email"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-12 18:54:54.365935",
+ "modified": "2025-09-01 16:12:45.737810",
  "modified_by": "Administrator",
  "module": "Ars support",
  "name": "ars_support_issue_table",

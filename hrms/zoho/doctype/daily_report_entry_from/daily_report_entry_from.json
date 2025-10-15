@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-09-12 12:06:46.898772",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_endw",
+  "amended_from",
+  "employee_info",
+  "input_date",
+  "column_break_nzgu",
+  "emname",
+  "remark",
+  "section_break_dbut",
+  "table_qemq"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_endw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "daily report entry from",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_info",
+   "fieldtype": "Link",
+   "label": "\u793e\u54e1ID",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "input_date",
+   "fieldtype": "Date",
+   "label": "\u5165\u529b\u65e5"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "section_break_dbut",
+   "fieldtype": "Section Break",
+   "label": "\u8a73\u7d30"
+  },
+  {
+   "fieldname": "table_qemq",
+   "fieldtype": "Table",
+   "options": "daily report entry from table"
+  },
+  {
+   "fieldname": "column_break_nzgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_info.employee_name",
+   "fieldname": "emname",
+   "fieldtype": "Data",
+   "label": "\u793e\u54e1\u540d"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-17 11:22:37.299868",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "daily report entry from",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

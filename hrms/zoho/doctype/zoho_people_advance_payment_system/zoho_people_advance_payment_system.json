@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-11 18:41:41.807192",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tckl",
+  "amended_from",
+  "\u51fa\u793e\u6708\u5ea6",
+  "approval_status",
+  "approval_submission_time",
+  "level_1_approver",
+  "level_1_approval_comments",
+  "level_1_approval_time",
+  "approval_completion_time",
+  "column_break_kkob",
+  "zoho_link_id",
+  "\u8d77\u6848\u8005",
+  "dt",
+  "section_break_ojqj",
+  "\u660e\u7d30"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tckl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "zoho people Advance payment system",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "zoho_link_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ZOHO_LINK_ID"
+  },
+  {
+   "fieldname": "\u51fa\u793e\u6708\u5ea6",
+   "fieldtype": "Data",
+   "label": "\u51fa\u793e\u6708\u5ea6"
+  },
+  {
+   "fieldname": "\u8d77\u6848\u8005",
+   "fieldtype": "Data",
+   "label": "\u8d77\u6848\u8005"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval Status"
+  },
+  {
+   "fieldname": "approval_submission_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval submission time"
+  },
+  {
+   "fieldname": "level_1_approver",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approver"
+  },
+  {
+   "fieldname": "level_1_approval_comments",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approval comments"
+  },
+  {
+   "fieldname": "level_1_approval_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approval time"
+  },
+  {
+   "fieldname": "approval_completion_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval completion time"
+  },
+  {
+   "fieldname": "\u660e\u7d30",
+   "fieldtype": "Table",
+   "label": "\u660e\u7d30",
+   "options": "zoho people Advance payment system table"
+  },
+  {
+   "fieldname": "column_break_kkob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ojqj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dt",
+   "fieldtype": "Datetime",
+   "label": "\u7533\u8acb\u65e5"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-12 17:50:39.567669",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "zoho people Advance payment system",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-09-11 14:05:30.476861",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gxp0",
+  "amended_from",
+  "record_id",
+  "\u9867\u5ba2\u30d5\u30e9\u30b0",
+  "\u8cac\u4efb\u8005_name",
+  "account_nameid",
+  "account_name",
+  "email",
+  "\u8cac\u4efb\u8005_ownerid",
+  "\u8cac\u4efb\u8005_owner",
+  "modified_time",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gxp0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "zoho crm contacts",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "record_id",
+   "fieldtype": "Data",
+   "label": "Record Id"
+  },
+  {
+   "fieldname": "\u9867\u5ba2\u30d5\u30e9\u30b0",
+   "fieldtype": "Data",
+   "label": "\u9867\u5ba2\u30d5\u30e9\u30b0"
+  },
+  {
+   "fieldname": "\u8cac\u4efb\u8005_name",
+   "fieldtype": "Data",
+   "label": "\u8cac\u4efb\u8005 Name"
+  },
+  {
+   "fieldname": "account_nameid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Account Name.id"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "\u8cac\u4efb\u8005_ownerid",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u8cac\u4efb\u8005 Owner.id"
+  },
+  {
+   "fieldname": "\u8cac\u4efb\u8005_owner",
+   "fieldtype": "Data",
+   "label": "\u8cac\u4efb\u8005 Owner"
+  },
+  {
+   "fieldname": "modified_time",
+   "fieldtype": "Datetime",
+   "label": "Modified Time"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-11 16:40:29.905409",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "zoho crm contacts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

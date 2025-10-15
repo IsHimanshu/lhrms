@@ -1,0 +1,476 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-02 13:40:29.354783",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_loib",
+  "employee",
+  "flag",
+  "employee_name",
+  "print_download_report",
+  "column_break_hzki",
+  "select_from",
+  "select_to",
+  "summary_section",
+  "column_break_fiih",
+  "total_subsidy_days",
+  "total_subsidy_amount",
+  "column_break_pmjh",
+  "total_subsidy_given",
+  "section_break_dmiw",
+  "column_break_bful",
+  "total_advance_payment",
+  "advance_payment_count",
+  "cat1",
+  "cat2",
+  "column_break_wsgr",
+  "cat3",
+  "cat4",
+  "cat5",
+  "overtime_summary_section",
+  "total_overtime",
+  "morning_overtime_breakfast",
+  "total_overtime_c1",
+  "total_overtime_c1_sp",
+  "total_overtime_c2",
+  "column_break_amoa",
+  "total_overtime_c3",
+  "total_overtime_c3_sp",
+  "total_overtime_c4",
+  "total_overtime_c4_sp",
+  "total_overtime_min",
+  "leave_summary_section",
+  "total_leave",
+  "total_leave_c1",
+  "total_leave_c2",
+  "total_leave_c3",
+  "total_leave_c4",
+  "total_leave_c5",
+  "total_leave_c6",
+  "total_leave_c7",
+  "total_leave_c8",
+  "total_leave_c9",
+  "total_leave_c10",
+  "column_break_lkki",
+  "total_leave_c11",
+  "total_leave_c12",
+  "total_leave_c13",
+  "total_leave_c14",
+  "total_leave_c15",
+  "total_leave_c16",
+  "total_leave_c17",
+  "section_break_qcsp",
+  "leave_details_table",
+  "breakfast_allowance_request_details_table",
+  "overtime_details_table",
+  "advance_payment_details_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_loib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "\u5f93\u696d\u54e1",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "flag",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "flag",
+   "non_negative": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "\u5f93\u696d\u54e1",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.docstatus > 0",
+   "fieldname": "print_download_report",
+   "fieldtype": "Button",
+   "label": "\u30ec\u30dd\u30fc\u30c8\u3092\u5370\u5237/\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9"
+  },
+  {
+   "fieldname": "column_break_hzki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_from",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u304b\u3089",
+   "reqd": 1
+  },
+  {
+   "fieldname": "select_to",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u307e\u3067",
+   "reqd": 1
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "\u6982\u8981"
+  },
+  {
+   "fieldname": "column_break_fiih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_subsidy_days",
+   "fieldtype": "Data",
+   "label": "\u300c\u671d\u6d3b\u65e5\u6570\u300d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_subsidy_amount",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u4e0d\u8981hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pmjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_subsidy_given",
+   "fieldtype": "Data",
+   "label": "Actual amount to be paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dmiw",
+   "fieldtype": "Section Break",
+   "label": "\u524d\u6255\u3044\u6982\u8981"
+  },
+  {
+   "fieldname": "column_break_bful",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_advance_payment",
+   "fieldtype": "Data",
+   "label": "\u300c\u7acb\u66ff\u91d1\u7dcf\u984d\u300d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "advance_payment_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u4e0d\u8981 hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cat1",
+   "fieldtype": "Data",
+   "label": "\u4ea4\u901a\u8cbb",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cat2",
+   "fieldtype": "Data",
+   "label": "\u4f1a\u8b70\u8cbb",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wsgr",
+   "fieldtype": "Column Break",
+   "label": " "
+  },
+  {
+   "fieldname": "cat3",
+   "fieldtype": "Data",
+   "label": "\u6d88\u8017\u54c1\u8cbb",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cat4",
+   "fieldtype": "Data",
+   "label": "\u305d\u306e\u4ed6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cat5",
+   "fieldtype": "Data",
+   "label": "\u4ea4\u969b\u8cbb",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overtime_summary_section",
+   "fieldtype": "Section Break",
+   "label": "\u6b8b\u696d\u306e\u6982\u8981"
+  },
+  {
+   "fieldname": "total_overtime",
+   "fieldtype": "Data",
+   "label": "\u6b8b\u696d\u5408\u8a08",
+   "read_only": 1
+  },
+  {
+   "fieldname": "morning_overtime_breakfast",
+   "fieldtype": "Data",
+   "label": "\u671d\u306e\u6b8b\u696d\uff08\u671d\u98df\u624b\u5f53\uff09",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c1",
+   "fieldtype": "Data",
+   "label": "18:30 \uff5e 22:00",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c1_sp",
+   "fieldtype": "Data",
+   "label": "\u5e73\u65e5 (\u65e9\u671d\uff65\u6df1\u591c)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c2",
+   "fieldtype": "Data",
+   "label": "22:00 \uff5e 5:00",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_amoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_overtime_c3",
+   "fieldtype": "Data",
+   "label": "\u6240\u5b9a\u4f11\u65e5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c3_sp",
+   "fieldtype": "Data",
+   "label": "\u6240\u5b9a\u4f11\u65e5(\u65e9\u671d\uff65\u6df1\u591c)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c4",
+   "fieldtype": "Data",
+   "label": "\u6cd5\u5b9a\u4f11\u65e5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_c4_sp",
+   "fieldtype": "Data",
+   "label": "\u6cd5\u5b9a\u4f11\u65e5(\u65e9\u671d\uff65\u6df1\u591c)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overtime_min",
+   "fieldtype": "Data",
+   "label": "\u652f\u6255\u5bfe\u8c61\u6b8b\u696d\u5408\u8a08",
+   "read_only": 1
+  },
+  {
+   "fieldname": "leave_summary_section",
+   "fieldtype": "Section Break",
+   "label": "\u4f11\u6687\u6982\u8981"
+  },
+  {
+   "fieldname": "total_leave",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "\u7dcf\u4f11\u6687 hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c1",
+   "fieldtype": "Data",
+   "label": "\u6709\u7d66\u4f11\u6687",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u5348\u524d\u6709\u7d66\u4f11\u6687 hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c3",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u5348\u5f8c\u6709\u7d66\u4f11\u6687 hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c4",
+   "fieldtype": "Data",
+   "label": "\u4ee3\u4f11\uff08\u7121\u7d66\uff09",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c5",
+   "fieldtype": "Data",
+   "label": "\u6b20\u52e4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c6",
+   "fieldtype": "Data",
+   "label": "\u9045\u523b",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c7",
+   "fieldtype": "Data",
+   "label": "\u65e9\u9000",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c8",
+   "fieldtype": "Data",
+   "label": "\u79c1\u7528\u5916\u51fa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c9",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u7523\u524d\u7523\u5f8c\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c10",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u6bcd\u6027\u5065\u5eb7\u7ba1\u7406\u306e\u305f\u3081\u306e\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lkki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_leave_c11",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u80b2\u5150\u30fb\u4ecb\u8b77\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c12",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u770b\u8b77\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c13",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u751f\u7406\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c14",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u88c1\u5224\u54e1\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c15",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u4f11\u6687 Hidden",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c16",
+   "fieldtype": "Data",
+   "label": "\u7279\u5225\u4f11\u6687",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_leave_c17",
+   "fieldtype": "Data",
+   "label": "\u305d\u306e\u4ed6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qcsp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leave_details_table",
+   "fieldtype": "Table",
+   "label": "Leave Details",
+   "options": "user report Leave",
+   "read_only": 1
+  },
+  {
+   "fieldname": "breakfast_allowance_request_details_table",
+   "fieldtype": "Table",
+   "label": "\u671d\u98df\u624b\u5f53\u306e\u8a73\u7d30",
+   "options": "user breakfast report",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overtime_details_table",
+   "fieldtype": "Table",
+   "label": "\u6b8b\u696d\u306e\u8a73\u7d30",
+   "options": "user overtime report",
+   "read_only": 1
+  },
+  {
+   "fieldname": "advance_payment_details_table",
+   "fieldtype": "Table",
+   "label": "Advance Payment",
+   "options": "user Advance Payment report",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "test user employee report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-02 13:40:29.354783",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "test user employee report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

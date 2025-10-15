@@ -81,7 +81,7 @@ def get_dashboard_for_timesheet(data):
 
 def get_dashboard_for_project(data):
 	data["transactions"].append(
-		{"label": _("Claims"), "items": ["Expense Claim"]},
+		{"label": _("Claims"), "items": ["Internal approval"]},
 	)
 
 	return data

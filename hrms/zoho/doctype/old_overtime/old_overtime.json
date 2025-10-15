@@ -7,9 +7,9 @@
  "field_order": [
   "applicant",
   "creation_tijme",
-  "overtime_date",
   "manager_approval",
-  "overtime_band",
+  "mins",
+  "\u6b8b\u696d\u6642\u9593\u5e2f",
   "overtime_start",
   "overtime_end",
   "overtime_reason",
@@ -36,37 +36,22 @@
   {
    "fieldname": "creation_tijme",
    "fieldtype": "Data",
-   "label": "\u7533\u8acb\u65e5\u6642"
-  },
-  {
-   "fieldname": "overtime_date",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "\u6b8b\u696d\u65e5",
-   "reqd": 1
+   "label": "\u6b8b\u696d\u65e5"
   },
   {
    "fieldname": "manager_approval",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "\u4e0a\u53f8\u306e\u627f\u8a8d",
-   "reqd": 1
-  },
-  {
-   "fieldname": "overtime_band",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "\u6b8b\u696d\u6642\u9593\u5e2f",
-   "reqd": 1
+   "label": "\u4e0a\u53f8\u306e\u627f\u8a8d"
   },
   {
    "fieldname": "overtime_start",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "\u6b8b\u696d\u958b\u59cb"
   },
   {
    "fieldname": "overtime_end",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "\u6b8b\u696d\u7d42\u4e86",
    "reqd": 1
@@ -143,10 +128,22 @@
    "fieldname": "level_2_approval_time",
    "fieldtype": "Data",
    "label": "Level 2 approval time"
+  },
+  {
+   "fieldname": "mins",
+   "fieldtype": "Datetime",
+   "label": "\u7533\u8acb\u65e5\u6642"
+  },
+  {
+   "fieldname": "\u6b8b\u696d\u6642\u9593\u5e2f",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u6b8b\u696d\u6642\u9593\u5e2f",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2025-07-21 13:43:03.822327",
+ "modified": "2025-09-13 18:50:13.335198",
  "modified_by": "Administrator",
  "module": "zoho",
  "name": "Old_overtime",
@@ -163,7 +160,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "overtime_date",
  "track_changes": 1,
  "track_seen": 1
 }

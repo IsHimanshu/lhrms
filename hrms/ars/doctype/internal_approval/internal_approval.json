@@ -20,11 +20,18 @@
   "supplier",
   "payment_catogrey",
   "payment_method",
+  "project",
   "column_break_cjcb",
   "reason_for_proposal_effect_of_investment",
   "attachment_1",
   "attachment_2",
-  "attachment_3"
+  "attachment_3",
+  "section_break_weyp",
+  "payment_amount",
+  "payment_date_1",
+  "column_break_wxie",
+  "date1",
+  "payment_date_2"
  ],
  "fields": [
   {
@@ -133,13 +140,47 @@
    "fieldtype": "Select",
    "label": "\u652f\u6255\u65b9\u6cd5",
    "options": "\u30af\u30ec\u30b8\u30c3\u30c8\u30ab\u30fc\u30c9\n\u73fe\u91d1\n\u632f\u8fbc\n\u5f15\u843d\n\u305d\u306e\u4ed6"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "\u30dd\u30ed\u30b8\u30a7\u30af\u30c8",
+   "options": "Project"
+  },
+  {
+   "fieldname": "section_break_weyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Float",
+   "label": "\u652f\u6255\u91d1\u984d\uff08\u5186\uff09"
+  },
+  {
+   "fieldname": "payment_date_1",
+   "fieldtype": "Date",
+   "label": "\u652f\u6255\u65e5 1\uff08\u5358\u767a\uff09\t"
+  },
+  {
+   "fieldname": "column_break_wxie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "\u767a\u6ce8\u65e5"
+  },
+  {
+   "fieldname": "payment_date_2",
+   "fieldtype": "Date",
+   "label": "\u652f\u6255\u65e52\uff08\u65e5\u4ed8\u304c\u4e0d\u78ba\u5b9a\u306a\u5834\u5408\uff09"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-01 14:59:30.272180",
+ "modified": "2025-08-26 15:44:54.204466",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Internal approval",

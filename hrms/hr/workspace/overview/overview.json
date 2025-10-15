@@ -1,7 +1,7 @@
 {
  "app": "hrms",
  "charts": [],
- "content": "[{\"id\":\"xpmg6I9kuf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1J7_vm3Yxx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u671d\u98df\u88dc\u52a9\u7533\u8acb\",\"col\":4}},{\"id\":\"FmOSDgJCov\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb\",\"col\":4}},{\"id\":\"dkAUQgXFXq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u4f11\u6687\u7b49\u7533\u8acb\u66f8\",\"col\":4}},{\"id\":\"9pvrdPo6M-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJK6zjCmvD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u7533\u8acb\",\"col\":4}},{\"id\":\"UJrKIblpSK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u5831\u544a\u66f8\",\"col\":4}},{\"id\":\"r7v9tFraAz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wTmVywQrXh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u7acb\u66ff\u91d1\u7cbe\u7b97\",\"col\":4}},{\"id\":\"ZP5WLNVDq8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u793e\u5185\u7a1f\u8b70\u7533\u8acb\",\"col\":4}},{\"id\":\"YYjNGqLC3s\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"3KD0JCeOyE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Slack\u30c1\u30e3\u30f3\u30cd\u30eb\u958b\u8a2d\u7533\u8acb\",\"col\":4}},{\"id\":\"r_rdAxMins\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\" Slack\u793e\u5916\u5229\u7528\u8005\",\"col\":4}},{\"id\":\"kjFhEt733T\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"11v0D5aGp5\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"leave bar chart\",\"col\":12}},{\"id\":\"LAggHRC5ng\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Overtime\",\"col\":12}},{\"id\":\"odyT4Oj9TY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"breakfast bar line chart\",\"col\":12}},{\"id\":\"N4RBMl-Ox6\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"business trip report\",\"col\":12}}]",
+ "content": "[{\"id\":\"xpmg6I9kuf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1J7_vm3Yxx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u671d\u98df\u88dc\u52a9\u7533\u8acb\",\"col\":4}},{\"id\":\"FmOSDgJCov\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb\",\"col\":4}},{\"id\":\"4oKK7RAJ4N\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u4f11\u6687\u7533\u8acb\",\"col\":4}},{\"id\":\"9pvrdPo6M-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"EJK6zjCmvD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u7533\u8acb\",\"col\":4}},{\"id\":\"UJrKIblpSK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u51fa\u5f35\u5831\u544a\u66f8\",\"col\":4}},{\"id\":\"r7v9tFraAz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wTmVywQrXh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u7acb\u66ff\u91d1\u7cbe\u7b97\",\"col\":4}},{\"id\":\"ZP5WLNVDq8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u793e\u5185\u7a1f\u8b70\u7533\u8acb\",\"col\":4}},{\"id\":\"YYjNGqLC3s\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"3KD0JCeOyE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Slack\u30c1\u30e3\u30f3\u30cd\u30eb\u958b\u8a2d\u7533\u8acb\",\"col\":4}},{\"id\":\"r_rdAxMins\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\" Slack\u793e\u5916\u5229\u7528\u8005\",\"col\":4}},{\"id\":\"kjFhEt733T\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oC9eEI-cfX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u65e5\u5831\u8a18\u5165\u30d5\u30a9\u30fc\u30e0\",\"col\":4}},{\"id\":\"LI4oIcgse8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u65e5\u6b21\u30ec\u30dd\u30fc\u30c8 \u95b2\u89a7\",\"col\":4}},{\"id\":\"11v0D5aGp5\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"leave bar chart\",\"col\":12}},{\"id\":\"LAggHRC5ng\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Overtime\",\"col\":12}},{\"id\":\"odyT4Oj9TY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"breakfast bar line chart\",\"col\":12}},{\"id\":\"N4RBMl-Ox6\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"business trip report\",\"col\":12}}]",
  "creation": "2020-03-02 15:48:58.322521",
  "custom_blocks": [
   {
@@ -30,7 +30,7 @@
  "is_hidden": 0,
  "label": "Overview",
  "links": [],
- "modified": "2025-08-01 18:23:34.686190",
+ "modified": "2025-10-09 18:32:40.667152",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Overview",
@@ -44,6 +44,14 @@
  "sequence_id": 1.0,
  "shortcuts": [
   {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u4f11\u6687\u7533\u8acb",
+   "link_to": "Leave",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
    "color": "Green",
    "doc_view": "List",
    "label": "\u671d\u98df\u88dc\u52a9\u7533\u8acb",
@@ -52,18 +60,25 @@
    "type": "DocType"
   },
   {
-   "color": "Orange",
-   "doc_view": "List",
-   "label": "\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb",
-   "link_to": "Overtime",
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "\u65e5\u5831\u8a18\u5165\u30d5\u30a9\u30fc\u30e0",
+   "link_to": "daily report entry from",
    "stats_filter": "[]",
    "type": "DocType"
   },
   {
-   "color": "Yellow",
+   "color": "Grey",
    "doc_view": "List",
-   "label": "\u4f11\u6687\u7b49\u7533\u8acb\u66f8",
-   "link_to": "Leave",
+   "label": "\u65e5\u6b21\u30ec\u30dd\u30fc\u30c8 \u95b2\u89a7",
+   "type": "URL",
+   "url": "/nippo"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "\u6b8b\u696d\u306e\u4e8b\u524d\u7533\u8acb",
+   "link_to": "Overtime",
    "stats_filter": "[]",
    "type": "DocType"
   },

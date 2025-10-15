@@ -1,0 +1,40 @@
+{
+ "chart_name": "Project Costs",
+ "chart_type": "Report",
+ "creation": "2025-08-26 11:40:40.356118",
+ "currency": "JPY",
+ "custom_options": "",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2025-08-26 17:21:21.776921",
+ "modified_by": "Administrator",
+ "module": "Ars",
+ "name": "Project Costs",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Project Cost",
+ "roles": [],
+ "show_values_over_chart": 1,
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "project",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "estimated_cost"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "actual_cost"
+  }
+ ]
+}

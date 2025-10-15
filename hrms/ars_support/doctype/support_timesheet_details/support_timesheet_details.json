@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "creation": "2025-08-18 17:29:19.511025",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_",
+  "from_time",
+  "to_time",
+  "description",
+  "section_break_3",
+  "expected_hours",
+  "hours",
+  "completed",
+  "section_break_6",
+  "is_billable",
+  "sales_invoice",
+  "column_break_8",
+  "billing_hours",
+  "project_details",
+  "work_type",
+  "issue_name",
+  "issue",
+  "search",
+  "column_break_2",
+  "project",
+  "section_break_11",
+  "base_billing_rate",
+  "base_billing_amount",
+  "base_costing_rate",
+  "base_costing_amount",
+  "column_break_14",
+  "billing_rate",
+  "billing_amount",
+  "costing_rate",
+  "costing_amount"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "From Time"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Expected Hrs"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "label": "To Time"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Hrs"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Completed"
+  },
+  {
+   "fieldname": "project_details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "default": "1",
+   "fieldname": "is_billable",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Is Billable",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "no_copy": 1,
+   "options": "Sales Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "is_billable",
+   "fieldname": "billing_hours",
+   "fieldtype": "Float",
+   "label": "Billing Hours",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "is_billable",
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "base_billing_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Billing Rate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_billing_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Billing Amount",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_costing_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Costing Rate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_costing_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Costing Amount",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Billing Rate",
+   "options": "currency",
+   "permlevel": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "billing_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Billing Amount",
+   "options": "currency",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "costing_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Costing Rate",
+   "options": "currency",
+   "permlevel": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "costing_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Costing Amount",
+   "options": "currency",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_name",
+   "fieldtype": "Data",
+   "label": "Issue Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Link",
+   "label": "Issue ",
+   "options": "ars support issue",
+   "read_only_depends_on": "eval:doc.work_type === 'Internal'"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "remember_last_selected_value": 1
+  },
+  {
+   "fieldname": "activity_",
+   "fieldtype": "Select",
+   "label": "Activity ",
+   "options": "CS\u8abf\u67fb\u4f5c\u696d\n\u96fb\u8a71\u5bfe\u5fdc\n\u793e\u5185\u3068\u306e\u4f1a\u8b70\n\u5916\u3068\u306e\u4f1a\u8b70\n\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u8cc7\u6599\u4f5c\u6210\u4e2d\n\u691c\u8a3c\u4e2d\u3001\n\u958b\u767a\u4f9d\u983c\n\u5f85\u6a5f\u4e2d\uff08\u305f\u3044\u304d\u3061\u3085\u3046\uff09\n\u767b\u9332\u4f5c\u696d"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Select",
+   "label": "Work Type",
+   "options": "Internal\n\u8ab2\u984c\u5bfe\u5fdc(CSMS\u767b\u9332\u6e08)\n\u8ab2\u984c\u5bfe\u5fdc(CSMS\u672a\u767b\u9332)"
+  },
+  {
+   "fieldname": "search",
+   "fieldtype": "Button",
+   "label": "Search"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-02 16:22:30.671204",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "Support Timesheet Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "ASC",
+ "states": []
+}

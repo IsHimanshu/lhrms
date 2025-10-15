@@ -41,10 +41,17 @@ add_to_apps_screen = [
 # app_include_css = "/assets/hrms/css/hrms.css"
 app_include_js = [
 	"hrms.bundle.js",
-	"/assets/hrms/js/disable_bar.js"
+	"/assets/hrms/js/disable_bar.js",
+	"/assets/hrms/js/project_cos_chart.js",
+	"/assets/hrms/js/ars_support/cusTimer.js",
+	"/assets/hrms/js/ars_support/datetimepatch.js",
+    "https://cdn.jsdelivr.net/npm/@ishimanshu/gantt@1.1.2/dist/frappe-gantt.umd.js"
 ]
 desk_include_js = "/assets/hrms/js/disable_bar.js"
-app_include_css = "hrms.bundle.css"
+app_include_css = ["hrms.bundle.css",
+	    "https://cdn.jsdelivr.net/npm/@ishimanshu/gantt@1.1.2/dist/frappe-gantt.css",
+
+]
 
 # website
 
@@ -155,8 +162,25 @@ before_app_uninstall = "hrms.setup.before_app_uninstall"
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
+
+# permission_query_conditions = {
+# 	"ars support issue": "hrms.ars.emailapprover.exclude_permission_for_support"
+# }
+
+
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
+# }
+# has_permission = {
+# 	"ars support issue" : "hrms.ars_support.doctype.ars_support_issue.ars_support_issue.has_permission"
+# }
+
+# has_user_permission = {
+# 	"ars support issue" : "hrms.ars_support.doctype.ars_support_issue.ars_support_issue.has_user_permission"
+# }
+
+# permission_query_conditions = {
+#     "ars support issue": "hrms.ars_support.doctype.ars_support_issue.ars_support_issue.get_permission_query_conditions",
 # }
 
 has_upload_permission = {"Employee": "erpnext.setup.doctype.employee.employee.has_upload_permission"}
@@ -180,11 +204,11 @@ doc_events = {
 	"Leave" : {
         "on_update_after_submit":[
 		"hrms.ars.appautomation.handle_workflow_automation",
-		"hrms.ars.emailapprover.start_email_sending"
+		#"hrms.ars.emailapprover.start_email_sending"
 		],
 		"on_update":[
 		"hrms.ars.appautomation.handle_workflow_automation",
-		"hrms.ars.emailapprover.start_email_sending"
+		#"hrms.ars.emailapprover.start_email_sending"
 		]
 	},
 	"Breakfast" : {
@@ -251,6 +275,11 @@ scheduler_events = {
 	"all": [
 		"hrms.hr.doctype.interview.interview.send_interview_reminder",
 	],
+	"cron": {
+        "30 17 * * 1-5": [
+            "hrms.ars_support.emailcron.send_virtual_issue_related_reminders"
+        ]
+    },
 	"hourly": [
 		"hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails",
 	],
@@ -328,6 +357,11 @@ global_search_doctypes = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "hrms.event.get_events"
 # }
+
+# override_whitelisted_methods = {
+# 	"frappe.core.doctype.user_permission.user_permission.get_user_permissions": "hrms.ars_support.per.get_user_permissions"
+# }
+
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
@@ -335,7 +369,6 @@ global_search_doctypes = {
 override_doctype_dashboards = {
 	"Employee": "hrms.overrides.dashboard_overrides.get_dashboard_for_employee",
 	"Holiday List": "hrms.overrides.dashboard_overrides.get_dashboard_for_holiday_list",
-	"Task": "hrms.overrides.dashboard_overrides.get_dashboard_for_project",
 	"Project": "hrms.overrides.dashboard_overrides.get_dashboard_for_project",
 	"Timesheet": "hrms.overrides.dashboard_overrides.get_dashboard_for_timesheet",
 	"Bank Account": "hrms.overrides.dashboard_overrides.get_dashboard_for_bank_account",

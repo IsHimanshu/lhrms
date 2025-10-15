@@ -6,7 +6,24 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_d2lw",
-  "amended_from"
+  "amended_from",
+  "var_shinseibi",
+  "var_jiyuu",
+  "var_sakuseisha",
+  "var_added_time",
+  "var_tenpu_file",
+  "var_kubun",
+  "var_kubun_shousai",
+  "var_kyuuka_from",
+  "var_kyuuka_to",
+  "var_kyuuka_kikan",
+  "var_bikou",
+  "var_approval_status",
+  "var_approver",
+  "level2app",
+  "var_approval_time",
+  "l1comm",
+  "l2comm"
  ],
  "fields": [
   {
@@ -14,74 +31,74 @@
    "fieldtype": "Section Break"
   },
   {
-    "fieldname": "var_shinseibi",
-    "label": "申請日",
-    "fieldtype": "Data"
+   "fieldname": "var_shinseibi",
+   "fieldtype": "Data",
+   "label": "\u7533\u8acb\u65e5"
   },
   {
-    "fieldname": "var_jiyuu",
-    "label": "事由",
-    "fieldtype": "Data"
+   "fieldname": "var_jiyuu",
+   "fieldtype": "Data",
+   "label": "\u4e8b\u7531"
   },
   {
-    "fieldname": "var_sakuseisha",
-    "label": "作成者",
-    "fieldtype": "Data"
+   "fieldname": "var_sakuseisha",
+   "fieldtype": "Data",
+   "label": "\u4f5c\u6210\u8005"
   },
   {
-    "fieldname": "var_added_time",
-    "label": "Added Time",
-    "fieldtype": "Data"
+   "fieldname": "var_added_time",
+   "fieldtype": "Data",
+   "label": "Added Time"
   },
   {
-    "fieldname": "var_tenpu_file",
-    "label": "添付ファイル",
-    "fieldtype": "Data"
+   "fieldname": "var_tenpu_file",
+   "fieldtype": "Data",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb"
   },
   {
-    "fieldname": "var_kubun",
-    "label": "区分",
-    "fieldtype": "Data"
+   "fieldname": "var_kubun",
+   "fieldtype": "Data",
+   "label": "\u533a\u5206"
   },
   {
-    "fieldname": "var_kubun_shousai",
-    "label": "区分詳細",
-    "fieldtype": "Data"
+   "fieldname": "var_kubun_shousai",
+   "fieldtype": "Data",
+   "label": "\u533a\u5206\u8a73\u7d30"
   },
   {
-    "fieldname": "var_kyuuka_from",
-    "label": "休暇日（から）",
-    "fieldtype": "Data"
+   "fieldname": "var_kyuuka_from",
+   "fieldtype": "Data",
+   "label": "\u4f11\u6687\u65e5\uff08\u304b\u3089\uff09"
   },
   {
-    "fieldname": "var_kyuuka_to",
-    "label": "休暇日（まで）",
-    "fieldtype": "Data"
+   "fieldname": "var_kyuuka_to",
+   "fieldtype": "Data",
+   "label": "\u4f11\u6687\u65e5\uff08\u307e\u3067\uff09"
   },
   {
-    "fieldname": "var_kyuuka_kikan",
-    "label": "休暇期間",
-    "fieldtype": "Data"
+   "fieldname": "var_kyuuka_kikan",
+   "fieldtype": "Data",
+   "label": "\u4f11\u6687\u671f\u9593"
   },
   {
-    "fieldname": "var_bikou",
-    "label": "備考",
-    "fieldtype": "Data"
+   "fieldname": "var_bikou",
+   "fieldtype": "Data",
+   "label": "\u5099\u8003"
   },
   {
-    "fieldname": "var_approval_status",
-    "label": "Approval Status",
-    "fieldtype": "Data"
+   "fieldname": "var_approval_status",
+   "fieldtype": "Data",
+   "label": "Approval Status"
   },
   {
-    "fieldname": "var_approver",
-    "label": "Approver",
-    "fieldtype": "Data"
+   "fieldname": "var_approver",
+   "fieldtype": "Data",
+   "label": "1Approver"
   },
   {
-    "fieldname": "var_approval_time",
-    "label": "Approval Time",
-    "fieldtype": "Data"
+   "fieldname": "var_approval_time",
+   "fieldtype": "Data",
+   "label": "Approval Time"
   },
   {
    "fieldname": "amended_from",
@@ -92,13 +109,28 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "l1comm",
+   "fieldtype": "Data",
+   "label": "l1comments"
+  },
+  {
+   "fieldname": "l2comm",
+   "fieldtype": "Data",
+   "label": "l2 comments"
+  },
+  {
+   "fieldname": "level2app",
+   "fieldtype": "Data",
+   "label": "2Approver"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-21 13:55:29.960902",
+ "modified": "2025-09-13 17:36:29.403913",
  "modified_by": "Administrator",
  "module": "zoho",
  "name": "old-leave",

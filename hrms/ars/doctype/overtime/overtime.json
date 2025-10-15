@@ -197,12 +197,12 @@
   {
    "fieldname": "total_special_ot",
    "fieldtype": "Int",
-   "label": "Total Special OT"
+   "label": "\u300c\u65e9\u671d\u30fb\u6df1\u591c\u6b8b\u696d\u300d"
   },
   {
    "fieldname": "total_normal_ot",
    "fieldtype": "Int",
-   "label": "Total Normal OT"
+   "label": "\u300c\u6b8b\u696d\u6642\u9593\u300d"
   },
   {
    "fetch_from": "employee_id.department",
@@ -217,7 +217,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-07 10:56:41.926092",
+ "modified": "2025-09-25 10:50:27.658718",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Overtime",

@@ -5,5 +5,11 @@
 	"js/hierarchy-chart.min.js": [
 		"public/js/hierarchy_chart/hierarchy_chart_desktop.js",
 		"public/js/hierarchy_chart/hierarchy_chart_mobile.js"
-	]
+	],
+	"js/frappe_gantt.bundle.js": [
+    "node_modules/frappe-gantt/dist/frappe-gantt.umd.js"
+  ],
+  "css/frappe_gantt.bundle.css": [
+    "node_modules/frappe-gantt/dist/frappe-gantt.css"
+  ]
 }

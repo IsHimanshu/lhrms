@@ -8,5 +8,6 @@ def fuckyou():
     _("~ Pending Manager"),
     _("Approve and Request More Info"),
     _("Send for Review"),
-    _("Send for Final Review")
+    _("Send for Final Review"),
+    _("Convert to leave"),
     ]

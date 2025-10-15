@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-12 12:16:30.744308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pmgr",
+  "amended_from",
+  "by_category",
+  "customer_name",
+  "pj_name",
+  "detail",
+  "start",
+  "end",
+  "\u5de5\u6570\u5206",
+  "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pmgr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "daily report entry from table",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "by_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u533a\u5206\u5225",
+   "options": "\u305d\u306e\u4ed6\n\u65b0\u898f\u30d7\u30ed\u30c0\u30af\u30c8\u958b\u767a\n\u65e2\u5b58\u9867\u5ba2\u5bfe\u5fdc\n\u5c0e\u5165"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "\u9867\u5ba2\u540d",
+   "options": "zoho nippo company"
+  },
+  {
+   "default": "None",
+   "fieldname": "pj_name",
+   "fieldtype": "Select",
+   "label": " PJ\u540d",
+   "options": "None\n\u30e9\u30f3\u30c9\u30de\u30fc\u30af\u69d8\u901a\u8ca9Ace\u5c0e\u5165\n\u30ef\u30fc\u30af\u30b9\u69d8EC\u5c0e\u5165\n\u30a8\u30df\u30cd\u30c3\u30c8\u69d8\u901a\u8ca9Ace\u5c0e\u5165\nLFP\u69d8\u901a\u8ca9Ace\u5c0e\u5165\n\u30f4\u30a3\u30ce\u30b9\u3084\u307e\u3056\u304d\u69d8\u901a\u8ca9Ace\u5c0e\u5165\n\u30bb\u30a4\u30b3\u30fc\u73c8\u7432\u69d8\u901a\u8ca9Ace\u5c0e\u5165\n\u30ef\u30fc\u30af\u30b9\u69d8\u901a\u8ca9Ace\u5c0e\u5165"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "label": "\u8a73\u7d30",
+   "options": "zoho nippo company"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "label": "Start"
+  },
+  {
+   "fieldname": "end",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "label": "End"
+  },
+  {
+   "fieldname": "\u5de5\u6570\u5206",
+   "fieldtype": "Int",
+   "label": "\u5de5\u6570 (\u5206)"
+  },
+  {
+   "fieldname": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-17 17:38:46.723152",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "daily report entry from table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

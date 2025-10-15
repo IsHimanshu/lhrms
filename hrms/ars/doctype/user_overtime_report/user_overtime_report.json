@@ -70,19 +70,19 @@
   {
    "fieldname": "normal_hours",
    "fieldtype": "Data",
-   "label": "Total Normal Hours"
+   "label": "\u300c\u6b8b\u696d\u6642\u9593\u300d"
   },
   {
    "fieldname": "special_hours",
    "fieldtype": "Data",
-   "label": "Total Special Hours"
+   "label": "\u300c\u65e9\u671d\u30fb\u6df1\u591c\u6b8b\u696d\u300d"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-26 11:30:58.621295",
+ "modified": "2025-09-25 11:10:38.898279",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "user overtime report",

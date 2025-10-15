@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-11 18:11:49.763087",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kfhh",
+  "amended_from",
+  "zoho_link_id",
+  "\u4ef6\u540d",
+  "\u51fa\u767a\u4e88\u5b9a\u65e5\u6642",
+  "level_3_approver",
+  "level_3_approval_comments",
+  "level_3_approval_time",
+  "approval_completion_time",
+  "column_break_ttvx",
+  "\u4f5c\u6210\u8005",
+  "\u5e30\u7740\u4e88\u5b9a\u65e5\u6642",
+  "approval_status",
+  "approval_submission_time",
+  "level_1_approver",
+  "level_1_approval_comments",
+  "level_1_approval_time",
+  "level_2_approver",
+  "level_2_approval_time",
+  "level_2_approval_comments",
+  "\u51fa\u5f35\u8a73\u7d30_section",
+  "table_lvfy",
+  "\u5099\u8003_section",
+  "\u5099\u8003",
+  "column_break_qwnb",
+  "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2460",
+  "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2461"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kfhh",
+   "fieldtype": "Section Break",
+   "label": "\u8a73\u7d30"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "zoho people business trip request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "zoho_link_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ZOHO_LINK_ID"
+  },
+  {
+   "fieldname": "\u4f5c\u6210\u8005",
+   "fieldtype": "Data",
+   "label": "\u4f5c\u6210\u8005"
+  },
+  {
+   "fieldname": "\u4ef6\u540d",
+   "fieldtype": "Data",
+   "label": "\u4ef6\u540d"
+  },
+  {
+   "fieldname": "\u51fa\u767a\u4e88\u5b9a\u65e5\u6642",
+   "fieldtype": "Datetime",
+   "label": "\u51fa\u767a\u4e88\u5b9a\u65e5\u6642"
+  },
+  {
+   "fieldname": "\u5e30\u7740\u4e88\u5b9a\u65e5\u6642",
+   "fieldtype": "Datetime",
+   "label": "\u5e30\u7740\u4e88\u5b9a\u65e5\u6642"
+  },
+  {
+   "fieldname": "\u5099\u8003",
+   "fieldtype": "Small Text",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval Status"
+  },
+  {
+   "fieldname": "approval_submission_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval submission time"
+  },
+  {
+   "fieldname": "level_1_approver",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approver"
+  },
+  {
+   "fieldname": "level_1_approval_comments",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approval comments"
+  },
+  {
+   "fieldname": "level_1_approval_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 1 approval time"
+  },
+  {
+   "fieldname": "level_2_approver",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 2 approver"
+  },
+  {
+   "fieldname": "level_2_approval_comments",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 2 approval comments"
+  },
+  {
+   "fieldname": "level_2_approval_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 2 approval time"
+  },
+  {
+   "fieldname": "level_3_approver",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 3 approver"
+  },
+  {
+   "fieldname": "level_3_approval_comments",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 3 approval comments"
+  },
+  {
+   "fieldname": "level_3_approval_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level 3 approval time"
+  },
+  {
+   "fieldname": "approval_completion_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approval completion time"
+  },
+  {
+   "fieldname": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2461",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2461"
+  },
+  {
+   "fieldname": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2460",
+   "fieldtype": "Attach",
+   "label": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u2460"
+  },
+  {
+   "fieldname": "column_break_ttvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "\u51fa\u5f35\u8a73\u7d30_section",
+   "fieldtype": "Section Break",
+   "label": "\u51fa\u5f35\u8a73\u7d30"
+  },
+  {
+   "fieldname": "table_lvfy",
+   "fieldtype": "Table",
+   "options": "zoho people business trip request table"
+  },
+  {
+   "fieldname": "\u5099\u8003_section",
+   "fieldtype": "Section Break",
+   "label": "\u5099\u8003"
+  },
+  {
+   "fieldname": "column_break_qwnb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-11 18:37:24.433569",
+ "modified_by": "Administrator",
+ "module": "zoho",
+ "name": "zoho people business trip request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

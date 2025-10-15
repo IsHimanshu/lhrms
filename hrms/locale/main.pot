@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Frappe HR VERSION\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
-"POT-Creation-Date: 2025-07-29 08:37+0000\n"
-"PO-Revision-Date: 2025-07-29 08:37+0000\n"
+"POT-Creation-Date: 2025-09-04 05:49+0000\n"
+"PO-Revision-Date: 2025-09-04 05:49+0000\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: contact@frappe.io\n"
 "MIME-Version: 1.0\n"
@@ -35,6 +35,11 @@ msgstr ""
 
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.py:22
 msgid "\"From Date\" can not be greater than or equal to \"To Date\""
+msgstr ""
+
+#. Label of the per_billed (Percent) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "% Amount Billed"
 msgstr ""
 
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:86
@@ -218,7 +223,10 @@ msgstr ""
 msgid "18:00"
 msgstr ""
 
+#. Label of the total_overtime_c1 (Data) field in DocType 'Employee User
+#. Report'
 #. Option for the '残業時間帯' (Select) field in DocType 'Overtime'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
 #: hrms/ars/doctype/overtime/overtime.json
 msgid "18:30 ～ 22:00"
 msgstr ""
@@ -227,12 +235,6 @@ msgstr ""
 #. Summary Group'
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 msgid "19:00"
-msgstr ""
-
-#. Label of the total_overtime_c1 (Data) field in DocType 'Employee User
-#. Report'
-#: hrms/ars/doctype/employee_user_report/employee_user_report.json
-msgid "19:00 ～ 22:00"
 msgstr ""
 
 #. Option for the '月を選択' (Select) field in DocType 'Breakfast'
@@ -408,6 +410,16 @@ msgstr ""
 msgid "<span class=\"h4\"><b>Masters &amp; Transactions</b></span>"
 msgstr ""
 
+#. Header text in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "<span class=\"h4\"><b>Reports &amp; Masters</b></span>"
+msgstr ""
+
+#. Header text in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "<span class=\"h4\"><b>Reports</b></span>"
+msgstr ""
+
 #. Header text in the Salary Payout Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
 msgid "<span class=\"h4\"><b>Transactions &amp; Reports</b></span>"
@@ -417,6 +429,7 @@ msgstr ""
 #. Header text in the Expense Claims Workspace
 #. Header text in the Leaves Workspace
 #. Header text in the Performance Workspace
+#. Header text in the Projects Workspace
 #. Header text in the Recruitment Workspace
 #. Header text in the Shift & Attendance Workspace
 #. Header text in the Salary Payout Workspace
@@ -425,6 +438,7 @@ msgstr ""
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 #: hrms/hr/workspace/leaves/leaves.json
 #: hrms/hr/workspace/performance/performance.json
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
@@ -435,11 +449,6 @@ msgstr ""
 #. Header text in the Zoho Workspace
 #: hrms/hr/workspace/zoho/zoho.json
 msgid "<span class=\"h4\">Zoho</span>"
-msgstr ""
-
-#. Header text in the Overview Workspace
-#: hrms/hr/workspace/overview/overview.json
-msgid "<span class=\"h4\">application</span>"
 msgstr ""
 
 #. Header text in the Reports Workspace
@@ -469,6 +478,11 @@ msgstr ""
 #: hrms/hr/utils.py:237
 #: hrms/payroll/doctype/payroll_period/payroll_period.py:49
 msgid "A {0} exists between {1} and {2} ("
+msgstr ""
+
+#. Label of the ai_data (Check) field in DocType 'ars_support_issue_table'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "AI"
 msgstr ""
 
 #. Label of the salary_component_abbr (Data) field in DocType 'Salary
@@ -540,6 +554,11 @@ msgstr ""
 #. Charges'
 #: hrms/hr/doctype/expense_taxes_and_charges/expense_taxes_and_charges.json
 msgid "Account Head"
+msgstr ""
+
+#. Label of the account_manager (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Account Manager"
 msgstr ""
 
 #: hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py:56
@@ -630,6 +649,11 @@ msgstr ""
 msgid "Accounts"
 msgstr ""
 
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Accounts Manager"
+msgstr ""
+
 #. Label of a Link in the Expense Claims Workspace
 #. Label of a Link in the Salary Payout Workspace
 #: hrms/hr/workspace/expense_claims/expense_claims.json
@@ -647,6 +671,11 @@ msgstr ""
 #. Label of a Link in the Salary Payout Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
 msgid "Accounts Settings"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Accounts User"
 msgstr ""
 
 #: hrms/payroll/doctype/salary_component/salary_component.py:57
@@ -710,13 +739,29 @@ msgstr ""
 msgid "Activities"
 msgstr ""
 
+#: hrms/public/js/ars_support/timer.js:11
+msgid "Activity"
+msgstr ""
+
+#. Label of the activity_ (Select) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Activity "
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Activity Cost"
+msgstr ""
+
 #. Label of the activity_name (Data) field in DocType 'Employee Boarding
 #. Activity'
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 msgid "Activity Name"
 msgstr ""
 
+#. Label of a Link in the Projects Workspace
 #. Label of a Link in the Shift & Attendance Workspace
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Activity Type"
 msgstr ""
@@ -737,6 +782,21 @@ msgstr ""
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.py:131
 msgid "Actual Encashable Days"
+msgstr ""
+
+#. Label of the act_end_date (Datetime) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Actual End Date"
+msgstr ""
+
+#. Label of the act_start_date (Datetime) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Actual Start Date"
+msgstr ""
+
+#. Label of the actual_time (Float) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Actual Time (hrs)"
 msgstr ""
 
 #: hrms/hr/doctype/leave_application/leave_application.py:419
@@ -855,6 +915,18 @@ msgstr ""
 
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:67
 msgid "Additional Salary: {0} already exist for Salary Component: {1} for period {2} and {3}"
+msgstr ""
+
+#. Description of the 'Customer Details' (Text) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Additional information regarding the customer."
+msgstr ""
+
+#. Label of the contact_and_address_tab (Tab Break) field in DocType 'ars
+#. support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Address & Contact"
 msgstr ""
 
 #. Label of the address_of_organizer (Data) field in DocType 'Travel Request'
@@ -1099,8 +1171,11 @@ msgstr ""
 #. Label of the amended_from (Link) field in DocType 'Slack channel opening
 #. application'
 #. Label of the amended_from (Link) field in DocType 'Support Case'
+#. Label of the amended_from (Link) field in DocType 'test'
 #. Label of the amended_from (Link) field in DocType 'user overtime report'
 #. Label of the amended_from (Link) field in DocType 'user report Leave'
+#. Label of the amended_from (Link) field in DocType 'ars support issue'
+#. Label of the amended_from (Link) field in DocType 'Support Timesheet'
 #. Label of the amended_from (Link) field in DocType 'Appraisal'
 #. Label of the amended_from (Link) field in DocType 'Attendance'
 #. Label of the amended_from (Link) field in DocType 'Attendance Request'
@@ -1170,8 +1245,11 @@ msgstr ""
 #: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars/doctype/test/test.json
 #: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
 #: hrms/ars/doctype/user_report_leave/user_report_leave.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/attendance_request/attendance_request.json
@@ -2039,8 +2117,10 @@ msgstr ""
 
 #. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "Backlog"
 msgstr ""
 
@@ -2092,6 +2172,24 @@ msgstr ""
 msgid "Base & Variable"
 msgstr ""
 
+#. Label of the base_total_billable_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Base Total Billable Amount"
+msgstr ""
+
+#. Label of the base_total_billed_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Base Total Billed Amount"
+msgstr ""
+
+#. Label of the base_total_costing_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Base Total Costing Amount"
+msgstr ""
+
 #. Label of the begin_on (Int) field in DocType 'Employee Boarding Activity'
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 msgid "Begin On (Days)"
@@ -2131,12 +2229,45 @@ msgstr ""
 msgid "Bill Amount"
 msgstr ""
 
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Billed"
+msgstr ""
+
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:249
 msgid "Billed Hours"
 msgstr ""
 
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:68
 msgid "Billed Hours (B)"
+msgstr ""
+
+#. Label of the base_billing_amount (Currency) field in DocType 'Support
+#. Timesheet Details'
+#. Label of the billing_amount (Currency) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Billing Amount"
+msgstr ""
+
+#. Label of the billing_details (Section Break) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Billing Details"
+msgstr ""
+
+#. Label of the billing_hours (Float) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Billing Hours"
+msgstr ""
+
+#. Label of the base_billing_rate (Currency) field in DocType 'Support
+#. Timesheet Details'
+#. Label of the billing_rate (Currency) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Billing Rate"
 msgstr ""
 
 #. Option for the 'Payroll Frequency' (Select) field in DocType 'Payroll Entry'
@@ -2251,12 +2382,6 @@ msgstr ""
 msgid "Breakfast"
 msgstr ""
 
-#. Label of the breakfast_allowance_request_details_table (Table) field in
-#. DocType 'Employee User Report'
-#: hrms/ars/doctype/employee_user_report/employee_user_report.json
-msgid "Breakfast Allowance Request Details"
-msgstr ""
-
 #. Name of a DocType
 #: hrms/ars/doctype/breakfast_table/breakfast_table.json
 msgid "Breakfast table"
@@ -2288,10 +2413,32 @@ msgstr ""
 msgid "Business trip request table"
 msgstr ""
 
+#. Description of a DocType
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Buyer of Goods and Services."
+msgstr ""
+
 #. Description of the 'Calculate Final Score based on Formula' (Check) field in
 #. DocType 'Appraisal Cycle'
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 msgid "By default, the Final Score is calculated as the average of Goal Score, Feedback Score, and Self Appraisal Score. Enable this to set a different formula"
+msgstr ""
+
+#. Option for the '問い合わせタイプ' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "CS"
+msgstr ""
+
+#. Label of the in_progress_cs (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "CS対応中"
+msgstr ""
+
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "CS調査作業"
 msgstr ""
 
 #. Label of the ctc (Currency) field in DocType 'Salary Slip'
@@ -2341,6 +2488,7 @@ msgstr ""
 msgid "Cancellation Queued"
 msgstr ""
 
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
 #. Option for the 'Status' (Select) field in DocType 'Employee Advance'
 #. Option for the 'Status' (Select) field in DocType 'Exit Interview'
 #. Option for the 'Status' (Select) field in DocType 'Expense Claim'
@@ -2354,6 +2502,7 @@ msgstr ""
 #. Option for the 'Status' (Select) field in DocType 'Salary Slip'
 #. Option for the 'Status' (Select) field in DocType 'Salary Withholding'
 #: frontend/src/views/employee_advance/List.vue:42
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/exit_interview/exit_interview.json
 #: hrms/hr/doctype/expense_claim/expense_claim.json
@@ -2477,8 +2626,10 @@ msgstr ""
 
 #. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "Chatwork"
 msgstr ""
 
@@ -2659,6 +2810,9 @@ msgstr ""
 msgid "Commission"
 msgstr ""
 
+#. Option for the 'Customer Type' (Select) field in DocType 'ars support
+#. customer'
+#. Label of the company (Link) field in DocType 'Support Timesheet'
 #. Label of the company (Link) field in DocType 'Appointment Letter'
 #. Label of the company (Link) field in DocType 'Appraisal'
 #. Label of the company (Link) field in DocType 'Appraisal Cycle'
@@ -2718,6 +2872,8 @@ msgstr ""
 #. Label of the company (Link) field in DocType 'Salary Structure'
 #. Label of the company (Link) field in DocType 'Salary Structure Assignment'
 #. Label of the company (Link) field in DocType 'Salary Withholding'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/dashboard_chart_source/employees_by_age/employees_by_age.js:8
 #: hrms/hr/dashboard_chart_source/hiring_vs_attrition_count/hiring_vs_attrition_count.js:8
 #: hrms/hr/doctype/appointment_letter/appointment_letter.json
@@ -2829,6 +2985,12 @@ msgstr ""
 msgid "Compensatory Off"
 msgstr ""
 
+#: hrms/public/js/ars_support/timer.js:43
+msgid "Complete"
+msgstr ""
+
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
+#. Label of the completed (Check) field in DocType 'Support Timesheet Details'
 #. Option for the 'Status' (Select) field in DocType 'Appraisal Cycle'
 #. Option for the 'Status' (Select) field in DocType 'Employee Onboarding'
 #. Option for the 'Status' (Select) field in DocType 'Employee Separation'
@@ -2837,6 +2999,8 @@ msgstr ""
 #. Option for the 'Event Status' (Select) field in DocType 'Training Event'
 #. Option for the 'Status' (Select) field in DocType 'Training Event Employee'
 #. Option for the 'Status' (Select) field in DocType 'Training Program'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.py:202
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.json
@@ -2988,6 +3152,10 @@ msgstr ""
 msgid "Contract"
 msgstr ""
 
+#: hrms/ars/dummy_trans.py:12
+msgid "Convert to leave"
+msgstr ""
+
 #. Label of the travel_proof (Attach) field in DocType 'Travel Request'
 #: hrms/hr/doctype/travel_request/travel_request.json
 msgid "Copy of Invitation/Announcement"
@@ -3025,15 +3193,33 @@ msgstr ""
 msgid "Cost Centers"
 msgstr ""
 
+#. Label of the costing_tab (Tab Break) field in DocType 'ars support issue'
 #. Label of the costings (Table) field in DocType 'Travel Request'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 #: hrms/hr/doctype/travel_request/travel_request.json
 msgid "Costing"
+msgstr ""
+
+#. Label of the base_costing_amount (Currency) field in DocType 'Support
+#. Timesheet Details'
+#. Label of the costing_amount (Currency) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Costing Amount"
 msgstr ""
 
 #. Label of the costing_details (Section Break) field in DocType 'Travel
 #. Request'
 #: hrms/hr/doctype/travel_request/travel_request.json
 msgid "Costing Details"
+msgstr ""
+
+#. Label of the base_costing_rate (Currency) field in DocType 'Support
+#. Timesheet Details'
+#. Label of the costing_rate (Currency) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Costing Rate"
 msgstr ""
 
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.py:1489
@@ -3205,6 +3391,7 @@ msgstr ""
 msgid "Criteria based on which employee should be rated in Performance Feedback and Self Appraisal"
 msgstr ""
 
+#. Label of the currency (Link) field in DocType 'Support Timesheet'
 #. Label of the currency (Link) field in DocType 'Employee Advance'
 #. Label of the currency (Link) field in DocType 'Employee Grade'
 #. Label of the currency (Link) field in DocType 'Job Applicant'
@@ -3227,6 +3414,7 @@ msgstr ""
 #. Label of the currency (Link) field in DocType 'Salary Structure'
 #. Label of the currency (Link) field in DocType 'Salary Structure Assignment'
 #. Label of a Link in the Salary Payout Workspace
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/employee_grade/employee_grade.json
 #: hrms/hr/doctype/job_applicant/job_applicant.json
@@ -3332,9 +3520,46 @@ msgstr ""
 msgid "Custom Range"
 msgstr ""
 
+#. Label of the customer (Link) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/report/project_profitability/project_profitability.js:31
 #: hrms/hr/report/project_profitability/project_profitability.py:133
 msgid "Customer"
+msgstr ""
+
+#. Label of the customer_details (Text) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Customer Details"
+msgstr ""
+
+#. Label of the customer_group (Select) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Customer Group"
+msgstr ""
+
+#. Label of a shortcut in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Customer List"
+msgstr ""
+
+#. Label of the customer_name (Data) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Customer Name"
+msgstr ""
+
+#. Label of the customer_pos_id (Data) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Customer POS id"
+msgstr ""
+
+#. Label of the customer_type (Select) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Customer Type"
+msgstr ""
+
+#. Label of the client_id (Link) field in DocType 'ars_support_issue_table'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "Customer id"
 msgstr ""
 
 #. Option for the 'Roster Color' (Select) field in DocType 'Shift Type'
@@ -3363,6 +3588,11 @@ msgstr ""
 #: hrms/payroll/doctype/salary_structure/salary_structure.json
 #: hrms/payroll/doctype/salary_withholding/salary_withholding.json
 msgid "Daily"
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Daily Timesheet Summary"
 msgstr ""
 
 #. Name of a DocType
@@ -3400,11 +3630,13 @@ msgstr ""
 #. Label of the dashboard_tab (Tab Break) field in DocType 'Expense Claim'
 #. Label of a shortcut in the Employee Lifecycle Workspace
 #. Label of a shortcut in the Expense Claims Workspace
+#. Label of a shortcut in the Projects Workspace
 #. Label of a shortcut in the Recruitment Workspace
 #. Label of a shortcut in the Shift & Attendance Workspace
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Dashboard"
@@ -3623,6 +3855,11 @@ msgstr ""
 msgid "Deferred Expense Account"
 msgstr ""
 
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Delayed Tasks Summary"
+msgstr ""
+
 #: frontend/src/components/ExpenseTaxesTable.vue:104
 #: frontend/src/components/ExpensesTable.vue:109
 #: frontend/src/components/FileUploaderView.vue:73
@@ -3647,6 +3884,7 @@ msgid "Delivery Trip"
 msgstr ""
 
 #. Label of the dept (Data) field in DocType 'Leave'
+#. Label of the department (Link) field in DocType 'Support Timesheet'
 #. Label of the department (Link) field in DocType 'Appraisal'
 #. Label of the department (Link) field in DocType 'Appraisal Cycle'
 #. Label of the department (Link) field in DocType 'Appraisee'
@@ -3705,6 +3943,7 @@ msgstr ""
 #: frontend/src/views/attendance/ShiftRequestList.vue:54
 #: frontend/src/views/employee_advance/List.vue:59
 #: frontend/src/views/leave/List.vue:53 hrms/ars/doctype/leave/leave.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/appraisee/appraisee.json
@@ -3815,6 +4054,9 @@ msgstr ""
 msgid "Depends on Payment Days"
 msgstr ""
 
+#. Label of the description (Text Editor) field in DocType 'ars support issue'
+#. Label of the description (Small Text) field in DocType 'Support Timesheet
+#. Details'
 #. Label of the description (Long Text) field in DocType 'Appointment Letter
 #. content'
 #. Label of the section_break_4 (Section Break) field in DocType 'Appraisal
@@ -3846,6 +4088,8 @@ msgstr ""
 #. Label of the description (Data) field in DocType 'Income Tax Slab Other
 #. Charges'
 #. Label of the description (Small Text) field in DocType 'Salary Component'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/doctype/appointment_letter_content/appointment_letter_content.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/appraisal_template/appraisal_template.json
@@ -4085,6 +4329,7 @@ msgstr ""
 msgid "Download Template"
 msgstr ""
 
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
 #. Option for the 'Status' (Select) field in DocType 'Employee Advance'
 #. Option for the 'Approval Status' (Select) field in DocType 'Expense Claim'
 #. Option for the 'Status' (Select) field in DocType 'Expense Claim'
@@ -4095,6 +4340,7 @@ msgstr ""
 #. Option for the 'Status' (Select) field in DocType 'Salary Slip'
 #. Option for the 'Status' (Select) field in DocType 'Salary Withholding'
 #: frontend/src/views/employee_advance/List.vue:42
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
@@ -4135,6 +4381,11 @@ msgstr ""
 #. Label of the duration (Int) field in DocType 'Employee Boarding Activity'
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 msgid "Duration (Days)"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "EC連携"
 msgstr ""
 
 #: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:355
@@ -4252,10 +4503,16 @@ msgstr ""
 msgid "Effective from"
 msgstr ""
 
+#. Label of the email (Data) field in DocType 'ars customer table'
+#. Label of the email (Data) field in DocType 'ars support customer table'
+#. Label of the email (Data) field in DocType 'Support Timesheet'
 #. Label of the email (Data) field in DocType 'Employee Referral'
 #. Label of the email_section (Section Break) field in DocType 'Payroll
 #. Settings'
 #: frontend/src/views/Login.vue:15
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/employee_referral/employee_referral.json
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 msgid "Email"
@@ -4303,8 +4560,9 @@ msgstr ""
 msgid "Emails salary slip to employee based on preferred email selected in Employee"
 msgstr ""
 
-#. Label of the employee (Link) field in DocType 'Appraisal'
+#. Label of the employee (Link) field in DocType 'Support Timesheet'
 #. Name of a role
+#. Label of the employee (Link) field in DocType 'Appraisal'
 #. Label of the employee (Link) field in DocType 'Appraisee'
 #. Label of the employee (Link) field in DocType 'Attendance'
 #. Label of the employee (Link) field in DocType 'Attendance Request'
@@ -4356,6 +4614,7 @@ msgstr ""
 #: frontend/src/views/attendance/ShiftRequestList.vue:48
 #: frontend/src/views/employee_advance/List.vue:53
 #: frontend/src/views/leave/List.vue:47
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/appraisal_template/appraisal_template.json
@@ -4565,6 +4824,12 @@ msgstr ""
 msgid "Employee Cost Center"
 msgstr ""
 
+#. Label of the employee_detail (Section Break) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Employee Detail"
+msgstr ""
+
 #. Label of the details_section (Section Break) field in DocType 'Employee
 #. Onboarding'
 #. Label of the employee_details_tab (Tab Break) field in DocType 'Employee
@@ -4736,6 +5001,7 @@ msgstr ""
 msgid "Employee Loan"
 msgstr ""
 
+#. Label of the employee_name (Data) field in DocType 'Support Timesheet'
 #. Label of the employee_name (Data) field in DocType 'Appraisal'
 #. Label of the employee_name (Data) field in DocType 'Appraisee'
 #. Label of the employee_name (Data) field in DocType 'Attendance'
@@ -4788,6 +5054,7 @@ msgstr ""
 #. Label of the employee_name (Data) field in DocType 'Salary Structure
 #. Assignment'
 #. Label of the employee_name (Data) field in DocType 'Salary Withholding'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisee/appraisee.json
 #: hrms/hr/doctype/attendance/attendance.json
@@ -5074,6 +5341,10 @@ msgstr ""
 msgid "Employee can be named by Employee ID if you assign one, or via Naming Series. Select your preference here."
 msgstr ""
 
+#: hrms/ars/doctype/overtime/overtime.py:18
+msgid "Employee is required to create leave"
+msgstr ""
+
 #. Label of the employee_name (Data) field in DocType 'Leave Policy Assignment'
 #: hrms/hr/doctype/leave_policy_assignment/leave_policy_assignment.json
 msgid "Employee name"
@@ -5288,6 +5559,7 @@ msgstr ""
 msgid "End"
 msgstr ""
 
+#. Label of the end_date (Date) field in DocType 'Support Timesheet'
 #. Label of the end_date (Date) field in DocType 'Appraisal'
 #. Label of the end_date (Date) field in DocType 'Appraisal Cycle'
 #. Label of the end_date (Date) field in DocType 'Goal'
@@ -5298,6 +5570,7 @@ msgstr ""
 #. Label of the end_date (Date) field in DocType 'Payroll Period Date'
 #. Label of the end_date (Date) field in DocType 'Salary Slip'
 #: frontend/src/views/attendance/ShiftAssignmentList.vue:28
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/goal/goal_tree.js:91
@@ -5505,9 +5778,11 @@ msgstr ""
 msgid "Exam"
 msgstr ""
 
+#. Label of the exchange_rate (Float) field in DocType 'Support Timesheet'
 #. Label of the exchange_rate (Float) field in DocType 'Employee Advance'
 #. Label of the exchange_rate (Float) field in DocType 'Payroll Entry'
 #. Label of the exchange_rate (Float) field in DocType 'Salary Slip'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
@@ -5666,6 +5941,12 @@ msgstr ""
 #. Requisition'
 #: hrms/hr/doctype/job_requisition/job_requisition.json
 msgid "Expected Compensation"
+msgstr ""
+
+#. Label of the expected_hours (Float) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Expected Hrs"
 msgstr ""
 
 #. Name of a DocType
@@ -6086,6 +6367,11 @@ msgstr ""
 msgid "First Name "
 msgstr ""
 
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "First Response Time for Issues"
+msgstr ""
+
 #. Label of the var_First_name (Data) field in DocType 'old_breakTable'
 #: hrms/zoho/doctype/old_breaktable/old_breaktable.json
 msgid "First name"
@@ -6289,7 +6575,10 @@ msgstr ""
 msgid "From Employee"
 msgstr ""
 
+#. Label of the from_time (Datetime) field in DocType 'Support Timesheet
+#. Details'
 #. Label of the from_time (Time) field in DocType 'Interview'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/doctype/interview/interview.json
 msgid "From Time"
 msgstr ""
@@ -6395,6 +6684,8 @@ msgstr ""
 msgid "Future dates not allowed"
 msgstr ""
 
+#. Label of the gender (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
 #: hrms/hr/report/employee_analytics/employee_analytics.py:36
 #: hrms/hr/report/employee_birthday/employee_birthday.py:27
 msgid "Gender"
@@ -7022,6 +7313,11 @@ msgstr ""
 msgid "House rented dates should be atleast 15 days apart"
 msgstr ""
 
+#. Label of the hours (Float) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Hrs"
+msgstr ""
+
 #: hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py:60
 msgid "IFSC"
 msgstr ""
@@ -7140,6 +7436,11 @@ msgstr ""
 
 #: hrms/patches/v15_0/notify_about_loan_app_separation.py:17
 msgid "If you are using loans in salary slips, please install the {0} app from Frappe Cloud Marketplace or GitHub to continue using loan integration with payroll."
+msgstr ""
+
+#. Label of the image (Attach Image) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Image"
 msgstr ""
 
 #. Label of the upload_attendance_data (Section Break) field in DocType 'Upload
@@ -7337,6 +7638,17 @@ msgstr ""
 msgid "Indicates the number of leaves that cannot be encashed from the leave balance. E.g. with a leave balance of 10 and 4 Non-Encashable Leaves, you can encash 6, while the remaining 4 can be carried forward or expired"
 msgstr ""
 
+#. Option for the 'Customer Type' (Select) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Individual"
+msgstr ""
+
+#. Label of the industry (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Industry"
+msgstr ""
+
 #. Option for the 'Type' (Select) field in DocType 'Vehicle Service'
 #: hrms/hr/doctype/vehicle_service/vehicle_service.json
 msgid "Inspection"
@@ -7383,6 +7695,12 @@ msgstr ""
 
 #: hrms/setup.py:388
 msgid "Intern"
+msgstr ""
+
+#. Option for the 'Work Type' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Internal"
 msgstr ""
 
 #. Name of a DocType
@@ -7636,6 +7954,12 @@ msgstr ""
 msgid "Is Applicable for Referral Bonus"
 msgstr ""
 
+#. Label of the is_billable (Check) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Is Billable"
+msgstr ""
+
 #. Label of the is_carry_forward (Check) field in DocType 'Leave Ledger Entry'
 #. Label of the is_carry_forward (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_ledger_entry/leave_ledger_entry.json
@@ -7746,10 +8070,58 @@ msgstr ""
 msgid "Is Tax Applicable"
 msgstr ""
 
+#. Label of a Link in the Support Workspace
+#. Label of a shortcut in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+#: hrms/public/js/ars_support/timer.js:16
+msgid "Issue"
+msgstr ""
+
+#. Label of the parent_issue (Link) field in DocType 'Support Timesheet'
+#. Label of the issue (Link) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Issue "
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/issue_details/issue_details.json
+msgid "Issue Details"
+msgstr ""
+
+#. Label of the issue_id (Link) field in DocType 'Issue Details'
+#: hrms/ars_support/doctype/issue_details/issue_details.json
+msgid "Issue ID"
+msgstr ""
+
+#. Label of the issue_name (Data) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Issue Name"
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Issue Priority"
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Issue Type"
+msgstr ""
+
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.py:77
+msgid "Issue is Mandatory when issue related work"
+msgstr ""
+
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:12
 #: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:507
 #: hrms/public/js/salary_slip_deductions_report_filters.js:19
 msgid "Jan"
+msgstr ""
+
+#. Option for the 'Territory' (Select) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Japan"
 msgstr ""
 
 #. Label of the job_applicant (Link) field in DocType 'Appointment Letter'
@@ -7971,6 +8343,10 @@ msgstr ""
 #. Description of the 'KRA' (Link) field in DocType 'Appraisal Template Goal'
 #: hrms/hr/doctype/appraisal_template_goal/appraisal_template_goal.json
 msgid "Key Result Area"
+msgstr ""
+
+#: hrms/public/js/ars_support/timer.js:43
+msgid "Lap"
 msgstr ""
 
 #. Option for the 'Allocate on Day' (Select) field in DocType 'Leave Type'
@@ -8650,6 +9026,16 @@ msgstr ""
 msgid "MICR"
 msgstr ""
 
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Maintenance Schedule"
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Maintenance Visit"
+msgstr ""
+
 #. Label of the make (Read Only) field in DocType 'Vehicle Log'
 #: hrms/hr/doctype/vehicle_log/vehicle_log.json
 #: hrms/hr/report/vehicle_expenses/vehicle_expenses.py:31
@@ -8759,6 +9145,11 @@ msgstr ""
 #. Attendance Tool'
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.json
 msgid "Marked Attendance HTML"
+msgstr ""
+
+#. Label of the market_segment (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Market Segment"
 msgstr ""
 
 #: hrms/hr/doctype/employee_attendance_tool/employee_attendance_tool.js:284
@@ -8915,6 +9306,11 @@ msgstr ""
 
 #: hrms/setup.py:327
 msgid "Medical"
+msgstr ""
+
+#. Label of the memo (Section Break) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Memo"
 msgstr ""
 
 #: frontend/src/components/FormView.vue:46
@@ -9085,6 +9481,12 @@ msgstr ""
 msgid "More Info"
 msgstr ""
 
+#. Label of the more_info (Section Break) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "More Information"
+msgstr ""
+
 #: hrms/hr/utils.py:267
 msgid "More than one selection for {0} not allowed"
 msgstr ""
@@ -9117,7 +9519,11 @@ msgstr ""
 msgid "My Requests"
 msgstr ""
 
+#. Label of the name1 (Data) field in DocType 'ars customer table'
+#. Label of the name1 (Data) field in DocType 'ars support customer table'
 #. Label of the salary_component (Data) field in DocType 'Salary Component'
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.js:137
 #: hrms/hr/report/breakfast_allowance_report/breakfast_allowance_report.js:9
 #: hrms/hr/report/employee_analytics/employee_analytics.py:31
@@ -9460,6 +9866,15 @@ msgstr ""
 msgid "Non-Vegetarian"
 msgstr ""
 
+#. Option for the '製品名' (Select) field in DocType 'ars support issue'
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
+#. Option for the 'ステータス' (Select) field in DocType 'ars support issue'
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "None"
+msgstr ""
+
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.py:28
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.py:207
 #: hrms/hr/doctype/goal/goal.py:67 hrms/hr/doctype/goal/goal.py:71
@@ -9480,6 +9895,8 @@ msgstr ""
 msgid "Not Started"
 msgstr ""
 
+#. Label of the note (Text Editor) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.js:282
 msgid "Note"
 msgstr ""
@@ -9744,6 +10161,11 @@ msgstr ""
 msgid "Open Now"
 msgstr ""
 
+#. Label of a chart in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Open Projects"
+msgstr ""
+
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.py:54
 msgid "Opening Balance"
 msgstr ""
@@ -9853,12 +10275,6 @@ msgstr ""
 msgid "Overtime"
 msgstr ""
 
-#. Label of the overtime_details_table (Table) field in DocType 'Employee User
-#. Report'
-#: hrms/ars/doctype/employee_user_report/employee_user_report.json
-msgid "Overtime Details"
-msgstr ""
-
 #. Label of the overtime_summary_section (Section Break) field in DocType
 #. 'Overtime'
 #: hrms/ars/doctype/overtime/overtime.json
@@ -9889,6 +10305,11 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
+#. Label of a shortcut in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Overview - Ars Support"
+msgstr ""
+
 #. Label of the overwrite_salary_structure_amount (Check) field in DocType
 #. 'Additional Salary'
 #: hrms/payroll/doctype/additional_salary/additional_salary.json
@@ -9916,6 +10337,22 @@ msgstr ""
 
 #: hrms/payroll/report/provident_fund_deductions/provident_fund_deductions.py:51
 msgid "PF Loan"
+msgstr ""
+
+#. Option for the '問い合わせタイプ' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "PG"
+msgstr ""
+
+#. Label of the pg_incharge (Link) field in DocType 'ars_support_issue_table'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "PG 担当者"
+msgstr ""
+
+#. Label of the in_progress_pg (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "PG対応中"
 msgstr ""
 
 #. Name of a DocType
@@ -9985,6 +10422,12 @@ msgstr ""
 #: frontend/src/views/employee_advance/List.vue:42
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 msgid "Partly Claimed and Returned"
+msgstr ""
+
+#. Option for the 'Customer Type' (Select) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Partnership"
 msgstr ""
 
 #. Label of the passport_number (Data) field in DocType 'Travel Request'
@@ -10253,6 +10696,11 @@ msgstr ""
 
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:86
 msgid "Payroll date can not be less than employee's joining date."
+msgstr ""
+
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Payslip"
 msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'Employee Onboarding'
@@ -10717,6 +11165,11 @@ msgstr ""
 msgid "Print Heading"
 msgstr ""
 
+#. Label of the language (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Print Language"
+msgstr ""
+
 #: hrms/payroll/report/salary_register/salary_register.html:40
 msgid "Printed On {0}"
 msgstr ""
@@ -10808,12 +11261,16 @@ msgstr ""
 msgid "Progress"
 msgstr ""
 
+#. Label of the project (Link) field in DocType 'Support Timesheet Details'
 #. Label of the project (Link) field in DocType 'Employee Onboarding'
 #. Label of the project (Link) field in DocType 'Employee Separation'
 #. Label of the project (Link) field in DocType 'Expense Claim'
 #. Label of the project (Link) field in DocType 'Expense Claim Detail'
 #. Label of the project (Link) field in DocType 'Expense Taxes and Charges'
+#. Label of a Link in the Projects Workspace
+#. Label of a shortcut in the Projects Workspace
 #. Label of the project (Link) field in DocType 'Payroll Entry'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.js:36
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.json
 #: hrms/hr/doctype/employee_separation/employee_separation.js:24
@@ -10824,7 +11281,9 @@ msgstr ""
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.js:43
 #: hrms/hr/report/project_profitability/project_profitability.js:43
 #: hrms/hr/report/project_profitability/project_profitability.py:162
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
+#: hrms/public/js/ars_support/timer.js:17
 msgid "Project"
 msgstr ""
 
@@ -10833,6 +11292,32 @@ msgstr ""
 #: hrms/hr/report/project_profitability/project_profitability.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Project Profitability"
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Project Template"
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Project Type"
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Project Update"
+msgstr ""
+
+#. Name of a Workspace
+#. Label of a Card Break in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Projects"
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Projects Settings"
 msgstr ""
 
 #. Label of a Card Break in the Performance Workspace
@@ -11345,6 +11830,7 @@ msgstr ""
 #. Label of a Card Break in the Expense Claims Workspace
 #. Label of a Card Break in the Leaves Workspace
 #. Label of a Card Break in the Performance Workspace
+#. Label of a Card Break in the Projects Workspace
 #. Label of a Card Break in the Recruitment Workspace
 #. Name of a Workspace
 #. Label of a Card Break in the Shift & Attendance Workspace
@@ -11354,6 +11840,7 @@ msgstr ""
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 #: hrms/hr/workspace/leaves/leaves.json
 #: hrms/hr/workspace/performance/performance.json
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/hr/workspace/reports/reports.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
@@ -11463,6 +11950,11 @@ msgstr ""
 msgid "Responsibilities"
 msgstr ""
 
+#. Option for the 'Territory' (Select) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Rest of the world"
+msgstr ""
+
 #. Label of the restrict_backdated_leave_application (Check) field in DocType
 #. 'HR Settings'
 #: hrms/hr/doctype/hr_settings/hr_settings.json
@@ -11493,6 +11985,10 @@ msgstr ""
 #: hrms/hr/doctype/employee_referral/employee_referral.json
 #: hrms/hr/doctype/job_applicant/job_applicant.json
 msgid "Resume Link"
+msgstr ""
+
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.js:101
+msgid "Resume Timer"
 msgstr ""
 
 #. Label of the resume_link (Data) field in DocType 'Interview'
@@ -11696,6 +12192,12 @@ msgstr ""
 #. 'Gratuity Rule'
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule.json
 msgid "Rules"
+msgstr ""
+
+#. Label of the sla_breach_count (Float) field in DocType 'ars support report -
+#. inquiry response status summary - t4'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t4/ars_support_report___inquiry_response_status_summary___t4.json
+msgid "SLA 超過件数"
 msgstr ""
 
 #. Label of the salary_details_section (Section Break) field in DocType
@@ -12011,8 +12513,33 @@ msgstr ""
 msgid "Salary slip emails have been enqueued for sending. Check {0} for status."
 msgstr ""
 
+#. Label of the sales_invoice (Link) field in DocType 'Support Timesheet'
+#. Label of the sales_invoice (Link) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/report/project_profitability/project_profitability.py:148
 msgid "Sales Invoice"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Sales Manager"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Sales Master Manager"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Sales User"
+msgstr ""
+
+#. Label of the salutation (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Salutation"
 msgstr ""
 
 #: hrms/hr/doctype/expense_claim_type/expense_claim_type.py:22
@@ -12070,6 +12597,13 @@ msgstr ""
 
 #: hrms/hr/doctype/appraisal/appraisal.js:104
 msgid "Scores"
+msgstr ""
+
+#. Label of the search_issue (Button) field in DocType 'ars support issue'
+#. Label of the search (Button) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Search"
 msgstr ""
 
 #: hrms/www/jobs/index.html:64
@@ -12313,6 +12847,14 @@ msgstr ""
 msgid "Separation Begins On"
 msgstr ""
 
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Serial No"
+msgstr ""
+
+#. Label of the naming_series (Select) field in DocType 'ars support customer'
+#. Label of the naming_series (Select) field in DocType 'ars support issue'
+#. Label of the naming_series (Select) field in DocType 'Support Timesheet'
 #. Label of the naming_series (Select) field in DocType 'Appraisal'
 #. Label of the naming_series (Select) field in DocType 'Attendance'
 #. Label of the naming_series (Select) field in DocType 'Employee Advance'
@@ -12321,6 +12863,9 @@ msgstr ""
 #. Label of the naming_series (Select) field in DocType 'Leave Application'
 #. Label of the naming_series (Select) field in DocType 'Vehicle Log'
 #. Label of the naming_series (Select) field in DocType 'Additional Salary'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/employee_advance/employee_advance.json
@@ -12355,6 +12900,11 @@ msgstr ""
 #: hrms/hr/doctype/vehicle_service/vehicle_service.json
 #: hrms/hr/doctype/vehicle_service_item/vehicle_service_item.json
 msgid "Service Item"
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Service Level Agreement"
 msgstr ""
 
 #. Description of the 'Current Work Experience' (Table) field in DocType
@@ -12422,9 +12972,11 @@ msgstr ""
 
 #. Label of the settings_section (Section Break) field in DocType 'Appraisal
 #. Cycle'
+#. Label of a Card Break in the Projects Workspace
 #: frontend/src/views/AppSettings.vue:17
 #: frontend/src/views/Notifications.vue:38 frontend/src/views/Profile.vue:87
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
+#: hrms/hr/workspace/projects/projects.json
 msgid "Settings"
 msgstr ""
 
@@ -12773,8 +13325,10 @@ msgstr ""
 
 #. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "Slack"
 msgstr ""
 
@@ -12876,9 +13430,11 @@ msgstr ""
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.js:46
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.js:51
 #: hrms/hr/doctype/attendance/attendance_list.js:46
+#: hrms/public/js/ars_support/timer.js:43
 msgid "Start"
 msgstr ""
 
+#. Label of the start_date (Date) field in DocType 'Support Timesheet'
 #. Label of the start_date (Date) field in DocType 'Appraisal'
 #. Label of the start_date (Date) field in DocType 'Appraisal Cycle'
 #. Label of the start_date (Date) field in DocType 'Goal'
@@ -12889,6 +13445,7 @@ msgstr ""
 #. Label of the start_date (Date) field in DocType 'Payroll Period Date'
 #. Label of the start_date (Date) field in DocType 'Salary Slip'
 #: frontend/src/views/attendance/ShiftAssignmentList.vue:27
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal/appraisal.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/goal/goal_tree.js:84
@@ -12911,6 +13468,10 @@ msgstr ""
 #: hrms/hr/notification/training_scheduled/training_scheduled.html:32
 #: hrms/templates/emails/training_event.html:7
 msgid "Start Time"
+msgstr ""
+
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.js:96
+msgid "Start Timer"
 msgstr ""
 
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.py:264
@@ -12937,6 +13498,8 @@ msgstr ""
 msgid "Statistical Component"
 msgstr ""
 
+#. Label of the status (Data) field in DocType 'test'
+#. Label of the status (Select) field in DocType 'Support Timesheet'
 #. Label of the status (Select) field in DocType 'Appraisal Cycle'
 #. Label of the status (Select) field in DocType 'Attendance'
 #. Label of the status (Select) field in DocType 'Daily Work Summary'
@@ -12971,7 +13534,8 @@ msgstr ""
 #. Label of the status (Select) field in DocType 'Salary Withholding'
 #: frontend/src/views/attendance/ShiftRequestList.vue:36
 #: frontend/src/views/employee_advance/List.vue:47
-#: frontend/src/views/leave/List.vue:35
+#: frontend/src/views/leave/List.vue:35 hrms/ars/doctype/test/test.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appraisal_cycle/appraisal_cycle.json
 #: hrms/hr/doctype/attendance/attendance.json
 #: hrms/hr/doctype/attendance/attendance_list.js:54
@@ -13022,8 +13586,18 @@ msgstr ""
 msgid "Status for Other Half"
 msgstr ""
 
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Stock Manager"
+msgstr ""
+
 #: hrms/setup.py:401
 msgid "Stock Options"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Stock User"
 msgstr ""
 
 #. Description of the 'Block Days' (Section Break) field in DocType 'Leave
@@ -13096,11 +13670,13 @@ msgstr ""
 msgid "Submit this to create the Employee record"
 msgstr ""
 
+#. Option for the 'Status' (Select) field in DocType 'Support Timesheet'
 #. Option for the 'Status' (Select) field in DocType 'Expense Claim'
 #. Option for the 'Status' (Select) field in DocType 'Leave Encashment'
 #. Option for the 'Status' (Select) field in DocType 'Gratuity'
 #. Option for the 'Status' (Select) field in DocType 'Payroll Entry'
 #. Option for the 'Status' (Select) field in DocType 'Salary Slip'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 #: hrms/hr/doctype/leave_encashment/leave_encashment.json
 #: hrms/payroll/doctype/gratuity/gratuity.json
@@ -13168,9 +13744,36 @@ msgstr ""
 msgid "Supplier"
 msgstr ""
 
+#. Name of a Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Support"
+msgstr ""
+
 #. Name of a DocType
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "Support Case"
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Support Settings"
+msgstr ""
+
+#. Name of a role
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Support Team"
+msgstr ""
+
+#. Name of a DocType
+#. Label of a shortcut in the Support Workspace
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+#: hrms/hr/workspace/support/support.json
+msgid "Support Timesheet"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Support Timesheet Details"
 msgstr ""
 
 #: hrms/hr/report/employee_leave_balance/employee_leave_balance.js:46
@@ -13202,6 +13805,8 @@ msgstr ""
 #: hrms/ars/doctype/leave/leave.json hrms/ars/doctype/overtime/overtime.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars/doctype/test/test.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
 #: hrms/hr/doctype/appointment_letter/appointment_letter.json
 #: hrms/hr/doctype/appointment_letter_template/appointment_letter_template.json
 #: hrms/hr/doctype/appraisal/appraisal.json
@@ -13270,10 +13875,13 @@ msgstr ""
 
 #. Label of the task (Link) field in DocType 'Employee Boarding Activity'
 #. Label of the task (Link) field in DocType 'Expense Claim'
+#. Label of a Link in the Projects Workspace
+#. Label of a shortcut in the Projects Workspace
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 #: hrms/hr/doctype/employee_onboarding/employee_onboarding.js:43
 #: hrms/hr/doctype/employee_separation/employee_separation.js:31
 #: hrms/hr/doctype/expense_claim/expense_claim.json
+#: hrms/hr/workspace/projects/projects.json
 msgid "Task"
 msgstr ""
 
@@ -13283,9 +13891,19 @@ msgstr ""
 msgid "Task Weight"
 msgstr ""
 
+#. Label of the tax_tab (Tab Break) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Tax"
+msgstr ""
+
 #. Name of a Workspace
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "Tax & Benefits"
+msgstr ""
+
+#. Label of the tax_category (Link) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Tax Category"
 msgstr ""
 
 #. Label of the tax_deducted_till_date (Currency) field in DocType 'Salary
@@ -13316,9 +13934,20 @@ msgstr ""
 msgid "Tax Exemption Proofs"
 msgstr ""
 
+#. Label of the tax_id (Data) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Tax ID"
+msgstr ""
+
 #. Label of a Card Break in the Tax & Benefits Workspace
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "Tax Setup"
+msgstr ""
+
+#. Label of the tax_withholding_category (Link) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Tax Withholding Category"
 msgstr ""
 
 #. Label of the tax_on_additional_salary (Currency) field in DocType 'Salary
@@ -13411,6 +14040,11 @@ msgstr ""
 #. Label of the terms (Text Editor) field in DocType 'Job Offer'
 #: hrms/hr/doctype/job_offer/job_offer.json
 msgid "Terms and Conditions"
+msgstr ""
+
+#. Label of the territory (Select) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Territory"
 msgstr ""
 
 #: hrms/templates/emails/training_event.html:20
@@ -13587,6 +14221,16 @@ msgstr ""
 msgid "Time Sheet"
 msgstr ""
 
+#. Label of the time_logs (Table) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Time Sheets"
+msgstr ""
+
+#. Label of a Card Break in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "Time Tracking"
+msgstr ""
+
 #. Description of the 'Allow check-out after shift end time (in minutes)' (Int)
 #. field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
@@ -13610,8 +14254,19 @@ msgstr ""
 msgid "Timelines"
 msgstr ""
 
+#: hrms/public/js/ars_support/timer.js:7
+msgid "Timer"
+msgstr ""
+
+#: hrms/public/js/ars_support/timer.js:215
+msgid "Timer exceeded the given hours."
+msgstr ""
+
+#. Label of a Link in the Projects Workspace
+#. Label of a shortcut in the Projects Workspace
 #. Label of a Link in the Shift & Attendance Workspace
 #: hrms/hr/report/project_profitability/project_profitability.py:155
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/shift_&_attendance/shift_&_attendance.json
 msgid "Timesheet"
 msgstr ""
@@ -13626,12 +14281,14 @@ msgstr ""
 msgid "Timing"
 msgstr ""
 
+#. Label of the title (Data) field in DocType 'Support Timesheet'
 #. Label of the title (Data) field in DocType 'Appointment Letter content'
 #. Label of the title (Data) field in DocType 'Employee Onboarding Template'
 #. Label of the title (Data) field in DocType 'Employee Separation Template'
 #. Label of the title (Data) field in DocType 'Job Offer Term Template'
 #. Label of the title (Data) field in DocType 'KRA'
 #. Label of the title (Data) field in DocType 'Leave Policy'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/appointment_letter_content/appointment_letter_content.json
 #: hrms/hr/doctype/employee_onboarding_template/employee_onboarding_template.json
 #: hrms/hr/doctype/employee_separation_template/employee_separation_template.json
@@ -13703,9 +14360,15 @@ msgstr ""
 msgid "To Date should be greater than From Date"
 msgstr ""
 
+#. Label of the to_time (Datetime) field in DocType 'Support Timesheet Details'
 #. Label of the to_time (Time) field in DocType 'Interview'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
 #: hrms/hr/doctype/interview/interview.json
 msgid "To Time"
+msgstr ""
+
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.py:26
+msgid "To Time cannot be before from date"
 msgstr ""
 
 #. Label of the to_user (Link) field in DocType 'PWA Notification'
@@ -13828,15 +14491,50 @@ msgstr ""
 msgid "Total Asset Recovery Cost"
 msgstr ""
 
+#. Label of the total_billable_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Total Billable Amount"
+msgstr ""
+
+#. Label of the total_billable_hours (Float) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Total Billable Hours"
+msgstr ""
+
+#. Label of the total_billed_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Total Billed Amount"
+msgstr ""
+
+#. Label of the total_billed_hours (Float) field in DocType 'Support Timesheet'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:227
 #: hrms/hr/report/project_profitability/project_profitability.py:197
 msgid "Total Billed Hours"
+msgstr ""
+
+#. Label of the total_billing_amount (Currency) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "Total Billing Amount"
 msgstr ""
 
 #. Label of the total_claimed_amount (Currency) field in DocType 'Expense
 #. Claim'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
 msgid "Total Claimed Amount"
+msgstr ""
+
+#. Label of the total_costing_amount (Currency) field in DocType 'ars support
+#. issue'
+#. Label of the total_costing_amount (Currency) field in DocType 'Support
+#. Timesheet'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
+msgid "Total Costing Amount"
 msgstr ""
 
 #. Label of the total_declared_amount (Currency) field in DocType 'Employee Tax
@@ -14047,7 +14745,9 @@ msgstr ""
 msgid "Total Taxes and Charges"
 msgstr ""
 
+#. Label of the total_hours (Float) field in DocType 'Support Timesheet'
 #. Label of the total_working_hours (Float) field in DocType 'Salary Slip'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/report/shift_attendance/shift_attendance.py:79
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Total Working Hours"
@@ -14567,11 +15267,13 @@ msgstr ""
 msgid "Used Leaves"
 msgstr ""
 
+#. Label of the user (Link) field in DocType 'Support Timesheet'
 #. Label of the user (Link) field in DocType 'Daily Work Summary Group User'
 #. Label of the user (Link) field in DocType 'Employee Boarding Activity'
 #. Label of the user (Link) field in DocType 'Employee Performance Feedback'
 #. Label of the user (Data) field in DocType 'Goal'
 #. Label of the user (Link) field in DocType 'Interviewer'
+#: hrms/ars_support/doctype/support_timesheet/support_timesheet.json
 #: hrms/hr/doctype/daily_work_summary_group_user/daily_work_summary_group_user.json
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 #: hrms/hr/doctype/employee_performance_feedback/employee_performance_feedback.json
@@ -14751,6 +15453,10 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.py:70
+msgid "Warning - Row {0}: Billing Hours are more than Actual Hours"
+msgstr ""
+
 #: hrms/hr/doctype/leave_application/leave_application.py:415
 msgid "Warning: Insufficient leave balance for Leave Type {0} in this allocation."
 msgstr ""
@@ -14765,6 +15471,16 @@ msgstr ""
 
 #: hrms/hr/doctype/shift_assignment/shift_assignment.py:91
 msgid "Warning: {0} already has an active Shift Assignment {1} for some/all of these dates."
+msgstr ""
+
+#. Label of a Link in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "Warranty Claim"
+msgstr ""
+
+#. Label of the website (Data) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "Website"
 msgstr ""
 
 #: hrms/setup.py:391
@@ -14875,6 +15591,11 @@ msgstr ""
 
 #: hrms/hr/doctype/daily_work_summary/daily_work_summary.py:100
 msgid "Work Summary for {0}"
+msgstr ""
+
+#. Label of the work_type (Select) field in DocType 'Support Timesheet Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "Work Type"
 msgstr ""
 
 #. Label of the worked_on (Section Break) field in DocType 'Compensatory Leave
@@ -15015,6 +15736,10 @@ msgstr ""
 msgid "You can only upload JPG, PNG, PDF, TXT or Microsoft documents."
 msgstr ""
 
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.py:81
+msgid "You can't submit timesheet when virtual issue is there."
+msgstr ""
+
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:505
 msgid "You do not have permission to complete this action"
 msgstr ""
@@ -15073,10 +15798,78 @@ msgstr ""
 msgid "active"
 msgstr ""
 
+#. Label of the address (Small Text) field in DocType 'ars customer table'
+#. Label of the address (Small Text) field in DocType 'ars support customer
+#. table'
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
+msgid "address"
+msgstr ""
+
 #. Label of the advance_payment_details_section (Section Break) field in
 #. DocType 'Advance payment table'
 #: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
 msgid "advance payment details"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+msgid "ars customer table"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "ars support customer"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
+msgid "ars support customer table"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "ars support issue"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
+msgid "ars support report - inquiry response status summary"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "ars support report - inquiry response status summary - t1"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t2/ars_support_report___inquiry_response_status_summary___t2.json
+msgid "ars support report - inquiry response status summary - t2"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t3/ars_support_report___inquiry_response_status_summary___t3.json
+msgid "ars support report - inquiry response status summary - t3"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t4/ars_support_report___inquiry_response_status_summary___t4.json
+msgid "ars support report - inquiry response status summary - t4"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "ars support report - inquiry response status summary - t5"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "ars support report - inquiry response status summary - t6"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "ars_support_issue_table"
 msgstr ""
 
 #: hrms/public/js/templates/feedback_summary.html:16
@@ -15110,8 +15903,15 @@ msgstr ""
 msgid "created"
 msgstr ""
 
+#. Label of the dh (Link) field in DocType 'Overtime'
+#: hrms/ars/doctype/overtime/overtime.json
+msgid "dh"
+msgstr ""
+
+#. Label of the emal_address (Data) field in DocType 'ars_support_issue_table'
 #. Label of the email (Read Only) field in DocType 'Daily Work Summary Group
 #. User'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 #: hrms/hr/doctype/daily_work_summary_group_user/daily_work_summary_group_user.json
 msgid "email"
 msgstr ""
@@ -15119,6 +15919,24 @@ msgstr ""
 #. Label of the flag (Int) field in DocType 'Employee User Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "flag"
+msgstr ""
+
+#. Option for the 'Customer Group' (Select) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "group 1"
+msgstr ""
+
+#. Option for the 'Customer Group' (Select) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "group 2"
+msgstr ""
+
+#. Option for the 'Customer Group' (Select) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "group 3"
 msgstr ""
 
 #. Name of a DocType
@@ -15133,6 +15951,16 @@ msgstr ""
 #. Label of the modify_half_day_status (Check) field in DocType 'Attendance'
 #: hrms/hr/doctype/attendance/attendance.json
 msgid "modify_half_day_status"
+msgstr ""
+
+#. Label of the monthly_billing (Float) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "monthly billing"
+msgstr ""
+
+#. Label of the phone_number (Data) field in DocType 'ars_support_issue_table'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "no"
 msgstr ""
 
 #. Name of a DocType
@@ -15154,14 +15982,12 @@ msgstr ""
 msgid "or for the Employee's Department: {0}"
 msgstr ""
 
-#. Label of the overtime_leaves (Int) field in DocType 'Overtime'
-#: hrms/ars/doctype/overtime/overtime.json
-msgid "overtime_leaves"
-msgstr ""
-
-#. Label of the overtime_mins (Int) field in DocType 'Overtime'
-#: hrms/ars/doctype/overtime/overtime.json
-msgid "overtime_mins"
+#. Label of the phone_number (Data) field in DocType 'ars customer table'
+#. Label of the phone_number (Data) field in DocType 'ars support customer
+#. table'
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
+msgid "phone_number"
 msgstr ""
 
 #: hrms/public/dist/js/hrms.bundle.A6T6RA2E.js:291
@@ -15179,6 +16005,14 @@ msgstr ""
 msgid "r6"
 msgstr ""
 
+#. Label of the remark (Small Text) field in DocType 'ars customer table'
+#. Label of the remark (Small Text) field in DocType 'ars support customer
+#. table'
+#: hrms/ars/doctype/ars_customer_table/ars_customer_table.json
+#: hrms/ars_support/doctype/ars_support_customer_table/ars_support_customer_table.json
+msgid "remark"
+msgstr ""
+
 #. Name of a DocType
 #: hrms/zoho/doctype/repayment/repayment.json
 msgid "repayment"
@@ -15189,12 +16023,24 @@ msgstr ""
 msgid "repayment_table"
 msgstr ""
 
+#. Label of the representative_details_section (Section Break) field in DocType
+#. 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "representative details"
+msgstr ""
+
 #: hrms/www/jobs/index.html:122
 msgid "result"
 msgstr ""
 
 #: hrms/www/jobs/index.html:122
 msgid "results"
+msgstr ""
+
+#. Label of the accounting_tab (Tab Break) field in DocType 'ars support
+#. customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "revenue"
 msgstr ""
 
 #: hrms/public/js/templates/feedback_summary.html:16
@@ -15210,13 +16056,28 @@ msgstr ""
 msgid "ringi"
 msgstr ""
 
+#. Label of the stakeholder (Select) field in DocType 'ars_support_issue_table'
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
+msgid "stakeholder"
+msgstr ""
+
 #: frontend/src/components/RequestActionSheet.vue:283
 msgid "submitted"
+msgstr ""
+
+#. Name of a DocType
+#: hrms/ars/doctype/test/test.json
+msgid "test"
 msgstr ""
 
 #. Name of a report
 #: hrms/ars/report/test_overtime/test_overtime.json
 msgid "test-overtime"
+msgstr ""
+
+#. Label of the total_billing (Float) field in DocType 'ars support customer'
+#: hrms/ars_support/doctype/ars_support_customer/ars_support_customer.json
+msgid "total billing"
 msgstr ""
 
 #. Name of a DocType
@@ -15237,6 +16098,11 @@ msgstr ""
 #. Name of a DocType
 #: hrms/ars/doctype/user_report_leave/user_report_leave.json
 msgid "user report Leave"
+msgstr ""
+
+#. Label of the value (Data) field in DocType 'test'
+#: hrms/ars/doctype/test/test.json
+msgid "value"
 msgstr ""
 
 #: hrms/payroll/doctype/salary_component/salary_component.py:101
@@ -15432,6 +16298,11 @@ msgstr ""
 msgid "{} Accepted"
 msgstr ""
 
+#. Count format of shortcut in the Projects Workspace
+#: hrms/hr/workspace/projects/projects.json
+msgid "{} Assigned"
+msgstr ""
+
 #. Count format of shortcut in the Salary Payout Workspace
 #. Count format of shortcut in the Tax & Benefits Workspace
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
@@ -15441,9 +16312,11 @@ msgstr ""
 
 #. Count format of shortcut in the Employee Lifecycle Workspace
 #. Count format of shortcut in the Leaves Workspace
+#. Count format of shortcut in the Projects Workspace
 #. Count format of shortcut in the Recruitment Workspace
 #: hrms/hr/workspace/employee_lifecycle/employee_lifecycle.json
 #: hrms/hr/workspace/leaves/leaves.json
+#: hrms/hr/workspace/projects/projects.json
 #: hrms/hr/workspace/recruitment/recruitment.json
 msgid "{} Open"
 msgstr ""
@@ -15473,14 +16346,29 @@ msgid "{} {} open for this position."
 msgstr ""
 
 #: hrms/ars/dummy_trans.py:8
-msgid "~Pending Manager"
+msgid "~ Pending Manager"
 msgstr ""
 
-#. Label of the purpose (Data) field in DocType 'user Advance Payment report'
 #. Label of the select_month (Data) field in DocType 'user breakfast report'
-#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
 #: hrms/ars/doctype/user_breakfast_report/user_breakfast_report.json
 msgid "⽉"
+msgstr ""
+
+#. Label of the waiting_customer_confirmation (Int) field in DocType 'ars
+#. support report - inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "お客様確認中"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "お客様確認待ち"
+msgstr ""
+
+#. Label of the customer_request_list (Text Editor) field in DocType 'ars
+#. support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "お客様要望リスト"
 msgstr ""
 
 #. Label of the select_from (Datetime) field in DocType 'Employee User Report'
@@ -15503,6 +16391,9 @@ msgstr ""
 #. Option for the '目的' (Select) field in DocType 'Slack channel opening
 #. application'
 #. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#. Label of the t4 (Table) field in DocType 'ars support report - inquiry
+#. response status summary'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
 #: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
@@ -15511,7 +16402,14 @@ msgstr ""
 #: hrms/ars/doctype/leave/leave.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
 msgid "その他"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "その他連携"
 msgstr ""
 
 #. Label of the report_to (Data) field in DocType 'Add Business trip request'
@@ -15561,13 +16459,23 @@ msgstr ""
 msgid "クレジットカード"
 msgstr ""
 
+#. Label of the claim_risk_index (Float) field in DocType 'ars support report -
+#. inquiry response status summary - t4'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t4/ars_support_report___inquiry_response_status_summary___t4.json
+msgid "クレームリスク指数"
+msgstr ""
+
 #. Label of the status (Select) field in DocType 'Support Case'
+#. Label of the status (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "ステータス"
 msgstr ""
 
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "スプレッドシート"
 msgstr ""
 
@@ -15593,13 +16501,22 @@ msgid "ファイルのアップロード1"
 msgstr ""
 
 #. Label of the file_upload_2 (Attach) field in DocType 'Support Case'
+#. Label of the file2 (Attach) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "ファイルのアップロード2"
 msgstr ""
 
 #. Label of the file_upload_3 (Attach) field in DocType 'Support Case'
+#. Label of the file3 (Attach) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "ファイルのアップロード3"
+msgstr ""
+
+#. Label of the file1 (Attach) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "ファイルのアップロード１"
 msgstr ""
 
 #. Label of the furigana (Data) field in DocType 'Slack for external users
@@ -15614,12 +16531,28 @@ msgstr ""
 msgid "プライベート"
 msgstr ""
 
+#. Label of the project (Link) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "プロジェクト"
+msgstr ""
+
 #. Option for the '目的' (Select) field in DocType 'Add slack for external users'
 #. Option for the '目的' (Select) field in DocType 'Slack channel opening
 #. application'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 msgid "プロジェクトにおける連絡・意見交換 等"
+msgstr ""
+
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "プロジェクト資料作成中"
+msgstr ""
+
+#. Label of the project (Link) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "ポロジェクト"
 msgstr ""
 
 #. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
@@ -15632,8 +16565,10 @@ msgstr ""
 #. Label of the email (Data) field in DocType 'Slack channel opening
 #. application participant list table'
 #. Label of the email (Data) field in DocType 'Slack for external users table'
+#. Label of the email_address (Data) field in DocType 'ars support issue'
 #: hrms/ars/doctype/slack_channel_opening_application_participant_list_table/slack_channel_opening_application_participant_list_table.json
 #: hrms/ars/doctype/slack_for_external_users_table/slack_for_external_users_table.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "メールアドレス"
 msgstr ""
 
@@ -15655,6 +16590,12 @@ msgstr ""
 msgid "リフレッシュ休暇"
 msgstr ""
 
+#. Label of the average_lead_time (Float) field in DocType 'ars support report
+#. - inquiry response status summary - t4'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t4/ars_support_report___inquiry_response_status_summary___t4.json
+msgid "リードタイム中央値"
+msgstr ""
+
 #. Label of the supervisor_approval (Data) field in DocType 'Internal approval'
 #. Label of the manager_approval (Data) field in DocType 'Old_overtime'
 #. Label of the var_joushi_shounin (Data) field in DocType 'ringi'
@@ -15665,7 +16606,9 @@ msgid "上司の承認"
 msgstr ""
 
 #. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "不具合"
 msgstr ""
 
@@ -15704,10 +16647,23 @@ msgstr ""
 msgid "今日 残業時間 (分)"
 msgstr ""
 
-#. Label of the total_leave_c4 (Data) field in DocType 'Employee User Report'
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "仕入支払"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "仕入発注"
+msgstr ""
+
 #. Option for the '区分' (Select) field in DocType 'Leave'
-#: hrms/ars/doctype/employee_user_report/employee_user_report.json
 #: hrms/ars/doctype/leave/leave.json
+msgid "代休"
+msgstr ""
+
+#. Label of the total_leave_c4 (Data) field in DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "代休（無給）"
 msgstr ""
 
@@ -15719,6 +16675,11 @@ msgstr ""
 #: hrms/ars/doctype/business_trip_report/business_trip_report.json
 #: hrms/ars/doctype/internal_approval/internal_approval.json
 msgid "件名"
+msgstr ""
+
+#. Label of the subject (Data) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "件名 "
 msgstr ""
 
 #. Option for the '残業調整' (Select) field in DocType 'Overtime'
@@ -15801,9 +16762,45 @@ msgstr ""
 msgid "作業依頼"
 msgstr ""
 
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "依頼   システム作業不具合"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "依頼  仕様確認作業"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "依頼  設定作業"
+msgstr ""
+
 #. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせタイプ' (Select) field in DocType 'ars support issue'
+#. Label of the pending (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t1'
+#. Label of the pending (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t5'
+#. Label of the pending (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
 msgid "保留"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "保留　一時保留"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "保留　継続保留"
 msgstr ""
 
 #. Label of the remark (Small Text) field in DocType 'Add Business trip
@@ -15823,13 +16820,40 @@ msgid "備考"
 msgstr ""
 
 #. Label of the priority (Select) field in DocType 'Support Case'
+#. Label of the priority (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "優先度"
 msgstr ""
 
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "入荷（WMS連携）"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "入荷（標準）"
+msgstr ""
+
+#. Label of the overall_balance (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "全体残"
+msgstr ""
+
+#. Label of the total_balance_including_currentmonth (Int) field in DocType
+#. 'ars support report - inquiry response status summary - t5'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "全体残高(当月の合計残高を含む)"
+msgstr ""
+
 #. Label of the breakdown (Small Text) field in DocType 'Advance payment table'
+#. Label of the breakdown (Small Text) field in DocType 'user Advance Payment
+#. report'
 #. Label of the var_uchiwake (Data) field in DocType 'repayment_table'
 #: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
 #: hrms/zoho/doctype/repayment_table/repayment_table.json
 msgid "内訳"
 msgstr ""
@@ -15837,6 +16861,12 @@ msgstr ""
 #. Label of the 内部コメント (Long Text) field in DocType 'inquiry_details_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
 msgid "内部コメント"
+msgstr ""
+
+#. Label of the completion_rate (Percent) field in DocType 'ars support report
+#. - inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "処理率"
 msgstr ""
 
 #. Label of a shortcut in the Overview Workspace
@@ -15877,6 +16907,16 @@ msgstr ""
 msgid "出社月度"
 msgstr ""
 
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "出荷（WMS連携）"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "出荷（標準）"
+msgstr ""
+
 #. Label of the usage_form (Select) field in DocType 'Add slack for external
 #. users'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
@@ -15914,6 +16954,12 @@ msgstr ""
 #. Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "前払い総額"
+msgstr ""
+
+#. Label of the last_month (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t5'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "前月残"
 msgstr ""
 
 #. Label of the developer (Link) field in DocType 'Support Case'
@@ -15963,6 +17009,44 @@ msgstr ""
 msgid "参加者リスト"
 msgstr ""
 
+#. Label of the reference_subject (Data) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照件名 "
+msgstr ""
+
+#. Label of the reference_client_id (Data) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照取引先ID"
+msgstr ""
+
+#. Label of the reference_client_name (Data) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照取引先名"
+msgstr ""
+
+#. Label of the 参照課題_section (Section Break) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照課題"
+msgstr ""
+
+#. Label of the reference_issue_id (Link) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照課題ID"
+msgstr ""
+
+#. Label of the reference_start_date (Data) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照課題発生日"
+msgstr ""
+
+#. Label of the reference_end_date (Data) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "参照課題終了日"
+msgstr ""
+
 #. Label of the attachment_1 (Attach) field in DocType 'Internal approval'
 #: hrms/ars/doctype/internal_approval/internal_approval.json
 msgid "参考資料 1"
@@ -15993,14 +17077,37 @@ msgstr ""
 msgid "参考資料③"
 msgstr ""
 
+#. Label of the client_id (Link) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "取引先ID"
+msgstr ""
+
 #. Label of the account_name (Select) field in DocType 'Support Case'
+#. Label of the client_name (Data) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "取引先名"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "受注"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "受注サポート"
 msgstr ""
 
 #. Option for the '取引先名' (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "合同会社ローレルプランニング"
+msgstr ""
+
+#. Label of the total_completed (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "合計完了"
 msgstr ""
 
 #. Label of the total_days (Data) field in DocType 'Breakfast'
@@ -16011,24 +17118,51 @@ msgid "合計日数"
 msgstr ""
 
 #. Label of the multiple_data_sources (Select) field in DocType 'Support Case'
+#. Label of the case_origin (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "問い合わせのデータ元"
 msgstr ""
 
 #. Label of the inquiry_handler (Link) field in DocType 'Support Case'
+#. Label of the inquiry_handler (Link) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "問い合わせの担当者"
+msgstr ""
+
+#. Label of the inquiry_handler_name (Data) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "問い合わせの担当者名前"
+msgstr ""
+
+#. Label of the issue_type (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "問い合わせタイプ"
 msgstr ""
 
 #. Label of the inquiry_details (Long Text) field in DocType
 #. 'inquiry_details_table'
+#. Label of the case_data (Text Editor) field in DocType
+#. 'ars_support_issue_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 msgid "問合せ内容"
 msgstr ""
 
 #. Label of the inquiry_date (Date) field in DocType 'inquiry_details_table'
+#. Label of the case_create_date (Date) field in DocType
+#. 'ars_support_issue_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 msgid "問合せ日付"
+msgstr ""
+
+#. Label of the inquiries_backlog (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "問合せ滞留"
 msgstr ""
 
 #. Label of the 問合内容_column (Column Break) field in DocType 'Support Case'
@@ -16038,13 +17172,29 @@ msgid "問合内容"
 msgstr ""
 
 #. Label of the answer (Long Text) field in DocType 'inquiry_details_table'
+#. Label of the case_reply (Text Editor) field in DocType
+#. 'ars_support_issue_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 msgid "回答"
 msgstr ""
 
 #. Label of the answer_date (Date) field in DocType 'inquiry_details_table'
+#. Label of the case_start_date (Data) field in DocType
+#. 'ars_support_issue_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 msgid "回答 日付"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "在庫管理"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "基本設定項目"
 msgstr ""
 
 #. Label of the report (Small Text) field in DocType 'Business trip report'
@@ -16052,10 +17202,30 @@ msgstr ""
 msgid "報告"
 msgstr ""
 
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "外との会議"
+msgstr ""
+
 #. Option for the 'ステータス' (Select) field in DocType 'Support Case'
 #. Option for the '優先度' (Select) field in DocType 'Support Case'
+#. Option for the 'ステータス' (Select) field in DocType 'ars support issue'
+#. Label of the completed (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t5'
+#. Label of the completed (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
 msgid "完了"
+msgstr ""
+
+#. Label of the completed_items (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "完了件数"
 msgstr ""
 
 #. Label of the completion_date (Date) field in DocType 'Support Case'
@@ -16066,6 +17236,11 @@ msgstr ""
 #. Option for the '関係者' (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "宮本"
+msgstr ""
+
+#. Option for the 'ステータス' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "対応中"
 msgstr ""
 
 #. Option for the 'ステータス' (Select) field in DocType 'Support Case'
@@ -16083,13 +17258,56 @@ msgstr ""
 msgid "対応中 - お客様確認待ち"
 msgstr ""
 
+#. Label of the in_progress_cs (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#. Label of the in_progress_cs (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "対応中(CS)"
+msgstr ""
+
+#. Label of the in_progress_pg (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#. Label of the in_progress_pg (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "対応中(PG)"
+msgstr ""
+
+#. Label of the in_progress_customer (Int) field in DocType 'ars support report
+#. - inquiry response status summary - t5'
+#. Label of the in_progress_customer (Int) field in DocType 'ars support report
+#. - inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "対応中(客)"
+msgstr ""
+
+#. Label of the in_progress_rate (Percent) field in DocType 'ars support report
+#. - inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "対応中比率"
+msgstr ""
+
+#. Label of the t3 (Table) field in DocType 'ars support report - inquiry
+#. response status summary'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
+msgid "対応中滞留日数"
+msgstr ""
+
 #. Option for the '本案件はカスタマイズ対応' (Select) field in DocType 'Support Case'
+#. Option for the '本案件はカスタマイズ対象' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "対象"
 msgstr ""
 
 #. Option for the '本案件はカスタマイズ対応' (Select) field in DocType 'Support Case'
+#. Option for the '本案件はカスタマイズ対象' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "対象外"
 msgstr ""
 
@@ -16120,6 +17338,11 @@ msgstr ""
 msgid "帰着予定日時"
 msgstr ""
 
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "帳票管理設定"
+msgstr ""
+
 #. Label of the total_overtime_c1_sp (Data) field in DocType 'Employee User
 #. Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
@@ -16131,7 +17354,14 @@ msgstr ""
 msgid "引落"
 msgstr ""
 
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "待機中（たいきちゅう）"
+msgstr ""
+
 #. Label of the employee (Link) field in DocType 'Employee User Report'
+#. Label of the employee_name (Data) field in DocType 'Employee User Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "従業員"
 msgstr ""
@@ -16156,7 +17386,9 @@ msgid "所要時間"
 msgstr ""
 
 #. Label of the manager (Link) field in DocType 'inquiry_details_table'
+#. Label of the incharge (Link) field in DocType 'ars_support_issue_table'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
+#: hrms/ars_support/doctype/ars_support_issue_table/ars_support_issue_table.json
 msgid "担当者"
 msgstr ""
 
@@ -16185,6 +17417,16 @@ msgstr ""
 msgid "提出者"
 msgstr ""
 
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "操作  操作説明（手順）"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "操作  操作説明（要調査）"
+msgstr ""
+
 #. Option for the '種類' (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "操作説明"
@@ -16208,12 +17450,21 @@ msgstr ""
 msgid "支払方法"
 msgstr ""
 
+#. Label of the payment_date_1 (Date) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "支払日 1（単発）\t"
+msgstr ""
+
+#. Label of the payment_date_2 (Date) field in DocType 'Internal approval'
 #. Label of the var_shiharai_bi2 (Data) field in DocType 'ringi'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
 #: hrms/zoho/doctype/ringi/ringi.json
 msgid "支払日2（日付が不確定な場合）"
 msgstr ""
 
+#. Label of the payment_amount (Float) field in DocType 'Internal approval'
 #. Label of the var_shiharai_kingaku (Data) field in DocType 'ringi'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
 #: hrms/zoho/doctype/ringi/ringi.json
 msgid "支払金額（円）"
 msgstr ""
@@ -16240,17 +17491,42 @@ msgstr ""
 msgid "新規"
 msgstr ""
 
+#. Label of the new_day (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t5'
+#. Label of the new_days (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "新規/日"
+msgstr ""
+
 #. Label of the date (Date) field in DocType 'Advance Payment'
 #. Label of the date (Date) field in DocType 'Advance payment table'
 #. Label of the date (Datetime) field in DocType 'Breakfast table'
+#. Label of the date (Data) field in DocType 'user Advance Payment report'
 #. Label of the date (Date) field in DocType 'user overtime report'
+#. Label of the date (Date) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
 #. Label of the var_hizuke (Data) field in DocType 'repayment_table'
 #: hrms/ars/doctype/advance_payment/advance_payment.json
 #: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
 #: hrms/ars/doctype/breakfast_table/breakfast_table.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
 #: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
 #: hrms/zoho/doctype/repayment_table/repayment_table.json
 msgid "日付"
+msgstr ""
+
+#. Label of the t6 (Table) field in DocType 'ars support report - inquiry
+#. response status summary'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
+msgid "日別レポート"
+msgstr ""
+
+#. Label of a shortcut in the Support Workspace
+#: hrms/hr/workspace/support/support.json
+msgid "日報管理"
 msgstr ""
 
 #. Label of the days (Data) field in DocType 'user report Leave'
@@ -16317,6 +17593,12 @@ msgstr ""
 msgid "最新コンタクト"
 msgstr ""
 
+#. Label of the month (Data) field in DocType 'ars support report - inquiry
+#. response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "月"
+msgstr ""
+
 #. Label of the select_month (Select) field in DocType 'Breakfast'
 #: hrms/ars/doctype/breakfast/breakfast.json
 msgid "月を選択"
@@ -16340,6 +17622,12 @@ msgstr ""
 msgid "朝の残業（朝食手当）"
 msgstr ""
 
+#. Label of the breakfast_allowance_request_details_table (Table) field in
+#. DocType 'Employee User Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "朝食手当の詳細"
+msgstr ""
+
 #. Label of the apply_for_breakfast_allowance_section (Section Break) field in
 #. DocType 'Breakfast'
 #: hrms/ars/doctype/breakfast/breakfast.json
@@ -16357,13 +17645,30 @@ msgstr ""
 msgid "朝食補助申請"
 msgstr ""
 
+#. Label of the not_processed_rate (Percent) field in DocType 'ars support
+#. report - inquiry response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "未処理率"
+msgstr ""
+
 #. Option for the '質問レベル' (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "未分類"
 msgstr ""
 
 #. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#. Option for the 'ステータス' (Select) field in DocType 'ars support issue'
+#. Label of the not_started_rate (Percent) field in DocType 'ars support report
+#. - inquiry response status summary - t1'
+#. Label of the unanswered (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t5'
+#. Label of the unanswered (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
 msgid "未対応"
 msgstr ""
 
@@ -16375,6 +17680,11 @@ msgstr ""
 #. Label of the is_customization (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "本案件はカスタマイズ対応"
+msgstr ""
+
+#. Label of the customization (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "本案件はカスタマイズ対象"
 msgstr ""
 
 #. Option for the '関係者' (Select) field in DocType 'Support Case'
@@ -16412,6 +17722,17 @@ msgstr ""
 msgid "株式会社ＧＳＴＶ"
 msgstr ""
 
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "検証中、"
+msgstr ""
+
+#. Label of the business_project (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "業務項目"
+msgstr ""
+
 #. Label of the summary_section (Section Break) field in DocType 'Breakfast'
 #. Label of the summary_section (Section Break) field in DocType 'Employee User
 #. Report'
@@ -16422,7 +17743,10 @@ msgstr ""
 
 #. Option for the '種類' (Select) field in DocType 'Support Case'
 #. Option for the 'ステータス' (Select) field in DocType 'Support Case'
+#. Label of the feature_requests (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
 msgid "機能要望"
 msgstr ""
 
@@ -16431,6 +17755,18 @@ msgstr ""
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 #: hrms/ars/doctype/leave/leave.json
 msgid "欠勤"
+msgstr ""
+
+#. Label of the remaining (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "残"
+msgstr ""
+
+#. Label of the backlog (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "残件"
 msgstr ""
 
 #. Label of the section_break_bvqf (Section Break) field in DocType 'Overtime'
@@ -16445,6 +17781,12 @@ msgstr ""
 #. 'Employee User Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "残業の概要"
+msgstr ""
+
+#. Label of the overtime_details_table (Table) field in DocType 'Employee User
+#. Report'
+#: hrms/ars/doctype/employee_user_report/employee_user_report.json
+msgid "残業の詳細"
 msgstr ""
 
 #. Label of the shift (Data) field in DocType 'user overtime report'
@@ -16582,6 +17924,62 @@ msgstr ""
 msgid "渡邊"
 msgstr ""
 
+#. Label of the within_3_days (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t2'
+#. Label of the within_3_days (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t3'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t2/ars_support_report___inquiry_response_status_summary___t2.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t3/ars_support_report___inquiry_response_status_summary___t3.json
+msgid "滞留3日以内"
+msgstr ""
+
+#. Label of the within_4_to_7_days (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t2'
+#. Label of the within_4_to_7_days (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t3'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t2/ars_support_report___inquiry_response_status_summary___t2.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t3/ars_support_report___inquiry_response_status_summary___t3.json
+msgid "滞留4–7日"
+msgstr ""
+
+#. Label of the equal_or_more_than_8_days (Int) field in DocType 'ars support
+#. report - inquiry response status summary - t2'
+#. Label of the equal_or_more_than_8_days (Int) field in DocType 'ars support
+#. report - inquiry response status summary - t3'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t2/ars_support_report___inquiry_response_status_summary___t2.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t3/ars_support_report___inquiry_response_status_summary___t3.json
+msgid "滞留8日以上"
+msgstr ""
+
+#. Label of the backlog_completed (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#. Label of the backlog_completed (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "滞留完了"
+msgstr ""
+
+#. Label of the average_backlog_days (Float) field in DocType 'ars support
+#. report - inquiry response status summary - t2'
+#. Label of the average_backlog_days (Float) field in DocType 'ars support
+#. report - inquiry response status summary - t3'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t2/ars_support_report___inquiry_response_status_summary___t2.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t3/ars_support_report___inquiry_response_status_summary___t3.json
+msgid "滞留平均日数"
+msgstr ""
+
+#. Label of the backlog_remaining (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t5'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t5/ars_support_report___inquiry_response_status_summary___t5.json
+msgid "滞留残"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "物流SYS連携"
+msgstr ""
+
 #. Option for the '質問レベル' (Select) field in DocType 'Support Case'
 #: hrms/ars/doctype/support_case/support_case.json
 msgid "特 - カスタマイズ"
@@ -16655,14 +18053,12 @@ msgstr ""
 #. Label of the date (Date) field in DocType 'Leave'
 #. Label of the date (Date) field in DocType 'Slack channel opening
 #. application'
-#. Label of the date (Data) field in DocType 'user Advance Payment report'
 #. Label of the var_shinseibi (Data) field in DocType 'old-leave'
 #: hrms/ars/doctype/add_business_trip_request/add_business_trip_request.json
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
 #: hrms/ars/doctype/business_trip_report/business_trip_report.json
 #: hrms/ars/doctype/leave/leave.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
-#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
 #: hrms/zoho/doctype/old_leave/old_leave.json
 msgid "申請日"
 msgstr ""
@@ -16683,11 +18079,21 @@ msgstr ""
 msgid "画像のアップロード1"
 msgstr ""
 
+#. Label of the image1 (Attach Image) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "画像のアップロード１"
+msgstr ""
+
 #. Label of the supplier (Data) field in DocType 'Internal approval'
 #. Label of the var_hacchusaki (Data) field in DocType 'ringi'
 #: hrms/ars/doctype/internal_approval/internal_approval.json
 #: hrms/zoho/doctype/ringi/ringi.json
 msgid "発注先"
+msgstr ""
+
+#. Label of the date1 (Date) field in DocType 'Internal approval'
+#: hrms/ars/doctype/internal_approval/internal_approval.json
+msgid "発注日"
 msgstr ""
 
 #. Label of the purpose (Select) field in DocType 'Add slack for external
@@ -16696,11 +18102,13 @@ msgstr ""
 #. Label of the purpose (Data) field in DocType 'Business trip request table'
 #. Label of the purpose (Select) field in DocType 'Slack channel opening
 #. application'
+#. Label of the purpose (Data) field in DocType 'user Advance Payment report'
 #. Label of the var_mokuteki (Data) field in DocType 'repayment_table'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
 #: hrms/ars/doctype/advance_payment_table/advance_payment_table.json
 #: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
+#: hrms/ars/doctype/user_advance_payment_report/user_advance_payment_report.json
 #: hrms/zoho/doctype/repayment_table/repayment_table.json
 msgid "目的"
 msgstr ""
@@ -16719,6 +18127,12 @@ msgstr ""
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 #: hrms/ars/doctype/leave/leave.json
 msgid "看護休暇"
+msgstr ""
+
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "社内との会議"
 msgstr ""
 
 #. Label of a shortcut in the Overview Workspace
@@ -16757,7 +18171,9 @@ msgid "私用外出"
 msgstr ""
 
 #. Label of the type (Select) field in DocType 'Support Case'
+#. Label of the category (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "種類"
 msgstr ""
 
@@ -16779,6 +18195,12 @@ msgstr ""
 msgid "立替金精算"
 msgstr ""
 
+#. Label of the t5 (Table) field in DocType 'ars support report - inquiry
+#. response status summary'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
+msgid "累計(月次計)"
+msgstr ""
+
 #. Label of the to (Datetime) field in DocType 'Business trip request table'
 #. Label of the to_date (Data) field in DocType 'user report Leave'
 #: hrms/ars/doctype/business_trip_request_table/business_trip_request_table.json
@@ -16789,8 +18211,11 @@ msgstr ""
 #. Label of the end_date (Date) field in DocType 'Slack channel opening
 #. application'
 #. Label of the end_date (Data) field in DocType 'user overtime report'
+#. Label of the end_date (Date) field in DocType 'ars support report - inquiry
+#. response status summary'
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 #: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
 msgid "終了日"
 msgstr ""
 
@@ -16810,9 +18235,26 @@ msgstr ""
 msgid "継続"
 msgstr ""
 
+#. Option for the '優先度' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "緊急"
+msgstr ""
+
 #. Label of the total_leave (Int) field in DocType 'Employee User Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
 msgid "総休暇"
+msgstr ""
+
+#. Label of the total (Int) field in DocType 'ars support report - inquiry
+#. response status summary - t1'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t1/ars_support_report___inquiry_response_status_summary___t1.json
+msgid "総数"
+msgstr ""
+
+#. Label of the t2 (Table) field in DocType 'ars support report - inquiry
+#. response status summary'
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
+msgid "総滞留日数（完了と未完了の全体数）"
 msgstr ""
 
 #. Label of the total_leave_c11 (Data) field in DocType 'Employee User Report'
@@ -16843,12 +18285,6 @@ msgstr ""
 msgid "補助金"
 msgstr ""
 
-#. Label of the all_time_subsidy_days (Data) field in DocType 'Employee User
-#. Report'
-#: hrms/ars/doctype/employee_user_report/employee_user_report.json
-msgid "補助金の合計日数"
-msgstr ""
-
 #. Label of the total_subsidy_days (Data) field in DocType 'Employee User
 #. Report'
 #: hrms/ars/doctype/employee_user_report/employee_user_report.json
@@ -16867,13 +18303,26 @@ msgid "補助金額"
 msgstr ""
 
 #. Label of the product_name (Select) field in DocType 'Support Case'
+#. Label of the product_name (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "製品名"
 msgstr ""
 
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "複数の手段"
+msgstr ""
+
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
+#. Option for the '問い合わせタイプ' (Select) field in DocType 'ars support issue'
+#. Label of the feature_requests (Int) field in DocType 'ars support report -
+#. inquiry response status summary - t6'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary___t6/ars_support_report___inquiry_response_status_summary___t6.json
+msgid "要望"
 msgstr ""
 
 #. Label of the destination_visited (Data) field in DocType 'Business trip
@@ -16908,8 +18357,37 @@ msgstr ""
 msgid "詳細"
 msgstr ""
 
+#. Option for the 'Work Type' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "課題対応(CMS未登録)"
+msgstr ""
+
+#. Option for the 'Work Type' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "課題対応(CSMS登録済)"
+msgstr ""
+
+#. Label of the issue_opening_date (Date) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "課題発生日"
+msgstr ""
+
+#. Label of the issue_closing_date (Date) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "課題終了日"
+msgstr ""
+
+#. Option for the '業務項目' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "請求/請求管理"
+msgstr ""
+
 #. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "請求書、合意書"
 msgstr ""
 
@@ -16939,6 +18417,11 @@ msgstr ""
 msgid "述べる"
 msgstr ""
 
+#. Option for the '優先度' (Select) field in DocType 'ars support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "通常"
+msgstr ""
+
 #. Option for the '利用形態' (Select) field in DocType 'Add slack for external
 #. users'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
@@ -16946,12 +18429,16 @@ msgid "通常メンバー（ARS社員）"
 msgstr ""
 
 #. Option for the '製品名' (Select) field in DocType 'Support Case'
+#. Option for the '製品名' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "通販Ace"
 msgstr ""
 
 #. Option for the '製品名' (Select) field in DocType 'Support Case'
+#. Option for the '製品名' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "通販プロ"
 msgstr ""
 
@@ -17015,10 +18502,13 @@ msgstr ""
 #. application'
 #. Label of the start_date (Date) field in DocType 'Support Case'
 #. Label of the start_date (Data) field in DocType 'user overtime report'
+#. Label of the start_date (Date) field in DocType 'ars support report -
+#. inquiry response status summary'
 #: hrms/ars/doctype/add_slack_for_external_users/add_slack_for_external_users.json
 #: hrms/ars/doctype/slack_channel_opening_application/slack_channel_opening_application.json
 #: hrms/ars/doctype/support_case/support_case.json
 #: hrms/ars/doctype/user_overtime_report/user_overtime_report.json
+#: hrms/ars_support/doctype/ars_support_report___inquiry_response_status_summary/ars_support_report___inquiry_response_status_summary.json
 msgid "開始日"
 msgstr ""
 
@@ -17028,13 +18518,35 @@ msgstr ""
 msgid "開始時刻"
 msgstr ""
 
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "開発依頼"
+msgstr ""
+
+#. Label of the development_representative (Link) field in DocType 'ars support
+#. issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "開発担当者"
+msgstr ""
+
+#. Label of the development_representative_name (Data) field in DocType 'ars
+#. support issue'
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
+msgid "開発担当者名前"
+msgstr ""
+
 #. Label of the related_to (Select) field in DocType 'Support Case'
+#. Label of the stakeholder (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "関係者"
 msgstr ""
 
 #. Option for the '種類' (Select) field in DocType 'Support Case'
+#. Option for the '種類' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "障害"
 msgstr ""
 
@@ -17050,13 +18562,23 @@ msgstr ""
 
 #. Option for the '連絡手段' (Select) field in DocType 'inquiry_details_table'
 #. Option for the '問い合わせのデータ元' (Select) field in DocType 'Support Case'
+#. Option for the '問い合わせのデータ元' (Select) field in DocType 'ars support issue'
 #: hrms/ars/doctype/inquiry_details_table/inquiry_details_table.json
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "電話"
 msgstr ""
 
+#. Option for the 'Activity ' (Select) field in DocType 'Support Timesheet
+#. Details'
+#: hrms/ars_support/doctype/support_timesheet_details/support_timesheet_details.json
+msgid "電話対応"
+msgstr ""
+
 #. Label of the phone (Phone) field in DocType 'Support Case'
+#. Label of the phone_number (Data) field in DocType 'ars support issue'
 #: hrms/ars/doctype/support_case/support_case.json
+#: hrms/ars_support/doctype/ars_support_issue/ars_support_issue.json
 msgid "電話番号"
 msgstr ""
 

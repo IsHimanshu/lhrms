@@ -1,0 +1,74 @@
+{
+ "app": "hrms",
+ "charts": [],
+ "content": "[{\"id\":\"HWqtm2OIEF\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Zoho CRM</span>\",\"col\":12}},{\"id\":\"KUM_CfBqMc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u53d6\u5f15\u5148\u8cac\u4efb\u8005\",\"col\":4}},{\"id\":\"2vRUXyqwPl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Accounts\",\"col\":4}},{\"id\":\"k4yvTwFlt2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cases\",\"col\":4}},{\"id\":\"gEHlae2zJS\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"zoho CRM ars support company wise issue count\",\"col\":12}},{\"id\":\"Zos_Vimjs8\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"zoho CRM ars support by person\",\"col\":12}},{\"id\":\"mdFOFOiFsO\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"zoho CRM ars support client issue wise\",\"col\":12}},{\"id\":\"1oYyIo5Nn1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"zoho CRM ars support by inquiry type\",\"col\":12}}]",
+ "creation": "2025-09-11 11:27:47.700531",
+ "custom_blocks": [
+  {
+   "custom_block_name": "zoho CRM ars support by inquiry type",
+   "label": "zoho CRM ars support by inquiry type"
+  },
+  {
+   "custom_block_name": "zoho CRM ars support by person",
+   "label": "zoho CRM ars support by person"
+  },
+  {
+   "custom_block_name": "zoho CRM ars support client issue wise",
+   "label": "zoho CRM ars support client issue wise"
+  },
+  {
+   "custom_block_name": "zoho CRM ars support company wise issue count",
+   "label": "zoho CRM ars support company wise issue count"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "grid",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Zoho CRM",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-09-15 12:21:27.151621",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Zoho CRM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u53d6\u5f15\u5148\u8cac\u4efb\u8005",
+   "link_to": "zoho crm contacts",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cases",
+   "link_to": "zoho crm cases",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Accounts",
+   "link_to": "zoho crm accounts",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Zoho CRM",
+ "type": "Workspace"
+}

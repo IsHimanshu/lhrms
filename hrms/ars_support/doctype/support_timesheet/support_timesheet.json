@@ -1,0 +1,354 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-08-18 17:26:13.725658",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "company",
+  "customer",
+  "currency",
+  "exchange_rate",
+  "sales_invoice",
+  "column_break_3",
+  "status",
+  "parent_issue",
+  "employee_detail",
+  "employee",
+  "employee_name",
+  "department",
+  "email",
+  "column_break_9",
+  "user",
+  "start_date",
+  "end_date",
+  "section_break_5",
+  "time_logs",
+  "working_hours",
+  "total_hours",
+  "billing_details",
+  "total_billable_hours",
+  "base_total_billable_amount",
+  "base_total_billed_amount",
+  "base_total_costing_amount",
+  "column_break_10",
+  "total_billed_hours",
+  "total_billable_amount",
+  "total_billed_amount",
+  "total_costing_amount",
+  "per_billed",
+  "section_break_18",
+  "note",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "default": "{employee_name}",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TS-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer",
+   "options": "ars support customer"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Exchange Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sales Invoice",
+   "no_copy": 1,
+   "options": "Sales Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nSubmitted\nBilled\nPayslip\nCompleted\nCancelled",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_detail",
+   "fieldtype": "Section Break",
+   "label": "Employee Detail"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "employee",
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Employee Name",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "time_logs",
+   "fieldtype": "Table",
+   "label": "Time Sheets",
+   "options": "Support Timesheet Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Working Hours",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "billing_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Billing Details",
+   "permlevel": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_billable_hours",
+   "fieldtype": "Float",
+   "label": "Total Billable Hours",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_total_billable_amount",
+   "fieldtype": "Currency",
+   "label": "Base Total Billable Amount",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_total_billed_amount",
+   "fieldtype": "Currency",
+   "label": "Base Total Billed Amount",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_total_costing_amount",
+   "fieldtype": "Currency",
+   "label": "Base Total Costing Amount",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_billed_hours",
+   "fieldtype": "Float",
+   "label": "Total Billed Hours",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "total_billable_amount",
+   "fieldtype": "Currency",
+   "label": "Total Billable Amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_billed_amount",
+   "fieldtype": "Currency",
+   "label": "Total Billed Amount",
+   "options": "currency",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_costing_amount",
+   "fieldtype": "Currency",
+   "label": "Total Costing Amount",
+   "options": "currency",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "per_billed",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "% Amount Billed",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Support Timesheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_issue",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Issue ",
+   "link_filters": "[[\"ars support issue\",\"status\",\"!=\",\"\u5b8c\u4e86\"]]",
+   "options": "ars support issue"
+  },
+  {
+   "fetch_from": "user.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-clock-o",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-30 20:15:41.899772",
+ "modified_by": "Administrator",
+ "module": "Ars support",
+ "name": "Support Timesheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "title"
+}

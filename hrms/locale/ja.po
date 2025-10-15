@@ -671,7 +671,7 @@ msgstr "実際の金額"
 #. Label of the actual_cost (Currency) field in DocType 'Full and Final Asset'
 #: hrms/hr/doctype/full_and_final_asset/full_and_final_asset.json
 msgid "Actual Cost"
-msgstr "実際のコスト"
+msgstr "実績コスト"
 
 #. Label of the actual_encashable_days (Float) field in DocType 'Leave
 #. Encashment'
@@ -679,6 +679,10 @@ msgstr "実際のコスト"
 #: hrms/hr/doctype/leave_encashment/leave_encashment.py:131
 msgid "Actual Encashable Days"
 msgstr "実際の獲得可能な日"
+
+
+msgid "Convert to leave"
+msgstr "代休への切り替え"
 
 #: hrms/hr/doctype/leave_application/leave_application.py:419
 msgid ""
@@ -1609,7 +1613,7 @@ msgstr "承認する"
 #: hrms/hr/doctype/shift_request/shift_request.json
 #: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Approved"
-msgstr "承認済み"
+msgstr "承認済" 
 
 #. Label of the approver (Link) field in DocType 'Department Approver'
 #. Label of the approver (Link) field in DocType 'Shift Assignment Tool'
@@ -3029,7 +3033,7 @@ msgstr "補償的"
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
 #: hrms/hr/doctype/training_program/training_program.json
 msgid "Completed"
-msgstr "完了しました"
+msgstr "完了"   
 
 #. Label of the completed_on (Date) field in DocType 'Job Requisition'
 #: hrms/hr/doctype/job_requisition/job_requisition.json
@@ -4444,11 +4448,11 @@ msgstr "テンプレートをダウンロードします"
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 #: hrms/payroll/doctype/salary_withholding/salary_withholding.json
 msgid "Draft"
-msgstr "草案"
+msgstr "保存中（未提出）" 
 
 #. Label of a Link in the Expense Claims Workspace
 #: hrms/hr/workspace/expense_claims/expense_claims.json
-msgid "Driver"
+msgid "Driver""
 msgstr "ドライバ"
 
 #: hrms/hr/doctype/attendance/attendance.py:76
@@ -6308,7 +6312,7 @@ msgstr "説明"
 
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:116
 msgid "Export"
-msgstr "輸出"
+msgstr "エクスポート"
 
 #: hrms/public/js/hierarchy_chart/hierarchy_chart_desktop.js:137
 msgid "Exporting..."
@@ -6772,7 +6776,7 @@ msgstr "従業員から"
 #. Label of the from_time (Time) field in DocType 'Interview'
 #: hrms/hr/doctype/interview/interview.json
 msgid "From Time"
-msgstr "時間から"
+msgstr "開始時間"
 
 #. Label of the from_user (Link) field in DocType 'PWA Notification'
 #: hrms/hr/doctype/pwa_notification/pwa_notification.json
@@ -8215,7 +8219,7 @@ msgstr "Invoice Ref"
 #: hrms/payroll/doctype/employee_tax_exemption_sub_category/employee_tax_exemption_sub_category.json
 #: hrms/payroll/doctype/salary_structure/salary_structure.json
 msgid "Is Active"
-msgstr "アクティブです"
+msgstr "有効"
 
 #. Label of the is_applicable_for_referral_bonus (Check) field in DocType
 #. 'Employee Referral'
@@ -8268,7 +8272,7 @@ msgstr "柔軟な利点です"
 #. Label of the is_group (Check) field in DocType 'Goal'
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/goal/goal_tree.js:51
 msgid "Is Group"
-msgstr "グループです"
+msgstr "グループ"
 
 #. Label of the is_income_tax_component (Check) field in DocType 'Salary
 #. Component'
@@ -9902,7 +9906,10 @@ msgstr "純賃金は否定的ではありません"
 #: hrms/hr/employee_property_update.js:114
 #: hrms/hr/employee_property_update.js:159
 msgid "New"
-msgstr "新しい"
+msgstr 新規
+
+msgid "残業の事前申請"
+msgstr "残業申請"
 
 #. Label of the new_company (Link) field in DocType 'Employee Transfer'
 #: hrms/hr/doctype/employee_transfer/employee_transfer.json
@@ -10500,7 +10507,7 @@ msgstr "{0}目標のみが{1}になります"
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/training_event_employee/training_event_employee.json
 msgid "Open"
-msgstr "開ける"
+msgstr "開始"
 
 #. Option for the 'Status' (Select) field in DocType 'Job Requisition'
 #: hrms/hr/doctype/job_requisition/job_requisition.json
@@ -10648,6 +10655,11 @@ msgstr "出席者の重複リクエスト"
 msgid "Overlapping Shift Attendance"
 msgstr "シフトの出席率が重複します"
 
+
+msgid "に報告する"
+msgstr "承認者"
+
+
 #: hrms/hr/doctype/shift_request/shift_request.py:133
 msgid "Overlapping Shift Requests"
 msgstr "シフトリクエストの重複"
@@ -10659,7 +10671,7 @@ msgstr "重複シフト"
 #. Name of a DocType
 #: hrms/ars/doctype/overtime/overtime.json
 msgid "Overtime"
-msgstr "残業の事前申請"
+msgstr "残業申請"
 
 #. Label of the overtime_adjustment (Select) field in DocType 'Overtime'
 #: hrms/ars/doctype/overtime/overtime.json
@@ -12161,7 +12173,7 @@ msgstr "従業員の紹介を拒否します"
 #: hrms/hr/doctype/shift_request/shift_request.json
 #: hrms/public/frontend/assets/ExpenseClaimSummary-C4raPuIK.js:1
 msgid "Rejected"
-msgstr "拒否された"
+msgstr "却下されました"  
 
 #: frontend/src/components/RequestActionSheet.vue:290
 msgid "Rejection"
@@ -12688,16 +12700,16 @@ msgid "Row {0}: {1}"
 msgstr "row {0}：{1}"
 
 msgid "Pending HR"
-msgstr "保留中 (社長室)"
+msgstr "提出完了"
 
 msgid "Pending Manager"
-msgstr "保留中（部長)"
+msgstr  "承認待ち（部長）- ②"
 
-msgid "Pending Manager"
-msgstr "保留中（部長)"
+msgid "~ Pending Manager"
+msgstr "承認待ち（部長）- ①" 
 
 msgid "Pending CEO"
-msgstr "保留中 (社長)"
+msgstr "承認待ち（社長）"
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:286
 msgid ""
@@ -14169,7 +14181,7 @@ msgstr "構造は正常に割り当てられています"
 #: hrms/hr/doctype/daily_work_summary_group/daily_work_summary_group.json
 #: hrms/hr/doctype/employee_grievance/employee_grievance.json
 msgid "Subject"
-msgstr "主題"
+msgstr "件名"
 
 #. Label of the submission_date (Date) field in DocType 'Employee Tax
 #. Exemption
@@ -14908,7 +14920,7 @@ msgstr "現在までには、これよりも大きくなければなりません
 #. Label of the to_time (Time) field in DocType 'Interview'
 #: hrms/hr/doctype/interview/interview.json
 msgid "To Time"
-msgstr "時間に"
+msgstr "終了時間"
 
 #. Label of the to_user (Link) field in DocType 'PWA Notification'
 #: hrms/hr/doctype/pwa_notification/pwa_notification.json
@@ -16772,17 +16784,17 @@ msgstr ""
 
 
 msgid "Need More Info"
-msgstr "詳細情報"
+msgstr "実績を入力してください"  
 
 msgid "Pending Final Review"
 msgstr "最終審査待ち"
 
 msgid "Send for Final Review"
-msgstr "最終審査に送る"
+msgstr "申請する"   
 
 #: hrms/ars/dummy_trans.py:10
 msgid "Send for Review"
-msgstr "審査に出す"
+msgstr "申請する"  
 
 
 #: hrms/ars/dummy_trans.py:9
