@@ -10,12 +10,14 @@
   "amended_from",
   "username",
   "employee_id",
+  "column_break_xruq",
   "report_to",
   "column_break_deap",
   "max_allowance_range",
   "total_days",
   "apply_for_breakfast_allowance_section",
   "select_month",
+  "select_year",
   "breakfast_table",
   "summary_section",
   "applied_total_subsidy_amount",
@@ -129,13 +131,24 @@
    "fieldtype": "Float",
    "label": "\u7533\u8acb\u6e08\u307f\u88dc\u52a9\u91d1\u984d",
    "read_only": 1
+  },
+  {
+   "default": "py:frappe.utils.now().split('-')[0]\n",
+   "fieldname": "select_year",
+   "fieldtype": "Int",
+   "label": "\u5e74",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_xruq",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-10 14:15:12.169378",
+ "modified": "2025-10-22 16:05:35.948199",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Breakfast",

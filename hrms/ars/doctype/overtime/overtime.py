@@ -7,7 +7,12 @@ import frappe
 from frappe import _
 
 class Overtime(Document):
-	pass
+	def validate(self):
+		self.validate_hours()
+	
+	def validate_hours(self):
+		for row in self.overtime_table:
+			row.validate_time()
 
 
 @frappe.whitelist()

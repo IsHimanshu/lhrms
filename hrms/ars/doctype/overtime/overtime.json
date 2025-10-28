@@ -32,7 +32,13 @@
   "total_normal_ot",
   "column_break_jmhv",
   "overtime_adjustment",
-  "dh"
+  "dh",
+  "total_weekspecial",
+  "total_weeknormal",
+  "total_saturday_special",
+  "total_saturday_normal",
+  "total_sunday_normal",
+  "total_sunday_special"
  ],
  "fields": [
   {
@@ -197,12 +203,14 @@
   {
    "fieldname": "total_special_ot",
    "fieldtype": "Int",
-   "label": "\u300c\u65e9\u671d\u30fb\u6df1\u591c\u6b8b\u696d\u300d"
+   "label": "\u300c\u65e9\u671d\u30fb\u6df1\u591c\u6b8b\u696d\u300d",
+   "read_only": 1
   },
   {
    "fieldname": "total_normal_ot",
    "fieldtype": "Int",
-   "label": "\u300c\u6b8b\u696d\u6642\u9593\u300d"
+   "label": "\u300c\u6b8b\u696d\u6642\u9593\u300d",
+   "read_only": 1
   },
   {
    "fetch_from": "employee_id.department",
@@ -211,13 +219,49 @@
    "hidden": 1,
    "label": "dh",
    "options": "Department"
+  },
+  {
+   "fieldname": "total_weekspecial",
+   "fieldtype": "Int",
+   "label": "weeksp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_weeknormal",
+   "fieldtype": "Int",
+   "label": "weeknormal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_saturday_special",
+   "fieldtype": "Int",
+   "label": "satsp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_saturday_normal",
+   "fieldtype": "Int",
+   "label": "satnormal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_sunday_normal",
+   "fieldtype": "Int",
+   "label": "sunnormal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_sunday_special",
+   "fieldtype": "Int",
+   "label": "sunsp",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-25 10:50:27.658718",
+ "modified": "2025-10-27 13:40:42.777540",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Overtime",

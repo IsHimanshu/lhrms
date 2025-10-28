@@ -6,6 +6,8 @@ from frappe.model.document import Document
 
 import frappe
 
+from datetime import datetime
+
 # def has_permission(doc, ptype, user):
 #     if frappe.has_role("CEO", user) or frappe.has_role("HR Manager", user):
 #         return True
@@ -16,4 +18,15 @@ import frappe
 #         return True
 #     return False
 class Leave(Document):
-	pass
+	#pass
+	def validate(self):
+		self.validate_same_month_leave()
+
+	def validate_same_month_leave(self):
+		if self.start_date and self.end_date:
+			from_date = str(self.start_date)[:7]
+			to_date =str(self.end_date)[:7]
+			if (from_date != to_date):
+				frappe.throw(
+				"休暇申請は月をまたぐことはできません。翌月分は別の申請を作成してください。"
+				)

@@ -13,7 +13,7 @@
   "department",
   "column_break_adun",
   "date",
-  "\u5bfe\u8c61\u6708",
+  "actdate",
   "details_section",
   "advance_payment_table"
  ],
@@ -79,7 +79,7 @@
    "options": "Advance payment table"
   },
   {
-   "fieldname": "\u5bfe\u8c61\u6708",
+   "fieldname": "actdate",
    "fieldtype": "Date",
    "label": "\u5bfe\u8c61\u6708",
    "reqd": 1
@@ -89,7 +89,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-25 10:42:58.609435",
+ "modified": "2025-10-23 12:11:44.242581",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Advance Payment",
