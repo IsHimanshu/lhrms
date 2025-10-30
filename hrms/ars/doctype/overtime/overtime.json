@@ -203,12 +203,14 @@
   {
    "fieldname": "total_special_ot",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "\u300c\u65e9\u671d\u30fb\u6df1\u591c\u6b8b\u696d\u300d",
    "read_only": 1
   },
   {
    "fieldname": "total_normal_ot",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "\u300c\u6b8b\u696d\u6642\u9593\u300d",
    "read_only": 1
   },
@@ -261,7 +263,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-10-27 13:40:42.777540",
+ "modified": "2025-10-29 16:59:08.851169",
  "modified_by": "Administrator",
  "module": "Ars",
  "name": "Overtime",
