@@ -426,12 +426,13 @@
    "fieldname": "\u30b9\u30c6\u30fc\u30bf\u30b92",
    "fieldtype": "Select",
    "label": "\u30b9\u30c6\u30fc\u30bf\u30b92",
-   "options": "0\t\u5b8c\u4e86\n1\t\u958b\u767a\u8abf\u67fb\u4f9d\u983c\n2\t\u958b\u767a\u8abf\u67fb\u4e2d\n3\tCS\u5bfe\u5fdc\u4e2d-A\n4\tCS\u5bfe\u5fdc\u4e2d-B\n5\t\u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061-5\u55b6\u696d\u65e5\u4ee5\u5185\n6\t\u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061-5\u55b6\u696d\u65e5\u4ee5\u4e0a\n7\t\u8981\u671b\n8\t\u305d\u306e\u4ed6-A\n9\t\u305d\u306e\u4ed6-B\n10\t\u632f\u308a\u5206\u3051\u4e0d\u8981"
+   "options": "0\t\u5b8c\u4e86\n1\t\u958b\u767a\u8abf\u67fb\u4f9d\u983c\n2\t\u958b\u767a\u8abf\u67fb\u4e2d\n3\tCS\u5bfe\u5fdc\u4e2d-A\n4\tCS\u5bfe\u5fdc\u4e2d-B\n5\t\u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061-5\u55b6\u696d\u65e5\u4ee5\u5185\n6\t\u304a\u5ba2\u69d8\u78ba\u8a8d\u5f85\u3061-5\u55b6\u696d\u65e5\u4ee5\u4e0a\n7\t\u8981\u671b\n8\t\u305d\u306e\u4ed6-A\n9\t\u305d\u306e\u4ed6-B\n10\t\u632f\u308a\u5206\u3051\u4e0d\u8981",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-ticket",
  "links": [],
- "modified": "2025-12-05 18:52:23.469613",
+ "modified": "2025-12-09 19:15:55.852683",
  "modified_by": "Administrator",
  "module": "Ars support",
  "name": "ars support issue",
