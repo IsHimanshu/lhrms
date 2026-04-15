@@ -15,7 +15,7 @@
  "label": "Zoho People",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-09-13 19:10:54.198629",
+ "modified": "2026-04-15 16:44:57.509230",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Zoho People",
@@ -27,6 +27,14 @@
  "roles": [],
  "sequence_id": 29.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u793e\u5185\u7a1f\u8b70\u7533\u8acb",
+   "link_to": "zoho ringi restore",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
@@ -48,14 +56,6 @@
    "doc_view": "List",
    "label": "\u671d\u98df\u88dc\u52a9\u7533\u8acb",
    "link_to": "old_breakfast",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "\u793e\u5185\u7a1f\u8b70\u7533\u8acb",
-   "link_to": "Zoho ringi",
    "stats_filter": "[]",
    "type": "DocType"
   },
